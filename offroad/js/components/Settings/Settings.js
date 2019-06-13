@@ -478,6 +478,7 @@ class Settings extends Component {
     renderNetworkSettings() {
         const {
           params: {
+            IsUploadRawEnabled: isRawUploadEnabled,
             IsUploadVideoOverCellularEnabled: isCellularUploadEnabled,
           },
         } = this.props;
@@ -499,7 +500,18 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='switch'
-                            title='Enable Upload Over Cellular'
+                            title='Enable Video Upload'
+                            value={ !!parseInt(isRawUploadEnabled) }
+                            iconSource={ Icons.network }
+                            description='Upload driving raw data and video. Uploads 3 GB per hour.'
+                            isExpanded={ expandedCell == 'upload_enabled' }
+                            handleExpanded={ () => this.handleExpanded('upload_enabled') }
+                            handleChanged={ this.props.setRawUploadEnabled } />
+                    </X.Table>
+                    <X.Table color='darkBlue'>
+                        <X.TableCell
+                            type='switch'
+                            title='Enable Video Upload Over Cellular'
                             value={ !!parseInt(isCellularUploadEnabled) }
                             iconSource={ Icons.network }
                             description='Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges.'
@@ -677,6 +689,9 @@ const mapDispatchToProps = dispatch => ({
     },
     setRecordFront: (recordFront) => {
         dispatch(updateParam(Params.KEY_RECORD_FRONT, (recordFront | 0).toString()));
+    },
+    setRawUploadEnabled: (rawUpload) => {
+        dispatch(updateParam(Params.KEY_UPLOAD_RAW, (rawUpload | 0).toString()));
     },
     setCellularEnabled: (useCellular) => {
         dispatch(updateParam(Params.KEY_UPLOAD_CELLULAR, (useCellular | 0).toString()));

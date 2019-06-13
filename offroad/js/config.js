@@ -9,6 +9,7 @@ export const Params = {
     KEY_CLOUD_CALIBRATION: 'CloudCalibration',
     KEY_DONGLE_ID: 'DongleId',
     KEY_IS_FCW_ENABLED: 'IsFcwEnabled',
+    KEY_UPLOAD_RAW: 'IsUploadRawEnabled',
     KEY_UPLOAD_CELLULAR: 'IsUploadVideoOverCellularEnabled',
     KEY_HAS_ACCEPTED_TERMS: 'HasAcceptedTerms',
     KEY_DO_UNINSTALL: 'DoUninstall',
