@@ -23,6 +23,14 @@
       ]
     ]
   },
+  "Password": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        237
+      ]
+    ]
+  },
   "More Options": {
     "origin": [
       [

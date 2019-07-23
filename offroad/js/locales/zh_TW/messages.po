@@ -295,8 +295,8 @@ msgid "Open Date and Time Settings"
 msgstr "開啟日期與時間設定"
 
 #: js/components/Settings/Settings.js:494
-msgid "Open Locale Settings"
-msgstr "開啟語系設定"
+msgid "Open Language Settings"
+msgstr "開啟語言設定"
 
 #: js/components/Settings/Settings.js:546
 msgid "Open Tethering Settings"
@@ -321,6 +321,10 @@ msgstr "配對 EON"
 #: js/components/Settings/Settings.js:463
 msgid "Paired"
 msgstr "已配對"
+
+#: js/components/SetupWifi/SetupWifi.js:237
+msgid "Password"
+msgstr "無線網路密碼"
 
 #: js/components/UpdatePrompt/UpdatePrompt.js:42
 msgid "Please keep in mind that system behavior may change.{0}{1}"

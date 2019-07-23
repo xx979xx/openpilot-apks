@@ -331,7 +331,7 @@
       ]
     ]
   },
-  "Open Locale Settings": {
+  "Open Language Settings": {
     "origin": [
       [
         "js/components/Settings/Settings.js",

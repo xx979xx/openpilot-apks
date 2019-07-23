@@ -491,7 +491,7 @@ class Settings extends Component {
                             color='settingsDefault'
                             size='small'
                             onPress={ () => ChffrPlus.openLocaleSettings() }>
-                            { i18n._(t`Open Locale Settings`) }
+                            { i18n._(t`Open Language Settings`) }
                         </X.Button>
                     </X.Table>
                 </ScrollView>
