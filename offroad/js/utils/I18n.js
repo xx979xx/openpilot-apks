@@ -1,9 +1,11 @@
 import { NativeModules } from 'react-native'
 import { setupI18n } from "@lingui/core"
+import en from '../locales/en/messages.js';
 import zhTW from '../locales/zh_TW/messages.js';
 
 // define which locale use which translate file
 let supportedLanguage = {
+    'en': en,
     'zh_TW': zhTW,
 };
 
@@ -14,6 +16,8 @@ i18n.load(supportedLanguage);
 // if the locale is defined, activate it
 if (supportedLanguage.hasOwnProperty(locale)) {
     i18n.activate(locale);
+} else {
+    i18n.activate('en');
 }
 
 export default i18n
