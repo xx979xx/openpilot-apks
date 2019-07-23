@@ -1,0 +1,50 @@
+{
+  "Connected": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        183
+      ]
+    ]
+  },
+  "Cancel": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        224
+      ]
+    ]
+  },
+  "Connect": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        230
+      ]
+    ]
+  },
+  "More Options": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        266
+      ]
+    ]
+  },
+  "Skip for now": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        273
+      ]
+    ]
+  },
+  "Continue": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        273
+      ]
+    ]
+  }
+}

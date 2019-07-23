@@ -1,5 +1,5 @@
 {
    "localeDir": "js/locales/",
-   "srcPathDirs": ["js/"],
+   "srcPathDirs": ["js/components/"],
    "format": "po"
 }

@@ -1,0 +1,566 @@
+{
+  "Reboot": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        120
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        372
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        690
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        709
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        771
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        773
+      ]
+    ]
+  },
+  "Resetting calibration requires a reboot.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        120
+      ]
+    ]
+  },
+  "Later": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        121
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        691
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        710
+      ]
+    ]
+  },
+  "Reboot Now": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        122
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        692
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        711
+      ]
+    ]
+  },
+  "Account": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        187
+      ]
+    ]
+  },
+  "Paired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        188
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        463
+      ]
+    ]
+  },
+  "Unpaired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        188
+      ]
+    ]
+  },
+  "Device": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        193
+      ]
+    ]
+  },
+  "{0} Free": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        194
+      ]
+    ]
+  },
+  "Network": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        199
+      ]
+    ]
+  },
+  "Developer": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        205
+      ]
+    ]
+  },
+  "<  Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        265
+      ]
+    ]
+  },
+  "Enable Driver Monitoring": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        277
+      ]
+    ]
+  },
+  "Driver Monitoring detects driver awareness with 3D facial reconstruction and pose estimation. It is used to warn the driver when they appear distracted while openpilot is engaged. This feature is still in beta, so Driver Monitoring is unavailable when the facial tracking is too inaccurate (e.g. at night). The availability is indicated by the face icon at the bottom-left corner of your EON.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        280
+      ]
+    ]
+  },
+  "Record and Upload Driver Camera": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        286
+      ]
+    ]
+  },
+  "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        289
+      ]
+    ]
+  },
+  "Enable Forward Collision Warning": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        295
+      ]
+    ]
+  },
+  "Use visual and acoustic warnings when risk of forward collision is detected.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        298
+      ]
+    ]
+  },
+  "Use Metric System": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        304
+      ]
+    ]
+  },
+  "Display speed in km/h instead of mp/h and temperature in °C instead of °F.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        307
+      ]
+    ]
+  },
+  "Review Training Guide": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        364
+      ]
+    ]
+  },
+  "Power Off": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        379
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        777
+      ]
+    ]
+  },
+  "<  Account Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        397
+      ]
+    ]
+  },
+  "Device Paired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        406
+      ]
+    ]
+  },
+  "Yes": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        407
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        464
+      ]
+    ]
+  },
+  "No": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        407
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        464
+      ]
+    ]
+  },
+  "<  Device Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        438
+      ]
+    ]
+  },
+  "Camera Calibration": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        447
+      ]
+    ]
+  },
+  "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        449
+      ]
+    ]
+  },
+  "Reset": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        457
+      ]
+    ]
+  },
+  "Dongle ID": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        466
+      ]
+    ]
+  },
+  "Serial Number": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        469
+      ]
+    ]
+  },
+  "Free Storage": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        472
+      ]
+    ]
+  },
+  "Upload Speed": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        476
+      ]
+    ]
+  },
+  "Open Date and Time Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        485
+      ]
+    ]
+  },
+  "<  Network Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        507
+      ]
+    ]
+  },
+  "Enable Upload Over Cellular": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        517
+      ]
+    ]
+  },
+  "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        520
+      ]
+    ]
+  },
+  "Open WiFi Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        530
+      ]
+    ]
+  },
+  "Open Tethering Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        537
+      ]
+    ]
+  },
+  "<  Developer Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        564
+      ]
+    ]
+  },
+  "Version": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        572
+      ]
+    ]
+  },
+  "Git Branch": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        575
+      ]
+    ]
+  },
+  "Git Revision": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        578
+      ]
+    ]
+  },
+  "Enable SSH": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        585
+      ]
+    ]
+  },
+  "Allow devices to connect to your EON using Secure Shell (SSH).": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        588
+      ]
+    ]
+  },
+  "Authorized SSH Keys": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        594
+      ]
+    ]
+  },
+  "Cancel": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        604
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        772
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        778
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        784
+      ]
+    ]
+  },
+  "Edit": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        604
+      ]
+    ]
+  },
+  "Uninstall {software}": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        613
+      ]
+    ]
+  },
+  "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will never ask you to add their GitHub.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        628
+      ]
+    ]
+  },
+  "GitHub Username": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        636
+      ]
+    ]
+  },
+  "Save": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        653
+      ]
+    ]
+  },
+  "Save failed. Ensure that your username is correct and you are connected to the internet.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        665
+      ]
+    ]
+  },
+  "Remove all": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        675
+      ]
+    ]
+  },
+  "Reboot to finalize removal of GitHub SSH keys.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        690
+      ]
+    ]
+  },
+  "Reboot to make SSH keys from {githubUsername} available.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        709
+      ]
+    ]
+  },
+  "Are you sure you want to reboot?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        771
+      ]
+    ]
+  },
+  "Are you sure you want to shutdown?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        777
+      ]
+    ]
+  },
+  "Shutdown": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        779
+      ]
+    ]
+  },
+  "Uninstall": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        783
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        785
+      ]
+    ]
+  },
+  "Are you sure you want to uninstall?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        783
+      ]
+    ]
+  }
+}

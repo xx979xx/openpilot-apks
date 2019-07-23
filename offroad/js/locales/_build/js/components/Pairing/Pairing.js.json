@@ -1,0 +1,18 @@
+{
+  "Scan with {0}comma connect {1}on iOS or Android": {
+    "origin": [
+      [
+        "js/components/Pairing/Pairing.js",
+        67
+      ]
+    ]
+  },
+  "Network connection required for pairing": {
+    "origin": [
+      [
+        "js/components/Pairing/Pairing.js",
+        67
+      ]
+    ]
+  }
+}

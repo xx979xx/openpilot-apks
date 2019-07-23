@@ -1,6 +1,6 @@
 import { NativeModules } from 'react-native'
 import { setupI18n } from "@lingui/core"
-import zhTW from '../locales/zh-TW/messages.js';
+import zhTW from '../locales/zh_TW/messages.js';
 
 // define which locale use which translate file
 let supportedLanguage = {

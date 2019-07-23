@@ -234,7 +234,7 @@ class SetupWifi extends Component {
                         </View>
                     ] }>
                     <X.Text>
-                        Password
+                        <Trans>Password</Trans>
                     </X.Text>
                     <TextInput
                         onChangeText={ (password) => this.setState({ password })}
