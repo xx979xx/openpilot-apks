@@ -485,6 +485,15 @@ class Settings extends Component {
                             { i18n._(t`Open Date and Time Settings`) }
                         </X.Button>
                     </X.Table>
+                    <X.Line color='transparent' size='tiny' spacing='mini' />
+                    <X.Table color='darkBlue' padding='big'>
+                        <X.Button
+                            color='settingsDefault'
+                            size='small'
+                            onPress={ () => ChffrPlus.openLocaleSettings() }>
+                            { i18n._(t`Open Locale Settings`) }
+                        </X.Button>
+                    </X.Table>
                 </ScrollView>
             </View>
         )
