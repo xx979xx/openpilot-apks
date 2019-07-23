@@ -16,6 +16,9 @@ import X from '../../themes';
 import Styles from './HomeStyles';
 import PrimaryButton from '../PrimaryButton';
 
+// i18n
+import { Trans } from "@lingui/macro"
+
 class Home extends Component {
     static navigationOptions = {
       header: null,
@@ -43,7 +46,7 @@ class Home extends Component {
                             weight='light'
                             size='small'
                             style={ Styles.homeActionsPrimaryButtonHeader }>
-                            Destination:
+                            <Trans>Destination:</Trans>
                         </X.Text>
                         { destination.address.length > 0
                             && destination.city.length > 0
@@ -73,7 +76,7 @@ class Home extends Component {
                                 color='white'
                                 size='small'
                                 weight='semibold'>
-                                New Destination
+                                <Trans>New Destination</Trans>
                             </X.Text>
                         </View>
                     </View>
@@ -87,7 +90,7 @@ class Home extends Component {
                             color='white'
                             weight='semibold'
                             size='medium'>
-                            New Destination
+                            <Trans>New Destination</Trans>
                         </X.Text>
                     </View>
                 }
@@ -108,7 +111,7 @@ class Home extends Component {
                       color='white'
                       weight='semibold'
                       size='medium'>
-                      New Drive
+                      <Trans>New Drive</Trans>
                   </X.Text>
               </View>
           </PrimaryButton>
@@ -169,7 +172,7 @@ class Home extends Component {
                                                 <X.Text
                                                     color='white'
                                                     weight='semibold'>
-                                                    EON Paired
+                                                    <Trans>EON Paired</Trans>
                                                 </X.Text>
                                             </View>
                                             :
@@ -181,7 +184,7 @@ class Home extends Component {
                                                 <X.Text
                                                     color='white'
                                                     weight='semibold'>
-                                                    Pair EON
+                                                    <Trans>Pair EON</Trans>
                                                 </X.Text>
                                             </View>
                                         }
@@ -204,7 +207,7 @@ class Home extends Component {
                                             <X.Text
                                                 color='white'
                                                 weight='semibold'>
-                                                Settings
+                                                <Trans>Settings</Trans>
                                             </X.Text>
                                         </View>
                                     </X.Gradient>

@@ -40,6 +40,7 @@
   "dependencies": {
     "@commaai/comma-api": "1.0.12",
     "@expo/react-native-touchable-native-feedback-safe": "^1.1.2",
+    "@lingui/core": "^2.8.3",
     "@lingui/react": "^2.8.3",
     "@mapbox/geo-viewport": "^0.2.2",
     "@mapbox/polyline": "^0.2.0",
@@ -49,6 +50,7 @@
     "react": "16.0.0-beta.5",
     "react-native": "^0.49.5",
     "react-native-cookies": "^3.2.0",
+    "react-native-fetch-blob": "^0.10.0",
     "react-native-linear-gradient": "^2.3.0",
     "react-native-network-info": "^3.0.0",
     "react-native-popup-dialog": "^0.10.44",

@@ -8,6 +8,9 @@ import SetupContainer from '../SetupContainer';
 
 import Styles from './SetupWelcomeStyles';
 
+// i18n
+import { t, Trans } from "@lingui/macro"
+
 class SetupWelcome extends Component {
     static navigationOptions = {
         header: null,
@@ -21,11 +24,11 @@ class SetupWelcome extends Component {
                         size='jumbo'
                         weight='semibold'
                         color='white'
-                        style={ Styles.welcomeText }>Welcome to EON</X.Text>
+                        style={ Styles.welcomeText }><Trans>Welcome to EON</Trans></X.Text>
                     <X.Text
                         size='medium'
                         color='white'
-                        style={ Styles.detailText }>Before we get on the road, let{"\'"}s cover some details and connect to the internet.</X.Text>
+                        style={ Styles.detailText }><Trans>Before we get on the road, let{"\'"}s cover some details and connect to the internet.</Trans></X.Text>
                     <View style={ Styles.setupButton }>
                         <X.Button
                             color='transparent'
@@ -34,7 +37,7 @@ class SetupWelcome extends Component {
                             <X.Gradient
                                 colors={ [ 'rgb(26,48,64)', 'rgb(18,39,56)' ] }
                                 style={ Styles.setupButtonGradient }>
-                                <X.Text size='big' weight='semibold' color='white'>Set up your EON</X.Text>
+                                <X.Text size='big' weight='semibold' color='white'><Trans>Set up your EON</Trans></X.Text>
                             </X.Gradient>
                         </X.Button>
                     </View>

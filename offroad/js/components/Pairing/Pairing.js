@@ -11,6 +11,10 @@ import ChffrPlus from '../../native/ChffrPlus';
 import { refreshDeviceInfo, updateConnectionState } from '../../store/host/actions';
 import { Colors } from '../../../node_modules/comma-x-native/x/themes/Base/BaseColors';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t } from "@lingui/macro"
+
 class Pairing extends Component {
   static propTypes = {
     onPairConfirmed: PropTypes.func,
@@ -60,7 +64,7 @@ class Pairing extends Component {
             color='white'
             size='medium'
             style={ Styles.scanText }>
-            { this.props.isConnected ? 'Scan with \ncomma connect \non iOS or Android' : 'Network connection required for pairing' }
+            { i18n._(this.props.isConnected ? t`Scan with ${'\n'}comma connect ${'\n'}on iOS or Android` : t`Network connection required for pairing`) }
           </X.Text>
         { this.props.isConnected ? this.renderQR() : null }
         </View>
