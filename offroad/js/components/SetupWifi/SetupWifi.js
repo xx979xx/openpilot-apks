@@ -25,7 +25,7 @@ import Styles from './SetupWifiStyles';
 
 // i18n
 import { i18n } from '../../utils/I18n'
-import { t } from "@lingui/macro"
+import { t, Trans } from "@lingui/macro"
 
 const BarImagesByLevel = {
     0: require('../../img/indicator_wifi_25.png'),
