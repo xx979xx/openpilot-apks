@@ -11,19 +11,19 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        690
+        691
       ],
       [
         "js/components/Settings/Settings.js",
-        709
+        710
       ],
       [
         "js/components/Settings/Settings.js",
-        771
+        772
       ],
       [
         "js/components/Settings/Settings.js",
-        773
+        774
       ]
     ]
   },
@@ -43,11 +43,11 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        691
+        692
       ],
       [
         "js/components/Settings/Settings.js",
-        710
+        711
       ]
     ]
   },
@@ -59,11 +59,11 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        692
+        693
       ],
       [
         "js/components/Settings/Settings.js",
-        711
+        712
       ]
     ]
   },
@@ -83,7 +83,7 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        463
+        464
       ]
     ]
   },
@@ -215,7 +215,7 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        777
+        778
       ]
     ]
   },
@@ -243,7 +243,7 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        464
+        465
       ]
     ]
   },
@@ -255,7 +255,15 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        464
+        465
+      ]
+    ]
+  },
+  "Terms of Service available at https://my.comma.ai/terms.html": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        408
       ]
     ]
   },
@@ -263,7 +271,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        438
+        439
       ]
     ]
   },
@@ -271,7 +279,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        447
+        448
       ]
     ]
   },
@@ -279,7 +287,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        449
+        450
       ]
     ]
   },
@@ -287,7 +295,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        457
+        458
       ]
     ]
   },
@@ -295,7 +303,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        466
+        467
       ]
     ]
   },
@@ -303,7 +311,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        469
+        470
       ]
     ]
   },
@@ -311,7 +319,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        472
+        473
       ]
     ]
   },
@@ -319,7 +327,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        476
+        477
       ]
     ]
   },
@@ -327,7 +335,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        485
+        486
       ]
     ]
   },
@@ -335,7 +343,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        507
+        508
       ]
     ]
   },
@@ -343,7 +351,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        517
+        518
       ]
     ]
   },
@@ -351,7 +359,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        520
+        521
       ]
     ]
   },
@@ -359,7 +367,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        530
+        531
       ]
     ]
   },
@@ -367,7 +375,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        537
+        538
       ]
     ]
   },
@@ -375,7 +383,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        564
+        565
       ]
     ]
   },
@@ -383,7 +391,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        572
+        573
       ]
     ]
   },
@@ -391,7 +399,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        575
+        576
       ]
     ]
   },
@@ -399,7 +407,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        578
+        579
       ]
     ]
   },
@@ -407,7 +415,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        585
+        586
       ]
     ]
   },
@@ -415,7 +423,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        588
+        589
       ]
     ]
   },
@@ -423,7 +431,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        594
+        595
       ]
     ]
   },
@@ -431,123 +439,15 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        604
+        605
       ],
       [
         "js/components/Settings/Settings.js",
-        772
+        773
       ],
-      [
-        "js/components/Settings/Settings.js",
-        778
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        784
-      ]
-    ]
-  },
-  "Edit": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        604
-      ]
-    ]
-  },
-  "Uninstall {software}": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        613
-      ]
-    ]
-  },
-  "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will never ask you to add their GitHub.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        628
-      ]
-    ]
-  },
-  "GitHub Username": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        636
-      ]
-    ]
-  },
-  "Save": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        653
-      ]
-    ]
-  },
-  "Save failed. Ensure that your username is correct and you are connected to the internet.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        665
-      ]
-    ]
-  },
-  "Remove all": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        675
-      ]
-    ]
-  },
-  "Reboot to finalize removal of GitHub SSH keys.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        690
-      ]
-    ]
-  },
-  "Reboot to make SSH keys from {githubUsername} available.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        709
-      ]
-    ]
-  },
-  "Are you sure you want to reboot?": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        771
-      ]
-    ]
-  },
-  "Are you sure you want to shutdown?": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        777
-      ]
-    ]
-  },
-  "Shutdown": {
-    "origin": [
       [
         "js/components/Settings/Settings.js",
         779
-      ]
-    ]
-  },
-  "Uninstall": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        783
       ],
       [
         "js/components/Settings/Settings.js",
@@ -555,11 +455,119 @@
       ]
     ]
   },
+  "Edit": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        605
+      ]
+    ]
+  },
+  "Uninstall {software}": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        614
+      ]
+    ]
+  },
+  "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will never ask you to add their GitHub.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        629
+      ]
+    ]
+  },
+  "GitHub Username": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        637
+      ]
+    ]
+  },
+  "Save": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        654
+      ]
+    ]
+  },
+  "Save failed. Ensure that your username is correct and you are connected to the internet.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        666
+      ]
+    ]
+  },
+  "Remove all": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        676
+      ]
+    ]
+  },
+  "Reboot to finalize removal of GitHub SSH keys.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        691
+      ]
+    ]
+  },
+  "Reboot to make SSH keys from {githubUsername} available.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        710
+      ]
+    ]
+  },
+  "Are you sure you want to reboot?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        772
+      ]
+    ]
+  },
+  "Are you sure you want to shutdown?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        778
+      ]
+    ]
+  },
+  "Shutdown": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        780
+      ]
+    ]
+  },
+  "Uninstall": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        784
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        786
+      ]
+    ]
+  },
   "Are you sure you want to uninstall?": {
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        783
+        784
       ]
     ]
   }
