@@ -17,7 +17,7 @@ msgstr ""
 msgid "<  Account Settings"
 msgstr "<  Account Settings"
 
-#: js/components/Settings/Settings.js:565
+#: js/components/Settings/Settings.js:574
 msgid "<  Developer Settings"
 msgstr "<  Developer Settings"
 
@@ -25,7 +25,7 @@ msgstr "<  Developer Settings"
 msgid "<  Device Settings"
 msgstr "<  Device Settings"
 
-#: js/components/Settings/Settings.js:508
+#: js/components/Settings/Settings.js:517
 msgid "<  Network Settings"
 msgstr "<  Network Settings"
 
@@ -59,23 +59,23 @@ msgstr "Account"
 msgid "Add SIM Card"
 msgstr "Add SIM Card"
 
-#: js/components/Settings/Settings.js:589
+#: js/components/Settings/Settings.js:598
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "Allow devices to connect to your EON using Secure Shell (SSH)."
 
-#: js/components/Settings/Settings.js:772
+#: js/components/Settings/Settings.js:781
 msgid "Are you sure you want to reboot?"
 msgstr "Are you sure you want to reboot?"
 
-#: js/components/Settings/Settings.js:778
+#: js/components/Settings/Settings.js:787
 msgid "Are you sure you want to shutdown?"
 msgstr "Are you sure you want to shutdown?"
 
-#: js/components/Settings/Settings.js:784
+#: js/components/Settings/Settings.js:793
 msgid "Are you sure you want to uninstall?"
 msgstr "Are you sure you want to uninstall?"
 
-#: js/components/Settings/Settings.js:595
+#: js/components/Settings/Settings.js:604
 msgid "Authorized SSH Keys"
 msgstr "Authorized SSH Keys"
 
@@ -100,10 +100,10 @@ msgstr "Camera Calibration"
 msgid "Camera from EON"
 msgstr "Camera from EON"
 
-#: js/components/Settings/Settings.js:605
-#: js/components/Settings/Settings.js:773
-#: js/components/Settings/Settings.js:779
-#: js/components/Settings/Settings.js:785
+#: js/components/Settings/Settings.js:614
+#: js/components/Settings/Settings.js:782
+#: js/components/Settings/Settings.js:788
+#: js/components/Settings/Settings.js:794
 #: js/components/SetupWifi/SetupWifi.js:224
 msgid "Cancel"
 msgstr "Cancel"
@@ -184,7 +184,7 @@ msgstr "Driver Monitoring detects driver awareness with 3D facial reconstruction
 msgid "EON Paired"
 msgstr "EON Paired"
 
-#: js/components/Settings/Settings.js:605
+#: js/components/Settings/Settings.js:614
 msgid "Edit"
 msgstr "Edit"
 
@@ -196,11 +196,11 @@ msgstr "Enable Driver Monitoring"
 msgid "Enable Forward Collision Warning"
 msgstr "Enable Forward Collision Warning"
 
-#: js/components/Settings/Settings.js:586
+#: js/components/Settings/Settings.js:595
 msgid "Enable SSH"
 msgstr "Enable SSH"
 
-#: js/components/Settings/Settings.js:518
+#: js/components/Settings/Settings.js:527
 msgid "Enable Upload Over Cellular"
 msgstr "Enable Upload Over Cellular"
 
@@ -217,15 +217,15 @@ msgstr "Finish Training"
 msgid "Free Storage"
 msgstr "Free Storage"
 
-#: js/components/Settings/Settings.js:576
+#: js/components/Settings/Settings.js:585
 msgid "Git Branch"
 msgstr "Git Branch"
 
-#: js/components/Settings/Settings.js:579
+#: js/components/Settings/Settings.js:588
 msgid "Git Revision"
 msgstr "Git Revision"
 
-#: js/components/Settings/Settings.js:637
+#: js/components/Settings/Settings.js:646
 msgid "GitHub Username"
 msgstr "GitHub Username"
 
@@ -250,8 +250,8 @@ msgid "Insert a SIM card with data. Need one? Get a comma SIM at shop.comma.ai"
 msgstr "Insert a SIM card with data. Need one? Get a comma SIM at shop.comma.ai"
 
 #: js/components/Settings/Settings.js:121
-#: js/components/Settings/Settings.js:692
-#: js/components/Settings/Settings.js:711
+#: js/components/Settings/Settings.js:701
+#: js/components/Settings/Settings.js:720
 #: js/components/UpdatePrompt/UpdatePrompt.js:37
 msgid "Later"
 msgstr "Later"
@@ -294,11 +294,15 @@ msgstr "Now that you’re all set up, it’s important to understand the functio
 msgid "Open Date and Time Settings"
 msgstr "Open Date and Time Settings"
 
-#: js/components/Settings/Settings.js:538
+#: js/components/Settings/Settings.js:495
+msgid "Open Language Settings"
+msgstr "Open Language Settings"
+
+#: js/components/Settings/Settings.js:547
 msgid "Open Tethering Settings"
 msgstr "Open Tethering Settings"
 
-#: js/components/Settings/Settings.js:531
+#: js/components/Settings/Settings.js:540
 msgid "Open WiFi Settings"
 msgstr "Open WiFi Settings"
 
@@ -327,7 +331,7 @@ msgid "Please keep in mind that system behavior may change.{0}{1}"
 msgstr "Please keep in mind that system behavior may change.{0}{1}"
 
 #: js/components/Settings/Settings.js:379
-#: js/components/Settings/Settings.js:778
+#: js/components/Settings/Settings.js:787
 msgid "Power Off"
 msgstr "Power Off"
 
@@ -354,16 +358,16 @@ msgstr "Read to Continue"
 
 #: js/components/Settings/Settings.js:120
 #: js/components/Settings/Settings.js:372
-#: js/components/Settings/Settings.js:691
-#: js/components/Settings/Settings.js:710
-#: js/components/Settings/Settings.js:772
-#: js/components/Settings/Settings.js:774
+#: js/components/Settings/Settings.js:700
+#: js/components/Settings/Settings.js:719
+#: js/components/Settings/Settings.js:781
+#: js/components/Settings/Settings.js:783
 msgid "Reboot"
 msgstr "Reboot"
 
 #: js/components/Settings/Settings.js:122
-#: js/components/Settings/Settings.js:693
-#: js/components/Settings/Settings.js:712
+#: js/components/Settings/Settings.js:702
+#: js/components/Settings/Settings.js:721
 msgid "Reboot Now"
 msgstr "Reboot Now"
 
@@ -371,11 +375,11 @@ msgstr "Reboot Now"
 msgid "Reboot and Update"
 msgstr "Reboot and Update"
 
-#: js/components/Settings/Settings.js:691
+#: js/components/Settings/Settings.js:700
 msgid "Reboot to finalize removal of GitHub SSH keys."
 msgstr "Reboot to finalize removal of GitHub SSH keys."
 
-#: js/components/Settings/Settings.js:710
+#: js/components/Settings/Settings.js:719
 msgid "Reboot to make SSH keys from {githubUsername} available."
 msgstr "Reboot to make SSH keys from {githubUsername} available."
 
@@ -383,7 +387,7 @@ msgstr "Reboot to make SSH keys from {githubUsername} available."
 msgid "Record and Upload Driver Camera"
 msgstr "Record and Upload Driver Camera"
 
-#: js/components/Settings/Settings.js:676
+#: js/components/Settings/Settings.js:685
 msgid "Remove all"
 msgstr "Remove all"
 
@@ -411,11 +415,11 @@ msgstr "Review Training Guide"
 msgid "SIM card detected in EON"
 msgstr "SIM card detected in EON"
 
-#: js/components/Settings/Settings.js:654
+#: js/components/Settings/Settings.js:663
 msgid "Save"
 msgstr "Save"
 
-#: js/components/Settings/Settings.js:666
+#: js/components/Settings/Settings.js:675
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "Save failed. Ensure that your username is correct and you are connected to the internet."
 
@@ -456,7 +460,7 @@ msgstr "Set up your EON"
 msgid "Settings"
 msgstr "Settings"
 
-#: js/components/Settings/Settings.js:780
+#: js/components/Settings/Settings.js:789
 msgid "Shutdown"
 msgstr "Shutdown"
 
@@ -501,12 +505,12 @@ msgstr "The stock radar in your car helps openpilot measure the lead car distanc
 msgid "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 
-#: js/components/Settings/Settings.js:784
-#: js/components/Settings/Settings.js:786
+#: js/components/Settings/Settings.js:793
+#: js/components/Settings/Settings.js:795
 msgid "Uninstall"
 msgstr "Uninstall"
 
-#: js/components/Settings/Settings.js:614
+#: js/components/Settings/Settings.js:623
 msgid "Uninstall {software}"
 msgstr "Uninstall {software}"
 
@@ -526,7 +530,7 @@ msgstr "Upload Speed"
 msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
 msgstr "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
 
-#: js/components/Settings/Settings.js:521
+#: js/components/Settings/Settings.js:530
 msgid "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges."
 msgstr "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges."
 
@@ -538,11 +542,11 @@ msgstr "Use Metric System"
 msgid "Use visual and acoustic warnings when risk of forward collision is detected."
 msgstr "Use visual and acoustic warnings when risk of forward collision is detected."
 
-#: js/components/Settings/Settings.js:573
+#: js/components/Settings/Settings.js:582
 msgid "Version"
 msgstr "Version"
 
-#: js/components/Settings/Settings.js:629
+#: js/components/Settings/Settings.js:638
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will never ask you to add their GitHub."
 msgstr "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will never ask you to add their GitHub."
 

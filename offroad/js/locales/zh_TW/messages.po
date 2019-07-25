@@ -17,7 +17,7 @@ msgstr ""
 msgid "<  Account Settings"
 msgstr "<  帳戶設定"
 
-#: js/components/Settings/Settings.js:565
+#: js/components/Settings/Settings.js:574
 msgid "<  Developer Settings"
 msgstr "<  開發人員設定"
 
@@ -25,7 +25,7 @@ msgstr "<  開發人員設定"
 msgid "<  Device Settings"
 msgstr "<  裝置設定"
 
-#: js/components/Settings/Settings.js:508
+#: js/components/Settings/Settings.js:517
 msgid "<  Network Settings"
 msgstr "<  網路設定"
 
@@ -59,23 +59,23 @@ msgstr "帳號"
 msgid "Add SIM Card"
 msgstr "加入 SIM 卡"
 
-#: js/components/Settings/Settings.js:589
+#: js/components/Settings/Settings.js:598
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "允許別的裝置經由 Secure Shell (SSH) 連線至您的 EON。"
 
-#: js/components/Settings/Settings.js:772
+#: js/components/Settings/Settings.js:781
 msgid "Are you sure you want to reboot?"
 msgstr "您確定要重新啟動嗎？"
 
-#: js/components/Settings/Settings.js:778
+#: js/components/Settings/Settings.js:787
 msgid "Are you sure you want to shutdown?"
 msgstr "您確定要關機嗎？"
 
-#: js/components/Settings/Settings.js:784
+#: js/components/Settings/Settings.js:793
 msgid "Are you sure you want to uninstall?"
 msgstr "您確定要卸載嗎？"
 
-#: js/components/Settings/Settings.js:595
+#: js/components/Settings/Settings.js:604
 msgid "Authorized SSH Keys"
 msgstr "已授權的 SSH 密鑰"
 
@@ -100,10 +100,10 @@ msgstr "相機校準"
 msgid "Camera from EON"
 msgstr "來自 EON 的相機"
 
-#: js/components/Settings/Settings.js:605
-#: js/components/Settings/Settings.js:773
-#: js/components/Settings/Settings.js:779
-#: js/components/Settings/Settings.js:785
+#: js/components/Settings/Settings.js:614
+#: js/components/Settings/Settings.js:782
+#: js/components/Settings/Settings.js:788
+#: js/components/Settings/Settings.js:794
 #: js/components/SetupWifi/SetupWifi.js:224
 msgid "Cancel"
 msgstr "取消"
@@ -184,7 +184,7 @@ msgstr "駕駛監控系統利用建構 3D 人臉和姿態來判斷駕駛的狀�
 msgid "EON Paired"
 msgstr "EON 已配對"
 
-#: js/components/Settings/Settings.js:605
+#: js/components/Settings/Settings.js:614
 msgid "Edit"
 msgstr "編輯"
 
@@ -196,11 +196,11 @@ msgstr "啟用駕駛監控"
 msgid "Enable Forward Collision Warning"
 msgstr "啟用前方碰撞預警"
 
-#: js/components/Settings/Settings.js:586
+#: js/components/Settings/Settings.js:595
 msgid "Enable SSH"
 msgstr "啟用 SSH"
 
-#: js/components/Settings/Settings.js:518
+#: js/components/Settings/Settings.js:527
 msgid "Enable Upload Over Cellular"
 msgstr "允許使用行動通訊網路上傳記錄"
 
@@ -217,15 +217,15 @@ msgstr "完成教學"
 msgid "Free Storage"
 msgstr "剩餘空間"
 
-#: js/components/Settings/Settings.js:576
+#: js/components/Settings/Settings.js:585
 msgid "Git Branch"
 msgstr "Git 分支"
 
-#: js/components/Settings/Settings.js:579
+#: js/components/Settings/Settings.js:588
 msgid "Git Revision"
 msgstr "Git 修訂版"
 
-#: js/components/Settings/Settings.js:637
+#: js/components/Settings/Settings.js:646
 msgid "GitHub Username"
 msgstr "GitHub 用戶名"
 
@@ -250,8 +250,8 @@ msgid "Insert a SIM card with data. Need one? Get a comma SIM at shop.comma.ai"
 msgstr "插入一張有網路流量的 SIM 卡，需要嗎？您可以到 shop.comma.ai 取得 comma SIM"
 
 #: js/components/Settings/Settings.js:121
-#: js/components/Settings/Settings.js:692
-#: js/components/Settings/Settings.js:711
+#: js/components/Settings/Settings.js:701
+#: js/components/Settings/Settings.js:720
 #: js/components/UpdatePrompt/UpdatePrompt.js:37
 msgid "Later"
 msgstr "稍後"
@@ -294,11 +294,15 @@ msgstr "現在您已經完成了所有的設定，在您開始測試之前，請
 msgid "Open Date and Time Settings"
 msgstr "開啟日期與時間設定"
 
-#: js/components/Settings/Settings.js:538
+#: js/components/Settings/Settings.js:495
+msgid "Open Language Settings"
+msgstr "打開語言設定"
+
+#: js/components/Settings/Settings.js:547
 msgid "Open Tethering Settings"
 msgstr "開啟網絡共享設定"
 
-#: js/components/Settings/Settings.js:531
+#: js/components/Settings/Settings.js:540
 msgid "Open WiFi Settings"
 msgstr "開啟無線網路設定"
 
@@ -327,7 +331,7 @@ msgid "Please keep in mind that system behavior may change.{0}{1}"
 msgstr "請記住系統的行為可能發生變化。{0}{1}"
 
 #: js/components/Settings/Settings.js:379
-#: js/components/Settings/Settings.js:778
+#: js/components/Settings/Settings.js:787
 msgid "Power Off"
 msgstr "關機"
 
@@ -350,16 +354,16 @@ msgstr "繼續閱讀"
 
 #: js/components/Settings/Settings.js:120
 #: js/components/Settings/Settings.js:372
-#: js/components/Settings/Settings.js:691
-#: js/components/Settings/Settings.js:710
-#: js/components/Settings/Settings.js:772
-#: js/components/Settings/Settings.js:774
+#: js/components/Settings/Settings.js:700
+#: js/components/Settings/Settings.js:719
+#: js/components/Settings/Settings.js:781
+#: js/components/Settings/Settings.js:783
 msgid "Reboot"
 msgstr "重新啟動"
 
 #: js/components/Settings/Settings.js:122
-#: js/components/Settings/Settings.js:693
-#: js/components/Settings/Settings.js:712
+#: js/components/Settings/Settings.js:702
+#: js/components/Settings/Settings.js:721
 msgid "Reboot Now"
 msgstr "馬上重啟"
 
@@ -367,11 +371,11 @@ msgstr "馬上重啟"
 msgid "Reboot and Update"
 msgstr "重啟並更新"
 
-#: js/components/Settings/Settings.js:691
+#: js/components/Settings/Settings.js:700
 msgid "Reboot to finalize removal of GitHub SSH keys."
 msgstr "請重新啟動以完成刪除 GitHub SSH 密鑰。"
 
-#: js/components/Settings/Settings.js:710
+#: js/components/Settings/Settings.js:719
 msgid "Reboot to make SSH keys from {githubUsername} available."
 msgstr "請重新啟動來啟用 {githubUsername} 的 SSH 密鑰。"
 
@@ -379,7 +383,7 @@ msgstr "請重新啟動來啟用 {githubUsername} 的 SSH 密鑰。"
 msgid "Record and Upload Driver Camera"
 msgstr "錄制並上傳駕駛的錄像"
 
-#: js/components/Settings/Settings.js:676
+#: js/components/Settings/Settings.js:685
 msgid "Remove all"
 msgstr "移除全部"
 
@@ -407,11 +411,11 @@ msgstr "查看使用教學"
 msgid "SIM card detected in EON"
 msgstr "EON 已偵測到 SIM 卡"
 
-#: js/components/Settings/Settings.js:654
+#: js/components/Settings/Settings.js:663
 msgid "Save"
 msgstr "儲存"
 
-#: js/components/Settings/Settings.js:666
+#: js/components/Settings/Settings.js:675
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "儲存失敗，請確認您已連上網路並輸入正確的用戶名。"
 
@@ -452,7 +456,7 @@ msgstr "設定您的 EON"
 msgid "Settings"
 msgstr "設定"
 
-#: js/components/Settings/Settings.js:780
+#: js/components/Settings/Settings.js:789
 msgid "Shutdown"
 msgstr "關機"
 
@@ -497,12 +501,12 @@ msgstr "來自您車上的原廠雷達訊號幫助 openpilot 計算出與前車�
 msgid "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "若有需要，您可以隨時至 EON 設定裡重新閱讀使用指南。若您想知道更多關於 openpilot 的訊息，請參閱 wiki 或是加入我們在 discord.comma.ai 的社群。"
 
-#: js/components/Settings/Settings.js:784
-#: js/components/Settings/Settings.js:786
+#: js/components/Settings/Settings.js:793
+#: js/components/Settings/Settings.js:795
 msgid "Uninstall"
 msgstr "卸載"
 
-#: js/components/Settings/Settings.js:614
+#: js/components/Settings/Settings.js:623
 msgid "Uninstall {software}"
 msgstr "卸載 {software}"
 
@@ -522,7 +526,7 @@ msgstr "上傳速度"
 msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
 msgstr "上傳前置相機的錄像來協助我們提升駕駛監控的準確率。"
 
-#: js/components/Settings/Settings.js:521
+#: js/components/Settings/Settings.js:530
 msgid "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges."
 msgstr "當您的 EON 沒有無線網路連線卻有安裝 SIM 卡時，這個選項將允許 EON 使用行動通訊網路上傳記錄。如果您非使用吃到飽方案，您可能需付額外的費用。"
 
@@ -534,11 +538,11 @@ msgstr "使用公／米制單位"
 msgid "Use visual and acoustic warnings when risk of forward collision is detected."
 msgstr "當檢測到前方有碰撞的風險時，使用視覺和音效來警示。"
 
-#: js/components/Settings/Settings.js:573
+#: js/components/Settings/Settings.js:582
 msgid "Version"
 msgstr "版本"
 
-#: js/components/Settings/Settings.js:629
+#: js/components/Settings/Settings.js:638
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will never ask you to add their GitHub."
 msgstr "警告：這將授予在您 GitHub 帳號裡所有公開密鑰的 SSH 訪問權限。永遠不要輸入您自己以外的 GitHub 用戶名。comma 的員工永遠不會要求您添加他們的 GitHub 用戶名。"
 
