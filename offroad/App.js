@@ -82,7 +82,6 @@ export default class App extends Component {
         UpdateChecker.start(this.store.dispatch);
         HomeButtonListener.register(this.store.dispatch);
         SimStateListener.register(this.store.dispatch);
-        DestinationListener.register(this.store.dispatch);
         SettingsButtonListener.register(this.store.dispatch);
         ThermalListener.register(this.store.dispatch);
         WifiStateListener.register(this.store.dispatch);
@@ -97,10 +96,10 @@ export default class App extends Component {
     }
 
     componentWillUnmount() {
+        AppStateListener.unregister();
         UploadProgressTimer.stop();
         HomeButtonListener.unregister();
         SimStateListener.unregister();
-        DestinationListener.unregister();
         UpdateChecker.stop();
         SettingsButtonListener.unregister();
         ThermalListener.unregister();

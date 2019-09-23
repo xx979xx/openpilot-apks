@@ -13,6 +13,7 @@ import ChffrPlus from '../../native/ChffrPlus';
 import { formatSize } from '../../utils/bytes';
 import { mpsToKph, mpsToMph, kphToMps, mphToMps } from '../../utils/conversions';
 import { Params } from '../../config';
+import { resetToLaunch } from '../../store/nav/actions';
 
 import {
     updateSshEnabled,
@@ -41,7 +42,6 @@ const Icons = {
     user: require('../../img/icon_user.png'),
     developer: require('../../img/icon_shell.png'),
     warning: require('../../img/icon_warning.png'),
-    monitoring: require('../../img/icon_monitoring.png'),
     metric: require('../../img/icon_metric.png'),
     network: require('../../img/icon_network.png'),
     eon: require('../../img/icon_eon.png'),
@@ -245,9 +245,7 @@ class Settings extends Component {
     renderPrimarySettings() {
         const {
             params: {
-                IsDriverMonitoringEnabled: isDriverMonitoringEnabled,
                 RecordFront: recordFront,
-                IsFcwEnabled: isFcwEnabled,
                 IsMetric: isMetric,
                 LongitudinalControl: hasLongitudinalControl,
                 LimitSetSpeed: limitSetSpeed,
@@ -274,15 +272,6 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='switch'
-                            title={ i18n._(t`Enable Driver Monitoring`) }
-                            value={ !!parseInt(isDriverMonitoringEnabled) }
-                            iconSource={ Icons.monitoring }
-                            description= { i18n._(t`Driver Monitoring detects driver awareness with 3D facial reconstruction and pose estimation. It is used to warn the driver when they appear distracted while openpilot is engaged. This feature is still in beta, so Driver Monitoring is unavailable when the facial tracking is too inaccurate (e.g. at night). The availability is indicated by the face icon at the bottom-left corner of your EON.`) }
-                            isExpanded={ expandedCell == 'driver_monitoring' }
-                            handleExpanded={ () => this.handleExpanded('driver_monitoring') }
-                            handleChanged={ this.props.setDriverMonitoringEnabled } />
-                        <X.TableCell
-                            type='switch'
                             title={ i18n._(t`Record and Upload Driver Camera`) }
                             value={ !!parseInt(recordFront) }
                             iconSource={ Icons.network }
@@ -290,15 +279,6 @@ class Settings extends Component {
                             isExpanded={ expandedCell == 'record_front' }
                             handleExpanded={ () => this.handleExpanded('record_front') }
                             handleChanged={ this.props.setRecordFront } />
-                        <X.TableCell
-                            type='switch'
-                            title={ i18n._(t`Enable Forward Collision Warning`) }
-                            value={ !!parseInt(isFcwEnabled) }
-                            iconSource={ Icons.warning }
-                            description={ i18n._(t`Use visual and acoustic warnings when risk of forward collision is detected.`) }
-                            isExpanded={ expandedCell == 'fcw' }
-                            handleExpanded={ () => this.handleExpanded('fcw') }
-                            handleChanged={ this.props.setFcwEnabled } />
                         <X.TableCell
                             type='switch'
                             title={ i18n._(t`Use Metric System`) }
@@ -407,6 +387,16 @@ class Settings extends Component {
                                 value={ i18n._(isPaired ? t`Yes` : t`No`) } />
                             <X.Text color='white' size='tiny'><Trans>Terms of Service available at {'https://my.comma.ai/terms.html'}</Trans></X.Text>
                         </X.Table>
+                        { isPaired ? null : (
+                            <X.Table color='darkBlue' padding='big'>
+                                <X.Button
+                                    color='settingsDefault'
+                                    size='small'
+                                    onPress={ this.props.openPairing }>
+                                    Pair Device
+                                </X.Button>
+                            </X.Table>
+                        ) }
                     </View>
                 </ScrollView>
             </View>
@@ -527,8 +517,8 @@ class Settings extends Component {
                         <X.Button
                             size='small'
                             color='settingsDefault'
-                            onPress={ () => ChffrPlus.openWifiSettings() }>
-                            { i18n._(t`Open WiFi Settings`) }
+                            onPress={ this.props.openWifiSettings }>
+                            Open WiFi Settings
                         </X.Button>
                         <X.Line color='transparent' size='tiny' spacing='mini' />
                         <X.Button
@@ -760,13 +750,13 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     navigateHome: async () => {
-        dispatch(NavigationActions.reset({
-            index: 0,
-            key: null,
-            actions: [
-                NavigationActions.navigate({ routeName: 'Home' })
-            ]
-        }));
+        dispatch(resetToLaunch());
+    },
+    openPairing: () => {
+        dispatch(NavigationActions.navigate({ routeName: 'SetupQr' }));
+    },
+    openWifiSettings: () => {
+        dispatch(NavigationActions.navigate({ routeName: 'SettingsWifi' }));
     },
     reboot: () => {
         Alert.alert(i18n._(t`Reboot`), i18n._(t`Are you sure you want to reboot?`), [
@@ -794,13 +784,6 @@ const mapDispatchToProps = dispatch => ({
                 NavigationActions.navigate({ routeName: 'Onboarding' })
             ]
         }))
-    },
-    setDriverMonitoringEnabled: (isDriverMonitoringEnabled) => {
-        const value = (isDriverMonitoringEnabled | 0).toString();
-        dispatch(updateParam(Params.KEY_IS_DRIVER_MONITORING_ENABLED, value));
-    },
-    setFcwEnabled: (isFcwEnabled) => {
-        dispatch(updateParam(Params.KEY_IS_FCW_ENABLED, (isFcwEnabled | 0).toString()));
     },
     setMetric: (useMetricUnits) => {
         dispatch(updateParam(Params.KEY_IS_METRIC, (useMetricUnits | 0).toString()));
