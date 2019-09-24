@@ -3,15 +3,27 @@
     "origin": [
       [
         "js/components/SetupWifi/SetupWifi.js",
-        183
+        219
+      ],
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        239
       ]
     ]
   },
-  "Cancel": {
+  "Authenticating...": {
     "origin": [
       [
         "js/components/SetupWifi/SetupWifi.js",
-        224
+        220
+      ]
+    ]
+  },
+  "Authentication problem": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        221
       ]
     ]
   },
@@ -19,15 +31,59 @@
     "origin": [
       [
         "js/components/SetupWifi/SetupWifi.js",
-        230
+        262
+      ],
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        326
       ]
     ]
   },
-  "Password": {
+  "There was a problem scanning WiFi networks. {0}Make sure WiFi is enabled in \"More Options\" above.": {
     "origin": [
       [
         "js/components/SetupWifi/SetupWifi.js",
-        237
+        75
+      ]
+    ]
+  },
+  "Show password": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        301
+      ]
+    ]
+  },
+  "Cancel": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        313
+      ]
+    ]
+  },
+  "The network \"{0}\" requires a password.": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        334
+      ]
+    ]
+  },
+  "Password:": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        342
+      ]
+    ]
+  },
+  "Connect to WiFi": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        362
       ]
     ]
   },
@@ -35,15 +91,31 @@
     "origin": [
       [
         "js/components/SetupWifi/SetupWifi.js",
-        266
+        369
       ]
     ]
   },
-  "Skip for now": {
+  "Scanning WiFi Networks...": {
     "origin": [
       [
         "js/components/SetupWifi/SetupWifi.js",
-        273
+        389
+      ]
+    ]
+  },
+  "Go Back": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        406
+      ]
+    ]
+  },
+  "Skip For Now": {
+    "origin": [
+      [
+        "js/components/SetupWifi/SetupWifi.js",
+        417
       ]
     ]
   },
@@ -51,7 +123,7 @@
     "origin": [
       [
         "js/components/SetupWifi/SetupWifi.js",
-        273
+        417
       ]
     ]
   }

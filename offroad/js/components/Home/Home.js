@@ -50,7 +50,7 @@ class Home extends Component {
                             color='white'
                             weight='semibold'
                             size='medium'>
-                            New Drive
+                            <Trans>New Drive</Trans>
                         </X.Text>
                     </View>
                 </X.Gradient>

@@ -557,7 +557,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('limitations') }
                         hasAppend={ true }
                         onPress={ () => this.handleControlsRadioPressed('limitations') }
-                        label='Limited Features' />
+                        label={ i18n._(t`Limited Features`) } />
                     <X.RadioField
                         color='white'
                         isDisabled={ !stepChecks.includes('limitations') }
@@ -664,18 +664,20 @@ class Onboarding extends Component {
                         size='small' color='ghost' textWeight='light'
                         style={ Styles.onboardingStepPointCrumb }
                         onPress={ () => this.handleControlsRadioPressed('index') }>
-                        openpilot controls
+                        { i18n._(t`openpilot controls`) }
                     </X.Button>
                     <X.Text size='medium' color='white' weight='bold'>
-                        Limited Features
+                        <Trans>Limited Features</Trans>
                     </X.Text>
                     <X.Text
                         size='small' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmaller }>
+                        <Trans>
                         Keep in mind that certain situations are not handled by
                         openpilot. Scenarios such as traffic lights, stop signs,
                         quick vehicle cutins and pedestrians are unrecognized
                         and openpilot may accelerate.
+                        </Trans>
                     </X.Text>
                     <X.Button color='ghost'
                         style={ Styles.onboardingStepPointInstruction }
@@ -683,7 +685,7 @@ class Onboarding extends Component {
                         <X.Text
                             size='small' color='white' weight='semibold'
                             style={ Styles.onboardingStepPointInstructionText }>
-                            Select light to continue
+                            <Trans>Select light to continue</Trans>
                         </X.Text>
                         <X.Image
                             source={ require('../../../img/icon_chevron_right.png') }

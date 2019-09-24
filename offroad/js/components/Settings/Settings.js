@@ -393,7 +393,7 @@ class Settings extends Component {
                                     color='settingsDefault'
                                     size='small'
                                     onPress={ this.props.openPairing }>
-                                    Pair Device
+                                    {i18n._(t`Pair Device`)}
                                 </X.Button>
                             </X.Table>
                         ) }
@@ -518,7 +518,7 @@ class Settings extends Component {
                             size='small'
                             color='settingsDefault'
                             onPress={ this.props.openWifiSettings }>
-                            Open WiFi Settings
+                            { i18n._(t`Open WiFi Settings`) }
                         </X.Button>
                         <X.Line color='transparent' size='tiny' spacing='mini' />
                         <X.Button

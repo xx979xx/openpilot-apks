@@ -3,7 +3,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        260
+        269
       ]
     ]
   },
@@ -11,7 +11,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        265
+        274
       ]
     ]
   },
@@ -19,7 +19,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        275
+        284
       ]
     ]
   },
@@ -27,7 +27,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        304
+        313
       ]
     ]
   },
@@ -35,7 +35,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        309
+        318
       ]
     ]
   },
@@ -43,7 +43,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        320
+        329
       ]
     ]
   },
@@ -51,7 +51,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        326
+        335
       ]
     ]
   },
@@ -59,7 +59,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        332
+        341
       ]
     ]
   },
@@ -67,7 +67,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        360
+        369
       ]
     ]
   },
@@ -75,7 +75,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        365
+        374
       ]
     ]
   },
@@ -83,11 +83,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        376
+        385
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        403
+        412
       ]
     ]
   },
@@ -95,11 +95,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        384
+        393
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        450
+        459
       ]
     ]
   },
@@ -107,11 +107,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        400
+        409
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        447
+        456
       ]
     ]
   },
@@ -119,7 +119,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        408
+        417
       ]
     ]
   },
@@ -127,7 +127,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        416
+        425
       ]
     ]
   },
@@ -135,7 +135,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        427
+        436
       ]
     ]
   },
@@ -143,7 +143,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        455
+        464
       ]
     ]
   },
@@ -151,7 +151,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        463
+        472
       ]
     ]
   },
@@ -159,7 +159,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        474
+        483
       ]
     ]
   },
@@ -167,7 +167,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        525
+        534
       ]
     ]
   },
@@ -175,7 +175,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        530
+        539
       ]
     ]
   },
@@ -183,11 +183,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        538
+        546
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        573
+        586
       ]
     ]
   },
@@ -195,11 +195,23 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        546
+        553
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        614
+        627
+      ]
+    ]
+  },
+  "Limited Features": {
+    "origin": [
+      [
+        "js/components/training/Onboarding/Onboarding.js",
+        560
+      ],
+      [
+        "js/components/training/Onboarding/Onboarding.js",
+        670
       ]
     ]
   },
@@ -207,11 +219,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        554
+        567
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        657
+        713
       ]
     ]
   },
@@ -219,15 +231,19 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        570
+        583
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        611
+        624
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        654
+        667
+      ],
+      [
+        "js/components/training/Onboarding/Onboarding.js",
+        710
       ]
     ]
   },
@@ -235,7 +251,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        578
+        591
       ]
     ]
   },
@@ -243,7 +259,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        590
+        603
       ]
     ]
   },
@@ -251,7 +267,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        619
+        632
       ]
     ]
   },
@@ -259,19 +275,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        632
+        645
       ]
     ]
   },
-  "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage.": {
-    "origin": [
-      [
-        "js/components/training/Onboarding/Onboarding.js",
-        662
-      ]
-    ]
-  },
-  "Tap a pedal to disengage": {
+  "Keep in mind that certain situations are not handled by openpilot. Scenarios such as traffic lights, stop signs, quick vehicle cutins and pedestrians are unrecognized and openpilot may accelerate.": {
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
@@ -279,23 +287,23 @@
       ]
     ]
   },
-  "Congratulations! You have completed openpilot training.": {
+  "Select light to continue": {
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        714
+        688
       ]
     ]
   },
-  "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai": {
+  "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage.": {
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        719
+        718
       ]
     ]
   },
-  "Finish Training": {
+  "Tap a pedal to disengage": {
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
@@ -303,11 +311,35 @@
       ]
     ]
   },
+  "Congratulations! You have completed openpilot training.": {
+    "origin": [
+      [
+        "js/components/training/Onboarding/Onboarding.js",
+        772
+      ]
+    ]
+  },
+  "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai": {
+    "origin": [
+      [
+        "js/components/training/Onboarding/Onboarding.js",
+        777
+      ]
+    ]
+  },
+  "Finish Training": {
+    "origin": [
+      [
+        "js/components/training/Onboarding/Onboarding.js",
+        789
+      ]
+    ]
+  },
   "Restart": {
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        739
+        797
       ]
     ]
   }
