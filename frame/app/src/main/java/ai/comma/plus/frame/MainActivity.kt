@@ -249,11 +249,14 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                         expandSidebar()
                         frame?.background = gradientBlue
                         if (state == STATE.HOME) {
-                            broadcastHomePress()
                             startInnerActivity(OFFROAD_APP)
                         }
-                        activityOverlayManager!!.show(ActivityOverlayManager.OVERLAY_THERMAL_WARNING)
-                        hideActivityView()
+                        if (ChffrPlusParams.readParam("UpdateAvailable") == "1") {
+                            showActivityView()
+                        } else {
+                            activityOverlayManager!!.show(ActivityOverlayManager.OVERLAY_THERMAL_WARNING)
+                            hideActivityView()
+                        }
                     }
                 }
 
@@ -267,8 +270,6 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                   log.thermal.bat,
                   log.thermal.thermalStatus.toString());
             }
-
-            
         }
     }
 
@@ -406,6 +407,10 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
             deselectNavItem(settingsButton!!)
             setAndSendState(STATE.HOME)
         }
+    }
+
+    override fun onBackPressed() {
+
     }
 
     override fun uiLayoutOnEngagedMocked() {

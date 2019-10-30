@@ -18,7 +18,9 @@ import { NetworkInfo } from 'react-native-network-info';
 
 import Logging from '../../native/Logging';
 import WifiModule from '../../native/Wifi';
+import { updateConnectionState } from '../../store/host/actions';
 import { resetToLaunch } from '../../store/nav/actions';
+import { Params } from '../../config';
 import X from '../../themes';
 import ChffrPlus from '../../native/ChffrPlus';
 import Styles from './SetupWifiStyles';
@@ -276,7 +278,7 @@ class SetupWifi extends Component {
 
     render() {
         const { networks, connectingNetwork, connectedNetworkSsid, showPassword, isLoading } = this.state;
-        const hasBackButton = this.props.handleBackPressed !== null;
+        const hasBackButton = typeof this.props.handleBackPressed === 'function';
         return (
             <X.Gradient
                 color='flat_blue'>
@@ -409,7 +411,7 @@ class SetupWifi extends Component {
                         ) : null }
                         <X.Button
                             color={ connectedNetworkSsid ? 'setupPrimary' : 'setupInverted' }
-                            onPress={ connectedNetworkSsid ? this.props.handleSetupWifiCompleted : null }
+                            onPress={ connectedNetworkSsid ? () => this.props.handleSetupWifiCompleted(hasBackButton) : () => this.props.handleSetupWifiSkip(hasBackButton) }
                             style={ Styles.setupWifiContinueButton }>
                             <X.Text
                                 color='white'
@@ -424,7 +426,6 @@ class SetupWifi extends Component {
     }
 }
 
-
 function mapStateToProps(state) {
     return {}
 }
@@ -433,8 +434,19 @@ const mapDispatchToProps = dispatch => ({
     handleSetupWifiMoreOptionsPressed: () => {
         ChffrPlus.openWifiSettings();
     },
-    handleSetupWifiCompleted: () => {
+    handleSetupWifiCompleted: (hasBackButton) => {
+        dispatch(updateConnectionState(true));
         dispatch(resetToLaunch());
+        if (hasBackButton) {
+            ChffrPlus.sendBroadcast("ai.comma.plus.offroad.NAVIGATED_FROM_SETTINGS");
+        }
+    },
+    handleSetupWifiSkip: async (hasBackButton) => {
+        await ChffrPlus.writeParam(Params.KEY_HAS_COMPLETED_SETUP, "1");
+        dispatch(resetToLaunch());
+        if (hasBackButton) {
+            ChffrPlus.sendBroadcast("ai.comma.plus.offroad.NAVIGATED_FROM_SETTINGS");
+        }
     },
 });
 
