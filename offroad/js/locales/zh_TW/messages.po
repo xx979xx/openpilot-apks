@@ -21,7 +21,7 @@ msgstr "14 天行車記錄"
 msgid "<  Account Settings"
 msgstr "<  帳戶設定"
 
-#: js/components/Settings/Settings.js:575
+#: js/components/Settings/Settings.js:577
 msgid "<  Developer Settings"
 msgstr "<  開發人員設定"
 
@@ -61,19 +61,19 @@ msgstr "全部"
 msgid "Account"
 msgstr "帳號"
 
-#: js/components/Settings/Settings.js:599
+#: js/components/Settings/Settings.js:609
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "允許別的裝置經由 Secure Shell (SSH) 連線至您的 EON。"
 
-#: js/components/Settings/Settings.js:783
+#: js/components/Settings/Settings.js:793
 msgid "Are you sure you want to reboot?"
 msgstr "您確定要重新啟動嗎？"
 
-#: js/components/Settings/Settings.js:789
+#: js/components/Settings/Settings.js:799
 msgid "Are you sure you want to shutdown?"
 msgstr "您確定要關機嗎？"
 
-#: js/components/Settings/Settings.js:795
+#: js/components/Settings/Settings.js:805
 msgid "Are you sure you want to uninstall?"
 msgstr "您確定要卸載嗎？"
 
@@ -85,7 +85,7 @@ msgstr "認證中..."
 msgid "Authentication problem"
 msgstr "認證錯誤"
 
-#: js/components/Settings/Settings.js:605
+#: js/components/Settings/Settings.js:615
 msgid "Authorized SSH Keys"
 msgstr "已授權的 SSH 密鑰"
 
@@ -114,10 +114,10 @@ msgstr "相機校準"
 msgid "Camera from EON"
 msgstr "來自 EON 的相機"
 
-#: js/components/Settings/Settings.js:615
-#: js/components/Settings/Settings.js:784
-#: js/components/Settings/Settings.js:790
-#: js/components/Settings/Settings.js:796
+#: js/components/Settings/Settings.js:625
+#: js/components/Settings/Settings.js:794
+#: js/components/Settings/Settings.js:800
+#: js/components/Settings/Settings.js:806
 #: js/components/SetupWifi/SetupWifi.js:315
 msgid "Cancel"
 msgstr "取消"
@@ -196,11 +196,11 @@ msgstr "下載"
 msgid "Driver Monitoring"
 msgstr "駕駛監控"
 
-#: js/components/Settings/Settings.js:615
+#: js/components/Settings/Settings.js:625
 msgid "Edit"
 msgstr "編輯"
 
-#: js/components/Settings/Settings.js:596
+#: js/components/Settings/Settings.js:606
 msgid "Enable SSH"
 msgstr "啟用 SSH"
 
@@ -229,15 +229,15 @@ msgstr "完成教學"
 msgid "Free Storage"
 msgstr "剩餘空間"
 
-#: js/components/Settings/Settings.js:586
+#: js/components/Settings/Settings.js:588
 msgid "Git Branch"
 msgstr "Git 分支"
 
-#: js/components/Settings/Settings.js:589
+#: js/components/Settings/Settings.js:591
 msgid "Git Revision"
 msgstr "Git 修訂版"
 
-#: js/components/Settings/Settings.js:658
+#: js/components/Settings/Settings.js:668
 msgid "GitHub Username"
 msgstr "GitHub 用戶名"
 
@@ -294,6 +294,11 @@ msgstr "英里"
 msgid "More Options"
 msgstr "更多選項"
 
+#: js/components/Settings/Settings.js:596
+#: js/components/Settings/Settings.js:600
+msgid "N/A"
+msgstr ""
+
 #: js/components/Settings/Settings.js:202
 msgid "Network"
 msgstr "網路"
@@ -340,11 +345,19 @@ msgstr "與 comma connect 配對您的 comma 帳號"
 msgid "Paired"
 msgstr "已配對"
 
+#: js/components/Settings/Settings.js:599
+msgid "Panda Dongle ID"
+msgstr "Panda Dongle ID"
+
+#: js/components/Settings/Settings.js:595
+msgid "Panda Firmware"
+msgstr "Panda 韌體"
+
 #: js/components/SetupWifi/SetupWifi.js:344
 msgid "Password:"
 msgstr "密碼:"
 
-#: js/components/Settings/Settings.js:789
+#: js/components/Settings/Settings.js:799
 msgid "Power Off"
 msgstr "關機"
 
@@ -362,8 +375,8 @@ msgid "Radar from your car"
 msgstr "來自您車子的雷達"
 
 #: js/components/Settings/Settings.js:123
-#: js/components/Settings/Settings.js:783
-#: js/components/Settings/Settings.js:785
+#: js/components/Settings/Settings.js:793
+#: js/components/Settings/Settings.js:795
 msgid "Reboot"
 msgstr "重新啟動"
 
@@ -383,7 +396,7 @@ msgstr "錄制並上傳駕駛的錄像"
 msgid "Remote Access"
 msgstr "遠端控制"
 
-#: js/components/Settings/Settings.js:697
+#: js/components/Settings/Settings.js:707
 msgid "Remove all"
 msgstr "移除全部"
 
@@ -403,11 +416,11 @@ msgstr "重新開始"
 msgid "Review Training Guide"
 msgstr "查看使用教學"
 
-#: js/components/Settings/Settings.js:675
+#: js/components/Settings/Settings.js:685
 msgid "Save"
 msgstr "儲存"
 
-#: js/components/Settings/Settings.js:687
+#: js/components/Settings/Settings.js:697
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "儲存失敗，請確認您已連上網路並輸入正確的用戶名。"
 
@@ -439,7 +452,7 @@ msgstr "序號"
 msgid "Show password"
 msgstr "顯示密碼"
 
-#: js/components/Settings/Settings.js:791
+#: js/components/Settings/Settings.js:801
 msgid "Shutdown"
 msgstr "關機"
 
@@ -499,12 +512,12 @@ msgstr "掃描無線網路出現錯誤。{0}請確認無線網路功能已在上
 msgid "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "若有需要，您可以隨時至 EON 設定裡重新閱讀使用指南。若您想知道更多關於 openpilot 的訊息，請參閱 wiki 或是加入我們在 discord.comma.ai 的社群。"
 
-#: js/components/Settings/Settings.js:795
-#: js/components/Settings/Settings.js:797
+#: js/components/Settings/Settings.js:805
+#: js/components/Settings/Settings.js:807
 msgid "Uninstall"
 msgstr "卸載"
 
-#: js/components/Settings/Settings.js:624
+#: js/components/Settings/Settings.js:634
 msgid "Uninstall {software}"
 msgstr "卸載 {software}"
 
@@ -541,11 +554,11 @@ msgstr "使用公／米制單位"
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 msgstr "以 openpilot 系統取代您原車的主動車距控制巡航系統以及車道保持輔助系統。使用本系統時，您仍需要全時保持注意。此設定將於重新發動車子後生效。"
 
-#: js/components/Settings/Settings.js:583
+#: js/components/Settings/Settings.js:585
 msgid "Version"
 msgstr "版本"
 
-#: js/components/Settings/Settings.js:639
+#: js/components/Settings/Settings.js:649
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
 msgstr "警告：這將授予在您 GitHub 帳號裡所有公開密鑰的 SSH 訪問權限。永遠不要輸入您自己以外的 GitHub 用戶名。comma 的員工永遠不會要求您添加他們的 GitHub 用戶名。"
 

@@ -21,7 +21,7 @@ msgstr "14 days of storage"
 msgid "<  Account Settings"
 msgstr "<  Account Settings"
 
-#: js/components/Settings/Settings.js:575
+#: js/components/Settings/Settings.js:577
 msgid "<  Developer Settings"
 msgstr "<  Developer Settings"
 
@@ -61,19 +61,19 @@ msgstr "ALL TIME"
 msgid "Account"
 msgstr "Account"
 
-#: js/components/Settings/Settings.js:599
+#: js/components/Settings/Settings.js:609
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "Allow devices to connect to your EON using Secure Shell (SSH)."
 
-#: js/components/Settings/Settings.js:783
+#: js/components/Settings/Settings.js:793
 msgid "Are you sure you want to reboot?"
 msgstr "Are you sure you want to reboot?"
 
-#: js/components/Settings/Settings.js:789
+#: js/components/Settings/Settings.js:799
 msgid "Are you sure you want to shutdown?"
 msgstr "Are you sure you want to shutdown?"
 
-#: js/components/Settings/Settings.js:795
+#: js/components/Settings/Settings.js:805
 msgid "Are you sure you want to uninstall?"
 msgstr "Are you sure you want to uninstall?"
 
@@ -85,7 +85,7 @@ msgstr "Authenticating..."
 msgid "Authentication problem"
 msgstr "Authentication problem"
 
-#: js/components/Settings/Settings.js:605
+#: js/components/Settings/Settings.js:615
 msgid "Authorized SSH Keys"
 msgstr "Authorized SSH Keys"
 
@@ -114,10 +114,10 @@ msgstr "Camera Calibration"
 msgid "Camera from EON"
 msgstr "Camera from EON"
 
-#: js/components/Settings/Settings.js:615
-#: js/components/Settings/Settings.js:784
-#: js/components/Settings/Settings.js:790
-#: js/components/Settings/Settings.js:796
+#: js/components/Settings/Settings.js:625
+#: js/components/Settings/Settings.js:794
+#: js/components/Settings/Settings.js:800
+#: js/components/Settings/Settings.js:806
 #: js/components/SetupWifi/SetupWifi.js:315
 msgid "Cancel"
 msgstr "Cancel"
@@ -196,11 +196,11 @@ msgstr "Download"
 msgid "Driver Monitoring"
 msgstr "Driver Monitoring"
 
-#: js/components/Settings/Settings.js:615
+#: js/components/Settings/Settings.js:625
 msgid "Edit"
 msgstr "Edit"
 
-#: js/components/Settings/Settings.js:596
+#: js/components/Settings/Settings.js:606
 msgid "Enable SSH"
 msgstr "Enable SSH"
 
@@ -229,15 +229,15 @@ msgstr "Finish Training"
 msgid "Free Storage"
 msgstr "Free Storage"
 
-#: js/components/Settings/Settings.js:586
+#: js/components/Settings/Settings.js:588
 msgid "Git Branch"
 msgstr "Git Branch"
 
-#: js/components/Settings/Settings.js:589
+#: js/components/Settings/Settings.js:591
 msgid "Git Revision"
 msgstr "Git Revision"
 
-#: js/components/Settings/Settings.js:658
+#: js/components/Settings/Settings.js:668
 msgid "GitHub Username"
 msgstr "GitHub Username"
 
@@ -294,6 +294,11 @@ msgstr "MILES"
 msgid "More Options"
 msgstr "More Options"
 
+#: js/components/Settings/Settings.js:596
+#: js/components/Settings/Settings.js:600
+msgid "N/A"
+msgstr "N/A"
+
 #: js/components/Settings/Settings.js:202
 msgid "Network"
 msgstr "Network"
@@ -340,11 +345,19 @@ msgstr "Pair your comma account with comma connect"
 msgid "Paired"
 msgstr "Paired"
 
+#: js/components/Settings/Settings.js:599
+msgid "Panda Dongle ID"
+msgstr "Panda Dongle ID"
+
+#: js/components/Settings/Settings.js:595
+msgid "Panda Firmware"
+msgstr "Panda Firmware"
+
 #: js/components/SetupWifi/SetupWifi.js:344
 msgid "Password:"
 msgstr "Password:"
 
-#: js/components/Settings/Settings.js:789
+#: js/components/Settings/Settings.js:799
 msgid "Power Off"
 msgstr "Power Off"
 
@@ -362,8 +375,8 @@ msgid "Radar from your car"
 msgstr "Radar from your car"
 
 #: js/components/Settings/Settings.js:123
-#: js/components/Settings/Settings.js:783
-#: js/components/Settings/Settings.js:785
+#: js/components/Settings/Settings.js:793
+#: js/components/Settings/Settings.js:795
 msgid "Reboot"
 msgstr "Reboot"
 
@@ -383,7 +396,7 @@ msgstr "Record and Upload Driver Camera"
 msgid "Remote Access"
 msgstr "Remote Access"
 
-#: js/components/Settings/Settings.js:697
+#: js/components/Settings/Settings.js:707
 msgid "Remove all"
 msgstr "Remove all"
 
@@ -403,11 +416,11 @@ msgstr "Restart"
 msgid "Review Training Guide"
 msgstr "Review Training Guide"
 
-#: js/components/Settings/Settings.js:675
+#: js/components/Settings/Settings.js:685
 msgid "Save"
 msgstr "Save"
 
-#: js/components/Settings/Settings.js:687
+#: js/components/Settings/Settings.js:697
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "Save failed. Ensure that your username is correct and you are connected to the internet."
 
@@ -439,7 +452,7 @@ msgstr "Serial Number"
 msgid "Show password"
 msgstr "Show password"
 
-#: js/components/Settings/Settings.js:791
+#: js/components/Settings/Settings.js:801
 msgid "Shutdown"
 msgstr "Shutdown"
 
@@ -499,12 +512,12 @@ msgstr "There was a problem scanning WiFi networks. {0}Make sure WiFi is enabled
 msgid "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 
-#: js/components/Settings/Settings.js:795
-#: js/components/Settings/Settings.js:797
+#: js/components/Settings/Settings.js:805
+#: js/components/Settings/Settings.js:807
 msgid "Uninstall"
 msgstr "Uninstall"
 
-#: js/components/Settings/Settings.js:624
+#: js/components/Settings/Settings.js:634
 msgid "Uninstall {software}"
 msgstr "Uninstall {software}"
 
@@ -541,11 +554,11 @@ msgstr "Use Metric System"
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 msgstr "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 
-#: js/components/Settings/Settings.js:583
+#: js/components/Settings/Settings.js:585
 msgid "Version"
 msgstr "Version"
 
-#: js/components/Settings/Settings.js:639
+#: js/components/Settings/Settings.js:649
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
 msgstr "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
 
