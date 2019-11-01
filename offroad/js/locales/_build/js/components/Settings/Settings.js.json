@@ -7,6 +7,10 @@
       ],
       [
         "js/components/Settings/Settings.js",
+        489
+      ],
+      [
+        "js/components/Settings/Settings.js",
         793
       ],
       [
@@ -291,6 +295,18 @@
       ]
     ]
   },
+  "Power Off": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        496
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        799
+      ]
+    ]
+  },
   "<  Network Settings": {
     "origin": [
       [
@@ -496,14 +512,6 @@
       [
         "js/components/Settings/Settings.js",
         793
-      ]
-    ]
-  },
-  "Power Off": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        799
       ]
     ]
   },

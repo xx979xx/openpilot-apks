@@ -357,6 +357,7 @@ msgstr "Panda Firmware"
 msgid "Password:"
 msgstr "Password:"
 
+#: js/components/Settings/Settings.js:496
 #: js/components/Settings/Settings.js:799
 msgid "Power Off"
 msgstr "Power Off"
@@ -375,6 +376,7 @@ msgid "Radar from your car"
 msgstr "Radar from your car"
 
 #: js/components/Settings/Settings.js:123
+#: js/components/Settings/Settings.js:489
 #: js/components/Settings/Settings.js:793
 #: js/components/Settings/Settings.js:795
 msgid "Reboot"
