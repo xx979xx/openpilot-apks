@@ -14,10 +14,7 @@
     "jest": "^24.8.0",
     "lodash": "^4.17.4",
     "metro-react-native-babel-preset": "^0.54.1",
-    "react-test-renderer": "16.8.3",
-    "add-locale": "lingui add-locale",
-    "extract": "lingui extract",
-    "compile": "lingui compile"
+    "react-test-renderer": "16.8.3"
   },
   "scripts": {
     "start": "adb reverse tcp:8081 tcp:8081; node_modules/.bin/react-native start",
