@@ -296,7 +296,7 @@ class Settings extends Component {
                         ) : null }
                         <X.TableCell
                             type='switch'
-                            title='Enable Lane Departure Warnings'
+                            title={ i18n._(t`Enable Lane Departure Warnings`) }
                             value={ !!parseInt(isLaneDepartureWarningEnabled) }
                             iconSource={ Icons.warning }
                             description='Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph).'
@@ -585,15 +585,15 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='switch'
-                            title='Enable Community Features'
+                            title={ i18n._(t`Enable Community Features`) }
                             value={ !!parseInt(communityFeatures) }
                             iconSource={ Icons.developer }
                             descriptionExtra={
                               <X.Text color='white' size='tiny'>
-                                  Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{'\n'}
+                                  <Trans>Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{'\n'}
                                   * GM car port{'\n'}
                                   * Toyota with DSU unplugged{'\n'}
-                                  * Pedal interceptor{'\n'}
+                                  * Pedal interceptor{'\n'}</Trans>
                               </X.Text>
                             }
                             isExpanded={ expandedCell == 'communityFeatures' }
@@ -858,9 +858,9 @@ const mapDispatchToProps = dispatch => ({
     },
     setCommunityFeatures: (communityFeatures) => {
         if (communityFeatures == 1) {
-            Alert.alert('Enable Community Features', 'Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them.', [
-                { text: 'Cancel', onPress: () => {}, style: 'cancel' },
-                { text: 'Enable', onPress: () => {
+            Alert.alert(i18n._(t`Enable Community Features`), i18n._(t`Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them.`), [
+                { text: i18n._(t`Cancel`), onPress: () => {}, style: 'cancel' },
+                { text: i18n._(t`Enable`), onPress: () => {
                     dispatch(updateParam(Params.KEY_COMMUNITY_FEATURES, (communityFeatures | 0).toString()));
                 } },
             ]);
