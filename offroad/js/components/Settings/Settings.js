@@ -10,6 +10,7 @@ import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
 
 import ChffrPlus from '../../native/ChffrPlus';
+import UploadProgressTimer from '../../timers/UploadProgressTimer';
 import { formatSize } from '../../utils/bytes';
 import { mpsToKph, mpsToMph, kphToMps, mphToMps } from '../../utils/conversions';
 import { Params } from '../../config';
@@ -80,6 +81,7 @@ class Settings extends Component {
     }
 
     async componentWillMount() {
+        UploadProgressTimer.start(this.props.dispatch);
         await this.props.refreshParams();
         const {
             isMetric,
@@ -93,6 +95,10 @@ class Settings extends Component {
         } else {
             this.setState({ speedLimitOffsetInt: parseInt(mpsToMph(speedLimitOffset)) })
         }
+    }
+
+    componentWillUnmount() {
+        UploadProgressTimer.stop();
     }
 
     handleExpanded(key) {
@@ -256,6 +262,7 @@ class Settings extends Component {
                 SpeedLimitOffset: speedLimitOffset,
                 OpenpilotEnabledToggle: openpilotEnabled,
                 Passive: isPassive,
+                IsLdwEnabled: isLaneDepartureWarningEnabled,
             }
         } = this.props;
         const { expandedCell, speedLimitOffsetInt } = this.state;
@@ -287,6 +294,15 @@ class Settings extends Component {
                                 handleExpanded={ () => this.handleExpanded('openpilot_enabled') }
                                 handleChanged={ this.props.setOpenpilotEnabled } />
                         ) : null }
+                        <X.TableCell
+                            type='switch'
+                            title='Enable Lane Departure Warnings'
+                            value={ !!parseInt(isLaneDepartureWarningEnabled) }
+                            iconSource={ Icons.warning }
+                            description='Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph).'
+                            isExpanded={ expandedCell == 'ldw' }
+                            handleExpanded={ () => this.handleExpanded('ldw') }
+                            handleChanged={ this.props.setLaneDepartureWarningEnabled } />
                         <X.TableCell
                             type='switch'
                             title={ i18n._(t`Record and Upload Driver Camera`) }
@@ -451,7 +467,7 @@ class Settings extends Component {
                             type='custom'
                             title={ i18n._(t`Camera Calibration`) }
                             iconSource={ Icons.calibration }
-                            description={ i18n._(t`The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position.`) }
+                            description={ i18n._(t`The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position.`) }
                             isExpanded={ expandedCell == 'calibration' }
                             handleExpanded={ () => this.handleExpanded('calibration') }>
                             <X.Button
@@ -503,11 +519,6 @@ class Settings extends Component {
     }
 
     renderNetworkSettings() {
-        const {
-          params: {
-            IsUploadVideoOverCellularEnabled: isCellularUploadEnabled,
-          },
-        } = this.props;
         const { expandedCell } = this.state;
         return (
             <View style={ Styles.settings }>
@@ -523,17 +534,6 @@ class Settings extends Component {
                     ref="settingsScrollView"
                     style={ Styles.settingsWindow }>
                     <X.Line color='transparent' spacing='tiny' />
-                    <X.Table color='darkBlue'>
-                        <X.TableCell
-                            type='switch'
-                            title={ i18n._(t`Enable Upload Over Cellular`) }
-                            value={ !!parseInt(isCellularUploadEnabled) }
-                            iconSource={ Icons.network }
-                            description={ i18n._(t`Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges.`) }
-                            isExpanded={ expandedCell == 'cellular_enabled' }
-                            handleExpanded={ () => this.handleExpanded('cellular_enabled') }
-                            handleChanged={ this.props.setCellularEnabled } />
-                    </X.Table>
                     <X.Table spacing='big' color='darkBlue'>
                         <X.Button
                             size='small'
@@ -562,8 +562,9 @@ class Settings extends Component {
                 GitBranch: gitBranch,
                 GitCommit: gitRevision,
                 Passive: isPassive,
-                PandaFirmware: pandaFirmware,
+                PandaFirmwareHex: pandaFirmwareHex,
                 PandaDongleId: pandaDongleId,
+                CommunityFeaturesToggle: communityFeatures,
             },
         } = this.props;
         const { expandedCell } = this.state;
@@ -581,27 +582,23 @@ class Settings extends Component {
                 <ScrollView
                     ref="settingsScrollView"
                     style={ Styles.settingsWindow }>
-                    <X.Table spacing='none'>
-                        <X.TableCell
-                            title={ i18n._(t`Version`) }
-                            value={ `${ software } v${ version }` } />
-                        <X.TableCell
-                            title={ i18n._(t`Git Branch`) }
-                            value={ gitBranch } />
-                        <X.TableCell
-                            title={ i18n._(t`Git Revision`) }
-                            value={ gitRevision.slice(0, 12) }
-                            valueTextSize='tiny' />
-                        <X.TableCell
-                            title={ i18n._(t`Panda Firmware`) }
-                            value={ pandaFirmware != null ? pandaFirmware : i18n._(t`N/A`) }
-                            valueTextSize='tiny' />
-                        <X.TableCell
-                            title={ i18n._(t`Panda Dongle ID`) }
-                            value={ (pandaDongleId != null && pandaDongleId != "unprovisioned") ? pandaDongleId : i18n._(t`N/A`) }
-                            valueTextSize='tiny' />
-                    </X.Table>
                     <X.Table color='darkBlue'>
+                        <X.TableCell
+                            type='switch'
+                            title='Enable Community Features'
+                            value={ !!parseInt(communityFeatures) }
+                            iconSource={ Icons.developer }
+                            descriptionExtra={
+                              <X.Text color='white' size='tiny'>
+                                  Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{'\n'}
+                                  * GM car port{'\n'}
+                                  * Toyota with DSU unplugged{'\n'}
+                                  * Pedal interceptor{'\n'}
+                              </X.Text>
+                            }
+                            isExpanded={ expandedCell == 'communityFeatures' }
+                            handleExpanded={ () => this.handleExpanded('communityFeatures') }
+                            handleChanged={ this.props.setCommunityFeatures } />
                         <X.TableCell
                             type='switch'
                             title={ i18n._(t`Enable SSH`) }
@@ -626,6 +623,26 @@ class Settings extends Component {
                                 { i18n._(expandedCell === 'ssh_keys' ? t`Cancel` : t`Edit`) }
                             </X.Button>
                         </X.TableCell>
+                    </X.Table>
+                    <X.Table spacing='none'>
+                        <X.TableCell
+                            title={ i18n._(t`Version`) }
+                            value={ `${ software } v${ version }` } />
+                        <X.TableCell
+                            title={ i18n._(t`Git Branch`) }
+                            value={ gitBranch } />
+                        <X.TableCell
+                            title={ i18n._(t`Git Revision`) }
+                            value={ gitRevision.slice(0, 12) }
+                            valueTextSize='tiny' />
+                        <X.TableCell
+                            title={ i18n._(t`Panda Firmware`) }
+                            value={ pandaFirmwareHex != null ? pandaFirmwareHex : 'N/A' }
+                            valueTextSize='tiny' />
+                        <X.TableCell
+                            title={ i18n._(t`Panda Dongle ID`) }
+                            value={ (pandaDongleId != null && pandaDongleId != "unprovisioned") ? pandaDongleId : 'N/A' }
+                            valueTextSize='tiny' />
                     </X.Table>
                     <X.Table color='darkBlue' padding='big'>
                         <X.Button
@@ -781,6 +798,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
+    dispatch,
     navigateHome: async () => {
         dispatch(resetToLaunch());
     },
@@ -826,9 +844,6 @@ const mapDispatchToProps = dispatch => ({
     setRecordFront: (recordFront) => {
         dispatch(updateParam(Params.KEY_RECORD_FRONT, (recordFront | 0).toString()));
     },
-    setCellularEnabled: (useCellular) => {
-        dispatch(updateParam(Params.KEY_UPLOAD_CELLULAR, (useCellular | 0).toString()));
-    },
     setSshEnabled: (isSshEnabled) => {
         dispatch(updateSshEnabled(!!isSshEnabled));
     },
@@ -840,6 +855,21 @@ const mapDispatchToProps = dispatch => ({
     },
     setSpeedLimitOffset: (speedLimitOffset) => {
         dispatch(updateParam(Params.KEY_SPEED_LIMIT_OFFSET, (speedLimitOffset).toString()));
+    },
+    setCommunityFeatures: (communityFeatures) => {
+        if (communityFeatures == 1) {
+            Alert.alert('Enable Community Features', 'Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them.', [
+                { text: 'Cancel', onPress: () => {}, style: 'cancel' },
+                { text: 'Enable', onPress: () => {
+                    dispatch(updateParam(Params.KEY_COMMUNITY_FEATURES, (communityFeatures | 0).toString()));
+                } },
+            ]);
+        } else {
+            dispatch(updateParam(Params.KEY_COMMUNITY_FEATURES, (communityFeatures | 0).toString()));
+        }
+    },
+    setLaneDepartureWarningEnabled: (isLaneDepartureWarningEnabled) => {
+        dispatch(updateParam(Params.KEY_LANE_DEPARTURE_WARNING_ENABLED, (isLaneDepartureWarningEnabled | 0).toString()));
     },
     deleteParam: (param) => {
         dispatch(deleteParam(param));

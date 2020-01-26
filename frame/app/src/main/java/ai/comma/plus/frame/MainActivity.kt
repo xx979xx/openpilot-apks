@@ -1,5 +1,6 @@
 package ai.comma.plus.frame
 
+import ai.comma.messaging.Poller
 import android.app.Activity
 import android.view.View
 import android.view.animation.Animation
@@ -17,7 +18,6 @@ import android.net.ConnectivityManager
 import android.net.Uri
 import android.util.Log
 
-import org.zeromq.ZMQ
 import org.capnproto.MessageReader
 import java.io.IOException
 import java.io.ByteArrayOutputStream
@@ -25,27 +25,26 @@ import java.nio.ByteBuffer
 import java.nio.channels.Channels
 
 import org.capnproto.Serialize;
+import ai.comma.messaging.Context as MQContext
 import ai.comma.openpilot.cereal.Log as CLog
-import ai.comma.openpilot.cereal.Log.ControlsState.OpenpilotState
+import ai.comma.openpilot.cereal.Log.UiLayoutState
 import android.net.wifi.WifiManager
 import android.net.NetworkInfo
 import android.os.*
-import android.os.BatteryManager.BATTERY_PROPERTY_CAPACITY
 import android.telephony.PhoneStateListener
 import android.telephony.ServiceState
 import android.telephony.SignalStrength
 import android.telephony.TelephonyManager
 import android.view.MotionEvent
 import com.android.internal.telephony.TelephonyIntents
-import com.crashlytics.android.Crashlytics
-import io.fabric.sdk.android.Fabric
+import io.sentry.Sentry;
+import io.sentry.android.AndroidSentryClientFactory;
+import io.sentry.event.UserBuilder
 
 
 class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigationReceiverDelegate, UiLayoutReceiverDelegate, ActivityOverlayManagerDelegate {
     private val IMAGE_ALPHA_SELECTED = 255
     private val IMAGE_ALPHA_UNSELECTED = 177
-    private val FRAME_SOCKET_ADDR = "tcp://127.0.0.1:8037"
-    private val UILAYOUT_SOCKET_ADDR = "tcp://127.0.0.1:8060"
 
     val OFFROAD_APP = "ai.comma.plus.offroad/.MainActivity"
     val BLACK_APP = "ai.comma.plus.black/.MainActivity"
@@ -54,15 +53,8 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     val DRIVING_APP = if (IS_MAP_ENABLED) ONROAD_APP else BLACK_APP
     val IS_RESPONSIVE: Boolean = true
 
-    enum class STATE {
-        HOME,
-        SETTINGS,
-    }
-
-    var state: STATE = STATE.HOME
+    var activeApp: UiLayoutState.App = UiLayoutState.App.HOME
     var isPassive: Boolean = false
-
-    var controlState: OpenpilotState? = null
 
     var frame: View? = null
     var sidebarIndicators: LinearLayout? = null
@@ -89,28 +81,22 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     var activityTouchGate: RelativeLayout? = null
     var settingsButton: ImageView? = null
     var homeButton: ImageView? = null
-    var useMetric: Boolean = false
 
-    var zmqCtx: org.zeromq.ZMQ.Context? = null
-    var frameSock: org.zeromq.ZMQ.Socket? = null
-    var statusSock: org.zeromq.ZMQ.Socket? = null
-    var ubloxGnssSock: org.zeromq.ZMQ.Socket? = null
-    var ubloxGnssPoller: org.zeromq.ZMQ.Poller? = null
-    var controlStateSock: org.zeromq.ZMQ.Socket? = null
-    var uiLayoutSock: org.zeromq.ZMQ.Socket? = null
+    var msgqCtx: ai.comma.messaging.Context? = null
+    var thermalSock: ai.comma.messaging.SubSocket? = null
+    var ubloxGnssPoller: ai.comma.messaging.Poller? = null
+    var uiLayoutSock: ai.comma.messaging.PubSocket? = null
 
     var newDestinationReceiver: NewDestinationReceiver? = null
     var offroadNavReceiver: OffroadNavigationReceiver? = null
     var uiLayoutReceiver: UiLayoutReceiver? = null
 
-    var thermalWarningManager: ActivityOverlayManager? = null
     var networkMonitor: NetworkMonitor? = null
-    var batteryMonitor: BatteryMonitor? = null
     var pandaConnectionMonitor: PandaConnectionMonitor? = null
     var lastStarted: Boolean = false
     var satelliteCount: Int = -1
+    var uiLayoutStateThreadHandle: Thread? = null
     var statusThreadHandle: Thread? = null
-    var controlsThreadHandle: Thread? = null
     var ubloxGnssThreadHandle: Thread? = null
 
     var simState: String? = null
@@ -123,7 +109,6 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     var colorRed: Int? = null;
 
     // Drawables
-    var iconBattery: Drawable? = null;
     var iconNetwork0: Drawable? = null;
     var iconNetwork1: Drawable? = null;
     var iconNetwork2: Drawable? = null;
@@ -188,40 +173,38 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         sendBroadcast(pressIntent)
     }
 
-    fun setAndSendState(state: STATE) {
-        this.state = state
-        val buf = ByteBuffer.allocate(1)
-        buf.put(state.ordinal.toByte())
-        frameSock!!.send(buf.array())
-    }
+    fun updateUiLayoutState() {
+        synchronized(this) {
+            val log = LogEvent()
+            val uiLayout = log.root.initUiLayoutState()
+            uiLayout.setSidebarCollapsed(sidebarCollapsed)
+            uiLayout.setMapEnabled(IS_MAP_ENABLED)
+            uiLayout.activeApp = activeApp
 
-    fun updateUiLayoutState(sidebarCollapsed: Boolean,
-                            mapEnabled: Boolean): LogEvent {
-        val log = LogEvent()
-        val uiLayout = log.root.initUiLayoutState()
-        uiLayout.setSidebarCollapsed(sidebarCollapsed && IS_RESPONSIVE)
-        uiLayout.setMapEnabled(mapEnabled)
+            val out = ByteArrayOutputStream()
+            Serialize.write(Channels.newChannel(out), log.msg)
+            val bytes = out.toByteArray()
 
-        val out = ByteArrayOutputStream()
-        Serialize.write(Channels.newChannel(out), log.msg)
-        val bytes = out.toByteArray()
-
-        uiLayoutSock!!.send(bytes)
-
-        return log
+            uiLayoutSock!!.send(bytes)
+        }
     }
 
     fun statusThread() {
         Log.w("frame", "statusThread")
         while (true) {
-            val msg = statusSock!!.recv()
-            val msgbuf = ByteBuffer.wrap(msg)
+            val msg = thermalSock!!.receive()
+            if (msg == null) {
+                continue
+            }
+            val msgbuf = ByteBuffer.wrap(msg.data)
             var reader: MessageReader
             try {
                 reader = Serialize.read(msgbuf)
             } catch (e: IOException) {
                 Log.e("frame", "read")
                 continue
+            } finally {
+                msg.release()
             }
 
             val log = reader.getRoot(CLog.Event.factory)
@@ -236,7 +219,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                         frame?.background = null
                         synchronized(this) {
                             enterHomeState()
-                            if (state == STATE.HOME) {
+                            if (activeApp == UiLayoutState.App.HOME) {
                                 startInnerActivity(DRIVING_APP)
                                 if (!IS_MAP_ENABLED) {
                                     hideActivityView()
@@ -248,15 +231,10 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                     runOnUiThread {
                         expandSidebar()
                         frame?.background = gradientBlue
-                        if (state == STATE.HOME) {
+                        if (activeApp == UiLayoutState.App.HOME) {
                             startInnerActivity(OFFROAD_APP)
                         }
-                        if (ChffrPlusParams.readParam("UpdateAvailable") == "1") {
-                            showActivityView()
-                        } else {
-                            activityOverlayManager!!.show(ActivityOverlayManager.OVERLAY_THERMAL_WARNING)
-                            hideActivityView()
-                        }
+                        showActivityView()
                     }
                 }
 
@@ -267,8 +245,11 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
             runOnUiThread {
                 updateSidebarMetrics(
                   log.thermal.freeSpace,
-                  log.thermal.bat,
+                  log.thermal.pa0,
                   log.thermal.thermalStatus.toString());
+                onBatteryChange(
+                  log.thermal.batteryPercent.toInt(),
+                  log.thermal.batteryStatus.toString())
             }
         }
     }
@@ -276,9 +257,9 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     fun ubloxGnssThread() {
         Log.w("frame", "ubloxGnssThread")
         while (true) {
-            val recv = ubloxGnssPoller!!.poll(5000)
-            if (recv == 0) {
-                // no message from socket in last 5s
+            val poll = ubloxGnssPoller!!.poll(5000)
+            if (poll.size == 0) {
+                // no message from subSocket in last 5s
                 satelliteCount = -1
                 runOnUiThread {
                     updatePandaConnectionStatus()
@@ -286,14 +267,19 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                 continue
             }
 
-            val msg = ubloxGnssSock!!.recv()
-            val msgbuf = ByteBuffer.wrap(msg)
+            val msg = poll[0].receive()
+            if (msg == null) {
+                continue
+            }
+            val msgbuf = ByteBuffer.wrap(msg.data)
             var reader: MessageReader
             try {
                 reader = Serialize.read(msgbuf)
             } catch (e: IOException) {
                 Log.e("frame", "read")
                 continue
+            } finally {
+                msg.release()
             }
 
             val log = reader.getRoot(CLog.Event.factory)
@@ -301,7 +287,6 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
 
             if (log.ubloxGnss.isMeasurementReport) {
                 satelliteCount = log.ubloxGnss.measurementReport.numMeas.toInt()
-
                 runOnUiThread {
                     updatePandaConnectionStatus()
                 }
@@ -309,8 +294,16 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         }
     }
 
+    fun uiLayoutStateThread() {
+        while (true) {
+            if (lastStarted) {
+                updateUiLayoutState()
+            }
+            Thread.sleep(2000)
+        }
+    }
+
     fun updatePandaConnectionStatus() {
-        Log.i("frame", satelliteCount.toString())
         if (pandaConnectionMonitor?.isConnected == false) {
             sidebarMetricPanda?.text = "NO PANDA"
             sidebarMetricPandaEdge?.setColorFilter(colorRed!!);
@@ -332,7 +325,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         }
     }
 
-    fun updateSidebarMetrics(freeSpace: Float, batteryTemp: Int, thermalStatus: String) {
+    fun updateSidebarMetrics(freeSpace: Float, paTemp: Short, thermalStatus: String) {
       // Storage
       var storagePct = (1.0-freeSpace)*100;
       sidebarMetricStorage?.text = String.format("%.0f", storagePct).plus("%");
@@ -348,8 +341,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
       }
 
       // Temperature
-      var batteryTempC = batteryTemp/1000;
-      sidebarMetricTemp?.text = Integer.toString(batteryTempC).plus("°C");
+      sidebarMetricTemp?.text = Integer.toString(paTemp.toInt()).plus("°C");
       if (thermalStatus==="GREEN") {
         sidebarMetricTempEdge?.setColorFilter(colorWhite!!);
         sidebarMetricTempBorder?.background = borderEmpty;
@@ -370,32 +362,6 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
       }
     }
 
-    /* fun controlsThread() {
-        Log.w("frame", "controlsThread")
-        var recv = 0
-
-        while (true) {
-            val msg = controlStateSock!!.recv()
-            recv += 1
-
-            if (!lastStarted || recv % 100 != 0) {
-                continue
-            }
-
-            val msgbuf = ByteBuffer.wrap(msg)
-            var reader: MessageReader
-            try {
-                reader = Serialize.read(msgbuf)
-            } catch (e: IOException) {
-                Log.e("frame", "read")
-                continue
-            }
-
-            val log = reader.getRoot(CLog.Event.factory)
-            assert(log.isControlsState)
-        }
-    } */
-
     fun enterHomeState() {
         var startApp = OFFROAD_APP
         if (lastStarted) {
@@ -405,7 +371,8 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
 
         if (startInnerActivity(startApp)) {
             deselectNavItem(settingsButton!!)
-            setAndSendState(STATE.HOME)
+            activeApp = UiLayoutState.App.HOME
+            updateUiLayoutState()
         }
     }
 
@@ -430,7 +397,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
             sidebarIndicators?.visibility = View.GONE
             sidebarMetrics?.visibility = View.GONE
             sidebarCollapsed = true
-            updateUiLayoutState(true, IS_MAP_ENABLED)
+            updateUiLayoutState()
         }
     }
 
@@ -443,7 +410,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
             sidebarIndicators?.visibility = View.VISIBLE
             sidebarMetrics?.visibility = View.VISIBLE
             sidebarCollapsed = false
-            updateUiLayoutState(false, IS_MAP_ENABLED)
+            updateUiLayoutState()
         }
     }
 
@@ -496,12 +463,12 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
 
     fun setSettingsState() {
         selectNavItem(settingsButton!!)
-
-        setAndSendState(STATE.SETTINGS)
+        activeApp = UiLayoutState.App.SETTINGS
+        updateUiLayoutState()
     }
 
     fun openSettings() {
-        if (state == STATE.SETTINGS) {
+        if (activeApp == UiLayoutState.App.SETTINGS) {
             return
         }
 
@@ -518,7 +485,8 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
         if (!BuildConfig.DEBUG) {
-            Fabric.with(this, Crashlytics());
+            Sentry.init("https://bf3de6848ae04ab48a79b8cac70a87f2@sentry.io/226563", AndroidSentryClientFactory(this));
+            Sentry.getContext().user = UserBuilder().setId(ChffrPlusParams.readParam("DongleId")).build()
         }
         setContentView(R.layout.activity_main);
 
@@ -526,23 +494,13 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         CloudLog.init(applicationContext)
 
         isPassive = ChffrPlusParams.readParam("Passive") == "1"
-        zmqCtx = ZMQ.context(1)
+        msgqCtx = ai.comma.messaging.Context()
 
-        frameSock = zmqCtx!!.socket(ZMQ.PUB)
-        frameSock!!.bind(FRAME_SOCKET_ADDR)
+        uiLayoutSock = msgqCtx!!.pubSocket("uiLayoutState")
 
-        uiLayoutSock = zmqCtx!!.socket(ZMQ.PUB)
-        uiLayoutSock!!.bind(UILAYOUT_SOCKET_ADDR)
+        thermalSock = msgqCtx!!.subSocket("thermal")
 
-        statusSock = zmqCtx!!.socket(ZMQ.SUB)
-        statusSock!!.connect("tcp://127.0.0.1:8005")
-        statusSock!!.subscribe("")
-
-        ubloxGnssSock = zmqCtx!!.socket(ZMQ.SUB)
-        ubloxGnssSock!!.connect("tcp://127.0.0.1:8033")
-        ubloxGnssSock!!.subscribe("")
-        ubloxGnssPoller = zmqCtx!!.poller(1)
-        ubloxGnssPoller!!.register(ubloxGnssSock, zmq.ZMQ.ZMQ_POLLIN)
+        ubloxGnssPoller = Poller(arrayOf(msgqCtx!!.subSocket("ubloxGnss")))
 
         // Layouts
         frame = findViewById(R.id.frame) as RelativeLayout
@@ -593,7 +551,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         activityTouchGate!!.setOnTouchListener { _, event ->
             when (event.action) {
                 MotionEvent.ACTION_UP -> {
-                    if (lastStarted && state == STATE.HOME) {
+                    if (lastStarted && activeApp == UiLayoutState.App.HOME) {
                         if (sidebarCollapsed) {
                             expandSidebar()
                         } else {
@@ -660,13 +618,6 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         uiLayoutReceiver = UiLayoutReceiver(this)
         registerReceiver(uiLayoutReceiver, UiLayoutReceiver.uiLayoutIntentFilter)
 
-        batteryMonitor = BatteryMonitor()
-        val batteryIntentFilter = IntentFilter(Intent.ACTION_BATTERY_CHANGED)
-        registerReceiver(batteryMonitor, batteryIntentFilter)
-        val batteryManager = getSystemService(Context.BATTERY_SERVICE) as BatteryManager
-        val status = if (batteryManager.isCharging) BatteryManager.BATTERY_STATUS_CHARGING else BatteryManager.BATTERY_STATUS_NOT_CHARGING
-        onBatteryChange(batteryManager.getIntProperty(BATTERY_PROPERTY_CAPACITY), 100, status)
-
         val telephonyManager = getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
         telephonyManager.listen(CellStateListener(), PhoneStateListener.LISTEN_SIGNAL_STRENGTHS or PhoneStateListener.LISTEN_SERVICE_STATE)
 
@@ -695,19 +646,15 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         })
         ubloxGnssThreadHandle!!.start()
 
-        updateUiLayoutState(false, IS_MAP_ENABLED)
-
-        setAndSendState(STATE.HOME)
+        uiLayoutStateThreadHandle = Thread(Runnable {
+            uiLayoutStateThread()
+        })
+        uiLayoutStateThreadHandle!!.start()
     }
 
     override fun onDestroy() {
         unregisterReceiver(newDestinationReceiver)
         unregisterReceiver(networkMonitor)
-        unregisterReceiver(batteryMonitor)
-        frameSock?.unbind(FRAME_SOCKET_ADDR)
-        frameSock?.close()
-        uiLayoutSock?.unbind(UILAYOUT_SOCKET_ADDR)
-        uiLayoutSock?.close()
 
         pandaConnectionMonitor?.destroy()
 
@@ -756,15 +703,12 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
         networkTypeText?.text = networkType
     }
 
-    fun onBatteryChange(level: Int, scale: Int, status: Int) {
-        val pct = 100 * (level / (scale * 1.0))
-
-        val isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL
-
-        val batteryPctRound = if (pct > 0) (Math.ceil(pct / 25) * 25).toInt() else 0
-
+    fun onBatteryChange(level: Int, status: String) {
+        val isCharging = status == "Charging"
         val suffix = if (isCharging) "_charging" else ""
-        val iconId = resources.getIdentifier("indicator_battery_${batteryPctRound}${suffix}", "drawable", packageName)
+        val batteryPctRound = if (level > 0) (Math.ceil(level.toDouble() / 25) * 25).toInt() else 0
+        val iconAsset = "indicator_battery_${batteryPctRound}${suffix}"
+        val iconId = resources.getIdentifier(iconAsset, "drawable", packageName)
         val iconBattery = resources.getDrawable(iconId, null);
         batteryLevelView?.setImageDrawable(iconBattery);
     }
@@ -786,19 +730,6 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                     simState = intent.getStringExtra("ss")
 
                     onNetworkStateChange()
-                }
-            }
-        }
-    }
-
-    inner class BatteryMonitor : BroadcastReceiver() {
-        override fun onReceive(context: Context?, intent: Intent?) {
-            when (intent?.action) {
-                Intent.ACTION_BATTERY_CHANGED -> {
-                    val level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
-                    val scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
-                    val status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1)
-                    onBatteryChange(level, scale, status)
                 }
             }
         }
