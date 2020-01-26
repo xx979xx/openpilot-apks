@@ -1,0 +1,554 @@
+{
+  "Reboot": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        124
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        490
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        794
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        796
+      ]
+    ]
+  },
+  "Resetting calibration requires a reboot.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        124
+      ]
+    ]
+  },
+  "Later": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        125
+      ]
+    ]
+  },
+  "Reboot Now": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        126
+      ]
+    ]
+  },
+  "Account": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        191
+      ]
+    ]
+  },
+  "Paired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        192
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        468
+      ]
+    ]
+  },
+  "Unpaired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        192
+      ]
+    ]
+  },
+  "Device": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        197
+      ]
+    ]
+  },
+  "{0} Free": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        198
+      ]
+    ]
+  },
+  "Network": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        203
+      ]
+    ]
+  },
+  "Developer": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        209
+      ]
+    ]
+  },
+  "<  Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        269
+      ]
+    ]
+  },
+  "Enable openpilot": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        282
+      ]
+    ]
+  },
+  "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        285
+      ]
+    ]
+  },
+  "Record and Upload Driver Camera": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        292
+      ]
+    ]
+  },
+  "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        295
+      ]
+    ]
+  },
+  "Use Metric System": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        301
+      ]
+    ]
+  },
+  "Display speed in km/h instead of mp/h and temperature in °C instead of °F.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        304
+      ]
+    ]
+  },
+  "Review Training Guide": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        361
+      ]
+    ]
+  },
+  "<  Account Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        379
+      ]
+    ]
+  },
+  "Device Paired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        388
+      ]
+    ]
+  },
+  "Yes": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        389
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        469
+      ]
+    ]
+  },
+  "No": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        389
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        469
+      ]
+    ]
+  },
+  "You may unpair your device in the comma connect app settings.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        394
+      ]
+    ]
+  },
+  "Terms of Service available at https://my.comma.ai/terms.html": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        401
+      ]
+    ]
+  },
+  "Pair Device": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        410
+      ]
+    ]
+  },
+  "<  Device Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        443
+      ]
+    ]
+  },
+  "Camera Calibration": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        452
+      ]
+    ]
+  },
+  "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        454
+      ]
+    ]
+  },
+  "Reset": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        462
+      ]
+    ]
+  },
+  "Dongle ID": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        471
+      ]
+    ]
+  },
+  "Serial Number": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        474
+      ]
+    ]
+  },
+  "Free Storage": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        477
+      ]
+    ]
+  },
+  "Upload Speed": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        481
+      ]
+    ]
+  },
+  "Power Off": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        497
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        800
+      ]
+    ]
+  },
+  "<  Network Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        519
+      ]
+    ]
+  },
+  "Enable Upload Over Cellular": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        529
+      ]
+    ]
+  },
+  "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        532
+      ]
+    ]
+  },
+  "Open WiFi Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        542
+      ]
+    ]
+  },
+  "Open Tethering Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        549
+      ]
+    ]
+  },
+  "<  Developer Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        578
+      ]
+    ]
+  },
+  "Version": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        586
+      ]
+    ]
+  },
+  "Git Branch": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        589
+      ]
+    ]
+  },
+  "Git Revision": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        592
+      ]
+    ]
+  },
+  "Panda Firmware": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        596
+      ]
+    ]
+  },
+  "N/A": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        597
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        601
+      ]
+    ]
+  },
+  "Panda Dongle ID": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        600
+      ]
+    ]
+  },
+  "Enable SSH": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        607
+      ]
+    ]
+  },
+  "Allow devices to connect to your EON using Secure Shell (SSH).": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        610
+      ]
+    ]
+  },
+  "Authorized SSH Keys": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        616
+      ]
+    ]
+  },
+  "Cancel": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        626
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        795
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        801
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        807
+      ]
+    ]
+  },
+  "Edit": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        626
+      ]
+    ]
+  },
+  "Uninstall {software}": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        635
+      ]
+    ]
+  },
+  "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        650
+      ]
+    ]
+  },
+  "GitHub Username": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        669
+      ]
+    ]
+  },
+  "Save": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        686
+      ]
+    ]
+  },
+  "Save failed. Ensure that your username is correct and you are connected to the internet.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        698
+      ]
+    ]
+  },
+  "Remove all": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        708
+      ]
+    ]
+  },
+  "Are you sure you want to reboot?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        794
+      ]
+    ]
+  },
+  "Are you sure you want to shutdown?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        800
+      ]
+    ]
+  },
+  "Shutdown": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        802
+      ]
+    ]
+  },
+  "Uninstall": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        806
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        808
+      ]
+    ]
+  },
+  "Are you sure you want to uninstall?": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        806
+      ]
+    ]
+  }
+}
