@@ -391,7 +391,7 @@ msgid "Successfully paired to an account in"
 msgstr "تمت إقران بنجاح إلى حساب في"
 #: js/components/training/Onboarding/Onboarding.js:643
 msgid "Tap \"SET\" to engage"
-msgstr "اضغط \ "SET \" للمشاركة"
+msgstr "اضغط \"SET\" للمشاركة"
 #: js/components/training/Onboarding/Onboarding.js:948
 msgid "Tap a pedal to disengage"
 msgstr "اضغط على دواسة لفك الارتباط"
@@ -409,13 +409,13 @@ msgid "The lane lines are drawn with varying widths to reflect the confidence in
 msgstr "يتم رسم خطوط الممرات بأطوال مختلفة لتعكس الثقة في العثور على المسار الخاص بك."
 #: js/components/SetupWifi/SetupWifi.js:341
 msgid "The network \"{0}\" requires a password."
-msgstr "تتطلب الشبكة \ "{0} \" كلمة مرور."
+msgstr "تتطلب الشبكة \"{0}\" كلمة مرور."
 #: js/components/training/Onboarding/Onboarding.js:528
 msgid "The stock radar in your car helps openpilot measure the lead car distance for longitudinal control."
 msgstr "يساعد رادار المخزون الموجود في سيارتك openpilot في قياس مسافة سيارة الرصاص من أجل التحكم الطولي."
 #: js/components/SetupWifi/SetupWifi.js:77
 msgid "There was a problem scanning WiFi networks. {0}Make sure WiFi is enabled in \"More Options\" above."
-msgstr "حدثت مشكلة في فحص شبكات WiFi. {0} تأكد من تمكين WiFi في \ "مزيد من الخيارات \" أعلاه."
+msgstr "حدثت مشكلة في فحص شبكات WiFi. {0} تأكد من تمكين WiFi في \"مزيد من الخيارات \" أعلاه."
 #: js/components/training/Onboarding/Onboarding.js:994
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "يمكن إعادة تشغيل هذا الدليل في أي وقت من إعدادات الجهاز. لمعرفة المزيد حول openpilot ، اقرأ الويكي والانضمام إلى المجتمع على discord.comma.ai"
@@ -468,7 +468,7 @@ msgid "When openpilot is engaged, you must always pay attention! openpilot monit
 msgstr "عندما تشارك openpilot ، يجب عليك دائمًا الانتباه! openpilot تراقب الوعي مع إعادة بناء الوجه ثلاثية الأبعاد وتشكل. يتم تنبيه السائقين المشغولين ، ثم يتم فك ارتباطهم من openpilot حتى يتم تصحيحه."
 #: js/components/training/Onboarding/Onboarding.js:631
 msgid "When you are ready to engage openpilot at a comfortable speed, locate the cruise controls on your steering wheel and press \"SET\" to begin."
-msgstr "عندما تكون مستعدًا للانخراط في openpilot بسرعة مريحة ، حدد أدوات التحكم في التطواف على عجلة القيادة واضغط على \ "SET \" للبدء."
+msgstr "عندما تكون مستعدًا للانخراط في openpilot بسرعة مريحة ، حدد أدوات التحكم في التطواف على عجلة القيادة واضغط على \"SET \" للبدء."
 #: js/components/training/Onboarding/Onboarding.js:935
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
 msgstr "أثناء تعامل openpilot ، يمكنك إبقاء يديك على العجلة لتجاوز الضوابط الجانبية. ستتم إدارة أدوات التحكم الطولية بواسطة openpilot حتى يتم الضغط على دواسة الوقود أو الفرامل لفك الارتباط."
