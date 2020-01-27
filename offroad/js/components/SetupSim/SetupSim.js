@@ -13,6 +13,10 @@ import { BUTTON_CONTINUE_GRADIENT } from '../../styles/gradients';
 
 import Styles from './SetupSimStyles';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t } from "@lingui/macro"
+
 class SetupSim extends Component {
     static propTypes = {
         onContinue: PropTypes.func,
@@ -60,22 +64,22 @@ class SetupSim extends Component {
                         size='big'
                         weight='semibold'
                         style={ Styles.titleText }>
-                        { simState === 'ABSENT' ? 'No SIM card detected in EON' : 'SIM card detected in EON' }
+                        { i18n._(simState === 'ABSENT' ? t`No SIM card detected in EON` : t`SIM card detected in EON`) }
                     </X.Text>
                     <X.Text
                         color='white'
                         size='small'
                         weight='light'
                         style={ Styles.detailText }>
-                        { simState === 'ABSENT' ? 'Insert a SIM card with data. Need one? Get a comma SIM at shop.comma.ai'
-                        : (networkName === null ? 'A SIM card was entered, however your cellular network has not yet been discovered.'
-                                : "You're all set to get EON on the road with full cellular connection. Complete set up to continue.") }
+                        { i18n._(simState === 'ABSENT' ? t`Insert a SIM card with data. Need one? Get a comma SIM at shop.comma.ai`
+                        : (networkName === null ? t`A SIM card was entered, however your cellular network has not yet been discovered.`
+                                : t`You're all set to get EON on the road with full cellular connection. Complete set up to continue.`)) }
                     </X.Text>
                 </View>
                 <View style={ Styles.statusRow }>
                     <View style={ Styles.status }>
                         <X.Text color='white'>
-                            { simState === 'ABSENT' ? 'Waiting for SIM...' : (networkName === null ? 'Searching for cellular networks...' : `Connected to ${networkName}`)}
+                            { i18n._(simState === 'ABSENT' ? t`Waiting for SIM...` : (networkName === null ? t`Searching for cellular networks...` : t`Connected to ${networkName}`))}
                         </X.Text>
                         { networkName !== null ?
                             <Image
@@ -98,7 +102,7 @@ class SetupSim extends Component {
                             <X.Button
                                 onPress={ this.props.onContinue }
                                 color='setupInverted'>
-                                Skip for now
+                                { i18n._(t`Skip for now`) }
                             </X.Button>
                             : null
                         }
@@ -114,7 +118,7 @@ class SetupSim extends Component {
                                     <X.Text
                                         color='white'
                                         weight='semibold'>
-                                        { networkName === null ? 'Waiting for network...' : 'Complete Setup' }
+                                        { i18n._(networkName === null ? t`Waiting for network...` : t`Complete Setup`) }
                                     </X.Text>
                                 </X.Gradient>
                             </X.Button>

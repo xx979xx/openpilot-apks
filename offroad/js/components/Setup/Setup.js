@@ -16,6 +16,10 @@ import SetupQr from '../SetupQr';
 
 import Styles from './SetupStyles';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t } from "@lingui/macro"
+
 const Step = {
     REVIEW_TERMS: 'REVIEW_TERMS',
     WIFI: 'WIFI',
@@ -25,22 +29,22 @@ const Step = {
 
 const TabsByStep = {
     REVIEW_TERMS: [
-        'Review Terms',
-        'Select WiFi',
-        'Add SIM Card',
-        'PAIR EON',
+        i18n._(t`Review Terms`),
+        i18n._(t`Select WiFi`),
+        i18n._(t`Add SIM Card`),
+        i18n._(t`PAIR EON`),
     ],
     WIFI: [
-        'Select WiFi',
-        'Add SIM Card',
-        'PAIR EON',
+        i18n._(t`Select WiFi`),
+        i18n._(t`Add SIM Card`),
+        i18n._(t`PAIR EON`),
     ],
     SIM: [
-        'Add SIM Card',
-        'PAIR EON',
+        i18n._(t`Add SIM Card`),
+        i18n._(t`PAIR EON`),
     ],
     PAIR: [
-        'PAIR EON',
+        i18n._(t`PAIR EON`),
     ]
 }
 

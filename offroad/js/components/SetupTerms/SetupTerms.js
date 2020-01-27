@@ -10,6 +10,10 @@ import X from '../../themes';
 import SetupStyles from '../Setup';
 import Styles from './SetupTermsStyles';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t, Trans } from "@lingui/macro"
+
 export default class SetupTerms extends Component {
     static propTypes = {
         onAccept: PropTypes.func,
@@ -35,13 +39,13 @@ export default class SetupTerms extends Component {
         return (
             <ScrollThrough
                 onPrimaryButtonClick={ this.props.onAccept }
-                primaryButtonText={ hasScrolled ? 'I agree to the terms' : 'Read to Continue' }
-                secondaryButtonText={ 'Decline' }
+                primaryButtonText={ i18n._(hasScrolled ? t`I agree to the terms` : t`Read to Continue`) }
+                secondaryButtonText={ i18n._(t`Decline`) }
                 onScroll={ this.onScroll }
                 primaryButtonEnabled={ hasScrolled }>
-                <X.Text weight='semibold' color='white'>Comma.ai, Inc. Terms & Conditions</X.Text>
+                <X.Text weight='semibold' color='white'><Trans>Comma.ai, Inc. Terms & Conditions</Trans></X.Text>
                 <X.Text size='small' color='white' style={ Styles.tosText }>{ Documents.TOS }</X.Text>
-                <X.Text size='small' color='white'>Privacy policy available at https://my.comma.ai/privacy.html</X.Text>
+                <X.Text size='small' color='white'><Trans>Privacy policy available at https://my.comma.ai/privacy.html</Trans></X.Text>
             </ScrollThrough>
         );
 

@@ -12,6 +12,10 @@ import {
 import SetupContainer from '../SetupContainer';
 import ScrollThrough from '../ScrollThrough';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t, Trans } from "@lingui/macro"
+
 class UpdatePrompt extends Component {
     static navigationOptions = {
         header: null,
@@ -29,13 +33,13 @@ class UpdatePrompt extends Component {
                 <ScrollThrough
                     onPrimaryButtonClick={ this.onUpdatePressed }
                     onSecondaryButtonClick={ this.props.onDismiss }
-                    primaryButtonText={ 'Reboot and Update' }
-                    secondaryButtonText={ 'Later' }
+                    primaryButtonText={ i18n._(t`Reboot and Update`) }
+                    secondaryButtonText={ i18n._(t`Later`) }
                     onScroll={ this.onScroll }>
-                    <X.Text color='white' size='big' weight='semibold'>Update Available</X.Text>
+                    <X.Text color='white' size='big' weight='semibold'><Trans>Update Available</Trans></X.Text>
                     <X.Line />
                     <X.Text color='white'>
-                        { 'Please keep in mind that system behavior may change.\n\n' }
+                        { i18n._(t`Please keep in mind that system behavior may change.${'\n'}${'\n'}`) }
                         { this.props.releaseNotes }
                     </X.Text>
                 </ScrollThrough>

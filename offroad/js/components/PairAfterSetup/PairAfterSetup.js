@@ -8,6 +8,10 @@ import X from '../../themes';
 import Styles from './PairAfterSetupStyles'
 import Pairing from '../Pairing';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t, Trans } from "@lingui/macro"
+
 class PairAfterSetup extends Component {
     static navigationOptions = {
         header: null,
@@ -39,7 +43,7 @@ class PairAfterSetup extends Component {
                             color='ghost'
                             size='small'
                             onPress={ () => this.handlePressedBack() }>
-                            {'<  Pair EON'}
+                            { i18n._(t`<  Pair EON`) }
                         </X.Button>
                     </View>
                     <View style={{ flex: 1 }}>
@@ -47,7 +51,7 @@ class PairAfterSetup extends Component {
                           <Pairing onPairConfirmed={ this.onPairConfirmed } onContinueButton={  () => this.handlePressedBack() } skipText='Back' continueText='Back' />
                          :
                             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                                <X.Text color='white'>EON Paired</X.Text>
+                                <X.Text color='white'><Trans>EON Paired</Trans></X.Text>
                             </View>
                         }
                     </View>

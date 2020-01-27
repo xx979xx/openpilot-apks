@@ -1,0 +1,611 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2019-07-23 22:27+1000\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: zh_TW\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: Rick Lan <ricklan+offroad@gmail.com>\n"
+"PO-Revision-Date: 2019-07-23 23:02+1000\n"
+"Last-Translator: Rick Lan\n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: js/components/Settings/Settings.js:397
+msgid "<  Account Settings"
+msgstr "<  帳戶設定"
+
+#: js/components/Settings/Settings.js:574
+msgid "<  Developer Settings"
+msgstr "<  開發人員設定"
+
+#: js/components/Settings/Settings.js:439
+msgid "<  Device Settings"
+msgstr "<  裝置設定"
+
+#: js/components/Settings/Settings.js:517
+msgid "<  Network Settings"
+msgstr "<  網路設定"
+
+#: js/components/PairAfterSetup/PairAfterSetup.js:46
+msgid "<  Pair EON"
+msgstr "<  配對 EON"
+
+#: js/components/Settings/Settings.js:265
+msgid "<  Settings"
+msgstr "<  設定"
+
+#: js/components/SetupSim/SetupSim.js:75
+msgid "A SIM card was entered, however your cellular network has not yet been discovered."
+msgstr "偵測到 SIM 卡已插入，但是尚未搜尋您的行動通訊網路。"
+
+#: js/components/training/Onboarding/Onboarding.js:309
+msgid "A driver assistance system is not a self driving car. This means openpilot is designed to work with you, not without you. Your attention is required to drive."
+msgstr "駕駛輔助系統不是自動駕駛系統。這代表 openpilot 的設計是來輔助您而不是取代您。駕駛時，您仍然需要注意行車安全。"
+
+#: js/components/training/Onboarding/Onboarding.js:408
+msgid "A vision algorithm leverages EON’s road-facing camera to determine the path to drive."
+msgstr "我們利用後置相機補捉到的影像演算出行車的路徑。"
+
+#: js/components/Settings/Settings.js:187
+msgid "Account"
+msgstr "帳號"
+
+#: js/components/Setup/Setup.js:34
+#: js/components/Setup/Setup.js:39
+#: js/components/Setup/Setup.js:43
+msgid "Add SIM Card"
+msgstr "加入 SIM 卡"
+
+#: js/components/Settings/Settings.js:598
+msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
+msgstr "允許別的裝置經由 Secure Shell (SSH) 連線至您的 EON。"
+
+#: js/components/Settings/Settings.js:781
+msgid "Are you sure you want to reboot?"
+msgstr "您確定要重新啟動嗎？"
+
+#: js/components/Settings/Settings.js:787
+msgid "Are you sure you want to shutdown?"
+msgstr "您確定要關機嗎？"
+
+#: js/components/Settings/Settings.js:793
+msgid "Are you sure you want to uninstall?"
+msgstr "您確定要卸載嗎？"
+
+#: js/components/Settings/Settings.js:604
+msgid "Authorized SSH Keys"
+msgstr "已授權的 SSH 密鑰"
+
+#: js/components/training/Onboarding/Onboarding.js:365
+msgid "Before any signals are sent to control your car, sensors are fused to construct a scene of the road."
+msgstr "在發送任何操控您車子的訊號之前，我們用這些傳感器來構建前方道路場景。"
+
+#: js/components/SetupWelcome/SetupWelcome.js:31
+msgid "Before we get on the road, let's cover some details and connect to the internet."
+msgstr "在我們上路之前，讓我們先介紹一些細節並連線到網路。"
+
+#: js/components/training/Onboarding/Onboarding.js:275
+msgid "Begin Training"
+msgstr "開始教學"
+
+#: js/components/Settings/Settings.js:448
+msgid "Camera Calibration"
+msgstr "相機校準"
+
+#: js/components/training/Onboarding/Onboarding.js:376
+#: js/components/training/Onboarding/Onboarding.js:403
+msgid "Camera from EON"
+msgstr "來自 EON 的相機"
+
+#: js/components/Settings/Settings.js:614
+#: js/components/Settings/Settings.js:782
+#: js/components/Settings/Settings.js:788
+#: js/components/Settings/Settings.js:794
+#: js/components/SetupWifi/SetupWifi.js:224
+msgid "Cancel"
+msgstr "取消"
+
+#: js/components/SetupTerms/SetupTerms.js:46
+msgid "Comma.ai, Inc. Terms & Conditions"
+msgstr "Comma.ai, Inc. 條款和條件"
+
+#: js/components/SetupSim/SetupSim.js:121
+msgid "Complete Setup"
+msgstr "完成設定"
+
+#: js/components/training/Onboarding/Onboarding.js:714
+msgid "Congratulations! You have completed openpilot training."
+msgstr "恭喜您！您已經完成了 openpilot 的使用教學"
+
+#: js/components/SetupWifi/SetupWifi.js:230
+msgid "Connect"
+msgstr "連線"
+
+#: js/components/SetupWifi/SetupWifi.js:183
+msgid "Connected"
+msgstr "已連線"
+
+#: js/components/SetupSim/SetupSim.js:82
+msgid "Connected to {networkName}"
+msgstr "已連線至 {networkName}"
+
+#: js/components/SetupQr/SetupQr.js:40
+#: js/components/SetupWifi/SetupWifi.js:273
+msgid "Continue"
+msgstr "繼續"
+
+#: js/components/SetupTerms/SetupTerms.js:43
+msgid "Decline"
+msgstr "拒絕"
+
+#: js/components/Home/Home.js:49
+msgid "Destination:"
+msgstr "目的地："
+
+#: js/components/Settings/Settings.js:205
+msgid "Developer"
+msgstr "開發人員"
+
+#: js/components/Settings/Settings.js:193
+msgid "Device"
+msgstr "裝置"
+
+#: js/components/Settings/Settings.js:406
+msgid "Device Paired"
+msgstr "裝置已配對"
+
+#: js/components/training/Onboarding/Onboarding.js:554
+#: js/components/training/Onboarding/Onboarding.js:657
+msgid "Disengage openpilot"
+msgstr "取消 openpilot"
+
+#: js/components/Settings/Settings.js:307
+msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
+msgstr "開啟後單位將使用 km/h (速度) 和 °C (溫度)；關閉後單位將使用 mph (速度) 或 °F (溫度)。"
+
+#: js/components/Settings/Settings.js:467
+msgid "Dongle ID"
+msgstr "Dongle ID"
+
+#: js/components/training/Onboarding/Onboarding.js:546
+#: js/components/training/Onboarding/Onboarding.js:614
+msgid "Driver Monitoring"
+msgstr "駕駛監控"
+
+#: js/components/Settings/Settings.js:280
+msgid "Driver Monitoring detects driver awareness with 3D facial reconstruction and pose estimation. It is used to warn the driver when they appear distracted while openpilot is engaged. This feature is still in beta, so Driver Monitoring is unavailable when the facial tracking is too inaccurate (e.g. at night). The availability is indicated by the face icon at the bottom-left corner of your EON."
+msgstr "駕駛監控系統利用建構 3D 人臉和姿態來判斷駕駛的狀態。當 openpilot 啟用後，它會在駕駛分心時發出警示。這個功能仍然在測試階段所以監控會在無法正確識別時暫時取消（例如光線不足時）。您可以從 EON 左下角的人臉圖示來判斷系統的狀態。"
+
+#: js/components/Home/Home.js:175
+#: js/components/PairAfterSetup/PairAfterSetup.js:54
+msgid "EON Paired"
+msgstr "EON 已配對"
+
+#: js/components/Settings/Settings.js:614
+msgid "Edit"
+msgstr "編輯"
+
+#: js/components/Settings/Settings.js:277
+msgid "Enable Driver Monitoring"
+msgstr "啟用駕駛監控"
+
+#: js/components/Settings/Settings.js:295
+msgid "Enable Forward Collision Warning"
+msgstr "啟用前方碰撞預警"
+
+#: js/components/Settings/Settings.js:595
+msgid "Enable SSH"
+msgstr "啟用 SSH"
+
+#: js/components/Settings/Settings.js:527
+msgid "Enable Upload Over Cellular"
+msgstr "允許使用行動通訊網路上傳記錄"
+
+#: js/components/training/Onboarding/Onboarding.js:538
+#: js/components/training/Onboarding/Onboarding.js:573
+msgid "Engage openpilot"
+msgstr "啟用 openpilot"
+
+#: js/components/training/Onboarding/Onboarding.js:731
+msgid "Finish Training"
+msgstr "完成教學"
+
+#: js/components/Settings/Settings.js:473
+msgid "Free Storage"
+msgstr "剩餘空間"
+
+#: js/components/Settings/Settings.js:585
+msgid "Git Branch"
+msgstr "Git 分支"
+
+#: js/components/Settings/Settings.js:588
+msgid "Git Revision"
+msgstr "Git 修訂版"
+
+#: js/components/Settings/Settings.js:646
+msgid "GitHub Username"
+msgstr "GitHub 用戶名"
+
+#: js/components/SetupTerms/SetupTerms.js:42
+msgid "I agree to the terms"
+msgstr "我同意這些條款"
+
+#: js/components/training/Onboarding/Onboarding.js:332
+msgid "I will be ready to take over at any time!"
+msgstr "我一定會準備好隨時接管控制！"
+
+#: js/components/training/Onboarding/Onboarding.js:326
+msgid "I will be ready to take over at any time."
+msgstr "我會準備好隨時接管控制。"
+
+#: js/components/training/Onboarding/Onboarding.js:320
+msgid "I will keep my eyes on the road."
+msgstr "我會盯著路況。"
+
+#: js/components/SetupSim/SetupSim.js:74
+msgid "Insert a SIM card with data. Need one? Get a comma SIM at shop.comma.ai"
+msgstr "插入一張有網路流量的 SIM 卡，需要嗎？您可以到 shop.comma.ai 取得 comma SIM"
+
+#: js/components/Settings/Settings.js:121
+#: js/components/Settings/Settings.js:701
+#: js/components/Settings/Settings.js:720
+#: js/components/UpdatePrompt/UpdatePrompt.js:37
+msgid "Later"
+msgstr "稍後"
+
+#: js/components/SetupWifi/SetupWifi.js:266
+msgid "More Options"
+msgstr "更多選項"
+
+#: js/components/Settings/Settings.js:199
+msgid "Network"
+msgstr "網路"
+
+#: js/components/Pairing/Pairing.js:67
+msgid "Network connection required for pairing"
+msgstr "配對需要有網路連線"
+
+#: js/components/Home/Home.js:79
+#: js/components/Home/Home.js:93
+msgid "New Destination"
+msgstr "新的目的地"
+
+#: js/components/Home/Home.js:114
+msgid "New Drive"
+msgstr "新的行車記錄"
+
+#: js/components/Settings/Settings.js:407
+#: js/components/Settings/Settings.js:465
+msgid "No"
+msgstr "否"
+
+#: js/components/SetupSim/SetupSim.js:67
+msgid "No SIM card detected in EON"
+msgstr "EON 沒有偵測到 SIM 卡"
+
+#: js/components/training/Onboarding/Onboarding.js:265
+msgid "Now that you’re all set up, it’s important to understand the functionality and limitations of openpilot as alpha software before testing."
+msgstr "現在您已經完成了所有的設定，在您開始測試之前，請您務必先了解身為 alpha 版的 openpilot 它的功能和限制。"
+
+#: js/components/Settings/Settings.js:486
+msgid "Open Date and Time Settings"
+msgstr "開啟日期與時間設定"
+
+#: js/components/Settings/Settings.js:495
+msgid "Open Language Settings"
+msgstr "打開語言設定"
+
+#: js/components/Settings/Settings.js:547
+msgid "Open Tethering Settings"
+msgstr "開啟網絡共享設定"
+
+#: js/components/Settings/Settings.js:540
+msgid "Open WiFi Settings"
+msgstr "開啟無線網路設定"
+
+#: js/components/Setup/Setup.js:35
+#: js/components/Setup/Setup.js:40
+#: js/components/Setup/Setup.js:44
+#: js/components/Setup/Setup.js:47
+msgid "PAIR EON"
+msgstr "配對 EON"
+
+#: js/components/Home/Home.js:187
+msgid "Pair EON"
+msgstr "配對 EON"
+
+#: js/components/Settings/Settings.js:188
+#: js/components/Settings/Settings.js:464
+msgid "Paired"
+msgstr "已配對"
+
+#: js/components/SetupWifi/SetupWifi.js:237
+msgid "Password"
+msgstr "無線網路密碼"
+
+#: js/components/UpdatePrompt/UpdatePrompt.js:42
+msgid "Please keep in mind that system behavior may change.{0}{1}"
+msgstr "請記住系統的行為可能發生變化。{0}{1}"
+
+#: js/components/Settings/Settings.js:379
+#: js/components/Settings/Settings.js:787
+msgid "Power Off"
+msgstr "關機"
+
+#: js/components/training/Onboarding/Onboarding.js:530
+msgid "Press cruise to engage and a pedal to disengage."
+msgstr "按下巡航鈕啟動，踩油門或剎車取消。"
+
+#: js/components/SetupTerms/SetupTerms.js:48
+msgid "Privacy policy available at https://my.comma.ai/privacy.html"
+msgstr "隱私權政策請參閱 https://my.comma.ai/privacy.html"
+
+#: js/components/training/Onboarding/Onboarding.js:384
+#: js/components/training/Onboarding/Onboarding.js:450
+msgid "Radar from your car"
+msgstr "來自您車子的雷達"
+
+#: js/components/SetupTerms/SetupTerms.js:42
+msgid "Read to Continue"
+msgstr "繼續閱讀"
+
+#: js/components/Settings/Settings.js:120
+#: js/components/Settings/Settings.js:372
+#: js/components/Settings/Settings.js:700
+#: js/components/Settings/Settings.js:719
+#: js/components/Settings/Settings.js:781
+#: js/components/Settings/Settings.js:783
+msgid "Reboot"
+msgstr "重新啟動"
+
+#: js/components/Settings/Settings.js:122
+#: js/components/Settings/Settings.js:702
+#: js/components/Settings/Settings.js:721
+msgid "Reboot Now"
+msgstr "馬上重啟"
+
+#: js/components/UpdatePrompt/UpdatePrompt.js:36
+msgid "Reboot and Update"
+msgstr "重啟並更新"
+
+#: js/components/Settings/Settings.js:700
+msgid "Reboot to finalize removal of GitHub SSH keys."
+msgstr "請重新啟動以完成刪除 GitHub SSH 密鑰。"
+
+#: js/components/Settings/Settings.js:719
+msgid "Reboot to make SSH keys from {githubUsername} available."
+msgstr "請重新啟動來啟用 {githubUsername} 的 SSH 密鑰。"
+
+#: js/components/Settings/Settings.js:286
+msgid "Record and Upload Driver Camera"
+msgstr "錄制並上傳駕駛的錄像"
+
+#: js/components/Settings/Settings.js:685
+msgid "Remove all"
+msgstr "移除全部"
+
+#: js/components/Settings/Settings.js:458
+msgid "Reset"
+msgstr "重設"
+
+#: js/components/Settings/Settings.js:120
+msgid "Resetting calibration requires a reboot."
+msgstr "重設校準需要重新啟動。"
+
+#: js/components/training/Onboarding/Onboarding.js:739
+msgid "Restart"
+msgstr "重新開始"
+
+#: js/components/Setup/Setup.js:32
+msgid "Review Terms"
+msgstr "查看條款"
+
+#: js/components/Settings/Settings.js:364
+msgid "Review Training Guide"
+msgstr "查看使用教學"
+
+#: js/components/SetupSim/SetupSim.js:67
+msgid "SIM card detected in EON"
+msgstr "EON 已偵測到 SIM 卡"
+
+#: js/components/Settings/Settings.js:663
+msgid "Save"
+msgstr "儲存"
+
+#: js/components/Settings/Settings.js:675
+msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
+msgstr "儲存失敗，請確認您已連上網路並輸入正確的用戶名。"
+
+#: js/components/Pairing/Pairing.js:67
+msgid "Scan with {0}comma connect {1}on iOS or Android"
+msgstr "用 iOS 或 Android 版的{0} comma connect {1}掃描"
+
+#: js/components/SetupSim/SetupSim.js:82
+msgid "Searching for cellular networks..."
+msgstr "搜尋行動通訊網路中…"
+
+#: js/components/Setup/Setup.js:33
+#: js/components/Setup/Setup.js:38
+msgid "Select WiFi"
+msgstr "選擇無線網路"
+
+#: js/components/training/Onboarding/Onboarding.js:632
+msgid "Select face to continue"
+msgstr "請點選畫面上的人臉繼續"
+
+#: js/components/training/Onboarding/Onboarding.js:474
+msgid "Select lead car indicator"
+msgstr "請點選畫面上的前車指標繼續"
+
+#: js/components/training/Onboarding/Onboarding.js:427
+msgid "Select path to continue"
+msgstr "請點選畫面上的行車路徑繼續"
+
+#: js/components/Settings/Settings.js:470
+msgid "Serial Number"
+msgstr "序號"
+
+#: js/components/SetupWelcome/SetupWelcome.js:40
+msgid "Set up your EON"
+msgstr "設定您的 EON"
+
+#: js/components/Home/Home.js:210
+msgid "Settings"
+msgstr "設定"
+
+#: js/components/Settings/Settings.js:789
+msgid "Shutdown"
+msgstr "關機"
+
+#: js/components/SetupQr/SetupQr.js:40
+msgid "Skip"
+msgstr "跳過"
+
+#: js/components/SetupSim/SetupSim.js:105
+#: js/components/SetupWifi/SetupWifi.js:273
+msgid "Skip for now"
+msgstr "暫時跳過"
+
+#: js/components/training/Onboarding/Onboarding.js:590
+msgid "Tap \"SET\" to engage"
+msgstr "請點選畫面上的 \"SET\" 繼續"
+
+#: js/components/training/Onboarding/Onboarding.js:675
+msgid "Tap a pedal to disengage"
+msgstr "請點選畫面上的油門／剎車繼續"
+
+#: js/components/Settings/Settings.js:408
+msgid "Terms of Service available at https://my.comma.ai/terms.html"
+msgstr "服條款請參閱 https://my.comma.ai/terms.html"
+
+#: js/components/Settings/Settings.js:450
+msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position."
+msgstr "後置相機是一直在背景自動校準的。只有當您的 EON 發出校準無效的訊息或是您將 EON 安裝至不同的位置／車子時，才需要重設校準。"
+
+#: js/components/training/Onboarding/Onboarding.js:463
+msgid "The indicator is drawn either red or yellow to illustrate relative speed to the lead car."
+msgstr "紅色或黃色的指標用來表示與前車之間的相對速度。"
+
+#: js/components/training/Onboarding/Onboarding.js:416
+msgid "The lane lines are drawn with varying widths to reflect the confidence in finding your lane."
+msgstr "車道分隔線會依據我們判斷的精準度標示不同的粗細。"
+
+#: js/components/training/Onboarding/Onboarding.js:455
+msgid "The stock radar in your car helps openpilot measure the lead car distance for longitudinal control."
+msgstr "來自您車上的原廠雷達訊號幫助 openpilot 計算出與前車的距離，這將用來提供縱向控制的功能。"
+
+#: js/components/training/Onboarding/Onboarding.js:719
+msgid "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
+msgstr "若有需要，您可以隨時至 EON 設定裡重新閱讀使用指南。若您想知道更多關於 openpilot 的訊息，請參閱 wiki 或是加入我們在 discord.comma.ai 的社群。"
+
+#: js/components/Settings/Settings.js:793
+#: js/components/Settings/Settings.js:795
+msgid "Uninstall"
+msgstr "卸載"
+
+#: js/components/Settings/Settings.js:623
+msgid "Uninstall {software}"
+msgstr "卸載 {software}"
+
+#: js/components/Settings/Settings.js:188
+msgid "Unpaired"
+msgstr "未配對"
+
+#: js/components/UpdatePrompt/UpdatePrompt.js:39
+msgid "Update Available"
+msgstr "有可用的更新"
+
+#: js/components/Settings/Settings.js:477
+msgid "Upload Speed"
+msgstr "上傳速度"
+
+#: js/components/Settings/Settings.js:289
+msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
+msgstr "上傳前置相機的錄像來協助我們提升駕駛監控的準確率。"
+
+#: js/components/Settings/Settings.js:530
+msgid "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges."
+msgstr "當您的 EON 沒有無線網路連線卻有安裝 SIM 卡時，這個選項將允許 EON 使用行動通訊網路上傳記錄。如果您非使用吃到飽方案，您可能需付額外的費用。"
+
+#: js/components/Settings/Settings.js:304
+msgid "Use Metric System"
+msgstr "使用公／米制單位"
+
+#: js/components/Settings/Settings.js:298
+msgid "Use visual and acoustic warnings when risk of forward collision is detected."
+msgstr "當檢測到前方有碰撞的風險時，使用視覺和音效來警示。"
+
+#: js/components/Settings/Settings.js:582
+msgid "Version"
+msgstr "版本"
+
+#: js/components/Settings/Settings.js:638
+msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. A comma employee will never ask you to add their GitHub."
+msgstr "警告：這將授予在您 GitHub 帳號裡所有公開密鑰的 SSH 訪問權限。永遠不要輸入您自己以外的 GitHub 用戶名。comma 的員工永遠不會要求您添加他們的 GitHub 用戶名。"
+
+#: js/components/SetupSim/SetupSim.js:82
+msgid "Waiting for SIM..."
+msgstr "搜尋 SIM 卡中…"
+
+#: js/components/SetupSim/SetupSim.js:121
+msgid "Waiting for network..."
+msgstr "搜尋無線網路中…"
+
+#: js/components/SetupWelcome/SetupWelcome.js:27
+msgid "Welcome to EON"
+msgstr "歡迎來到 EON"
+
+#: js/components/training/Onboarding/Onboarding.js:260
+msgid "Welcome to openpilot alpha"
+msgstr "歡迎來到 openpilot alpha"
+
+#: js/components/training/Onboarding/Onboarding.js:619
+msgid "When openpilot is engaged, you must always pay attention! openpilot monitors awareness with 3D facial reconstruction and pose. Distracted drivers are alerted, then disengaged from openpilot until corrected."
+msgstr "當您使用 openpilot 時，請您務必隨時注意路況! openpilot 通過建構 3D 人臉和姿態來判斷駕駛的狀態。若是檢測到駕駛分心，openpilot 將在警示過後暫時取消直到駕駛恢復注意力。"
+
+#: js/components/training/Onboarding/Onboarding.js:578
+msgid "When you are ready to engage openpilot at a comfortable speed, locate the cruise controls on your steering wheel and press \"SET\" to begin."
+msgstr "當您的車行駛在安全的速度時，您可以按下位於方向盤上的巡航鍵 \"SET\" 開始使用 openpilot。"
+
+#: js/components/training/Onboarding/Onboarding.js:662
+msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
+msgstr "當您使用 openpilot 時，您可以隨時改以人工操控方向，縱向控制則會繼續由 openpilot 控制直到踩下油門或剎車取消 openpilot 為止。"
+
+#: js/components/Settings/Settings.js:407
+#: js/components/Settings/Settings.js:465
+msgid "Yes"
+msgstr "是"
+
+#: js/components/SetupSim/SetupSim.js:76
+msgid "You're all set to get EON on the road with full cellular connection. Complete set up to continue."
+msgstr "你的 EON 已經連上行動通訊網路並準備好上路了。完成設定後繼續。"
+
+#: js/components/training/Onboarding/Onboarding.js:570
+#: js/components/training/Onboarding/Onboarding.js:611
+#: js/components/training/Onboarding/Onboarding.js:654
+msgid "openpilot controls"
+msgstr "openpilot 控制"
+
+#: js/components/training/Onboarding/Onboarding.js:304
+msgid "openpilot is an advanced driver assistance system."
+msgstr "openpilot 是進階版的駕駛輔助系統。"
+
+#: js/components/training/Onboarding/Onboarding.js:400
+#: js/components/training/Onboarding/Onboarding.js:447
+msgid "openpilot sensors"
+msgstr "openpilot 傳感器"
+
+#: js/components/training/Onboarding/Onboarding.js:360
+msgid "openpilot uses multiple sensors to see the road ahead."
+msgstr "openpilot 使用多個傳感器來監看前方道路。"
+
+#: js/components/training/Onboarding/Onboarding.js:525
+msgid "openpilot will start driving when cruise control is set."
+msgstr "openpilot 將在巡航系統啟用後開始運作。"
+
+#: js/components/Settings/Settings.js:194
+msgid "{0} Free"
+msgstr "尚餘 {0}"

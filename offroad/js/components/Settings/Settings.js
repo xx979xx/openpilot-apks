@@ -25,6 +25,10 @@ import {
 import X from '../../themes';
 import Styles from './SettingsStyles';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t, Trans } from "@lingui/macro"
+
 const SettingsRoutes = {
     PRIMARY: 'PRIMARY',
     ACCOUNT: 'ACCOUNT',
@@ -113,9 +117,9 @@ class Settings extends Component {
     handlePressedResetCalibration = async () => {
         this.props.deleteParam(Params.KEY_CALIBRATION_PARAMS);
         this.setState({ calibration: null });
-        Alert.alert('Reboot', 'Resetting calibration requires a reboot.', [
-            { text: 'Later', onPress: () => {}, style: 'cancel' },
-            { text: 'Reboot Now', onPress: () => ChffrPlus.reboot() },
+        Alert.alert(i18n._(t`Reboot`), i18n._(t`Resetting calibration requires a reboot.`), [
+            { text: i18n._(t`Later`), onPress: () => {}, style: 'cancel' },
+            { text: i18n._(t`Reboot Now`), onPress: () => ChffrPlus.reboot() },
         ]);
     }
 
@@ -180,25 +184,25 @@ class Settings extends Component {
         const settingsMenuItems = [
             {
                 icon: Icons.user,
-                title: 'Account',
-                context: isPaired ? 'Paired' : 'Unpaired',
+                title: i18n._(t`Account`),
+                context: i18n._(isPaired ? t`Paired` : t`Unpaired`),
                 route: SettingsRoutes.ACCOUNT,
             },
             {
                 icon: Icons.eon,
-                title: 'Device',
-                context: `${ parseInt(freeSpace * 100) + '%' } Free`,
+                title: i18n._(t`Device`),
+                context: i18n._(t`${ parseInt(freeSpace * 100) + '%' } Free`),
                 route: SettingsRoutes.DEVICE,
             },
             {
                 icon: Icons.network,
-                title: 'Network',
+                title: i18n._(t`Network`),
                 context: connectivity,
                 route: SettingsRoutes.NETWORK,
             },
             {
                 icon: Icons.developer,
-                title: 'Developer',
+                title: i18n._(t`Developer`),
                 context: `${ software } v${ version.split('-')[0] }`,
                 route: SettingsRoutes.DEVELOPER,
             },
@@ -258,7 +262,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  Settings'}
+                        {i18n._(t`<  Settings`)}
                     </X.Button>
                 </View>
                 <ScrollView
@@ -270,37 +274,37 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='switch'
-                            title='Enable Driver Monitoring'
+                            title={ i18n._(t`Enable Driver Monitoring`) }
                             value={ !!parseInt(isDriverMonitoringEnabled) }
                             iconSource={ Icons.monitoring }
-                            description='Driver Monitoring detects driver awareness with 3D facial reconstruction and pose estimation. It is used to warn the driver when they appear distracted while openpilot is engaged. This feature is still in beta, so Driver Monitoring is unavailable when the facial tracking is too inaccurate (e.g. at night). The availability is indicated by the face icon at the bottom-left corner of your EON.'
+                            description= { i18n._(t`Driver Monitoring detects driver awareness with 3D facial reconstruction and pose estimation. It is used to warn the driver when they appear distracted while openpilot is engaged. This feature is still in beta, so Driver Monitoring is unavailable when the facial tracking is too inaccurate (e.g. at night). The availability is indicated by the face icon at the bottom-left corner of your EON.`) }
                             isExpanded={ expandedCell == 'driver_monitoring' }
                             handleExpanded={ () => this.handleExpanded('driver_monitoring') }
                             handleChanged={ this.props.setDriverMonitoringEnabled } />
                         <X.TableCell
                             type='switch'
-                            title='Record and Upload Driver Camera'
+                            title={ i18n._(t`Record and Upload Driver Camera`) }
                             value={ !!parseInt(recordFront) }
                             iconSource={ Icons.network }
-                            description='Upload data from the driver facing camera and help improve the Driver Monitoring algorithm.'
+                            description={ i18n._(t`Upload data from the driver facing camera and help improve the Driver Monitoring algorithm.`) }
                             isExpanded={ expandedCell == 'record_front' }
                             handleExpanded={ () => this.handleExpanded('record_front') }
                             handleChanged={ this.props.setRecordFront } />
                         <X.TableCell
                             type='switch'
-                            title='Enable Forward Collision Warning'
+                            title={ i18n._(t`Enable Forward Collision Warning`) }
                             value={ !!parseInt(isFcwEnabled) }
                             iconSource={ Icons.warning }
-                            description='Use visual and acoustic warnings when risk of forward collision is detected.'
+                            description={ i18n._(t`Use visual and acoustic warnings when risk of forward collision is detected.`) }
                             isExpanded={ expandedCell == 'fcw' }
                             handleExpanded={ () => this.handleExpanded('fcw') }
                             handleChanged={ this.props.setFcwEnabled } />
                         <X.TableCell
                             type='switch'
-                            title='Use Metric System'
+                            title={ i18n._(t`Use Metric System`) }
                             value={ !!parseInt(isMetric) }
                             iconSource={ Icons.metric }
-                            description='Display speed in km/h instead of mp/h and temperature in °C instead of °F.'
+                            description={ i18n._(t`Display speed in km/h instead of mp/h and temperature in °C instead of °F.`) }
                             isExpanded={ expandedCell == 'metric' }
                             handleExpanded={ () => this.handleExpanded('metric') }
                             handleChanged={ this.props.setMetric } />
@@ -309,9 +313,9 @@ class Settings extends Component {
                       <X.Table color='darkBlue'>
                         <X.TableCell
                             type='custom'
-                            title='Add Speed Limit Offset'
+                            title={ i18n._(t`Add Speed Limit Offset`) }
                             iconSource={ Icons.speedLimit }
-                            description='Customize the default speed limit warning with an offset in km/h or mph above the posted legal limit when available.'
+                            description={ i18n._(t`Customize the default speed limit warning with an offset in km/h or mph above the posted legal limit when available.`) }
                             isExpanded={ expandedCell == 'speedLimitOffset' }
                             handleExpanded={ () => this.handleExpanded('speedLimitOffset') }
                             handleChanged={ this.props.setLimitSetSpeed }>
@@ -343,11 +347,11 @@ class Settings extends Component {
                         </X.TableCell>
                         <X.TableCell
                             type='switch'
-                            title='Use Map To Control Vehicle Speed'
+                            title={ i18n._(t`Use Map To Control Vehicle Speed`) }
                             value={ !!parseInt(limitSetSpeed) }
                             isDisabled={ !parseInt(hasLongitudinalControl) }
                             iconSource={ Icons.mapSpeed }
-                            description='Use map data to control the vehicle speed. A curvy road icon appears when the car automatically slows down for upcoming turns. The vehicle speed is also limited by the posted legal limit, when available, including the custom offset. This feature is only available for cars where openpilot manages longitudinal control and when EON has internet connectivity. The map icon appears when map data are downloaded.'
+                            description={ i18n._(t`Use map data to control the vehicle speed. A curvy road icon appears when the car automatically slows down for upcoming turns. The vehicle speed is also limited by the posted legal limit, when available, including the custom offset. This feature is only available for cars where openpilot manages longitudinal control and when EON has internet connectivity. The map icon appears when map data are downloaded.`) }
                             isExpanded={ expandedCell == 'limitSetSpeed' }
                             handleExpanded={ () => this.handleExpanded('limitSetSpeed') }
                             handleChanged={ this.props.setLimitSetSpeed } />
@@ -357,7 +361,7 @@ class Settings extends Component {
                         <X.Button
                             color='settingsDefault'
                             onPress={ () => this.props.openTrainingGuide() }>
-                            Review Training Guide
+                            { i18n._(t`Review Training Guide`) }
                         </X.Button>
                     </X.Table>
                     <X.Table color='darkBlue'>
@@ -365,14 +369,14 @@ class Settings extends Component {
                             size='small'
                             color='settingsDefault'
                             onPress={ () => this.props.reboot() }>
-                            Reboot
+                            { i18n._(t`Reboot`) }
                         </X.Button>
                         <X.Line color='transparent' size='tiny' spacing='mini' />
                         <X.Button
                             size='small'
                             color='settingsDefault'
                             onPress={ () => this.props.shutdown() }>
-                            Power Off
+                            { i18n._(t`Power Off`) }
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -390,7 +394,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  Account Settings'}
+                        { i18n._(t`<  Account Settings`) }
                     </X.Button>
                 </View>
                 <ScrollView
@@ -399,9 +403,9 @@ class Settings extends Component {
                     <View>
                         <X.Table>
                             <X.TableCell
-                                title='Device Paired'
-                                value={ isPaired ? 'Yes' : 'No' } />
-                            <X.Text color='white' size='tiny'>Terms of Service available at {'https://my.comma.ai/terms.html'}</X.Text>
+                                title={ i18n._(t`Device Paired`) }
+                                value={ i18n._(isPaired ? t`Yes` : t`No`) } />
+                            <X.Text color='white' size='tiny'><Trans>Terms of Service available at {'https://my.comma.ai/terms.html'}</Trans></X.Text>
                         </X.Table>
                     </View>
                 </ScrollView>
@@ -432,7 +436,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  Device Settings'}
+                        { i18n._(t`<  Device Settings`) }
                     </X.Button>
                 </View>
                 <ScrollView
@@ -441,9 +445,9 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='custom'
-                            title='Camera Calibration'
+                            title={ i18n._(t`Camera Calibration`) }
                             iconSource={ Icons.calibration }
-                            description='The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position.'
+                            description={ i18n._(t`The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position.`) }
                             isExpanded={ expandedCell == 'calibration' }
                             handleExpanded={ () => this.handleExpanded('calibration') }>
                             <X.Button
@@ -451,26 +455,26 @@ class Settings extends Component {
                                 color='settingsDefault'
                                 onPress={ this.handlePressedResetCalibration  }
                                 style={ { minWidth: '100%' } }>
-                                Reset
+                                { i18n._(t`Reset`) }
                             </X.Button>
                         </X.TableCell>
                     </X.Table>
                     <X.Table>
                         <X.TableCell
-                            title='Paired'
-                            value={ isPaired ? 'Yes' : 'No' } />
+                            title={ i18n._(t`Paired`) }
+                            value={ i18n._(isPaired ? t`Yes` : t`No`) } />
                         <X.TableCell
-                            title='Dongle ID'
+                            title={ i18n._(t`Dongle ID`) }
                             value={ dongleId } />
                         <X.TableCell
-                            title='Serial Number'
+                            title={ i18n._(t`Serial Number`) }
                             value={ serialNumber } />
                         <X.TableCell
-                            title='Free Storage'
+                            title={ i18n._(t`Free Storage`) }
                             value={ parseInt(freeSpace * 100) + '%' }
                              />
                         <X.TableCell
-                            title='Upload Speed'
+                            title={ i18n._(t`Upload Speed`) }
                             value={ txSpeedKbps + ' kbps' }
                              />
                     </X.Table>
@@ -479,7 +483,16 @@ class Settings extends Component {
                             color='settingsDefault'
                             size='small'
                             onPress={ () => ChffrPlus.openDateTimeSettings() }>
-                            Open Date and Time Settings
+                            { i18n._(t`Open Date and Time Settings`) }
+                        </X.Button>
+                    </X.Table>
+                    <X.Line color='transparent' size='tiny' spacing='mini' />
+                    <X.Table color='darkBlue' padding='big'>
+                        <X.Button
+                            color='settingsDefault'
+                            size='small'
+                            onPress={ () => ChffrPlus.openLocaleSettings() }>
+                            { i18n._(t`Open Language Settings`) }
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -501,7 +514,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  Network Settings'}
+                        { i18n._(t`<  Network Settings`) }
                     </X.Button>
                 </View>
                 <ScrollView
@@ -511,10 +524,10 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='switch'
-                            title='Enable Upload Over Cellular'
+                            title={ i18n._(t`Enable Upload Over Cellular`) }
                             value={ !!parseInt(isCellularUploadEnabled) }
                             iconSource={ Icons.network }
-                            description='Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges.'
+                            description={ i18n._(t`Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges.`) }
                             isExpanded={ expandedCell == 'cellular_enabled' }
                             handleExpanded={ () => this.handleExpanded('cellular_enabled') }
                             handleChanged={ this.props.setCellularEnabled } />
@@ -524,14 +537,14 @@ class Settings extends Component {
                             size='small'
                             color='settingsDefault'
                             onPress={ () => ChffrPlus.openWifiSettings() }>
-                            Open WiFi Settings
+                            { i18n._(t`Open WiFi Settings`) }
                         </X.Button>
                         <X.Line color='transparent' size='tiny' spacing='mini' />
                         <X.Button
                             size='small'
                             color='settingsDefault'
                             onPress={ () => ChffrPlus.openTetheringSettings() }>
-                            Open Tethering Settings
+                            { i18n._(t`Open Tethering Settings`) }
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -558,7 +571,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  Developer Settings'}
+                        { i18n._(t`<  Developer Settings`) }
                     </X.Button>
                 </View>
                 <ScrollView
@@ -566,29 +579,29 @@ class Settings extends Component {
                     style={ Styles.settingsWindow }>
                     <X.Table spacing='none'>
                         <X.TableCell
-                            title='Version'
+                            title={ i18n._(t`Version`) }
                             value={ `${ software } v${ version }` } />
                         <X.TableCell
-                            title='Git Branch'
+                            title={ i18n._(t`Git Branch`) }
                             value={ gitBranch } />
                         <X.TableCell
-                            title='Git Revision'
+                            title={ i18n._(t`Git Revision`) }
                             value={ gitRevision.slice(0, 12) }
                             valueTextSize='tiny' />
                     </X.Table>
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='switch'
-                            title='Enable SSH'
+                            title={ i18n._(t`Enable SSH`) }
                             value={ isSshEnabled }
                             iconSource={ Icons.developer }
-                            description='Allow devices to connect to your EON using Secure Shell (SSH).'
+                            description={ i18n._(t`Allow devices to connect to your EON using Secure Shell (SSH).`) }
                             isExpanded={ expandedCell == 'ssh' }
                             handleExpanded={ () => this.handleExpanded('ssh') }
                             handleChanged={ this.props.setSshEnabled } />
                         <X.TableCell
                             iconSource={ Icons.developer }
-                            title='Authorized SSH Keys'
+                            title={ i18n._(t`Authorized SSH Keys`) }
                             descriptionExtra={ this.renderSshInput() }
                             isExpanded={ expandedCell === 'ssh_keys' }
                             handleExpanded={ this.toggleExpandGithubInput }
@@ -598,7 +611,7 @@ class Settings extends Component {
                                 color='settingsDefault'
                                 onPress={ this.toggleExpandGithubInput }
                                 style={ { minWidth: '100%' } }>
-                                { expandedCell === 'ssh_keys' ? 'Cancel' : 'Edit' }
+                                { i18n._(expandedCell === 'ssh_keys' ? t`Cancel` : t`Edit`) }
                             </X.Button>
                         </X.TableCell>
                     </X.Table>
@@ -607,7 +620,7 @@ class Settings extends Component {
                             color='settingsDefault'
                             size='small'
                             onPress={ this.props.uninstall }>
-                            { `Uninstall ${ software }` }
+                            { i18n._(t`Uninstall ${ software }`) }
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -622,7 +635,7 @@ class Settings extends Component {
         return (
             <View>
                 <X.Text color='white' size='tiny'>
-                    WARNING:{'\n'}This grants SSH access to all public keys in your GitHub settings.{'\n'}Never enter a GitHub username other than your own.{'\n'}A comma employee will never ask you to add their GitHub.{'\n'}
+                    <Trans>WARNING:{'\n'}This grants SSH access to all public keys in your GitHub settings.{'\n'}Never enter a GitHub username other than your own.{'\n'}A comma employee will never ask you to add their GitHub.{'\n'}</Trans>
                 </X.Text>
                 <View style={ Styles.githubUsernameInputContainer }>
                     <X.Text
@@ -630,7 +643,7 @@ class Settings extends Component {
                         weight='semibold'
                         size='small'
                         style={ Styles.githubUsernameInputLabel }>
-                        GitHub Username
+                        <Trans>GitHub Username</Trans>
                     </X.Text>
                     <TextInput
                         style={ Styles.githubUsernameInput }
@@ -647,7 +660,7 @@ class Settings extends Component {
                         isDisabled={ !githubUsernameIsValid }
                         onPress={ this.writeSshKeys }
                         style={ Styles.githubUsernameSaveButton }>
-                        <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }>Save</X.Text>
+                        <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }><Trans>Save</Trans></X.Text>
                     </X.Button>
                     { authKeysUpdateState !== null &&
                         <View style={ Styles.githubUsernameInputStatus }>
@@ -659,7 +672,7 @@ class Settings extends Component {
                                     style={ Styles.connectingIndicator } />
                             }
                             { authKeysUpdateState === 'failed' &&
-                                <X.Text color='white' size='tiny'>Save failed. Ensure that your username is correct and you are connected to the internet.</X.Text>
+                                <X.Text color='white' size='tiny'><Trans>Save failed. Ensure that your username is correct and you are connected to the internet.</Trans></X.Text>
                             }
                         </View>
                     }
@@ -669,7 +682,7 @@ class Settings extends Component {
                             color='settingsDefault'
                             onPress={ this.clearSshKeys }
                             style={ Styles.githubUsernameSaveButton }>
-                            <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }>Remove all</X.Text>
+                            <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }><Trans>Remove all</Trans></X.Text>
                         </X.Button>
                     </View>
                 </View>
@@ -684,9 +697,9 @@ class Settings extends Component {
 
     clearSshKeys() {
         ChffrPlus.deleteParam(Params.KEY_GITHUB_SSH_KEYS);
-        Alert.alert('Reboot', `Reboot to finalize removal of GitHub SSH keys.`, [
-            { text: 'Later', onPress: () => {}, style: 'cancel' },
-            { text: 'Reboot Now', onPress: () => ChffrPlus.reboot() },
+        Alert.alert(i18n._(t`Reboot`), i18n._(t`Reboot to finalize removal of GitHub SSH keys.`), [
+            { text: i18n._(t`Later`), onPress: () => {}, style: 'cancel' },
+            { text: i18n._(t`Reboot Now`), onPress: () => ChffrPlus.reboot() },
         ]);
     }
 
@@ -703,9 +716,9 @@ class Settings extends Component {
 
             await ChffrPlus.writeParam(Params.KEY_GITHUB_SSH_KEYS, githubKeys);
 
-            Alert.alert('Reboot', `Reboot to make SSH keys from ${githubUsername} available.`, [
-                { text: 'Later', onPress: () => {}, style: 'cancel' },
-                { text: 'Reboot Now', onPress: () => ChffrPlus.reboot() },
+            Alert.alert(i18n._(t`Reboot`), i18n._(t`Reboot to make SSH keys from ${githubUsername} available.`), [
+                { text: i18n._(t`Later`), onPress: () => {}, style: 'cancel' },
+                { text: i18n._(t`Reboot Now`), onPress: () => ChffrPlus.reboot() },
             ]);
             this.toggleExpandGithubInput();
         } catch(err) {
@@ -765,21 +778,21 @@ const mapDispatchToProps = dispatch => ({
         }));
     },
     reboot: () => {
-        Alert.alert('Reboot', 'Are you sure you want to reboot?', [
-            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
-            { text: 'Reboot', onPress: () => ChffrPlus.reboot() },
+        Alert.alert(i18n._(t`Reboot`), i18n._(t`Are you sure you want to reboot?`), [
+            { text: i18n._(t`Cancel`), onPress: () => {}, style: 'cancel' },
+            { text: i18n._(t`Reboot`), onPress: () => ChffrPlus.reboot() },
         ]);
     },
     shutdown: () => {
-        Alert.alert('Power Off', 'Are you sure you want to shutdown?', [
-            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
-            { text: 'Shutdown', onPress: () => ChffrPlus.shutdown() },
+        Alert.alert(i18n._(t`Power Off`), i18n._(t`Are you sure you want to shutdown?`), [
+            { text: i18n._(t`Cancel`), onPress: () => {}, style: 'cancel' },
+            { text: i18n._(t`Shutdown`), onPress: () => ChffrPlus.shutdown() },
         ]);
     },
     uninstall: () => {
-        Alert.alert('Uninstall', 'Are you sure you want to uninstall?', [
-            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
-            { text: 'Uninstall', onPress: () => ChffrPlus.writeParam(Params.KEY_DO_UNINSTALL, "1") },
+        Alert.alert(i18n._(t`Uninstall`), i18n._(t`Are you sure you want to uninstall?`), [
+            { text: i18n._(t`Cancel`), onPress: () => {}, style: 'cancel' },
+            { text: i18n._(t`Uninstall`), onPress: () => ChffrPlus.writeParam(Params.KEY_DO_UNINSTALL, "1") },
         ]);
     },
     openTrainingGuide: () => {

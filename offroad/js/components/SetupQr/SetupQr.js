@@ -11,6 +11,10 @@ import SetupStyles from '../Setup';
 import Styles from './SetupQrStyles';
 import { updateConnectionState} from '../../store/host/actions';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t } from "@lingui/macro"
+
 class SetupQr extends Component {
     static propTypes = {
         onContinue: PropTypes.func,
@@ -33,7 +37,7 @@ class SetupQr extends Component {
       console.log('Render: Connection status is ' + (this.props.isConnected ? 'online' : 'offline') + ' ' + this.props.isConnected);
         return (
             <View style={ Styles.root }>
-                <Pairing onPairConfirmed={ this.props.onContinue } skipText='Skip'  onContinueButton={ this.props.onContinue} continueText='Continue'/>
+                <Pairing onPairConfirmed={ this.props.onContinue } skipText={ i18n._(t`Skip`) }  onContinueButton={ this.props.onContinue} continueText={ i18n._(t`Continue`) }/>
             </View>
         );
 

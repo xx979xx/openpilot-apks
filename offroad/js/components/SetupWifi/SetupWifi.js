@@ -23,6 +23,10 @@ import ChffrPlus from '../../native/ChffrPlus';
 import SetupStyles from '../Setup/SetupStyles';
 import Styles from './SetupWifiStyles';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t, Trans } from "@lingui/macro"
+
 const BarImagesByLevel = {
     0: require('../../img/indicator_wifi_25.png'),
     1: require('../../img/indicator_wifi_50.png'),
@@ -176,7 +180,7 @@ class SetupWifi extends Component {
                         resizeMode='contain' />
                     <View style={ Styles.networkDetails }>
                         <X.Text size='medium' color='white'>{ item.ssid }</X.Text>
-                        <X.Text size='small' color='white'>{ isConnected ? 'Connected' : item.security }</X.Text>
+                        <X.Text size='small' color='white'>{ isConnected ? i18n._(t`Connected`) : item.security }</X.Text>
                     </View>
                     <View style={ Styles.networkRowRight }>
                         { isConnected ?
@@ -217,20 +221,20 @@ class SetupWifi extends Component {
                         <View key="dialog_buttons" style={ { flexDirection: 'row' } }>
                             <DialogButton
                                 key="cancel"
-                                text="Cancel"
+                                text={ i18n._(t`Cancel`) }
                                 align="center"
                                 buttonStyle={ Styles.dialogButton }
                                 onPress={ this.onDismissPasswordPrompt }/>
                             <DialogButton
                                 key="connect"
-                                text="Connect"
+                                text={ i18n._(t`Connect`) }
                                 align="center"
                                 buttonStyle={ Styles.dialogButton }
                                 onPress={ this.onPasswordPromptConnectPressed }/>
                         </View>
                     ] }>
                     <X.Text>
-                        Password
+                        <Trans>Password</Trans>
                     </X.Text>
                     <TextInput
                         onChangeText={ (password) => this.setState({ password })}
@@ -259,14 +263,14 @@ class SetupWifi extends Component {
                         <X.Button
                             color='setupInverted'
                             onPress={ this.props.onMoreOptionsPress }>
-                            More Options
+                            { i18n._(t`More Options`) }
                         </X.Button>
                     </View>
                     <View style={ Styles.nextButton }>
                         <X.Button
                             color={ connectedNetworkSsid ? 'setupPrimary' : 'setupInverted' }
                             onPress={ this.props.onContinue }>
-                            { connectedNetworkSsid === null ? 'Skip for now' : 'Continue' }
+                            { i18n._(connectedNetworkSsid === null ? t`Skip for now` : t`Continue`) }
                         </X.Button>
                     </View>
                 </View>
