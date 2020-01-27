@@ -885,12 +885,32 @@
     jest-validate "^24.8.0"
     pkg-conf "^3.1.0"
 
+"@lingui/core@2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-2.9.1.tgz#e0edf9ad628bd49a0c42958390317834f0283636"
+  integrity sha512-oygikacnRlfR2p8Q30q9z7jBASvVd8JXgoq7q2Ao/NdZyk3YIYbDhBICxAtwlCbm1hSROh2xMS2Ygx3Ezwzp1Q==
+  dependencies:
+    babel-runtime "^6.26.0"
+    make-plural "^4.1.1"
+    messageformat-parser "^2.0.0"
+
 "@lingui/macro@^2.9.1":
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-2.9.1.tgz#45f1d98012d9d99d4ea17753c609ce72abb961a8"
   integrity sha512-iuT4rNl57h574vUfO9sYWstpbNMMaBxdscyOnY/R+HIPX0cPSjqaDmKTDInfI1gFpYznM2OOhOpqxMMUGt2+Gw==
   dependencies:
     "@lingui/babel-plugin-transform-react" "2.9.1"
+
+"@lingui/react@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-2.9.1.tgz#6dee029a4067939859b43f4f3dd068cb611256c0"
+  integrity sha512-LUpsw7zDUfS/iJWrBfmaVKcxjyNUQkMjBRuLVEzLHp32A6pK2CGFlDouBsEl1zbJn8gFdcBwWhTsh/FcXZCmXg==
+  dependencies:
+    "@lingui/core" "2.9.1"
+    babel-runtime "^6.26.0"
+    hash-sum "^1.0.2"
+    hoist-non-react-statics "3.3.0"
+    prop-types "^15.7.2"
 
 "@react-native-community/cli@^1.2.1":
   version "1.11.2"
@@ -3559,6 +3579,18 @@ has@^1.0.1, has@^1.0.3:
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
+
+hash-sum@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-1.0.2.tgz#33b40777754c6432573c120cc3808bbd10d47f04"
+  integrity sha1-M7QHd3VMZDJXPBIMw4CLvRDUfwQ=
+
+hoist-non-react-statics@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
+  integrity sha512-0XsbTXxgiaCDYDIWFcwkmerZPSwywfUqYmwT4jzewKTQSWoE6FCMoUVOeBJWK3E/CrWbxRG3m5GzY4lnIwGRBA==
+  dependencies:
+    react-is "^16.7.0"
 
 hoist-non-react-statics@^2.2.0:
   version "2.5.5"
@@ -6396,7 +6428,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -6577,6 +6609,11 @@ react-devtools-core@^3.6.0:
   dependencies:
     shell-quote "^1.6.1"
     ws "^3.3.1"
+
+react-is@^16.7.0:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
+  integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
 react-is@^16.8.1:
   version "16.8.6"
