@@ -513,6 +513,15 @@ class Settings extends Component {
                             { i18n._(t`Power Off`) }
                         </X.Button>
                     </X.Table>
+                    <X.Line color='transparent' size='tiny' spacing='mini' />
+                    <X.Table color='darkBlue' padding='big'>
+                        <X.Button
+                            color='settingsDefault'
+                            size='small'
+                            onPress={ () => ChffrPlus.openLocaleSettings() }>
+                            { i18n._(t`Open Language Settings`) }
+                        </X.Button>
+                    </X.Table>
                 </ScrollView>
             </View>
         )

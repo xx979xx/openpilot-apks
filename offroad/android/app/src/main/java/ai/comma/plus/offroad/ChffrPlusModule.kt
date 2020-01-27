@@ -241,6 +241,14 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
     }
 
     @ReactMethod
+    fun openLocaleSettings() {
+        val intent = Intent("android.intent.action.MAIN")
+        intent.component = ComponentName("com.android.settings", "com.android.settings.LanguageSettings")
+        intent.putExtra("extra_prefs_show_button_bar", true)
+        startActivityWithIntent(intent)
+    }
+
+    @ReactMethod
     fun reboot() {
         try {
             Runtime.getRuntime().exec(arrayOf("/system/bin/su", "-c", "service call power 16 i32 0 i32 0 i32 1"))
