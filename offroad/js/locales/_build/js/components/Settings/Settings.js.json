@@ -3,19 +3,19 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        124
+        130
       ],
       [
         "js/components/Settings/Settings.js",
-        490
+        506
       ],
       [
         "js/components/Settings/Settings.js",
-        794
+        821
       ],
       [
         "js/components/Settings/Settings.js",
-        796
+        823
       ]
     ]
   },
@@ -23,7 +23,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        124
+        130
       ]
     ]
   },
@@ -31,7 +31,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        125
+        131
       ]
     ]
   },
@@ -39,7 +39,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        126
+        132
       ]
     ]
   },
@@ -47,7 +47,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        191
+        197
       ]
     ]
   },
@@ -55,11 +55,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        192
+        198
       ],
       [
         "js/components/Settings/Settings.js",
-        468
+        484
       ]
     ]
   },
@@ -67,7 +67,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        192
+        198
       ]
     ]
   },
@@ -75,7 +75,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        197
+        203
       ]
     ]
   },
@@ -83,7 +83,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        198
+        204
       ]
     ]
   },
@@ -91,7 +91,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        203
+        209
       ]
     ]
   },
@@ -99,7 +99,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        209
+        215
       ]
     ]
   },
@@ -107,7 +107,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        269
+        276
       ]
     ]
   },
@@ -115,7 +115,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        282
+        289
       ]
     ]
   },
@@ -123,7 +123,15 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        285
+        292
+      ]
+    ]
+  },
+  "Enable Lane Departure Warnings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        299
       ]
     ]
   },
@@ -131,7 +139,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        292
+        308
       ]
     ]
   },
@@ -139,7 +147,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        295
+        311
       ]
     ]
   },
@@ -147,7 +155,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        301
+        317
       ]
     ]
   },
@@ -155,7 +163,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        304
+        320
       ]
     ]
   },
@@ -163,7 +171,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        361
+        377
       ]
     ]
   },
@@ -171,7 +179,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        379
+        395
       ]
     ]
   },
@@ -179,7 +187,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        388
+        404
       ]
     ]
   },
@@ -187,11 +195,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        389
+        405
       ],
       [
         "js/components/Settings/Settings.js",
-        469
+        485
       ]
     ]
   },
@@ -199,11 +207,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        389
+        405
       ],
       [
         "js/components/Settings/Settings.js",
-        469
+        485
       ]
     ]
   },
@@ -211,7 +219,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        394
+        410
       ]
     ]
   },
@@ -219,7 +227,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        401
+        417
       ]
     ]
   },
@@ -227,7 +235,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        410
+        426
       ]
     ]
   },
@@ -235,7 +243,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        443
+        459
       ]
     ]
   },
@@ -243,15 +251,15 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        452
+        468
       ]
     ]
   },
-  "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position.": {
+  "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position.": {
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        454
+        470
       ]
     ]
   },
@@ -259,7 +267,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        462
+        478
       ]
     ]
   },
@@ -267,7 +275,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        471
+        487
       ]
     ]
   },
@@ -275,7 +283,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        474
+        490
       ]
     ]
   },
@@ -283,7 +291,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        477
+        493
       ]
     ]
   },
@@ -291,7 +299,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        481
+        497
       ]
     ]
   },
@@ -299,11 +307,19 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        497
+        513
       ],
       [
         "js/components/Settings/Settings.js",
-        800
+        827
+      ]
+    ]
+  },
+  "Open Language Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        522
       ]
     ]
   },
@@ -311,23 +327,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        519
-      ]
-    ]
-  },
-  "Enable Upload Over Cellular": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        529
-      ]
-    ]
-  },
-  "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        532
+        539
       ]
     ]
   },
@@ -335,7 +335,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        542
+        551
       ]
     ]
   },
@@ -343,7 +343,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        549
+        558
       ]
     ]
   },
@@ -351,43 +351,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        578
+        588
       ]
     ]
   },
-  "Version": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        586
-      ]
-    ]
-  },
-  "Git Branch": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        589
-      ]
-    ]
-  },
-  "Git Revision": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        592
-      ]
-    ]
-  },
-  "Panda Firmware": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        596
-      ]
-    ]
-  },
-  "N/A": {
+  "Enable Community Features": {
     "origin": [
       [
         "js/components/Settings/Settings.js",
@@ -395,15 +363,15 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        601
+        870
       ]
     ]
   },
-  "Panda Dongle ID": {
+  "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor": {
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        600
+        602
       ]
     ]
   },
@@ -411,7 +379,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        607
+        613
       ]
     ]
   },
@@ -419,7 +387,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        610
+        616
       ]
     ]
   },
@@ -427,7 +395,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        616
+        622
       ]
     ]
   },
@@ -435,19 +403,23 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        626
+        632
       ],
       [
         "js/components/Settings/Settings.js",
-        795
+        822
       ],
       [
         "js/components/Settings/Settings.js",
-        801
+        828
       ],
       [
         "js/components/Settings/Settings.js",
-        807
+        834
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        871
       ]
     ]
   },
@@ -455,7 +427,47 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        626
+        632
+      ]
+    ]
+  },
+  "Version": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        638
+      ]
+    ]
+  },
+  "Git Branch": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        641
+      ]
+    ]
+  },
+  "Git Revision": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        644
+      ]
+    ]
+  },
+  "Panda Firmware": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        648
+      ]
+    ]
+  },
+  "Panda Dongle ID": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        652
       ]
     ]
   },
@@ -463,7 +475,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        635
+        661
       ]
     ]
   },
@@ -471,7 +483,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        650
+        676
       ]
     ]
   },
@@ -479,7 +491,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        669
+        695
       ]
     ]
   },
@@ -487,7 +499,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        686
+        712
       ]
     ]
   },
@@ -495,7 +507,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        698
+        724
       ]
     ]
   },
@@ -503,7 +515,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        708
+        734
       ]
     ]
   },
@@ -511,7 +523,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        794
+        821
       ]
     ]
   },
@@ -519,7 +531,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        800
+        827
       ]
     ]
   },
@@ -527,7 +539,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        802
+        829
       ]
     ]
   },
@@ -535,11 +547,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        806
+        833
       ],
       [
         "js/components/Settings/Settings.js",
-        808
+        835
       ]
     ]
   },
@@ -547,7 +559,23 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        806
+        833
+      ]
+    ]
+  },
+  "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        870
+      ]
+    ]
+  },
+  "Enable": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        872
       ]
     ]
   }
