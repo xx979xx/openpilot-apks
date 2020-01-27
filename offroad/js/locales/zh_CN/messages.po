@@ -17,33 +17,33 @@ msgstr ""
 msgid "14 days of storage"
 msgstr "14 天行车记录"
 
-#: js/components/Settings/Settings.js:379
+#: js/components/Settings/Settings.js:395
 msgid "<  Account Settings"
 msgstr "<  帐户设置"
 
-#: js/components/Settings/Settings.js:578
+#: js/components/Settings/Settings.js:579
 msgid "<  Developer Settings"
 msgstr "<  开发人员设置"
 
-#: js/components/Settings/Settings.js:443
+#: js/components/Settings/Settings.js:459
 msgid "<  Device Settings"
 msgstr "<  设备设置"
 
-#: js/components/Settings/Settings.js:519
+#: js/components/Settings/Settings.js:530
 msgid "<  Network Settings"
 msgstr "<  网络设置"
 
-#: js/components/Settings/Settings.js:269
+#: js/components/Settings/Settings.js:276
 msgid "<  Settings"
 msgstr "<  设置"
 
-#: js/components/training/Onboarding/Onboarding.js:318
+#: js/components/training/Onboarding/Onboarding.js:382
 msgid "A driver assistance system is not a self driving car. This means openpilot is designed to work with you, not without you. Your attention is required to drive."
 msgstr "驾驶辅助系统不是自动驾驶系统，意味着 openpilot 需要配合你一起工作，而不是独立自主运行，驾驶时，您仍然需要注意行车安全。"
 
-#: js/components/training/Onboarding/Onboarding.js:417
-msgid "A vision algorithm leverages EON’s road-facing camera to determine the path to drive."
-msgstr "我们利用后置摄像头图像规划出行车路径。"
+#: js/components/training/Onboarding/Onboarding.js:481
+msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
+msgstr ""
 
 #: js/components/Home/Home.js:225
 msgid "ALERT"
@@ -57,35 +57,35 @@ msgstr "通知"
 msgid "ALL TIME"
 msgstr "全部"
 
-#: js/components/Settings/Settings.js:191
+#: js/components/Settings/Settings.js:197
 msgid "Account"
 msgstr "帐户"
 
-#: js/components/Settings/Settings.js:610
+#: js/components/Settings/Settings.js:607
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "允许别的设备通过 Secure Shell (SSH) 连接至您的 EON。"
 
-#: js/components/Settings/Settings.js:794
+#: js/components/Settings/Settings.js:812
 msgid "Are you sure you want to reboot?"
 msgstr "您确定要重新启动吗？"
 
-#: js/components/Settings/Settings.js:800
+#: js/components/Settings/Settings.js:818
 msgid "Are you sure you want to shutdown?"
 msgstr "您确定要关机吗？"
 
-#: js/components/Settings/Settings.js:806
+#: js/components/Settings/Settings.js:824
 msgid "Are you sure you want to uninstall?"
 msgstr "您确定要卸载吗？"
 
-#: js/components/SetupWifi/SetupWifi.js:222
+#: js/components/SetupWifi/SetupWifi.js:227
 msgid "Authenticating..."
 msgstr "网络连接中..."
 
-#: js/components/SetupWifi/SetupWifi.js:223
+#: js/components/SetupWifi/SetupWifi.js:228
 msgid "Authentication problem"
 msgstr "身份验证错误"
 
-#: js/components/Settings/Settings.js:616
+#: js/components/Settings/Settings.js:613
 msgid "Authorized SSH Keys"
 msgstr "授权 SSH 密钥"
 
@@ -93,11 +93,11 @@ msgstr "授权 SSH 密钥"
 msgid "Become a comma prime member in the comma app and get premium features!"
 msgstr "成为 comma 会员，获取更多功能！"
 
-#: js/components/training/Onboarding/Onboarding.js:374
+#: js/components/training/Onboarding/Onboarding.js:438
 msgid "Before any signals are sent to control your car, sensors are fused to construct a scene of the road."
 msgstr "我们把这些传感器信息融合在一起，构建出前方道路状况，然后才会向车辆发送控制信息。"
 
-#: js/components/training/Onboarding/Onboarding.js:284
+#: js/components/training/Onboarding/Onboarding.js:348
 msgid "Begin Training"
 msgstr "开始教程"
 
@@ -105,20 +105,21 @@ msgstr "开始教程"
 msgid "COMMA POINTS"
 msgstr "COMMA 积分"
 
-#: js/components/Settings/Settings.js:452
+#: js/components/Settings/Settings.js:468
 msgid "Camera Calibration"
 msgstr "摄像头校准"
 
-#: js/components/training/Onboarding/Onboarding.js:385
-#: js/components/training/Onboarding/Onboarding.js:412
-msgid "Camera from EON"
-msgstr "EON 的摄像头"
+#: js/components/training/Onboarding/Onboarding.js:449
+#: js/components/training/Onboarding/Onboarding.js:476
+msgid "Camera from Device"
+msgstr ""
 
-#: js/components/Settings/Settings.js:626
-#: js/components/Settings/Settings.js:795
-#: js/components/Settings/Settings.js:801
-#: js/components/Settings/Settings.js:807
-#: js/components/SetupWifi/SetupWifi.js:315
+#: js/components/Settings/Settings.js:623
+#: js/components/Settings/Settings.js:813
+#: js/components/Settings/Settings.js:819
+#: js/components/Settings/Settings.js:825
+#: js/components/Settings/Settings.js:862
+#: js/components/SetupWifi/SetupWifi.js:320
 msgid "Cancel"
 msgstr "取消"
 
@@ -126,16 +127,20 @@ msgstr "取消"
 msgid "Comma.ai, Inc. Terms & Conditions"
 msgstr "Comma.ai, Inc. 条款及细则"
 
-#: js/components/training/Onboarding/Onboarding.js:772
+#: js/components/Settings/Settings.js:861
+msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:989
 msgid "Congratulations! You have completed openpilot training."
 msgstr "恭喜! 您已经学完了教程。"
 
-#: js/components/SetupWifi/SetupWifi.js:264
-#: js/components/SetupWifi/SetupWifi.js:328
+#: js/components/SetupWifi/SetupWifi.js:269
+#: js/components/SetupWifi/SetupWifi.js:333
 msgid "Connect"
 msgstr "连接"
 
-#: js/components/SetupWifi/SetupWifi.js:364
+#: js/components/SetupWifi/SetupWifi.js:370
 msgid "Connect to WiFi"
 msgstr "连接到无线网络"
 
@@ -143,22 +148,26 @@ msgstr "连接到无线网络"
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 msgstr "连接到 WiFi 或使用 SIM 卡流量上传您的行车记录。"
 
-#: js/components/SetupWifi/SetupWifi.js:221
-#: js/components/SetupWifi/SetupWifi.js:241
+#: js/components/SetupWifi/SetupWifi.js:226
+#: js/components/SetupWifi/SetupWifi.js:246
 msgid "Connected"
 msgstr "已连接"
 
-#: js/components/SetupQr/SetupQr.js:145
-#: js/components/SetupWifi/SetupWifi.js:419
+#: js/components/SetupQr/SetupQr.js:140
+#: js/components/SetupWifi/SetupWifi.js:425
 msgid "Continue"
 msgstr "继续"
+
+#: js/components/training/Onboarding/Onboarding.js:802
+msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
+msgstr ""
 
 #: js/components/Home/Home.js:309
 #: js/components/Home/Home.js:369
 msgid "DRIVES"
 msgstr "驾驶"
 
-#: js/components/Settings/Settings.js:209
+#: js/components/Settings/Settings.js:215
 msgid "Developer"
 msgstr "开发人员"
 
@@ -166,54 +175,62 @@ msgstr "开发人员"
 msgid "Developer perks"
 msgstr "开发人员 perks"
 
-#: js/components/Settings/Settings.js:197
+#: js/components/Settings/Settings.js:203
 msgid "Device"
 msgstr "设备"
 
-#: js/components/Settings/Settings.js:388
+#: js/components/Settings/Settings.js:404
 msgid "Device Paired"
 msgstr "设备已绑定"
 
-#: js/components/training/Onboarding/Onboarding.js:567
-#: js/components/training/Onboarding/Onboarding.js:713
+#: js/components/training/Onboarding/Onboarding.js:930
 msgid "Disengage openpilot"
 msgstr "退出 openpilot"
 
-#: js/components/Settings/Settings.js:304
+#: js/components/Settings/Settings.js:320
 msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
 msgstr "启用后，显示 km/h (速度) 或 °C (温度)，否则显示 mph (速度) 或 °F (温度)。"
 
-#: js/components/Settings/Settings.js:471
+#: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
 msgstr "Dongle ID"
 
-#: js/components/SetupQr/SetupQr.js:109
+#: js/components/SetupQr/SetupQr.js:104
 msgid "Download"
 msgstr "下载"
 
-#: js/components/training/Onboarding/Onboarding.js:553
-#: js/components/training/Onboarding/Onboarding.js:627
+#: js/components/training/Onboarding/Onboarding.js:607
+#: js/components/training/Onboarding/Onboarding.js:667
 msgid "Driver Monitoring"
 msgstr "驾驶监控"
 
-#: js/components/Settings/Settings.js:626
+#: js/components/Settings/Settings.js:623
 msgid "Edit"
 msgstr "编辑"
 
-#: js/components/Settings/Settings.js:607
+#: js/components/Settings/Settings.js:863
+msgid "Enable"
+msgstr ""
+
+#: js/components/Settings/Settings.js:588
+#: js/components/Settings/Settings.js:861
+msgid "Enable Community Features"
+msgstr ""
+
+#: js/components/Settings/Settings.js:299
+msgid "Enable Lane Departure Warnings"
+msgstr ""
+
+#: js/components/Settings/Settings.js:604
 msgid "Enable SSH"
 msgstr "启用 SSH"
 
-#: js/components/Settings/Settings.js:529
-msgid "Enable Upload Over Cellular"
-msgstr "允许使用 SIM 卡流量上传数据"
-
-#: js/components/Settings/Settings.js:282
+#: js/components/Settings/Settings.js:289
 msgid "Enable openpilot"
 msgstr "启用 openpilot"
 
-#: js/components/training/Onboarding/Onboarding.js:546
-#: js/components/training/Onboarding/Onboarding.js:586
+#: js/components/training/Onboarding/Onboarding.js:599
+#: js/components/training/Onboarding/Onboarding.js:626
 msgid "Engage openpilot"
 msgstr "启用 openpilot"
 
@@ -221,27 +238,27 @@ msgstr "启用 openpilot"
 msgid "Finish Setup"
 msgstr "设置完成"
 
-#: js/components/training/Onboarding/Onboarding.js:789
+#: js/components/training/Onboarding/Onboarding.js:1006
 msgid "Finish Training"
 msgstr "完成"
 
-#: js/components/Settings/Settings.js:477
+#: js/components/Settings/Settings.js:493
 msgid "Free Storage"
 msgstr "剩余空间"
 
-#: js/components/Settings/Settings.js:589
+#: js/components/Settings/Settings.js:632
 msgid "Git Branch"
 msgstr "Git 分支"
 
-#: js/components/Settings/Settings.js:592
+#: js/components/Settings/Settings.js:635
 msgid "Git Revision"
 msgstr "Git 修订版"
 
-#: js/components/Settings/Settings.js:669
+#: js/components/Settings/Settings.js:686
 msgid "GitHub Username"
 msgstr "GitHub 用户名"
 
-#: js/components/SetupWifi/SetupWifi.js:408
+#: js/components/SetupWifi/SetupWifi.js:414
 msgid "Go Back"
 msgstr "返回"
 
@@ -254,15 +271,15 @@ msgstr "小时"
 msgid "Hide Alerts"
 msgstr "隐藏通知"
 
-#: js/components/training/Onboarding/Onboarding.js:341
+#: js/components/training/Onboarding/Onboarding.js:405
 msgid "I will be ready to take over at any time!"
 msgstr "我会准备好随时接管控制。"
 
-#: js/components/training/Onboarding/Onboarding.js:335
+#: js/components/training/Onboarding/Onboarding.js:399
 msgid "I will be ready to take over at any time."
 msgstr "我一定会准备好随时接管控制!"
 
-#: js/components/training/Onboarding/Onboarding.js:329
+#: js/components/training/Onboarding/Onboarding.js:393
 msgid "I will keep my eyes on the road."
 msgstr "我会保持关注路况。"
 
@@ -271,17 +288,17 @@ msgstr "我会保持关注路况。"
 msgid "KM"
 msgstr "公里"
 
-#: js/components/training/Onboarding/Onboarding.js:675
+#: js/components/training/Onboarding/Onboarding.js:892
 msgid "Keep in mind that certain situations are not handled by openpilot. Scenarios such as traffic lights, stop signs, quick vehicle cutins and pedestrians are unrecognized and openpilot may accelerate."
 msgstr "请注意，在红绿灯号标志、停车信号灯标志、前方车辆快速切入、无法识别的行人等特定路况下，openpilot 无法正确处理，有可能导致异常加速。"
 
-#: js/components/Settings/Settings.js:125
+#: js/components/Settings/Settings.js:131
 #: js/components/UpdatePrompt/UpdatePrompt.js:33
 msgid "Later"
 msgstr "稍后"
 
-#: js/components/training/Onboarding/Onboarding.js:560
-#: js/components/training/Onboarding/Onboarding.js:670
+#: js/components/training/Onboarding/Onboarding.js:859
+#: js/components/training/Onboarding/Onboarding.js:887
 msgid "Limited Features"
 msgstr "功能限制"
 
@@ -290,21 +307,16 @@ msgstr "功能限制"
 msgid "MILES"
 msgstr "英里"
 
-#: js/components/SetupWifi/SetupWifi.js:371
+#: js/components/SetupWifi/SetupWifi.js:377
 msgid "More Options"
 msgstr "更多选项"
 
-#: js/components/Settings/Settings.js:597
-#: js/components/Settings/Settings.js:601
-msgid "N/A"
-msgstr "N/A"
-
-#: js/components/Settings/Settings.js:203
+#: js/components/Settings/Settings.js:209
 msgid "Network"
 msgstr "网络"
 
-#: js/components/Settings/Settings.js:389
-#: js/components/Settings/Settings.js:469
+#: js/components/Settings/Settings.js:405
+#: js/components/Settings/Settings.js:485
 msgid "No"
 msgstr "否"
 
@@ -312,7 +324,7 @@ msgstr "否"
 msgid "No Network Connection"
 msgstr "没有网络连接"
 
-#: js/components/training/Onboarding/Onboarding.js:274
+#: js/components/training/Onboarding/Onboarding.js:338
 msgid "Now that you’re all set up, it’s important to understand the functionality and limitations of openpilot as alpha software before testing."
 msgstr "现在，您已经完成了所有设置，在测试使用之前，了解 openpilot 测试版的功能限制非常重要。"
 
@@ -328,11 +340,11 @@ msgstr "无线网络设置"
 msgid "PAST WEEK"
 msgstr "上周"
 
-#: js/components/Settings/Settings.js:410
+#: js/components/Settings/Settings.js:426
 msgid "Pair Device"
 msgstr "绑定帐户"
 
-#: js/components/SetupQr/SetupQr.js:68
+#: js/components/SetupQr/SetupQr.js:63
 msgid "Pair Your Account"
 msgstr "绑定帐户"
 
@@ -340,29 +352,35 @@ msgstr "绑定帐户"
 msgid "Pair your comma account with comma connect"
 msgstr "使用 Comma connect 绑定到您的 Comma 帐户"
 
-#: js/components/Settings/Settings.js:192
-#: js/components/Settings/Settings.js:468
+#: js/components/Settings/Settings.js:198
+#: js/components/Settings/Settings.js:484
 msgid "Paired"
 msgstr "设备已绑定"
 
-#: js/components/Settings/Settings.js:600
+#: js/components/Settings/Settings.js:643
 msgid "Panda Dongle ID"
 msgstr "Panda Dongle ID"
 
-#: js/components/Settings/Settings.js:596
+#: js/components/Settings/Settings.js:639
 msgid "Panda Firmware"
 msgstr "Panda 固件"
 
-#: js/components/SetupWifi/SetupWifi.js:344
+#: js/components/SetupWifi/SetupWifi.js:349
 msgid "Password:"
 msgstr "密码:"
 
-#: js/components/Settings/Settings.js:497
-#: js/components/Settings/Settings.js:800
+#: js/components/training/Onboarding/Onboarding.js:738
+#: js/components/training/Onboarding/Onboarding.js:797
+#: js/components/training/Onboarding/Onboarding.js:867
+msgid "Perform Lane Change"
+msgstr ""
+
+#: js/components/Settings/Settings.js:513
+#: js/components/Settings/Settings.js:818
 msgid "Power Off"
 msgstr "关机"
 
-#: js/components/training/Onboarding/Onboarding.js:539
+#: js/components/training/Onboarding/Onboarding.js:591
 msgid "Press cruise to engage and a pedal to disengage."
 msgstr "按下巡航按钮启动，踩下油门或刹车取消。"
 
@@ -370,19 +388,19 @@ msgstr "按下巡航按钮启动，踩下油门或刹车取消。"
 msgid "Privacy policy available at https://my.comma.ai/privacy.html"
 msgstr "隐私政策请参阅 https://my.comma.ai/privacy.html"
 
-#: js/components/training/Onboarding/Onboarding.js:393
-#: js/components/training/Onboarding/Onboarding.js:459
+#: js/components/training/Onboarding/Onboarding.js:457
+#: js/components/training/Onboarding/Onboarding.js:523
 msgid "Radar from your car"
 msgstr "原车雷达"
 
-#: js/components/Settings/Settings.js:124
-#: js/components/Settings/Settings.js:490
-#: js/components/Settings/Settings.js:794
-#: js/components/Settings/Settings.js:796
+#: js/components/Settings/Settings.js:130
+#: js/components/Settings/Settings.js:506
+#: js/components/Settings/Settings.js:812
+#: js/components/Settings/Settings.js:814
 msgid "Reboot"
 msgstr "重新启动"
 
-#: js/components/Settings/Settings.js:126
+#: js/components/Settings/Settings.js:132
 msgid "Reboot Now"
 msgstr "马上"
 
@@ -390,7 +408,7 @@ msgstr "马上"
 msgid "Reboot and Update"
 msgstr "重启并更新"
 
-#: js/components/Settings/Settings.js:292
+#: js/components/Settings/Settings.js:308
 msgid "Record and Upload Driver Camera"
 msgstr "上传驾驶员的驾驶录像"
 
@@ -398,111 +416,124 @@ msgstr "上传驾驶员的驾驶录像"
 msgid "Remote Access"
 msgstr "远程访问"
 
-#: js/components/Settings/Settings.js:708
+#: js/components/Settings/Settings.js:725
 msgid "Remove all"
 msgstr "全部删除"
 
-#: js/components/Settings/Settings.js:462
+#: js/components/Settings/Settings.js:478
 msgid "Reset"
 msgstr "重置"
 
-#: js/components/Settings/Settings.js:124
+#: js/components/Settings/Settings.js:130
 msgid "Resetting calibration requires a reboot."
 msgstr "重置摄像头校准需要重新启动。"
 
-#: js/components/training/Onboarding/Onboarding.js:797
+#: js/components/training/Onboarding/Onboarding.js:1014
 msgid "Restart"
 msgstr "重新学习"
 
-#: js/components/Settings/Settings.js:361
+#: js/components/Settings/Settings.js:377
 msgid "Review Training Guide"
 msgstr "查看使用教程"
 
-#: js/components/Settings/Settings.js:686
+#: js/components/Settings/Settings.js:703
 msgid "Save"
 msgstr "保存"
 
-#: js/components/Settings/Settings.js:698
+#: js/components/Settings/Settings.js:715
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "保存失败，请确保您的设备已联网并输入正确的用户名"
 
-#: js/components/SetupWifi/SetupWifi.js:391
+#: js/components/SetupWifi/SetupWifi.js:397
 msgid "Scanning WiFi Networks..."
 msgstr "无线网络扫描中..."
 
-#: js/components/training/Onboarding/Onboarding.js:645
+#: js/components/training/Onboarding/Onboarding.js:685
 msgid "Select face to continue"
 msgstr "请点击画面中的人脸继续"
 
-#: js/components/training/Onboarding/Onboarding.js:483
+#: js/components/training/Onboarding/Onboarding.js:547
 msgid "Select lead car indicator"
 msgstr "请点击画面中的前车指标继续"
 
-#: js/components/training/Onboarding/Onboarding.js:688
+#: js/components/training/Onboarding/Onboarding.js:905
 msgid "Select light to continue"
 msgstr "请点击画面中的红绿灯继续"
 
-#: js/components/training/Onboarding/Onboarding.js:436
+#: js/components/training/Onboarding/Onboarding.js:500
 msgid "Select path to continue"
 msgstr "请点击画面中的行车路径继续"
 
-#: js/components/Settings/Settings.js:474
+#: js/components/training/Onboarding/Onboarding.js:813
+msgid "Select steering wheel"
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:772
+msgid "Select turn signal"
+msgstr ""
+
+#: js/components/Settings/Settings.js:490
 msgid "Serial Number"
 msgstr "序列号"
 
-#: js/components/SetupWifi/SetupWifi.js:303
+#: js/components/SetupWifi/SetupWifi.js:308
 msgid "Show password"
 msgstr "显示密码"
 
-#: js/components/Settings/Settings.js:802
+#: js/components/Settings/Settings.js:820
 msgid "Shutdown"
 msgstr "关机"
 
-#: js/components/SetupWifi/SetupWifi.js:419
+#: js/components/SetupWifi/SetupWifi.js:425
 msgid "Skip For Now"
 msgstr "暂时跳过"
 
-#: js/components/SetupQr/SetupQr.js:152
+#: js/components/SetupQr/SetupQr.js:147
 msgid "Skip for Now"
 msgstr "暂时跳过"
 
-#: js/components/SetupQr/SetupQr.js:87
+#: js/components/training/Onboarding/Onboarding.js:730
+#: js/components/training/Onboarding/Onboarding.js:758
+msgid "Start Lane Change"
+msgstr ""
+
+#: js/components/SetupQr/SetupQr.js:82
 msgid "Succesfully paired to account"
 msgstr "已成功绑定到帐户"
 
-#: js/components/SetupQr/SetupQr.js:109
+#: js/components/SetupQr/SetupQr.js:104
 msgid "Successfully paired to an account in"
 msgstr "已绑定成功："
 
-#: js/components/training/Onboarding/Onboarding.js:603
+#: js/components/training/Onboarding/Onboarding.js:643
 msgid "Tap \"SET\" to engage"
 msgstr "请点击画面中的 “SET” 继续"
 
-#: js/components/training/Onboarding/Onboarding.js:731
+#: js/components/training/Onboarding/Onboarding.js:948
 msgid "Tap a pedal to disengage"
 msgstr "请点击画面中的油门或刹车继续"
 
-#: js/components/Settings/Settings.js:401
+#: js/components/Settings/Settings.js:417
 msgid "Terms of Service available at https://my.comma.ai/terms.html"
 msgstr "服务条款请参阅 https://my.comma.ai/terms.html"
 
-#: js/components/Settings/Settings.js:454
-msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position."
-msgstr "摄像头是一直在后台自动校准的，只有当您的 EON 发出校准无效的信息或是您将 EON 安装至不同的位置/车子时，才需要重置校准。"
+#: js/components/Settings/Settings.js:470
+msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position."
+msgstr ""
 
-#: js/components/training/Onboarding/Onboarding.js:472
+#: js/components/training/Onboarding/Onboarding.js:536
 msgid "The indicator is drawn either red or yellow to illustrate relative speed to the lead car."
 msgstr "三角形指示标志的颜色（红色或黄色）用来表示与前车之间的相对速度。"
 
-#: js/components/training/Onboarding/Onboarding.js:425
+#: js/components/training/Onboarding/Onboarding.js:489
 msgid "The lane lines are drawn with varying widths to reflect the confidence in finding your lane."
 msgstr "系统会根据识别准确度，绘制不同粗细的车道线。"
 
-#: js/components/SetupWifi/SetupWifi.js:336
+#: js/components/SetupWifi/SetupWifi.js:341
 msgid "The network \"{0}\" requires a password."
 msgstr "无线网络 \"{0}\" 需要密码"
 
-#: js/components/training/Onboarding/Onboarding.js:464
+#: js/components/training/Onboarding/Onboarding.js:528
 msgid "The stock radar in your car helps openpilot measure the lead car distance for longitudinal control."
 msgstr "Openpilot 需要原车使用雷达信号数据计算出与前车的距离，以供纵向控制使用。"
 
@@ -510,20 +541,20 @@ msgstr "Openpilot 需要原车使用雷达信号数据计算出与前车的距�
 msgid "There was a problem scanning WiFi networks. {0}Make sure WiFi is enabled in \"More Options\" above."
 msgstr "无线网络扫描错误。{0}请确认已在 \"更多选项\" 里开启了无线网络功能。"
 
-#: js/components/training/Onboarding/Onboarding.js:777
-msgid "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
-msgstr "您可以随时到 EON 设置里重新阅读使用教程，了解更多关于 openpilot 的信息，请查看 wiki 或加入 discord.comma.ai 社区交流。"
+#: js/components/training/Onboarding/Onboarding.js:994
+msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
+msgstr ""
 
-#: js/components/Settings/Settings.js:806
-#: js/components/Settings/Settings.js:808
+#: js/components/Settings/Settings.js:824
+#: js/components/Settings/Settings.js:826
 msgid "Uninstall"
 msgstr "卸载"
 
-#: js/components/Settings/Settings.js:635
+#: js/components/Settings/Settings.js:652
 msgid "Uninstall {software}"
 msgstr "卸载 {software}"
 
-#: js/components/Settings/Settings.js:192
+#: js/components/Settings/Settings.js:198
 msgid "Unpaired"
 msgstr "未绑定"
 
@@ -536,91 +567,121 @@ msgstr "有版本更新"
 msgid "Upgrade Now"
 msgstr "立即更新"
 
-#: js/components/Settings/Settings.js:481
+#: js/components/Settings/Settings.js:497
 msgid "Upload Speed"
 msgstr "上传速度"
 
-#: js/components/Settings/Settings.js:295
+#: js/components/Settings/Settings.js:311
 msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
 msgstr "上传前置摄像头的录像来协助我们提升驾驶监控的准确率。"
 
-#: js/components/Settings/Settings.js:532
-msgid "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges."
-msgstr "如果设备安装了 SIM 卡，并且没有其他网络可用时，会使用 SIM 卡流量上传驾驶记录，如果你的 SIM 卡不是无线流量套餐，超出流量会带来额外的费用。"
-
-#: js/components/Settings/Settings.js:301
+#: js/components/Settings/Settings.js:317
 msgid "Use Metric System"
 msgstr "使用公制单位"
 
-#: js/components/Settings/Settings.js:285
+#: js/components/Settings/Settings.js:593
+msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor"
+msgstr ""
+
+#: js/components/Settings/Settings.js:292
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 msgstr "使用 openpilot 的自适应巡航功能和车道保持功能，开启后您需要保持注意力集中，设置更改在重新启动车子后生效。"
 
-#: js/components/Settings/Settings.js:586
+#: js/components/Settings/Settings.js:629
 msgid "Version"
 msgstr "版本"
 
-#: js/components/Settings/Settings.js:650
+#: js/components/Settings/Settings.js:667
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
 msgstr "警告：这个功能会同步 Github 设置里所有公钥的 SSH 访问权限，请不要输入别人的 Github 用户名（即使声称是 comma 的员工），操作完成后，原先内置的 SSH 密钥会被禁用。"
 
-#: js/components/training/Onboarding/Onboarding.js:269
+#: js/components/training/Onboarding/Onboarding.js:333
 msgid "Welcome to openpilot alpha"
 msgstr "欢迎使用 openpilot 测试版"
 
-#: js/components/training/Onboarding/Onboarding.js:632
+#: js/components/training/Onboarding/Onboarding.js:850
+msgid "When encountering a potentially unsafe situation or exiting a highway, you can disengage with any pedal."
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:672
 msgid "When openpilot is engaged, you must always pay attention! openpilot monitors awareness with 3D facial reconstruction and pose. Distracted drivers are alerted, then disengaged from openpilot until corrected."
 msgstr "使用 openpilot 时，请务必随时注意前方路况! openpilot 通过 3D 人脸 / 姿态识别来判断驾驶员的状态，如果检测到驾驶员注意力不集中，openpilot 会先提醒驾驶员然后退出控制，除非驾驶员改正问题，集中注意力。"
 
-#: js/components/training/Onboarding/Onboarding.js:591
+#: js/components/training/Onboarding/Onboarding.js:631
 msgid "When you are ready to engage openpilot at a comfortable speed, locate the cruise controls on your steering wheel and press \"SET\" to begin."
 msgstr "当车辆行驶在安全速度时，您可以按下位于方向盘上的定速按钮 “SET” 启用 openpilot。"
 
-#: js/components/training/Onboarding/Onboarding.js:718
+#: js/components/training/Onboarding/Onboarding.js:935
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
 msgstr "使用 openpilot 时，您可以随时改为人工操作方向盘，openpilot 会继续控制车速，直到踩下油门或刹车取消 openpilot 为止。"
 
-#: js/components/Settings/Settings.js:389
-#: js/components/Settings/Settings.js:469
+#: js/components/training/Onboarding/Onboarding.js:763
+msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
+msgstr ""
+
+#: js/components/Settings/Settings.js:405
+#: js/components/Settings/Settings.js:485
 msgid "Yes"
 msgstr "是"
 
-#: js/components/Settings/Settings.js:394
+#: js/components/Settings/Settings.js:410
 msgid "You may unpair your device in the comma connect app settings."
 msgstr "您可以在手机应用（Comma connect）中解绑设备。"
 
-#: js/components/SetupQr/SetupQr.js:119
+#: js/components/SetupQr/SetupQr.js:114
 msgid "and scan this code to pair."
 msgstr "然后扫描这个二维码绑定。"
 
-#: js/components/SetupQr/SetupQr.js:114
+#: js/components/SetupQr/SetupQr.js:109
 msgid "comma connect"
 msgstr "comma connect"
 
-#: js/components/training/Onboarding/Onboarding.js:583
-#: js/components/training/Onboarding/Onboarding.js:624
-#: js/components/training/Onboarding/Onboarding.js:667
-#: js/components/training/Onboarding/Onboarding.js:710
+#: js/components/training/Onboarding/Onboarding.js:717
+msgid "openpilot can change lanes with your assistance."
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:623
+#: js/components/training/Onboarding/Onboarding.js:755
 msgid "openpilot controls"
 msgstr "openpilot 控制"
 
-#: js/components/training/Onboarding/Onboarding.js:313
+#: js/components/training/Onboarding/Onboarding.js:927
+msgid "openpilot disengaging"
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:664
+msgid "openpilot engaging"
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:377
 msgid "openpilot is an advanced driver assistance system."
 msgstr "openpilot 是一个高级驾驶辅助系统。"
 
-#: js/components/training/Onboarding/Onboarding.js:409
-#: js/components/training/Onboarding/Onboarding.js:456
+#: js/components/training/Onboarding/Onboarding.js:722
+msgid "openpilot is not capable of checking if a lane change is safe. This is your job. openpilot will change lanes regardless if another vehicle is present."
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:794
+msgid "openpilot lane changes"
+msgstr ""
+
+#: js/components/training/Onboarding/Onboarding.js:473
+#: js/components/training/Onboarding/Onboarding.js:520
 msgid "openpilot sensors"
 msgstr "openpilot 的传感器"
 
-#: js/components/training/Onboarding/Onboarding.js:369
+#: js/components/training/Onboarding/Onboarding.js:433
 msgid "openpilot uses multiple sensors to see the road ahead."
 msgstr "openpilot 使用多个传感器来检测前方道路。"
 
-#: js/components/training/Onboarding/Onboarding.js:534
-msgid "openpilot will start driving when cruise control is set."
-msgstr "openpilot 将在巡航系统启用后开始运行。"
+#: js/components/training/Onboarding/Onboarding.js:586
+msgid "openpilot will engage when cruise control is set."
+msgstr ""
 
-#: js/components/Settings/Settings.js:198
+#: js/components/training/Onboarding/Onboarding.js:845
+msgid "openpilot will stop driving when a pedal is pressed."
+msgstr ""
+
+#: js/components/Settings/Settings.js:204
 msgid "{0} Free"
 msgstr "剩余 {0}"
