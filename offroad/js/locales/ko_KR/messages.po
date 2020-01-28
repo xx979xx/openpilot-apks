@@ -1,118 +1,118 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-11-06 15:12+1000\n"
+"POT-Creation-Date: 2020-01-28 16:11+0300\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
-"Language: zh_CN\n"
+"Language: ko_KR\n"
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: afa <rmingwang@gmail.com>\n"
-"PO-Revision-Date: 2019-11-06 16:21+0800\n"
-"Last-Translator: afa\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: crwusiz , Lee Jong Mun\n"
 "Language-Team: \n"
 "Plural-Forms: \n"
 
 #: js/components/Home/Home.js:476
 msgid "14 days of storage"
-msgstr "14 天行车记录"
+msgstr "저장기간 : 14일"
 
 #: js/components/Settings/Settings.js:395
 msgid "<  Account Settings"
-msgstr "<  帐户设置"
+msgstr "<  계정 설정"
 
 #: js/components/Settings/Settings.js:588
 msgid "<  Developer Settings"
-msgstr "<  开发人员设置"
+msgstr "<  개발자 설정"
 
 #: js/components/Settings/Settings.js:459
 msgid "<  Device Settings"
-msgstr "<  设备设置"
+msgstr "<  장치 설정"
 
 #: js/components/Settings/Settings.js:539
 msgid "<  Network Settings"
-msgstr "<  网络设置"
+msgstr "<  네트워크 설정"
 
 #: js/components/Settings/Settings.js:276
 msgid "<  Settings"
-msgstr "<  设置"
+msgstr "<  설정"
 
 #: js/components/training/Onboarding/Onboarding.js:382
 msgid "A driver assistance system is not a self driving car. This means openpilot is designed to work with you, not without you. Your attention is required to drive."
-msgstr "驾驶辅助系统不是自动驾驶系统，意味着 openpilot 需要配合你一起工作，而不是独立自主运行，驾驶时，您仍然需要注意行车安全。"
+msgstr "운전자 지원 시스템은 자가 운전 차량이 아닙니다. 이것은 openpilot이 운전자 없이 주행을 하는것이 아니라 운전자와 함께 동작하도록 설계되었다는것을 의미합니다. 운전하려면 주의를 기울여야 합니다"
 
 #: js/components/training/Onboarding/Onboarding.js:481
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
-msgstr ""
+msgstr "비전 알고리짐은 노면을 향한 카메라를 이용하여 운전 경로를 결정합니다."
 
 #: js/components/Home/Home.js:225
 msgid "ALERT"
-msgstr "通知"
+msgstr "경고"
 
 #: js/components/Home/Home.js:225
 msgid "ALERTS"
-msgstr "通知"
+msgstr "경고"
 
 #: js/components/Home/Home.js:353
 msgid "ALL TIME"
-msgstr "全部"
+msgstr "전체 시간"
 
 #: js/components/Settings/Settings.js:197
 msgid "Account"
-msgstr "帐户"
+msgstr "계정"
 
 #: js/components/Settings/Settings.js:616
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
-msgstr "允许别的设备通过 Secure Shell (SSH) 连接至您的 EON。"
+msgstr "SSH를 사용하여 장치가 EON에 연결되도록 허용"
 
 #: js/components/Settings/Settings.js:821
 msgid "Are you sure you want to reboot?"
-msgstr "您确定要重新启动吗？"
+msgstr "재부팅하시겠습니까?"
 
 #: js/components/Settings/Settings.js:827
 msgid "Are you sure you want to shutdown?"
-msgstr "您确定要关机吗？"
+msgstr "종료하시겠습니까?"
 
 #: js/components/Settings/Settings.js:833
 msgid "Are you sure you want to uninstall?"
-msgstr "您确定要卸载吗？"
+msgstr "제거하시겠습니까?"
 
 #: js/components/SetupWifi/SetupWifi.js:227
 msgid "Authenticating..."
-msgstr "网络连接中..."
+msgstr "인증중..."
 
 #: js/components/SetupWifi/SetupWifi.js:228
 msgid "Authentication problem"
-msgstr "身份验证错误"
+msgstr "인증 문제"
 
 #: js/components/Settings/Settings.js:622
 msgid "Authorized SSH Keys"
-msgstr "授权 SSH 密钥"
+msgstr "인증된 SSH 키"
 
 #: js/components/Home/Home.js:452
 msgid "Become a comma prime member in the comma app and get premium features!"
-msgstr "成为 comma 会员，获取更多功能！"
+msgstr "comma prime 맴버가 되어 comma connect 앱에서 고급 기능을 얻으십시오!"
 
 #: js/components/training/Onboarding/Onboarding.js:438
 msgid "Before any signals are sent to control your car, sensors are fused to construct a scene of the road."
-msgstr "我们把这些传感器信息融合在一起，构建出前方道路状况，然后才会向车辆发送控制信息。"
+msgstr "자동차를 제어하기 위해 어떤 신호를 보내기 전에 센서가 결합되어 도로의 장면을 구성한다."
 
 #: js/components/training/Onboarding/Onboarding.js:348
 msgid "Begin Training"
-msgstr "开始教程"
+msgstr "트레이닝 시작"
 
 #: js/components/Home/Home.js:422
 msgid "COMMA POINTS"
-msgstr "COMMA 积分"
+msgstr "COMMA 포인트"
 
 #: js/components/Settings/Settings.js:468
 msgid "Camera Calibration"
-msgstr "摄像头校准"
+msgstr "카메라 켈리브레이션"
 
 #: js/components/training/Onboarding/Onboarding.js:449
 #: js/components/training/Onboarding/Onboarding.js:476
 msgid "Camera from Device"
-msgstr ""
+msgstr "장치의 카메라"
 
 #: js/components/Settings/Settings.js:632
 #: js/components/Settings/Settings.js:822
@@ -121,212 +121,212 @@ msgstr ""
 #: js/components/Settings/Settings.js:871
 #: js/components/SetupWifi/SetupWifi.js:320
 msgid "Cancel"
-msgstr "取消"
+msgstr "취소"
 
 #: js/components/SetupTerms/SetupTerms.js:47
 msgid "Comma.ai, Inc. Terms & Conditions"
-msgstr "Comma.ai, Inc. 条款及细则"
+msgstr "Comma.ai, Inc. 약관"
 
 #: js/components/Settings/Settings.js:870
 msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
-msgstr ""
+msgstr "커뮤니티 유지 기능은 표준 안전 모델의 충족 기준이 comma.ai 에 의해 확인되지않으니 사용시 각별히 주의하십시오."
 
 #: js/components/training/Onboarding/Onboarding.js:989
 msgid "Congratulations! You have completed openpilot training."
-msgstr "恭喜! 您已经学完了教程。"
+msgstr "축하합니다! openpilot 트레이닝을 완료하였습니다"
 
 #: js/components/SetupWifi/SetupWifi.js:269
 #: js/components/SetupWifi/SetupWifi.js:333
 msgid "Connect"
-msgstr "连接"
+msgstr "연결"
 
 #: js/components/SetupWifi/SetupWifi.js:370
 msgid "Connect to WiFi"
-msgstr "连接到无线网络"
+msgstr "Wifi 연결"
 
 #: js/components/Home/Home.js:281
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
-msgstr "连接到 WiFi 或使用 SIM 卡流量上传您的行车记录。"
+msgstr "Wifi 또는 LTE에 연결하여 드라이브 업로드 및 리뷰"
 
 #: js/components/SetupWifi/SetupWifi.js:226
 #: js/components/SetupWifi/SetupWifi.js:246
 msgid "Connected"
-msgstr "已连接"
+msgstr "연결됨"
 
 #: js/components/SetupQr/SetupQr.js:140
 #: js/components/SetupWifi/SetupWifi.js:425
 msgid "Continue"
-msgstr "继续"
+msgstr "계속"
 
 #: js/components/training/Onboarding/Onboarding.js:802
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
-msgstr ""
+msgstr "스티이링 휠을 원하는 차선으로 부드럽게 밀어내면서 주변 안전을 지속적으로 관찰하십시오. 방향지시 신호와 휠 조향의 조합은 openpilot 이 차선을 변경하도록 유도할 것입니다."
 
 #: js/components/Home/Home.js:309
 #: js/components/Home/Home.js:369
 msgid "DRIVES"
-msgstr "驾驶"
+msgstr "주행수"
 
 #: js/components/Settings/Settings.js:215
 msgid "Developer"
-msgstr "开发人员"
+msgstr "개발자"
 
 #: js/components/Home/Home.js:488
 msgid "Developer perks"
-msgstr "开发人员 perks"
+msgstr "개발자 특혜"
 
 #: js/components/Settings/Settings.js:203
 msgid "Device"
-msgstr "设备"
+msgstr "장치"
 
 #: js/components/Settings/Settings.js:404
 msgid "Device Paired"
-msgstr "设备已绑定"
+msgstr "장치 페이링됨"
 
 #: js/components/training/Onboarding/Onboarding.js:930
 msgid "Disengage openpilot"
-msgstr "退出 openpilot"
+msgstr "openpilot 해제"
 
 #: js/components/Settings/Settings.js:320
 msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "启用后，显示 km/h (速度) 或 °C (温度)，否则显示 mph (速度) 或 °F (温度)。"
+msgstr "속도는 mp/h 대신 km/h, 온도는°F 대신 °C로 표시합니다"
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
-msgstr "Dongle ID"
+msgstr "동글 ID"
 
 #: js/components/SetupQr/SetupQr.js:104
 msgid "Download"
-msgstr "下载"
+msgstr "다운로드"
 
 #: js/components/training/Onboarding/Onboarding.js:607
 #: js/components/training/Onboarding/Onboarding.js:667
 msgid "Driver Monitoring"
-msgstr "驾驶监控"
+msgstr "운전자 모니터링"
 
 #: js/components/Settings/Settings.js:632
 msgid "Edit"
-msgstr "编辑"
+msgstr "편집"
 
 #: js/components/Settings/Settings.js:872
 msgid "Enable"
-msgstr ""
+msgstr "사용"
 
 #: js/components/Settings/Settings.js:597
 #: js/components/Settings/Settings.js:870
 msgid "Enable Community Features"
-msgstr ""
+msgstr "커뮤니티 기능 사용"
 
 #: js/components/Settings/Settings.js:299
 msgid "Enable Lane Departure Warnings"
-msgstr ""
+msgstr "차선 이탈 경고 사용"
 
 #: js/components/Settings/Settings.js:613
 msgid "Enable SSH"
-msgstr "启用 SSH"
+msgstr "SSH 사용"
 
 #: js/components/Settings/Settings.js:289
 msgid "Enable openpilot"
-msgstr "启用 openpilot"
+msgstr "openpilot 사용"
 
 #: js/components/training/Onboarding/Onboarding.js:599
 #: js/components/training/Onboarding/Onboarding.js:626
 msgid "Engage openpilot"
-msgstr "启用 openpilot"
+msgstr "openpilot 활성"
 
 #: js/components/Home/Home.js:508
 msgid "Finish Setup"
-msgstr "设置完成"
+msgstr "설치 완료"
 
 #: js/components/training/Onboarding/Onboarding.js:1006
 msgid "Finish Training"
-msgstr "完成"
+msgstr "트레이닝 완료"
 
 #: js/components/Settings/Settings.js:493
 msgid "Free Storage"
-msgstr "剩余空间"
+msgstr "여유공간"
 
 #: js/components/Settings/Settings.js:641
 msgid "Git Branch"
-msgstr "Git 分支"
+msgstr "Git Branch"
 
 #: js/components/Settings/Settings.js:644
 msgid "Git Revision"
-msgstr "Git 修订版"
+msgstr "Git Revision"
 
 #: js/components/Settings/Settings.js:695
 msgid "GitHub Username"
-msgstr "GitHub 用户名"
+msgstr "Github 사용자명"
 
 #: js/components/SetupWifi/SetupWifi.js:414
 msgid "Go Back"
-msgstr "返回"
+msgstr "돌아가기"
 
 #: js/components/Home/Home.js:341
 #: js/components/Home/Home.js:401
 msgid "HOURS"
-msgstr "小时"
+msgstr "시간"
 
 #: js/components/Home/Home.js:263
 msgid "Hide Alerts"
-msgstr "隐藏通知"
+msgstr "경고 숨김"
 
 #: js/components/training/Onboarding/Onboarding.js:405
 msgid "I will be ready to take over at any time!"
-msgstr "我会准备好随时接管控制。"
+msgstr "언제라도 인수할 준비가 되어있을것!"
 
 #: js/components/training/Onboarding/Onboarding.js:399
 msgid "I will be ready to take over at any time."
-msgstr "我一定会准备好随时接管控制!"
+msgstr "언제라도 인수할 준비가 되어있을것!"
 
 #: js/components/training/Onboarding/Onboarding.js:393
 msgid "I will keep my eyes on the road."
-msgstr "我会保持关注路况。"
+msgstr "나는 계속 도로를 주시할 것이다"
 
 #: js/components/Home/Home.js:326
 #: js/components/Home/Home.js:386
 msgid "KM"
-msgstr "公里"
+msgstr "KM"
 
 #: js/components/training/Onboarding/Onboarding.js:892
 msgid "Keep in mind that certain situations are not handled by openpilot. Scenarios such as traffic lights, stop signs, quick vehicle cutins and pedestrians are unrecognized and openpilot may accelerate."
-msgstr "请注意，在红绿灯号标志、停车信号灯标志、前方车辆快速切入、无法识别的行人等特定路况下，openpilot 无法正确处理，有可能导致异常加速。"
+msgstr "어떤 상황은 openpilot에 의해 처리되지 않는다는 것을 명심하세요. 신호등, 정지표지판, 차량 차단기 및 보행자와 같은 시나리오는 인식되지않고 openpilot이 기속될 수 있습니다"
 
 #: js/components/Settings/Settings.js:131
 #: js/components/UpdatePrompt/UpdatePrompt.js:33
 msgid "Later"
-msgstr "稍后"
+msgstr "나중에"
 
 #: js/components/training/Onboarding/Onboarding.js:859
 #: js/components/training/Onboarding/Onboarding.js:887
 msgid "Limited Features"
-msgstr "功能限制"
+msgstr "제한된 기능"
 
 #: js/components/Home/Home.js:326
 #: js/components/Home/Home.js:386
 msgid "MILES"
-msgstr "英里"
+msgstr "MILES"
 
 #: js/components/SetupWifi/SetupWifi.js:377
 msgid "More Options"
-msgstr "更多选项"
+msgstr "추가 옵션"
 
 #: js/components/Settings/Settings.js:209
 msgid "Network"
-msgstr "网络"
+msgstr "네트워크"
 
 #: js/components/Settings/Settings.js:405
 #: js/components/Settings/Settings.js:485
 msgid "No"
-msgstr "否"
+msgstr "아니오"
 
 #: js/components/Home/Home.js:275
 msgid "No Network Connection"
-msgstr "没有网络连接"
+msgstr "네트워크 연결되지않음"
 
 #: js/components/training/Onboarding/Onboarding.js:338
 msgid "Now that you’re all set up, it’s important to understand the functionality and limitations of openpilot as alpha software before testing."
-msgstr "现在，您已经完成了所有设置，在测试使用之前，了解 openpilot 测试版的功能限制非常重要。"
+msgstr "이제 모든 설정이 완료되었으므로 테스트하기 전에 openpilot의 기능과 한계를 알파 소프트웨어로 이해하는 것이 중요합니다"
 
 #: js/components/Settings/Settings.js:522
 msgid "Open Language Settings"
@@ -334,307 +334,307 @@ msgstr ""
 
 #: js/components/Settings/Settings.js:558
 msgid "Open Tethering Settings"
-msgstr "共享网络设置"
+msgstr "테더링 설정 열기"
 
 #: js/components/Settings/Settings.js:551
 msgid "Open WiFi Settings"
-msgstr "无线网络设置"
+msgstr "Wifi 설정 열기"
 
 #: js/components/Home/Home.js:293
 msgid "PAST WEEK"
-msgstr "上周"
+msgstr "지난주"
 
 #: js/components/Settings/Settings.js:426
 msgid "Pair Device"
-msgstr "绑定帐户"
+msgstr "장치 페이링됨"
 
 #: js/components/SetupQr/SetupQr.js:63
 msgid "Pair Your Account"
-msgstr "绑定帐户"
+msgstr "기기와 계정을 페이링하세요"
 
 #: js/components/Home/Home.js:520
 msgid "Pair your comma account with comma connect"
-msgstr "使用 Comma connect 绑定到您的 Comma 帐户"
+msgstr "comma connect 앱으로 페이링하세요"
 
 #: js/components/Settings/Settings.js:198
 #: js/components/Settings/Settings.js:484
 msgid "Paired"
-msgstr "设备已绑定"
+msgstr "페어링됨"
 
 #: js/components/Settings/Settings.js:652
 msgid "Panda Dongle ID"
-msgstr "Panda Dongle ID"
+msgstr "판다 동글 ID"
 
 #: js/components/Settings/Settings.js:648
 msgid "Panda Firmware"
-msgstr "Panda 固件"
+msgstr "판다 펌웨어"
 
 #: js/components/SetupWifi/SetupWifi.js:349
 msgid "Password:"
-msgstr "密码:"
+msgstr "비밀번호"
 
 #: js/components/training/Onboarding/Onboarding.js:738
 #: js/components/training/Onboarding/Onboarding.js:797
 #: js/components/training/Onboarding/Onboarding.js:867
 msgid "Perform Lane Change"
-msgstr ""
+msgstr "차선 변경 수행"
 
 #: js/components/Settings/Settings.js:513
 #: js/components/Settings/Settings.js:827
 msgid "Power Off"
-msgstr "关机"
+msgstr "종료"
 
 #: js/components/training/Onboarding/Onboarding.js:591
 msgid "Press cruise to engage and a pedal to disengage."
-msgstr "按下巡航按钮启动，踩下油门或刹车取消。"
+msgstr "크루즈 버튼을 눌러 활성하고 브레이크 페달로 해제하십시오"
 
 #: js/components/SetupTerms/SetupTerms.js:49
 msgid "Privacy policy available at https://my.comma.ai/privacy.html"
-msgstr "隐私政策请参阅 https://my.comma.ai/privacy.html"
+msgstr "개인 정보 보호 정책 : https://my.comma.ai/privacy.html"
 
 #: js/components/training/Onboarding/Onboarding.js:457
 #: js/components/training/Onboarding/Onboarding.js:523
 msgid "Radar from your car"
-msgstr "原车雷达"
+msgstr "차량의 레이더"
 
 #: js/components/Settings/Settings.js:130
 #: js/components/Settings/Settings.js:506
 #: js/components/Settings/Settings.js:821
 #: js/components/Settings/Settings.js:823
 msgid "Reboot"
-msgstr "重新启动"
+msgstr "재부팅"
 
 #: js/components/Settings/Settings.js:132
 msgid "Reboot Now"
-msgstr "马上"
+msgstr "지금 재부팅"
 
 #: js/components/UpdatePrompt/UpdatePrompt.js:32
 msgid "Reboot and Update"
-msgstr "重启并更新"
+msgstr "재부팅 및 업데이트"
 
 #: js/components/Settings/Settings.js:308
 msgid "Record and Upload Driver Camera"
-msgstr "上传驾驶员的驾驶录像"
+msgstr "드라이버 카메라 기록 및 업로드"
 
 #: js/components/Home/Home.js:464
 msgid "Remote Access"
-msgstr "远程访问"
+msgstr "원격 접속"
 
 #: js/components/Settings/Settings.js:734
 msgid "Remove all"
-msgstr "全部删除"
+msgstr "모두 제거"
 
 #: js/components/Settings/Settings.js:478
 msgid "Reset"
-msgstr "重置"
+msgstr "리셋"
 
 #: js/components/Settings/Settings.js:130
 msgid "Resetting calibration requires a reboot."
-msgstr "重置摄像头校准需要重新启动。"
+msgstr "캘리브레이션을 재설정하려면 재부팅하세요"
 
 #: js/components/training/Onboarding/Onboarding.js:1014
 msgid "Restart"
-msgstr "重新学习"
+msgstr "재시작"
 
 #: js/components/Settings/Settings.js:377
 msgid "Review Training Guide"
-msgstr "查看使用教程"
+msgstr "트레이닝 가이드 다시보기"
 
 #: js/components/Settings/Settings.js:712
 msgid "Save"
-msgstr "保存"
+msgstr "저장"
 
 #: js/components/Settings/Settings.js:724
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
-msgstr "保存失败，请确保您的设备已联网并输入正确的用户名"
+msgstr "저장 실패. 사용자 이름이 올바르고 인터넷에 연결되어 있는지 확인하십시오."
 
 #: js/components/SetupWifi/SetupWifi.js:397
 msgid "Scanning WiFi Networks..."
-msgstr "无线网络扫描中..."
+msgstr "Wifi 네트워크 검색중"
 
 #: js/components/training/Onboarding/Onboarding.js:685
 msgid "Select face to continue"
-msgstr "请点击画面中的人脸继续"
+msgstr "얼굴을 선택하세요"
 
 #: js/components/training/Onboarding/Onboarding.js:547
 msgid "Select lead car indicator"
-msgstr "请点击画面中的前车指标继续"
+msgstr "앞차량 표시기를 선택하세요"
 
 #: js/components/training/Onboarding/Onboarding.js:905
 msgid "Select light to continue"
-msgstr "请点击画面中的红绿灯继续"
+msgstr "조명을 선택하세요"
 
 #: js/components/training/Onboarding/Onboarding.js:500
 msgid "Select path to continue"
-msgstr "请点击画面中的行车路径继续"
+msgstr "경로를 선택하세요"
 
 #: js/components/training/Onboarding/Onboarding.js:813
 msgid "Select steering wheel"
-msgstr ""
+msgstr "핸들을 선택하세요"
 
 #: js/components/training/Onboarding/Onboarding.js:772
 msgid "Select turn signal"
-msgstr ""
+msgstr "방향지시등을 선택하세요"
 
 #: js/components/Settings/Settings.js:490
 msgid "Serial Number"
-msgstr "序列号"
+msgstr "시리얼번호"
 
 #: js/components/SetupWifi/SetupWifi.js:308
 msgid "Show password"
-msgstr "显示密码"
+msgstr "비밀번호 표시"
 
 #: js/components/Settings/Settings.js:829
 msgid "Shutdown"
-msgstr "关机"
+msgstr "종료"
 
 #: js/components/SetupWifi/SetupWifi.js:425
 msgid "Skip For Now"
-msgstr "暂时跳过"
+msgstr "지금은 건너뛰기"
 
 #: js/components/SetupQr/SetupQr.js:147
 msgid "Skip for Now"
-msgstr "暂时跳过"
+msgstr "지금은 건너뛰기"
 
 #: js/components/training/Onboarding/Onboarding.js:730
 #: js/components/training/Onboarding/Onboarding.js:758
 msgid "Start Lane Change"
-msgstr ""
+msgstr "차선 변경 시작"
 
 #: js/components/SetupQr/SetupQr.js:82
 msgid "Succesfully paired to account"
-msgstr "已成功绑定到帐户"
+msgstr "계정에 성공적으로 페이링됨"
 
 #: js/components/SetupQr/SetupQr.js:104
 msgid "Successfully paired to an account in"
-msgstr "已绑定成功："
+msgstr "의 계정에 성공적으로 페어링됨"
 
 #: js/components/training/Onboarding/Onboarding.js:643
 msgid "Tap \"SET\" to engage"
-msgstr "请点击画面中的 “SET” 继续"
+msgstr "활성은 \"SET\" 버튼 누름"
 
 #: js/components/training/Onboarding/Onboarding.js:948
 msgid "Tap a pedal to disengage"
-msgstr "请点击画面中的油门或刹车继续"
+msgstr "브레이크 페달을 밟으면 해제"
 
 #: js/components/Settings/Settings.js:417
 msgid "Terms of Service available at https://my.comma.ai/terms.html"
-msgstr "服务条款请参阅 https://my.comma.ai/terms.html"
+msgstr "서비스 이용 약관 : https://my.comma.ai/terms.html"
 
 #: js/components/Settings/Settings.js:470
 msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position."
-msgstr ""
+msgstr "캘리브레이션 알고리즘은 도로방향 카메라에서 항상 활성화 됩니다. 장치가 잘못된 켈리브레이션 경고를 보고하거나 장치를 다른 위치에 재장착한 경우에만 켈리브레이션 재설정을 권장합니다"
 
 #: js/components/training/Onboarding/Onboarding.js:536
 msgid "The indicator is drawn either red or yellow to illustrate relative speed to the lead car."
-msgstr "三角形指示标志的颜色（红色或黄色）用来表示与前车之间的相对速度。"
+msgstr "이 표시기는 앞차량에 대한 상대적인 속도를 설명하기 위해 빨간색 또는 노란색 중 하나를 나타냅니다"
 
 #: js/components/training/Onboarding/Onboarding.js:489
 msgid "The lane lines are drawn with varying widths to reflect the confidence in finding your lane."
-msgstr "系统会根据识别准确度，绘制不同粗细的车道线。"
+msgstr "차선 선은 차선을 찾는 자신감을 반영하기 위해 다양한 너비로 그려집니다"
 
 #: js/components/SetupWifi/SetupWifi.js:341
 msgid "The network \"{0}\" requires a password."
-msgstr "无线网络 \"{0}\" 需要密码"
+msgstr "이 네트워크는 \"{0}\" 비밀번호가 필요합니다"
 
 #: js/components/training/Onboarding/Onboarding.js:528
 msgid "The stock radar in your car helps openpilot measure the lead car distance for longitudinal control."
-msgstr "Openpilot 需要原车使用雷达信号数据计算出与前车的距离，以供纵向控制使用。"
+msgstr "당신의 차량에 장착되어있는 레이더는 세로 방향 제어를 위한 앞 차량과의 거리를 측정하는데 도움이 됩니다"
 
 #: js/components/SetupWifi/SetupWifi.js:77
 msgid "There was a problem scanning WiFi networks. {0}Make sure WiFi is enabled in \"More Options\" above."
-msgstr "无线网络扫描错误。{0}请确认已在 \"更多选项\" 里开启了无线网络功能。"
+msgstr "Wifi 네트워크 검색 문제발생됨. {0}Wifi 상태가 활성화되었는지 확인하고 \"추가 옵션\"을 확인하세요"
 
 #: js/components/training/Onboarding/Onboarding.js:994
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
-msgstr ""
+msgstr "이 가이드는 기기 설정에서 언제든지 다시볼수 있습니다. openpilot에 대해 자세히 알아보려면 wiki를 읽고 comma.ai 커뮤니티에 가입하십시오"
 
 #: js/components/Settings/Settings.js:833
 #: js/components/Settings/Settings.js:835
 msgid "Uninstall"
-msgstr "卸载"
+msgstr "제거"
 
 #: js/components/Settings/Settings.js:661
 msgid "Uninstall {software}"
-msgstr "卸载 {software}"
+msgstr "제거 {software}"
 
 #: js/components/Settings/Settings.js:198
 msgid "Unpaired"
-msgstr "未绑定"
+msgstr "페어링되지않음"
 
 #: js/components/Home/Home.js:210
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
-msgstr "有版本更新"
+msgstr "업데이트 사용가능"
 
 #: js/components/Home/Home.js:445
 msgid "Upgrade Now"
-msgstr "立即更新"
+msgstr "지금 업데이트"
 
 #: js/components/Settings/Settings.js:497
 msgid "Upload Speed"
-msgstr "上传速度"
+msgstr "업로드 속도"
 
 #: js/components/Settings/Settings.js:311
 msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
-msgstr "上传前置摄像头的录像来协助我们提升驾驶监控的准确率。"
+msgstr "운전자 대면 카메라에서 데이터를 업로드하고 운전자 모니터링 알고르짐을 개선하십시오"
 
 #: js/components/Settings/Settings.js:317
 msgid "Use Metric System"
-msgstr "使用公制单位"
+msgstr "미터법 사용"
 
 #: js/components/Settings/Settings.js:602
 msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor"
-msgstr ""
+msgstr "이 기능은 comma.ai에서 유지하거나 지원하지않으며 표준 안전 모델을 충족하는지 확인되지않은 오픈소스 커뮤니티의 기능입니다 : * GM car port * Toyota with DSU unplugged * Pedal interceptor"
 
 #: js/components/Settings/Settings.js:292
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
-msgstr "使用 openpilot 的自适应巡航功能和车道保持功能，开启后您需要保持注意力集中，设置更改在重新启动车子后生效。"
+msgstr "openpilot 시스템을 사용하여 어댑티브 크루즈 컨트롤 및 차선유지 운전자 지원을 받으십시오. 이 기능을 사용하려면 항상 주의를 기울여하 합니다. 이 설정을 변경하면 차량 전원이 꺼질 때 적용됨"
 
 #: js/components/Settings/Settings.js:638
 msgid "Version"
-msgstr "版本"
+msgstr "버전"
 
 #: js/components/Settings/Settings.js:676
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
-msgstr "警告：这个功能会同步 Github 设置里所有公钥的 SSH 访问权限，请不要输入别人的 Github 用户名（即使声称是 comma 的员工），操作完成后，原先内置的 SSH 密钥会被禁用。"
+msgstr "경고: 그러면 GitHub 설정의 모든 공용 키에 SSH 액세스 권한이 부여된다. GitHub 사용자 이름이 아닌 다른 사용자 이름을 입력하지 마십시오. 계속 진행하면 내장 SSH키가 비활성화됩니다. comma 직원은 절대 GitHub를 추가해 달라고 하지 않을 것이다."
 
 #: js/components/training/Onboarding/Onboarding.js:333
 msgid "Welcome to openpilot alpha"
-msgstr "欢迎使用 openpilot 测试版"
+msgstr "openpilot alpha 환영합니다"
 
 #: js/components/training/Onboarding/Onboarding.js:850
 msgid "When encountering a potentially unsafe situation or exiting a highway, you can disengage with any pedal."
-msgstr ""
+msgstr "잠재적으로 안전하지 않은 상황에 부딪히거나 고속도로를 빠져나갈 때, 어떤 페달을 밟아도 해제할 수 있다."
 
 #: js/components/training/Onboarding/Onboarding.js:672
 msgid "When openpilot is engaged, you must always pay attention! openpilot monitors awareness with 3D facial reconstruction and pose. Distracted drivers are alerted, then disengaged from openpilot until corrected."
-msgstr "使用 openpilot 时，请务必随时注意前方路况! openpilot 通过 3D 人脸 / 姿态识别来判断驾驶员的状态，如果检测到驾驶员注意力不集中，openpilot 会先提醒驾驶员然后退出控制，除非驾驶员改正问题，集中注意力。"
+msgstr "openpilot이 활성화될때는 항상 주의를 기울여야 합니다! openpilot은 3D 안면 재구성과 포즈로 인지도를 모니터링한다. 운전자 주의 경고된 후 수정될 때까지 openpilot이 해제됩니다"
 
 #: js/components/training/Onboarding/Onboarding.js:631
 msgid "When you are ready to engage openpilot at a comfortable speed, locate the cruise controls on your steering wheel and press \"SET\" to begin."
-msgstr "当车辆行驶在安全速度时，您可以按下位于方向盘上的定速按钮 “SET” 启用 openpilot。"
+msgstr "편안한 속도로 openpilot을 작동할 준비가 되면 스티어링 휠에서 크루즈 컨트롤을 찾고 \"SET\"을 눌러 시작하십시오."
 
 #: js/components/training/Onboarding/Onboarding.js:935
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
-msgstr "使用 openpilot 时，您可以随时改为人工操作方向盘，openpilot 会继续控制车速，直到踩下油门或刹车取消 openpilot 为止。"
+msgstr "openpilot이 작동 중일 때, 핸들을 조향하기 위해 손을 핸들에 대고 있을 수 있다. 핸들 조향 제어는 브레이크 페달을 눌러 해제할 때까지 openpilot에 의해 관리됩니다"
 
 #: js/components/training/Onboarding/Onboarding.js:763
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
-msgstr ""
+msgstr "openpilot이 활성화된 상태에서 방향지시등을 커고 주변을 점검하고 차선을 변경해도 안전한지 확인하십시오."
 
 #: js/components/Settings/Settings.js:405
 #: js/components/Settings/Settings.js:485
 msgid "Yes"
-msgstr "是"
+msgstr "예"
 
 #: js/components/Settings/Settings.js:410
 msgid "You may unpair your device in the comma connect app settings."
-msgstr "您可以在手机应用（Comma connect）中解绑设备。"
+msgstr "당신은 comma connect 앱에서 장치 페어링을 해제할수 있습니다"
 
 #: js/components/SetupQr/SetupQr.js:114
 msgid "and scan this code to pair."
-msgstr "然后扫描这个二维码绑定。"
+msgstr "이 코드를 스캔해서 페어링을 시도하세요"
 
 #: js/components/SetupQr/SetupQr.js:109
 msgid "comma connect"
@@ -642,50 +642,50 @@ msgstr "comma connect"
 
 #: js/components/training/Onboarding/Onboarding.js:717
 msgid "openpilot can change lanes with your assistance."
-msgstr ""
+msgstr "openpilot은 당신의 도움으로 차선을 바꿀 수 있습니다."
 
 #: js/components/training/Onboarding/Onboarding.js:623
 #: js/components/training/Onboarding/Onboarding.js:755
 msgid "openpilot controls"
-msgstr "openpilot 控制"
+msgstr "openpilot 컨트롤"
 
 #: js/components/training/Onboarding/Onboarding.js:927
 msgid "openpilot disengaging"
-msgstr ""
+msgstr "openpilot 해제중"
 
 #: js/components/training/Onboarding/Onboarding.js:664
 msgid "openpilot engaging"
-msgstr ""
+msgstr "openpilot 활성중"
 
 #: js/components/training/Onboarding/Onboarding.js:377
 msgid "openpilot is an advanced driver assistance system."
-msgstr "openpilot 是一个高级驾驶辅助系统。"
+msgstr "openpilot은 진보된 운전자 보조 시스템입니다."
 
 #: js/components/training/Onboarding/Onboarding.js:722
 msgid "openpilot is not capable of checking if a lane change is safe. This is your job. openpilot will change lanes regardless if another vehicle is present."
-msgstr ""
+msgstr "openpilot은 차선 변경이 안전한지 확인할 수 없습니다. 이건 운전자의 주의해야합니다. openpilot은 다른 차량이 있는지 여부에 관계없이 차선이 변경될수 있습니다."
 
 #: js/components/training/Onboarding/Onboarding.js:794
 msgid "openpilot lane changes"
-msgstr ""
+msgstr "openpilot 차선 변경"
 
 #: js/components/training/Onboarding/Onboarding.js:473
 #: js/components/training/Onboarding/Onboarding.js:520
 msgid "openpilot sensors"
-msgstr "openpilot 的传感器"
+msgstr "openpilot 센서"
 
 #: js/components/training/Onboarding/Onboarding.js:433
 msgid "openpilot uses multiple sensors to see the road ahead."
-msgstr "openpilot 使用多个传感器来检测前方道路。"
+msgstr "openpilot은 전방의 도로를 보기 위해 여러 개의 센서를 사용합니다."
 
 #: js/components/training/Onboarding/Onboarding.js:586
 msgid "openpilot will engage when cruise control is set."
-msgstr ""
+msgstr "크루즈 컨트롤이 설정되면 openpilot이 활성화 됩니다"
 
 #: js/components/training/Onboarding/Onboarding.js:845
 msgid "openpilot will stop driving when a pedal is pressed."
-msgstr ""
+msgstr "openpilot은 브레이크 페달을 밟으면 운전을 멈출것입니다"
 
 #: js/components/Settings/Settings.js:204
 msgid "{0} Free"
-msgstr "剩余 {0}"
+msgstr "{0} 여유"
