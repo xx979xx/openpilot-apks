@@ -473,7 +473,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  <Trans>14 days of storage</Trans>
+                                                  <Trans>1 year of storage</Trans>
                                               </X.Text>
                                           </View>
                                           <View style={ Styles.homeBodyAccountUpgradeFeature }>
