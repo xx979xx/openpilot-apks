@@ -68,7 +68,7 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
         ctx.registerReceiver(networkMonitor, filter)
 
         navDestinationPoller = NavDestinationPoller(this)
-        navDestinationPoller!!.start()
+//        navDestinationPoller!!.start()
 
         thermalPoller = ThermalPoller(this)
         thermalPoller!!.start()
@@ -82,7 +82,7 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
         ctx.unregisterReceiver(networkMonitor)
         ctx.unregisterReceiver(settingsClickReceiver)
 
-        navDestinationPoller!!.stop()
+//        navDestinationPoller!!.stop()
         thermalPoller!!.stop()
     }
 
@@ -133,13 +133,8 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
     @ReactMethod
     fun getImei(promise: Promise) {
         try {
-            val c = Class.forName("android.os.SystemProperties")
-            val get = c.getMethod("get", String::class.java, String::class.java)
-            var imei = get.invoke(c, "oem.device.imeicache", "") as String
-            if (imei == "") {
-                imei = "000000000000000"
-            }
-
+            val tm = ctx.applicationContext.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
+            val imei = tm.getDeviceId(0)
             promise.resolve(imei)
         } catch (e: Exception) {
             CloudLog.exception("BaseUIReactModule.getImei", e)
