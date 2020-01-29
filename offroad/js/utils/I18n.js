@@ -20,6 +20,8 @@ i18n.load(supportedLanguage);
 // if the locale is defined, activate it
 if (supportedLanguage.hasOwnProperty(locale)) {
     i18n.activate(locale);
+} else if (locale.startsWith("ar")) {
+    i18n.activate('ar');
 } else {
     i18n.activate('en');
 }
