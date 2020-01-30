@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_panda">판다 연결안됨</string>
+    <string name="storage">저장공간</string>
+    <string name="temp">온도</string>
+    <string name="panda_active">판다 연결됨</string>
+    <string name="panda_good_gps">판다 GPS 연결</string>
+    <string name="panda_no_gps">판다\\nGPS 없음</string>
+</resources>
