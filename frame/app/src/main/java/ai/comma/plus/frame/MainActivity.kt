@@ -328,7 +328,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     fun updateSidebarMetrics(freeSpace: Float, paTemp: Short, thermalStatus: String) {
       // Storage
       var storagePct = (1.0-freeSpace)*100;
-      sidebarMetricStorage?.text = String.format("%.0f", storagePct).plus("%");
+      sidebarMetricStorage?.text = String.format("%.0f%%", storagePct)
       if (storagePct < 75.0) {
         sidebarMetricStorageEdge?.setColorFilter(colorWhite!!);
         sidebarMetricStorageBorder!!.getBackground().setAlpha(76)
@@ -341,7 +341,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
       }
 
       // Temperature
-      sidebarMetricTemp?.text = Integer.toString(paTemp.toInt()).plus("°C");
+      sidebarMetricTemp?.text = String.format("%d°C", paTemp)
       if (thermalStatus==="GREEN") {
         sidebarMetricTempEdge?.setColorFilter(colorWhite!!);
         sidebarMetricTempBorder?.background = borderEmpty;
@@ -673,7 +673,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                 "LTE"
             else -> {
                 if (simState == "ABSENT") {
-                    "No SIM"
+                    resources.getString(R.string.no_sim)
                 } else {
                     CloudLog.log("No service detected. networkType ${telManager.networkType} lastNetworkType ${lastNetworkType}")
                     if (lastNetworkType != null) lastNetworkType!! else null
@@ -699,7 +699,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     }
 
     fun onNetworkStateChange(isWifiConnected: Boolean) {
-        val networkType = if (isWifiConnected) "WiFi" else getNetworkType()
+        val networkType = if (isWifiConnected) resources.getString(R.string.wifi) else getNetworkType()
         networkTypeText?.text = networkType
     }
 
