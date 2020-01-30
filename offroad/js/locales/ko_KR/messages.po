@@ -63,7 +63,7 @@ msgstr "계정"
 
 #: js/components/Settings/Settings.js:616
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
-msgstr "SSH를 사용하여 EON에 장치연결 허용"
+msgstr "SSH를 사용하여 EON연결 허용"
 
 #: js/components/Settings/Settings.js:821
 msgid "Are you sure you want to reboot?"
@@ -146,7 +146,7 @@ msgstr "Wifi 연결"
 
 #: js/components/Home/Home.js:281
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
-msgstr "Wifi 또는 LTE에 연결하여 드라이브 업로드 및 다시보기"
+msgstr "Wifi 또는 데이터 네트워크에 연결하여 주행영상 업로드 및 다시보기"
 
 #: js/components/SetupWifi/SetupWifi.js:226
 #: js/components/SetupWifi/SetupWifi.js:246
@@ -189,7 +189,7 @@ msgstr "오픈파일럿 해제"
 
 #: js/components/Settings/Settings.js:320
 msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "속도는 mp/h 대신 km/h, 온도는 °F 대신 °C로 표시합니다"
+msgstr "속도는 mp/h 대신 km/h, 온도는 °F 대신 °C 로 표시합니다"
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
@@ -219,7 +219,7 @@ msgstr "커뮤니티 기능 사용"
 
 #: js/components/Settings/Settings.js:299
 msgid "Enable Lane Departure Warnings"
-msgstr "차선 이탈 경고 사용"
+msgstr "차선이탈 경고 사용"
 
 #: js/components/Settings/Settings.js:613
 msgid "Enable SSH"
@@ -248,11 +248,11 @@ msgstr "여유공간"
 
 #: js/components/Settings/Settings.js:641
 msgid "Git Branch"
-msgstr "Git Branch"
+msgstr "Git 브랜치"
 
 #: js/components/Settings/Settings.js:644
 msgid "Git Revision"
-msgstr "Git Revision"
+msgstr "Git 리비전"
 
 #: js/components/Settings/Settings.js:695
 msgid "GitHub Username"
@@ -273,15 +273,15 @@ msgstr "경고 숨김"
 
 #: js/components/training/Onboarding/Onboarding.js:405
 msgid "I will be ready to take over at any time!"
-msgstr "언제라도 핸들을 잡을 준비가 되어있을것!"
+msgstr "언제라도 핸들을 잡을 준비를 하겠습니다!"
 
 #: js/components/training/Onboarding/Onboarding.js:399
 msgid "I will be ready to take over at any time."
-msgstr "언제라도 핸들을 잡을 준비가 되어있을것."
+msgstr "언제라도 핸들을 잡을 준비를 하겠습니다."
 
 #: js/components/training/Onboarding/Onboarding.js:393
 msgid "I will keep my eyes on the road."
-msgstr "나는 계속 도로를 주시할 것이다"
+msgstr "나는 항상 도로를 주시하겠습니다"
 
 #: js/components/Home/Home.js:326
 #: js/components/Home/Home.js:386
@@ -330,7 +330,7 @@ msgstr "이제 모든 설정이 완료되었으므로 테스트하기 전에 오
 
 #: js/components/Settings/Settings.js:522
 msgid "Open Language Settings"
-msgstr ""
+msgstr "언어설정 열기"
 
 #: js/components/Settings/Settings.js:558
 msgid "Open Tethering Settings"
@@ -377,7 +377,7 @@ msgstr "비밀번호"
 #: js/components/training/Onboarding/Onboarding.js:797
 #: js/components/training/Onboarding/Onboarding.js:867
 msgid "Perform Lane Change"
-msgstr "차선 변경 수행"
+msgstr "차선변경 수행"
 
 #: js/components/Settings/Settings.js:513
 #: js/components/Settings/Settings.js:827
@@ -503,7 +503,7 @@ msgstr "지금은 건너뛰기"
 #: js/components/training/Onboarding/Onboarding.js:730
 #: js/components/training/Onboarding/Onboarding.js:758
 msgid "Start Lane Change"
-msgstr "차선 변경 시작"
+msgstr "차선변경 시작"
 
 #: js/components/SetupQr/SetupQr.js:82
 msgid "Succesfully paired to account"
@@ -527,7 +527,7 @@ msgstr "서비스 이용 약관 : https://my.comma.ai/terms.html"
 
 #: js/components/Settings/Settings.js:470
 msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position."
-msgstr "캘리브레이션 알고리즘은 도로방향 카메라에서 항상 활성화 됩니다. 장치가 잘못된 켈리브레이션 경고를 보고하거나 장치를 다른 위치에 재장착한 경우에만 켈리브레이션 재설정을 권장합니다"
+msgstr "캘리브레이션 알고리즘은 도로방향 카메라에서 활성화 됩니다. 장치가 잘못된 켈리브레이션 경고를 보고하거나 장치를 다른 위치에 재장착한 경우에만 켈리브레이션 재설정을 권장합니다"
 
 #: js/components/training/Onboarding/Onboarding.js:536
 msgid "The indicator is drawn either red or yellow to illustrate relative speed to the lead car."
@@ -535,7 +535,7 @@ msgstr "이 표시기는 앞차량에 대한 상대적인 속도를 설명하기
 
 #: js/components/training/Onboarding/Onboarding.js:489
 msgid "The lane lines are drawn with varying widths to reflect the confidence in finding your lane."
-msgstr "차선 선은 차선을 찾는 자신감을 반영하기 위해 다양한 너비로 그려집니다"
+msgstr "차선을 표시하는선은 차선을 찾는 자신감을 반영하기 위해 다양한 너비로 그려집니다"
 
 #: js/components/SetupWifi/SetupWifi.js:341
 msgid "The network \"{0}\" requires a password."
@@ -551,7 +551,7 @@ msgstr "Wifi 네트워크 검색 문제발생됨. {0}Wifi 상태가 활성화되
 
 #: js/components/training/Onboarding/Onboarding.js:994
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
-msgstr "이 가이드는 기기 설정에서 언제든지 다시볼수 있습니다. 오픈파일럿에 대해 자세히 알아보려면 wiki를 읽고 comma.ai 커뮤니티에 가입하십시오"
+msgstr "이 가이드는 기기 설정에서 언제든지 다시볼수 있습니다. 오픈파일럿에 대해 자세히 알아보려면 wiki를 읽고 comma.ai DISCORD 커뮤니티에 가입하십시오"
 
 #: js/components/Settings/Settings.js:833
 #: js/components/Settings/Settings.js:835
@@ -560,7 +560,7 @@ msgstr "제거"
 
 #: js/components/Settings/Settings.js:661
 msgid "Uninstall {software}"
-msgstr "제거 {software}"
+msgstr "{software} 제거"
 
 #: js/components/Settings/Settings.js:198
 msgid "Unpaired"
@@ -581,7 +581,7 @@ msgstr "업로드 속도"
 
 #: js/components/Settings/Settings.js:311
 msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
-msgstr "운전자 대면 카메라에서 데이터를 업로드하고 운전자 모니터링 알고리짐을 개선하십시오"
+msgstr "운전자 대면 카메라에서 데이터를 업로드하고 운전자 모니터링 알고리즘을 개선하십시오"
 
 #: js/components/Settings/Settings.js:317
 msgid "Use Metric System"
@@ -593,7 +593,7 @@ msgstr "이 기능은 comma.ai에서 유지하거나 지원하지않으며 표�
 
 #: js/components/Settings/Settings.js:292
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
-msgstr "오픈파일럿 시스템을 사용하여 어댑티브 크루즈 컨트롤 및 차선유지 지원을 받으십시오. 이 기능을 사용하려면 항상 주의를 기울여야 합니다. 이 설정을 변경하면 차량시동이 꺼질 때 적용됨니다"
+msgstr "오픈파일럿 시스템을 사용하여 어댑티브 크루즈 컨트롤 및 차선유지 지원을 받으십시오. 이 기능을 사용하려면 항상 주의를 기울여야 합니다. 이 설정을 변경하면 차량시동 종료후 다시켜질때 적용됨니다"
 
 #: js/components/Settings/Settings.js:638
 msgid "Version"
@@ -601,7 +601,7 @@ msgstr "버전"
 
 #: js/components/Settings/Settings.js:676
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
-msgstr "경고: 그러면 GitHub 설정의 모든 공용 키에 SSH 액세스 권한이 부여됩니다. GitHub 사용자 이름이 아닌 다른 사용자 이름을 입력하지 마십시오. 계속 진행하면 내장 SSH키가 비활성화됩니다. comma 직원은 절대 GitHub를 추가해 달라고 하지않습니다."
+msgstr "경고: GitHub 설정의 모든 공용 키에 SSH 액세스 권한이 부여됩니다. GitHub 사용자 이름이 아닌 다른 사용자 이름을 입력하지 마십시오. 계속 진행하면 내장 SSH키가 비활성화됩니다. comma 직원은 절대 GitHub를 추가해 달라고 하지않습니다."
 
 #: js/components/training/Onboarding/Onboarding.js:333
 msgid "Welcome to openpilot alpha"
@@ -621,7 +621,7 @@ msgstr "편안한 속도로 오픈파일럿을 작동할 준비가 되면 핸들
 
 #: js/components/training/Onboarding/Onboarding.js:935
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
-msgstr "오픈파일럿이 작동 중일 때, 핸들을 조향하기 위해 손을 핸들에 대고 있을 수 있습니다. 핸들 조향 제어는 브레이크 페달을 눌러 해제할 때까지 오픈파일럿에 의해 관리됩니다"
+msgstr "오픈파일럿이 작동 중일 때, 핸들을 조향하기 위해 손을 핸들에 대고 있을 수 있습니다. 핸들 조향 제어는 브레이크를 밟아 해제할 때까지 오픈파일럿에 의해 관리됩니다"
 
 #: js/components/training/Onboarding/Onboarding.js:763
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
@@ -655,7 +655,7 @@ msgstr "오픈파일럿 컨트롤"
 
 #: js/components/training/Onboarding/Onboarding.js:927
 msgid "openpilot disengaging"
-msgstr "오픈파일럿 해제"
+msgstr "오픈파일럿 해제중"
 
 #: js/components/training/Onboarding/Onboarding.js:664
 msgid "openpilot engaging"
@@ -667,11 +667,11 @@ msgstr "오픈파일럿은 진보된 운전자 보조 시스템입니다."
 
 #: js/components/training/Onboarding/Onboarding.js:722
 msgid "openpilot is not capable of checking if a lane change is safe. This is your job. openpilot will change lanes regardless if another vehicle is present."
-msgstr "오픈파일럿은 차선 변경이 안전한지 확인할 수 없습니다. 이건 운전자가 주의해야합니다. 오픈파일럿은 다른 차량이 있는지 여부에 관계없이 차선이 변경될수 있습니다."
+msgstr "오픈파일럿은 차선변경이 안전한지 확인할 수 없습니다. 이건 운전자가 주의해야합니다. 오픈파일럿은 다른 차량이 있는지 여부에 관계없이 차선이 변경될수 있습니다."
 
 #: js/components/training/Onboarding/Onboarding.js:794
 msgid "openpilot lane changes"
-msgstr "오픈파일럿 차선 변경"
+msgstr "오픈파일럿 차선변경"
 
 #: js/components/training/Onboarding/Onboarding.js:473
 #: js/components/training/Onboarding/Onboarding.js:520
