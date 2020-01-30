@@ -6,4 +6,6 @@
     <string name="panda_active">판다 연결됨</string>
     <string name="panda_good_gps">판다 GPS 연결</string>
     <string name="panda_no_gps">판다\\nGPS 없음</string>
+    <string name="wifi">WiFi</string>
+    <string name="no_sim">SIM 없음</string>
 </resources>

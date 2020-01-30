@@ -673,7 +673,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
                 "LTE"
             else -> {
                 if (simState == "ABSENT") {
-                    "No SIM"
+                    resources.getString(R.string.no_sim)
                 } else {
                     CloudLog.log("No service detected. networkType ${telManager.networkType} lastNetworkType ${lastNetworkType}")
                     if (lastNetworkType != null) lastNetworkType!! else null
@@ -699,7 +699,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     }
 
     fun onNetworkStateChange(isWifiConnected: Boolean) {
-        val networkType = if (isWifiConnected) "WiFi" else getNetworkType()
+        val networkType = if (isWifiConnected) resources.getString(R.string.wifi) else getNetworkType()
         networkTypeText?.text = networkType
     }
 
