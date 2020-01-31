@@ -2,5 +2,5 @@
    "localeDir": "js/locales/",
    "srcPathDirs": ["js/components/"],
    "format": "po",
-   "sourceLocale": "en"
+   "sourceLocale": "en_US"
 }

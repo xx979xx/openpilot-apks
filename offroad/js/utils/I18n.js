@@ -25,7 +25,7 @@ if (supportedLanguage.hasOwnProperty(locale)) {
     i18n.activate(locale);
     moment.locale(supportedLanguage[locale])
 } else {
-    i18n.activate('en');
+    i18n.activate('en_US');
 }
 
 export default i18n
