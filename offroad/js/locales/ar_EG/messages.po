@@ -1,0 +1,695 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2020-01-31 21:39+0300\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ar_EG\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Google Translate\n"
+"Language-Team: Google Translate\n"
+"Plural-Forms: \n"
+
+#: js/components/Home/Home.js:476
+msgid "1 year of storage"
+msgstr "تخزين لمدة سنة"
+
+#: js/components/Settings/Settings.js:395
+msgid "<  Account Settings"
+msgstr "<  إعدادات الحساب"
+
+#: js/components/Settings/Settings.js:588
+msgid "<  Developer Settings"
+msgstr "<  إعدادات المطور"
+
+#: js/components/Settings/Settings.js:459
+msgid "<  Device Settings"
+msgstr "<  إعدادات الجهاز"
+
+#: js/components/Settings/Settings.js:539
+msgid "<  Network Settings"
+msgstr "<  إعدادات الشبكة"
+
+#: js/components/Settings/Settings.js:276
+msgid "<  Settings"
+msgstr "<  الإعدادات"
+
+#: js/components/training/Onboarding/Onboarding.js:382
+msgid "A driver assistance system is not a self driving car. This means openpilot is designed to work with you, not without you. Your attention is required to drive."
+msgstr "نظام مساعدة السائق ليس سيارة ذاتية القيادة. هذا يعني أن openpilot مصمم للعمل معك ، وليس بدونك. انتباهكم مطلوب للقيادة."
+
+#: js/components/training/Onboarding/Onboarding.js:481
+msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
+msgstr "تعمل خوارزمية الرؤية على زيادة فعالية الكاميرا المواجهة للطريق لتحديد مسار القيادة."
+
+#: js/components/Home/Home.js:225
+msgid "ALERT"
+msgstr "إنذار"
+
+#: js/components/Home/Home.js:225
+msgid "ALERTS"
+msgstr "تنبيهات"
+
+#: js/components/Home/Home.js:353
+msgid "ALL TIME"
+msgstr "كل الوقت"
+
+#: js/components/Settings/Settings.js:197
+msgid "Account"
+msgstr "الحساب"
+
+#: js/components/Settings/Settings.js:616
+msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
+msgstr "السماح للأجهزة بالاتصال بـ EON باستخدام Secure Shell (SSH)."
+
+#: js/components/Settings/Settings.js:821
+msgid "Are you sure you want to reboot?"
+msgstr "هل أنت متأكد أنك تريد إعادة التشغيل؟"
+
+#: js/components/Settings/Settings.js:827
+msgid "Are you sure you want to shutdown?"
+msgstr "هل أنت متأكد من أنك تريد إيقاف التشغيل؟"
+
+#: js/components/Settings/Settings.js:833
+msgid "Are you sure you want to uninstall?"
+msgstr "هل أنت متأكد أنك تريد إلغاء التثبيت؟"
+
+#: js/components/SetupWifi/SetupWifi.js:227
+msgid "Authenticating..."
+msgstr "مصادقة ..."
+
+#: js/components/SetupWifi/SetupWifi.js:228
+msgid "Authentication problem"
+msgstr "مشكلة المصادقة"
+
+#: js/components/Settings/Settings.js:622
+msgid "Authorized SSH Keys"
+msgstr "مفاتيح SSH المعتمدة"
+
+#: js/components/Home/Home.js:452
+msgid "Become a comma prime member in the comma app and get premium features!"
+msgstr "تصبح عضوا فاصلة رئيس في التطبيق فاصلة والحصول على ميزات متميزة!"
+
+#: js/components/training/Onboarding/Onboarding.js:438
+msgid "Before any signals are sent to control your car, sensors are fused to construct a scene of the road."
+msgstr "قبل إرسال أي إشارات للتحكم في سيارتك ، يتم دمج أجهزة الاستشعار لإنشاء مشهد للطريق."
+
+#: js/components/training/Onboarding/Onboarding.js:348
+msgid "Begin Training"
+msgstr "ابدأ التدريب"
+
+#: js/components/Home/Home.js:422
+msgid "COMMA POINTS"
+msgstr "نقاط COMMA"
+
+#: js/components/Settings/Settings.js:468
+msgid "Camera Calibration"
+msgstr "معايرة الكاميرا"
+
+#: js/components/training/Onboarding/Onboarding.js:449
+#: js/components/training/Onboarding/Onboarding.js:476
+msgid "Camera from Device"
+msgstr "الكاميرا من الجهاز"
+
+#: js/components/Settings/Settings.js:632
+#: js/components/Settings/Settings.js:822
+#: js/components/Settings/Settings.js:828
+#: js/components/Settings/Settings.js:834
+#: js/components/Settings/Settings.js:871
+#: js/components/SetupWifi/SetupWifi.js:320
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: js/components/SetupTerms/SetupTerms.js:47
+msgid "Comma.ai, Inc. Terms & Conditions"
+msgstr "Comma.ai، Inc. الشروط والأحكام"
+
+#: js/components/Settings/Settings.js:870
+msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
+msgstr "لم يتم تأكيد الميزات التي تم صيانتها من قِبل المجتمع باستخدام فاصلة لتلائم نموذج الأمان القياسي. كن حذرًا جدًا في استخدامها."
+
+#: js/components/training/Onboarding/Onboarding.js:989
+msgid "Congratulations! You have completed openpilot training."
+msgstr "تهانينا! لقد أكملت تدريب openpilot."
+
+#: js/components/SetupWifi/SetupWifi.js:269
+#: js/components/SetupWifi/SetupWifi.js:333
+msgid "Connect"
+msgstr "الاتصال"
+
+#: js/components/SetupWifi/SetupWifi.js:370
+msgid "Connect to WiFi"
+msgstr "الاتصال واي فاي"
+
+#: js/components/Home/Home.js:281
+msgid "Connect to a WiFi or cellular network to upload and review your drives."
+msgstr "اتصل بشبكة WiFi أو شبكة خلوية لتحميل ومراجعة محركات الأقراص."
+
+#: js/components/SetupWifi/SetupWifi.js:226
+#: js/components/SetupWifi/SetupWifi.js:246
+msgid "Connected"
+msgstr "متصل"
+
+#: js/components/SetupQr/SetupQr.js:140
+#: js/components/SetupWifi/SetupWifi.js:425
+msgid "Continue"
+msgstr "استمر"
+
+#: js/components/training/Onboarding/Onboarding.js:802
+msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
+msgstr "راقب محيطك باستمرار بحثًا عن الأمان مع دفع عجلة القيادة برفق نحو المسار الذي تريده. سيؤدي الجمع بين إشارة الدوران ودفع العجلات إلى دفع openpilot لتغيير الممرات."
+
+#: js/components/Home/Home.js:309
+#: js/components/Home/Home.js:369
+msgid "DRIVES"
+msgstr "DRIVES"
+
+#: js/components/Settings/Settings.js:215
+msgid "Developer"
+msgstr "مطور"
+
+#: js/components/Home/Home.js:488
+msgid "Developer perks"
+msgstr "اكراميات المطور"
+
+#: js/components/Settings/Settings.js:203
+msgid "Device"
+msgstr "جهاز"
+
+#: js/components/Settings/Settings.js:404
+msgid "Device Paired"
+msgstr "جهاز مقترن"
+
+#: js/components/training/Onboarding/Onboarding.js:930
+msgid "Disengage openpilot"
+msgstr "فك الارتباط openpilot"
+
+#: js/components/Settings/Settings.js:320
+msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
+msgstr "سرعة العرض في كم / ساعة بدلاً من النائب / ساعة ودرجة الحرارة في درجة مئوية بدلاً من درجة فهرنهايت."
+
+#: js/components/Settings/Settings.js:487
+msgid "Dongle ID"
+msgstr "دونغل الهوية"
+
+#: js/components/SetupQr/SetupQr.js:104
+msgid "Download"
+msgstr "تحميل"
+
+#: js/components/training/Onboarding/Onboarding.js:607
+#: js/components/training/Onboarding/Onboarding.js:667
+msgid "Driver Monitoring"
+msgstr "مراقبة السائق"
+
+#: js/components/Settings/Settings.js:632
+msgid "Edit"
+msgstr "تعديل"
+
+#: js/components/Settings/Settings.js:872
+msgid "Enable"
+msgstr "ممكن"
+
+#: js/components/Settings/Settings.js:597
+#: js/components/Settings/Settings.js:870
+msgid "Enable Community Features"
+msgstr "تمكين ميزات المجتمع"
+
+#: js/components/Settings/Settings.js:299
+msgid "Enable Lane Departure Warnings"
+msgstr "تمكين حارات المغادرة لين"
+
+#: js/components/Settings/Settings.js:613
+msgid "Enable SSH"
+msgstr "تمكين SSH"
+
+#: js/components/Settings/Settings.js:289
+msgid "Enable openpilot"
+msgstr "تمكين openpilot"
+
+#: js/components/training/Onboarding/Onboarding.js:599
+#: js/components/training/Onboarding/Onboarding.js:626
+msgid "Engage openpilot"
+msgstr "إشراك openpilot"
+
+#: js/components/Home/Home.js:508
+msgid "Finish Setup"
+msgstr "إنهاء الإعداد"
+
+#: js/components/training/Onboarding/Onboarding.js:1006
+msgid "Finish Training"
+msgstr "إنهاء التدريب"
+
+#: js/components/Settings/Settings.js:493
+msgid "Free Storage"
+msgstr "تخزين مجانية"
+
+#: js/components/Settings/Settings.js:641
+msgid "Git Branch"
+msgstr "فرع جيت"
+
+#: js/components/Settings/Settings.js:644
+msgid "Git Revision"
+msgstr "بوابة مراجعة"
+
+#: js/components/Settings/Settings.js:695
+msgid "GitHub Username"
+msgstr "اسم المستخدم جيثب"
+
+#: js/components/SetupWifi/SetupWifi.js:414
+msgid "Go Back"
+msgstr "عد"
+
+#: js/components/Home/Home.js:341
+#: js/components/Home/Home.js:401
+msgid "HOURS"
+msgstr "HOURS"
+
+#: js/components/Home/Home.js:263
+msgid "Hide Alerts"
+msgstr "إخفاء التنبيهات"
+
+#: js/components/training/Onboarding/Onboarding.js:405
+msgid "I will be ready to take over at any time!"
+msgstr "سوف أكون مستعدًا لتولي المسؤولية في أي وقت!"
+
+#: js/components/training/Onboarding/Onboarding.js:399
+msgid "I will be ready to take over at any time."
+msgstr "سوف أكون مستعدًا لتولي المسؤولية في أي وقت."
+
+#: js/components/training/Onboarding/Onboarding.js:393
+msgid "I will keep my eyes on the road."
+msgstr "سأبقي عيني على الطريق."
+
+#: js/components/Home/Home.js:326
+#: js/components/Home/Home.js:386
+msgid "KM"
+msgstr "كم"
+
+#: js/components/training/Onboarding/Onboarding.js:892
+msgid "Keep in mind that certain situations are not handled by openpilot. Scenarios such as traffic lights, stop signs, quick vehicle cutins and pedestrians are unrecognized and openpilot may accelerate."
+msgstr "ضع في اعتبارك أن بعض المواقف لا يتم التعامل معها بواسطة openpilot. لا يتم التعرف على السيناريوهات مثل إشارات المرور وعلامات التوقف والقطع السريع للمركبات والمشاة وقد تتسارع openpilot."
+
+#: js/components/Settings/Settings.js:131
+#: js/components/UpdatePrompt/UpdatePrompt.js:33
+msgid "Later"
+msgstr "في وقت لاحق"
+
+#: js/components/training/Onboarding/Onboarding.js:859
+#: js/components/training/Onboarding/Onboarding.js:887
+msgid "Limited Features"
+msgstr "ميزات محدودة"
+
+#: js/components/Home/Home.js:326
+#: js/components/Home/Home.js:386
+msgid "MILES"
+msgstr "اميال"
+
+#: js/components/SetupWifi/SetupWifi.js:377
+msgid "More Options"
+msgstr "المزيد من الخيارات"
+
+#: js/components/Settings/Settings.js:209
+msgid "Network"
+msgstr "شبكة الاتصال"
+
+#: js/components/Settings/Settings.js:405
+#: js/components/Settings/Settings.js:485
+msgid "No"
+msgstr "لا"
+
+#: js/components/Home/Home.js:275
+msgid "No Network Connection"
+msgstr "لا يوجد اتصال شبكة"
+
+#: js/components/training/Onboarding/Onboarding.js:338
+msgid "Now that you’re all set up, it’s important to understand the functionality and limitations of openpilot as alpha software before testing."
+msgstr "الآن وبعد الانتهاء من الإعداد ، من المهم فهم وظائف وحدود openpilot كبرنامج ألفا قبل الاختبار."
+
+#: js/components/Settings/Settings.js:522
+msgid "Open Language Settings"
+msgstr "افتح إعدادات اللغة"
+
+#: js/components/Settings/Settings.js:558
+msgid "Open Tethering Settings"
+msgstr "افتح إعدادات الربط"
+
+#: js/components/Settings/Settings.js:551
+msgid "Open WiFi Settings"
+msgstr "افتح إعدادات WiFi"
+
+#: js/components/Home/Home.js:293
+msgid "PAST WEEK"
+msgstr "الأسبوع الماضي"
+
+#: js/components/Settings/Settings.js:426
+msgid "Pair Device"
+msgstr "جهاز الزوج"
+
+#: js/components/SetupQr/SetupQr.js:63
+msgid "Pair Your Account"
+msgstr "إقران حسابك"
+
+#: js/components/Home/Home.js:520
+msgid "Pair your comma account with comma connect"
+msgstr "إقران حساب الفاصلة الخاص بك مع فواصل الاتصال"
+
+#: js/components/Settings/Settings.js:198
+#: js/components/Settings/Settings.js:484
+msgid "Paired"
+msgstr "يقترن"
+
+#: js/components/Settings/Settings.js:652
+msgid "Panda Dongle ID"
+msgstr "معرف الباندا دونغل"
+
+#: js/components/Settings/Settings.js:648
+msgid "Panda Firmware"
+msgstr "البرامج الثابتة الباندا"
+
+#: js/components/SetupWifi/SetupWifi.js:349
+msgid "Password:"
+msgstr "كلمه السر:"
+
+#: js/components/training/Onboarding/Onboarding.js:738
+#: js/components/training/Onboarding/Onboarding.js:797
+#: js/components/training/Onboarding/Onboarding.js:867
+msgid "Perform Lane Change"
+msgstr "أداء لين التغيير"
+
+#: js/components/Settings/Settings.js:513
+#: js/components/Settings/Settings.js:827
+msgid "Power Off"
+msgstr "خارج السلطة"
+
+#: js/components/training/Onboarding/Onboarding.js:591
+msgid "Press cruise to engage and a pedal to disengage."
+msgstr "اضغط كروز للانخراط ودواسة لفك الارتباط."
+
+#: js/components/SetupTerms/SetupTerms.js:49
+msgid "Privacy policy available at https://my.comma.ai/privacy.html"
+msgstr "سياسة الخصوصية متوفرة على https://my.comma.ai/privacy.html"
+
+#: js/components/training/Onboarding/Onboarding.js:457
+#: js/components/training/Onboarding/Onboarding.js:523
+msgid "Radar from your car"
+msgstr "الرادار من سيارتك"
+
+#: js/components/Settings/Settings.js:130
+#: js/components/Settings/Settings.js:506
+#: js/components/Settings/Settings.js:821
+#: js/components/Settings/Settings.js:823
+msgid "Reboot"
+msgstr "اعادة التشغيل"
+
+#: js/components/Settings/Settings.js:132
+msgid "Reboot Now"
+msgstr "اعادة التشغيل الان"
+
+#: js/components/UpdatePrompt/UpdatePrompt.js:32
+msgid "Reboot and Update"
+msgstr "إعادة التشغيل والتحديث"
+
+#: js/components/Settings/Settings.js:302
+msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
+msgstr "تلقي تنبيهات لتوجيه مرة أخرى إلى الممر عندما تنجرف سيارتك عبر خط حارة تم الكشف عنها دون تنشيط إشارة دوران أثناء القيادة أكثر من 31 ميلاً في الساعة (50 كم في الساعة)."
+
+#: js/components/Settings/Settings.js:308
+msgid "Record and Upload Driver Camera"
+msgstr "تسجيل وتحميل كاميرا سائق"
+
+#: js/components/Home/Home.js:464
+msgid "Remote Access"
+msgstr "الوصول عن بعد"
+
+#: js/components/Settings/Settings.js:734
+msgid "Remove all"
+msgstr "حذف الكل"
+
+#: js/components/Settings/Settings.js:478
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#: js/components/Settings/Settings.js:130
+msgid "Resetting calibration requires a reboot."
+msgstr "إعادة ضبط المعايرة تتطلب إعادة تشغيل."
+
+#: js/components/training/Onboarding/Onboarding.js:1014
+msgid "Restart"
+msgstr "اعادة البدء"
+
+#: js/components/Settings/Settings.js:377
+msgid "Review Training Guide"
+msgstr "مراجعة دليل التدريب"
+
+#: js/components/Settings/Settings.js:712
+msgid "Save"
+msgstr "حفظ"
+
+#: js/components/Settings/Settings.js:724
+msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
+msgstr "فشل عملية الحفظ. تأكد من صحة اسم المستخدم الخاص بك وأنك متصل بالإنترنت."
+
+#: js/components/SetupWifi/SetupWifi.js:397
+msgid "Scanning WiFi Networks..."
+msgstr "جارٍ مسح شبكات WiFi ..."
+
+#: js/components/training/Onboarding/Onboarding.js:685
+msgid "Select face to continue"
+msgstr "حدد الوجه للمتابعة"
+
+#: js/components/training/Onboarding/Onboarding.js:547
+msgid "Select lead car indicator"
+msgstr "حدد مؤشر سيارة الرصاص"
+
+#: js/components/training/Onboarding/Onboarding.js:905
+msgid "Select light to continue"
+msgstr "حدد الضوء للمتابعة"
+
+#: js/components/training/Onboarding/Onboarding.js:500
+msgid "Select path to continue"
+msgstr "حدد المسار للمتابعة"
+
+#: js/components/training/Onboarding/Onboarding.js:813
+msgid "Select steering wheel"
+msgstr "حدد عجلة القيادة"
+
+#: js/components/training/Onboarding/Onboarding.js:772
+msgid "Select turn signal"
+msgstr "حدد بدوره إشارة"
+
+#: js/components/Settings/Settings.js:490
+msgid "Serial Number"
+msgstr "رقم سري"
+
+#: js/components/SetupWifi/SetupWifi.js:308
+msgid "Show password"
+msgstr "عرض كلمة المرور"
+
+#: js/components/Settings/Settings.js:829
+msgid "Shutdown"
+msgstr "اغلق"
+
+#: js/components/SetupWifi/SetupWifi.js:425
+msgid "Skip For Now"
+msgstr "تخطي في الوقت الراهن"
+
+#: js/components/SetupQr/SetupQr.js:147
+msgid "Skip for Now"
+msgstr "تخطي في الوقت الراهن"
+
+#: js/components/training/Onboarding/Onboarding.js:730
+#: js/components/training/Onboarding/Onboarding.js:758
+msgid "Start Lane Change"
+msgstr "بدء حارة التغيير"
+
+#: js/components/SetupQr/SetupQr.js:82
+msgid "Succesfully paired to account"
+msgstr "يقترن بنجاح إلى الحساب"
+
+#: js/components/SetupQr/SetupQr.js:104
+msgid "Successfully paired to an account in"
+msgstr "تمت إقران بنجاح إلى حساب في"
+
+#: js/components/training/Onboarding/Onboarding.js:643
+msgid "Tap \"SET\" to engage"
+msgstr "اضغط \"SET\" للمشاركة"
+
+#: js/components/training/Onboarding/Onboarding.js:948
+msgid "Tap a pedal to disengage"
+msgstr "اضغط على دواسة لفك الارتباط"
+
+#: js/components/Settings/Settings.js:417
+msgid "Terms of Service available at https://my.comma.ai/terms.html"
+msgstr "تتوفر شروط الخدمة على https://my.comma.ai/terms.html"
+
+#: js/components/Settings/Settings.js:470
+msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position."
+msgstr "خوارزمية المعايرة نشطة دائمًا على الكاميرا التي تواجه الطريق. يُنصح بإعادة ضبط المعايرة فقط عندما يبلغ الجهاز عن تنبيه معايرة غير صالح أو عندما يتم إعادة تحميل الجهاز في وضع مختلف."
+
+#: js/components/training/Onboarding/Onboarding.js:536
+msgid "The indicator is drawn either red or yellow to illustrate relative speed to the lead car."
+msgstr "يتم رسم المؤشر إما باللون الأحمر أو الأصفر لتوضيح السرعة النسبية للسيارة الرائدة."
+
+#: js/components/training/Onboarding/Onboarding.js:489
+msgid "The lane lines are drawn with varying widths to reflect the confidence in finding your lane."
+msgstr "يتم رسم خطوط الممرات بأطوال مختلفة لتعكس الثقة في العثور على المسار الخاص بك."
+
+#: js/components/SetupWifi/SetupWifi.js:341
+msgid "The network \"{0}\" requires a password."
+msgstr "تتطلب الشبكة \"{0}\" كلمة مرور."
+
+#: js/components/training/Onboarding/Onboarding.js:528
+msgid "The stock radar in your car helps openpilot measure the lead car distance for longitudinal control."
+msgstr "يساعد رادار المخزون الموجود في سيارتك openpilot في قياس مسافة سيارة الرصاص من أجل التحكم الطولي."
+
+#: js/components/SetupWifi/SetupWifi.js:77
+msgid "There was a problem scanning WiFi networks. {0}Make sure WiFi is enabled in \"More Options\" above."
+msgstr "حدثت مشكلة في فحص شبكات WiFi. {0} تأكد من تمكين WiFi في \"مزيد من الخيارات \" أعلاه."
+
+#: js/components/training/Onboarding/Onboarding.js:994
+msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
+msgstr "يمكن إعادة تشغيل هذا الدليل في أي وقت من إعدادات الجهاز. لمعرفة المزيد حول openpilot ، اقرأ الويكي والانضمام إلى المجتمع على discord.comma.ai"
+
+#: js/components/Settings/Settings.js:833
+#: js/components/Settings/Settings.js:835
+msgid "Uninstall"
+msgstr "الغاء التثبيت"
+
+#: js/components/Settings/Settings.js:661
+msgid "Uninstall {software}"
+msgstr "إلغاء التثبيت {software}"
+
+#: js/components/Settings/Settings.js:198
+msgid "Unpaired"
+msgstr "أونبايريد"
+
+#: js/components/Home/Home.js:210
+#: js/components/UpdatePrompt/UpdatePrompt.js:36
+msgid "Update Available"
+msgstr "تحديث متوفر"
+
+#: js/components/Home/Home.js:445
+msgid "Upgrade Now"
+msgstr "تحديث الآن"
+
+#: js/components/Settings/Settings.js:497
+msgid "Upload Speed"
+msgstr "سرعة التحميل"
+
+#: js/components/Settings/Settings.js:311
+msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
+msgstr "قم بتحميل البيانات من الكاميرا التي تواجه السائق وساعد في تحسين خوارزمية مراقبة السائق."
+
+#: js/components/Settings/Settings.js:317
+msgid "Use Metric System"
+msgstr "استخدام النظام المتري"
+
+#: js/components/Settings/Settings.js:602
+msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor"
+msgstr "استخدم ميزات من مجتمع المصادر المفتوحة التي لم يتم صيانتها أو دعمها من قبل فاصلة ولم يتم التأكد من مطابقتها لنموذج الأمان القياسي. كن حذرًا جدًا عند استخدام هذه الميزات: * منفذ سيارة GM * Toyota مع DSU غير موصول * اعتراض Pedal"
+
+#: js/components/Settings/Settings.js:292
+msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
+msgstr "استخدم نظام openpilot للتحكم التكيفي في ثبات السرعة والحفاظ على مساعدة السائق. يجب الانتباه في جميع الأوقات لاستخدام هذه الميزة. يسري تغيير هذا الإعداد عندما تكون السيارة في وضع إيقاف التشغيل."
+
+#: js/components/Settings/Settings.js:638
+msgid "Version"
+msgstr "الإصدار"
+
+#: js/components/Settings/Settings.js:676
+msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
+msgstr "تحذير: هذا يمنح SSH الوصول إلى جميع المفاتيح العامة في إعدادات GitHub. لا تقم مطلقًا بإدخال اسم مستخدم GitHub بخلاف اسم المستخدم الخاص بك. سيتم تعطيل مفتاح SSH المدمج في حالة المتابعة. لن يطلب منك موظف فاصلة أبدًا إضافة GitHub."
+
+#: js/components/training/Onboarding/Onboarding.js:333
+msgid "Welcome to openpilot alpha"
+msgstr "مرحبًا بك في openpilot alpha"
+
+#: js/components/training/Onboarding/Onboarding.js:850
+msgid "When encountering a potentially unsafe situation or exiting a highway, you can disengage with any pedal."
+msgstr "عند مواجهة موقف غير آمن أو الخروج من طريق سريع ، يمكنك فك الارتباط بأي دواسة."
+
+#: js/components/training/Onboarding/Onboarding.js:672
+msgid "When openpilot is engaged, you must always pay attention! openpilot monitors awareness with 3D facial reconstruction and pose. Distracted drivers are alerted, then disengaged from openpilot until corrected."
+msgstr "عندما تشارك openpilot ، يجب عليك دائمًا الانتباه! openpilot تراقب الوعي مع إعادة بناء الوجه ثلاثية الأبعاد وتشكل. يتم تنبيه السائقين المشغولين ، ثم يتم فك ارتباطهم من openpilot حتى يتم تصحيحه."
+
+#: js/components/training/Onboarding/Onboarding.js:631
+msgid "When you are ready to engage openpilot at a comfortable speed, locate the cruise controls on your steering wheel and press \"SET\" to begin."
+msgstr "عندما تكون مستعدًا للانخراط في openpilot بسرعة مريحة ، حدد أدوات التحكم في التطواف على عجلة القيادة واضغط على \"SET \" للبدء."
+
+#: js/components/training/Onboarding/Onboarding.js:935
+msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
+msgstr "أثناء تعامل openpilot ، يمكنك إبقاء يديك على العجلة لتجاوز الضوابط الجانبية. ستتم إدارة أدوات التحكم الطولية بواسطة openpilot حتى يتم الضغط على دواسة الوقود أو الفرامل لفك الارتباط."
+
+#: js/components/training/Onboarding/Onboarding.js:763
+msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
+msgstr "عند استخدام openpilot ، قم بتشغيل الإشارة الخاصة بك وتحقق من المناطق المحيطة بك وتأكد من تغيير الممرات بأمان."
+
+#: js/components/Settings/Settings.js:405
+#: js/components/Settings/Settings.js:485
+msgid "Yes"
+msgstr "نعم"
+
+#: js/components/Settings/Settings.js:410
+msgid "You may unpair your device in the comma connect app settings."
+msgstr "يمكنك إلغاء إقران جهازك في إعدادات التطبيق بتوصيل الفاصلة."
+
+#: js/components/SetupQr/SetupQr.js:114
+msgid "and scan this code to pair."
+msgstr "ومسح هذا الرمز لإقرانه."
+
+#: js/components/SetupQr/SetupQr.js:109
+msgid "comma connect"
+msgstr "فاصلة الاتصال"
+
+#: js/components/training/Onboarding/Onboarding.js:717
+msgid "openpilot can change lanes with your assistance."
+msgstr "openpilot يمكن تغيير الممرات بمساعدتكم."
+
+#: js/components/training/Onboarding/Onboarding.js:623
+#: js/components/training/Onboarding/Onboarding.js:755
+msgid "openpilot controls"
+msgstr "ضوابط openpilot"
+
+#: js/components/training/Onboarding/Onboarding.js:927
+msgid "openpilot disengaging"
+msgstr "openpilot فك الارتباط"
+
+#: js/components/training/Onboarding/Onboarding.js:664
+msgid "openpilot engaging"
+msgstr "openpilot الانخراط"
+
+#: js/components/training/Onboarding/Onboarding.js:377
+msgid "openpilot is an advanced driver assistance system."
+msgstr "openpilot هو نظام متقدم لمساعدة السائق."
+
+#: js/components/training/Onboarding/Onboarding.js:722
+msgid "openpilot is not capable of checking if a lane change is safe. This is your job. openpilot will change lanes regardless if another vehicle is present."
+msgstr "openpilot غير قادر على التحقق مما إذا كان تغيير المسار آمنًا. هذه وظيفتك سوف openpilot تغيير الممرات بغض النظر إذا كانت مركبة أخرى موجودة."
+
+#: js/components/training/Onboarding/Onboarding.js:794
+msgid "openpilot lane changes"
+msgstr "openpilot التغييرات الحارة"
+
+#: js/components/training/Onboarding/Onboarding.js:473
+#: js/components/training/Onboarding/Onboarding.js:520
+msgid "openpilot sensors"
+msgstr "أجهزة استشعار openpilot"
+
+#: js/components/training/Onboarding/Onboarding.js:433
+msgid "openpilot uses multiple sensors to see the road ahead."
+msgstr "يستخدم openpilot أجهزة استشعار متعددة لرؤية الطريق إلى الأمام."
+
+#: js/components/training/Onboarding/Onboarding.js:586
+msgid "openpilot will engage when cruise control is set."
+msgstr "سوف openpilot الانخراط عندما يتم تعيين التحكم في التطواف."
+
+#: js/components/training/Onboarding/Onboarding.js:845
+msgid "openpilot will stop driving when a pedal is pressed."
+msgstr "openpilot سيتوقف عن القيادة عند الضغط على دواسة."
+
+#: js/components/Settings/Settings.js:204
+msgid "{0} Free"
+msgstr "{0} مجانًا"
