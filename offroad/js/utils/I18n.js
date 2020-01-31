@@ -6,17 +6,17 @@ import zhCN from '../locales/zh_CN/messages.js';
 import koKR from '../locales/ko_KR/messages.js';
 import arEG from '../locales/ar_EG/messages.js';
 import moment from 'moment';
-import 'moment/locale/zhTW';
-import 'moment/locale/zhCN';
+import 'moment/locale/zh-tw';
+import 'moment/locale/zh-cn';
 import 'moment/locale/ko';
-import 'moment/locale/ar';
+import 'moment/locale/ar-sa';
 
 // define which locale use which translate file
 let supportedLanguage = {
-    'zh_TW': zhTW,
-    'zh_CN': zhCN,
+    'zh_TW': zh-tw,
+    'zh_CN': zh-cn,
     'ko_KR': ko,
-    'ar_EG': ar,
+    'ar_EG': ar-sa,
 };
 
 const locale = NativeModules.I18nManager.localeIdentifier; // zh_TW_#Hant, zh_CN_#Hans
