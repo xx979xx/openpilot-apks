@@ -37,6 +37,7 @@
   "dependencies": {
     "@commaai/comma-api": "1.2.1",
     "@commaai/jsc-android": "250230.0.0",
+    "@lingui/react": "^2.9.1",
     "@sentry/react-native": "^1.0.9",
     "comma-x-native": "git+https://git@github.com/commaai/comma-x-native.git",
     "moment": "^2.19.1",

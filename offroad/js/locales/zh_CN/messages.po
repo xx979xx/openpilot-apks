@@ -14,8 +14,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: js/components/Home/Home.js:476
-msgid "14 days of storage"
-msgstr "14 天行车记录"
+msgid "1 year of storage"
+msgstr ""
 
 #: js/components/Settings/Settings.js:395
 msgid "<  Account Settings"
@@ -407,6 +407,10 @@ msgstr "马上"
 #: js/components/UpdatePrompt/UpdatePrompt.js:32
 msgid "Reboot and Update"
 msgstr "重启并更新"
+
+#: js/components/Settings/Settings.js:302
+msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
+msgstr ""
 
 #: js/components/Settings/Settings.js:308
 msgid "Record and Upload Driver Camera"
