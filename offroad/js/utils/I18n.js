@@ -5,11 +5,13 @@ import zhTW from '../locales/zh_TW/messages.js';
 import zhCN from '../locales/zh_CN/messages.js';
 import koKR from '../locales/ko_KR/messages.js';
 import arEG from '../locales/ar_EG/messages.js';
+import frFR from '../locales/fr_FR/messages.js';
 import moment from 'moment';
 import 'moment/locale/zh-tw';
 import 'moment/locale/zh-cn';
 import 'moment/locale/ko';
 import 'moment/locale/ar';
+import 'moment/locale/fr';
 
 
 // define which locale use which translate file
@@ -19,6 +21,7 @@ let supportedLanguage = {
     'zh_CN': zhCN,
     'ko_KR': koKR,
     'ar_EG': arEG,
+    'fr_FR': frFR,
 };
 
 const locale = NativeModules.I18nManager.localeIdentifier; // zh_TW_#Hant, zh_CN_#Hans
