@@ -29,7 +29,7 @@ import X from '../../themes';
 import Styles from './SettingsStyles';
 
 // i18n
-import { i18n } from '../../utils/I18n'
+import { i18n, numToSymbol } from '../../utils/I18n'
 import { t, Trans } from "@lingui/macro"
 
 const SettingsRoutes = {
@@ -201,7 +201,7 @@ class Settings extends Component {
             {
                 icon: Icons.eon,
                 title: i18n._(t`Device`),
-                context: i18n._(t`${ parseInt(freeSpace) + '%' } Free`),
+                context: i18n._(t`${ numToSymbol(parseInt(freeSpace) + '%') } Free`),
                 route: SettingsRoutes.DEVICE,
             },
             {
