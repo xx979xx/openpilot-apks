@@ -12,16 +12,19 @@ import 'moment/locale/zh-cn';
 import 'moment/locale/ko';
 import 'moment/locale/ar';
 import 'moment/locale/fr';
-import extra from '../locales/ar_EG/extra.js';
+import arEGext from '../locales/ar_EG/extra.js';
 
 // define which locale use which translate file
-let supportedLanguage = {
+const supportedLanguage = {
     'en_US': enUS,
     'zh_TW': zhTW,
     'zh_CN': zhCN,
     'ko_KR': koKR,
     'ar_EG': arEG,
     'fr_FR': frFR,
+};
+const languageExtra = {
+    'ar_EG': arEGext,
 };
 
 const locale = NativeModules.I18nManager.localeIdentifier; // zh_TW_#Hant, zh_CN_#Hans
@@ -35,11 +38,26 @@ if (supportedLanguage.hasOwnProperty(locale)) {
 } else {
     i18n.activate('en_US');
     moment.locale('en_US');
+} 
+var extra = false;
+if (languageExtra.hasOwnProperty(locale)) {
+    extra = languageExtra[locale];
 }
 
+export const transCity = (string) => {
+    if (extra && extra.cityNames.hasOwnProperty(string)) {
+        return extra.cityNames[string];
+    } else {
+        return string;
+    }
+}
 
-export const numToSymbol = (string) => string.replace(/\d/g, (match) => extra.numberMap[match]);
-
-export const transCity = (string) => extra.cityNames.hasOwnProperty(string) ? extra.cityNames[string] : string;
+export const numToSymbol = (string) => {
+    if (extra && extra.hasOwnProperty('numberMap')) {
+        return string.replace(/\d/g, (match) => extra.numberMap[match]);
+    } else {
+        return string;
+    }
+}
 
 export default i18n
