@@ -12,7 +12,7 @@ import 'moment/locale/zh-cn';
 import 'moment/locale/ko';
 import 'moment/locale/ar';
 import 'moment/locale/fr';
-
+import extra from '../locales/ar_EG/extra.js';
 
 // define which locale use which translate file
 let supportedLanguage = {
@@ -36,5 +36,10 @@ if (supportedLanguage.hasOwnProperty(locale)) {
     i18n.activate('en_US');
     moment.locale('en_US');
 }
+
+
+export const numToSymbol = (string) => string.replace(/\d/g, (match) => extra.numberMap[match]);
+
+export const transCity = (string) => extra.cityNames.hasOwnProperty(string) ? extra.cityNames[string] : string;
 
 export default i18n
