@@ -14,8 +14,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: js/components/Home/Home.js:476
-msgid "14 days of storage"
-msgstr "14 jours de stockage"
+msgid "1 year of storage"
+msgstr "1 an de stockage"
 
 #: js/components/Settings/Settings.js:395
 msgid "<  Account Settings"
@@ -188,8 +188,8 @@ msgid "Disengage openpilot"
 msgstr "Désengager openpilot"
 
 #: js/components/Settings/Settings.js:320
-msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "Affiche la vitesse en km/h à la place de mp/h et la température en °C à la place de °F."
+msgid "Display speed in km/h instead of mp/h."
+msgstr "Affiche la vitesse en km/h à la place de mp/h"
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
