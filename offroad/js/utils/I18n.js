@@ -12,8 +12,8 @@ import 'moment/locale/zh-cn';
 import 'moment/locale/ko';
 import 'moment/locale/ar';
 import 'moment/locale/fr';
-import arEGext from '../locales/ar_EG/extra.js';
-import koKRext from '../locales/ko_KR/extra.js';
+import xarEG from '../locales/ar_EG/extra.js';
+import xkoKR from '../locales/ko_KR/extra.js';
 
 // define which locale use which translate file
 const supportedLanguage = {
@@ -25,8 +25,8 @@ const supportedLanguage = {
     'fr_FR': frFR,
 };
 const languageExtra = {
-    'ar_EG': arEGext,
-    'ko_KR': koKRext,
+    'ar_EG': xarEG,
+    'ko_KR': xkoKR,
 };
 
 const locale = NativeModules.I18nManager.localeIdentifier; // zh_TW_#Hant, zh_CN_#Hans
@@ -47,16 +47,16 @@ if (languageExtra.hasOwnProperty(locale)) {
 }
 
 export const transCity = (string) => {
-    if (extra && extra.cityNames.hasOwnProperty(string)) {
-        return extra.cityNames[string];
+    if (extra && extra.citiesNames.hasOwnProperty(string)) {
+        return extra.citiesNames[string];
     } else {
         return string;
     }
 }
 
 export const numToSymbol = (string) => {
-    if (extra && extra.hasOwnProperty('numberMap')) {
-        return string.replace(/\d/g, (match) => extra.numberMap[match]);
+    if (extra && extra.hasOwnProperty('numbersMap')) {
+        return string.replace(/\d/g, (match) => extra.numbersMap[match]);
     } else {
         return string;
     }
