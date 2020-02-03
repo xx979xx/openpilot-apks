@@ -61,5 +61,4 @@ export const numToSymbol = (string) => {
         return string;
     }
 }
-
 export default i18n

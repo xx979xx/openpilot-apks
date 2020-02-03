@@ -328,7 +328,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
     fun updateSidebarMetrics(freeSpace: Float, paTemp: Short, thermalStatus: String) {
       // Storage
       var storagePct = (1.0-freeSpace)*100;
-      sidebarMetricStorage?.text = String.format("%.0f", storagePct).plus("%");
+      sidebarMetricStorage?.text = String.format("%.0f%%", storagePct)
       if (storagePct < 75.0) {
         sidebarMetricStorageEdge?.setColorFilter(colorWhite!!);
         sidebarMetricStorageBorder!!.getBackground().setAlpha(76)
@@ -341,7 +341,7 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
       }
 
       // Temperature
-      sidebarMetricTemp?.text = Integer.toString(paTemp.toInt()).plus("°C");
+      sidebarMetricTemp?.text = String.format("%d°C", paTemp)
       if (thermalStatus==="GREEN") {
         sidebarMetricTempEdge?.setColorFilter(colorWhite!!);
         sidebarMetricTempBorder?.background = borderEmpty;

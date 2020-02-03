@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00000000"
+    android:layoutDirection="ltr"
     tools:context="ai.comma.plus.frame.MainActivity">
     <RelativeLayout
         android:id="@+id/frame"
@@ -68,10 +69,12 @@
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/sidebar_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <include
             android:id="@+id/sidebarInclude"
             layout="@layout/sidebar" />

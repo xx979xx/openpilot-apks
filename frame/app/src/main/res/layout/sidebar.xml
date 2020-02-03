@@ -84,21 +84,26 @@
                 android:layout_width="6dp"
                 android:layout_height="fill_parent"
                 android:src="@drawable/edge_white_left" />
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_marginLeft="14dp"
+                android:layout_marginRight="7dp"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:id="@+id/sidebarMetricStorageValue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="56%"
                     android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:textSize="20sp" />
+                    android:textDirection="locale"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/sidebarMetricStorageLabel"
                     android:layout_width="match_parent"
@@ -121,28 +126,33 @@
                 android:layout_width="6dp"
                 android:layout_height="fill_parent"
                 android:src="@drawable/edge_white_left" />
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_marginLeft="14dp"
+                android:layout_marginRight="7dp"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:id="@+id/sidebarMetricTempValue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="114 F"
                     android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:textSize="20sp" />
+                    android:textDirection="locale"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/sidebarMetricTempLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
                     android:text="@string/temp"
                     android:textColor="#ffffff"
-                    android:layout_marginTop="26dp"
                     android:textSize="12sp" />
             </RelativeLayout>
         </RelativeLayout>
