@@ -13,6 +13,7 @@ import 'moment/locale/ko';
 import 'moment/locale/ar';
 import 'moment/locale/fr';
 import arEGext from '../locales/ar_EG/extra.js';
+import koKRext from '../locales/ko_KR/extra.js';
 
 // define which locale use which translate file
 const supportedLanguage = {
@@ -25,6 +26,7 @@ const supportedLanguage = {
 };
 const languageExtra = {
     'ar_EG': arEGext,
+    'ko_KR': koKRext,
 };
 
 const locale = NativeModules.I18nManager.localeIdentifier; // zh_TW_#Hant, zh_CN_#Hans
