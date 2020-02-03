@@ -30,7 +30,7 @@ import { mToKm } from '../../utils/conversions';
 
 // i18n
 import {t, Trans} from "@lingui/macro"
-import {i18n} from "../../utils/I18n";
+import {i18n, numToSymbol, transCity } from "../../utils/I18n";
 
 class Home extends Component {
     static navigationOptions = {
@@ -178,7 +178,7 @@ class Home extends Component {
                                         size={ summaryCity.length > 20 ? 'big' : 'jumbo' }
                                         numberOfLines={ 1 }
                                         weight='semibold'>
-                                        { summaryCity }
+                                        { transCity(summaryCity) }
                                     </X.Text>
                                 ) : null }
                             </View>
@@ -300,7 +300,7 @@ class Home extends Component {
                                           size='big'
                                           weight='semibold'
                                           style={ Styles.homeBodyStatNumber }>
-                                          { hasDeviceStats ? formatCommas(deviceStats.week.routes) : '0' }
+                                          { numToSymbol(hasDeviceStats ? formatCommas(deviceStats.week.routes) : '0') }
                                       </X.Text>
                                       <X.Text
                                           color='lightGrey700'
@@ -315,9 +315,9 @@ class Home extends Component {
                                           size='big'
                                           weight='semibold'
                                           style={ Styles.homeBodyStatNumber }>
-                                          { hasDeviceStats ? formatCommas(Math.floor(
+                                          { numToSymbol(hasDeviceStats ? formatCommas(Math.floor(
                                                 isMetric ? mToKm(deviceStats.week.distance): deviceStats.week.distance
-                                            )) : '0' }
+                                            )) : '0') }
                                       </X.Text>
                                       <X.Text
                                           color='lightGrey700'
@@ -332,7 +332,7 @@ class Home extends Component {
                                           size='big'
                                           weight='semibold'
                                           style={ Styles.homeBodyStatNumber }>
-                                          { hasDeviceStats ? formatCommas(Math.floor(deviceStats.week.minutes / 60)) : '0' }
+                                          { numToSymbol(hasDeviceStats ? formatCommas(Math.floor(deviceStats.week.minutes / 60)) : '0') }
                                       </X.Text>
                                       <X.Text
                                           color='lightGrey700'
@@ -360,7 +360,7 @@ class Home extends Component {
                                           size='medium'
                                           weight='semibold'
                                           style={ Styles.homeBodyStatNumber }>
-                                          { hasDeviceStats ? formatCommas(deviceStats.all.routes) : '0' }
+                                          { numToSymbol(hasDeviceStats ? formatCommas(deviceStats.all.routes) : '0') }
                                       </X.Text>
                                       <X.Text
                                           color='lightGrey700'
@@ -375,9 +375,9 @@ class Home extends Component {
                                           size='medium'
                                           weight='semibold'
                                           style={ Styles.homeBodyStatNumber }>
-                                          { hasDeviceStats ? formatCommas(Math.floor(
+                                          { numToSymbol(hasDeviceStats ? formatCommas(Math.floor(
                                                 isMetric ? mToKm(deviceStats.all.distance): deviceStats.all.distance
-                                            )) : '0' }
+                                            )) : '0') }
                                       </X.Text>
                                       <X.Text
                                           color='lightGrey700'
@@ -392,7 +392,7 @@ class Home extends Component {
                                           size='medium'
                                           weight='semibold'
                                           style={ Styles.homeBodyStatNumber }>
-                                          { hasDeviceStats ? formatCommas(Math.floor(deviceStats.all.minutes / 60)) : '0' }
+                                          { numToSymbol(hasDeviceStats ? formatCommas(Math.floor(deviceStats.all.minutes / 60)) : '0') }
                                       </X.Text>
                                       <X.Text
                                           color='lightGrey700'
@@ -411,9 +411,9 @@ class Home extends Component {
                                           size='big'
                                           weight='semibold'
                                           style={ Styles.homeBodyAccountPointsNumber }>
-                                          { typeof(commaPoints) !== 'undefined' ? (
+                                          { numToSymbol(typeof(commaPoints) !== 'undefined' ? (
                                             formatCommas(commaPoints)
-                                          ) : '--' }
+                                          ) : '--') }
                                       </X.Text>
                                       <X.Text
                                           color='lightGrey700'
