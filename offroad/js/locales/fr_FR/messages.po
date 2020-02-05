@@ -13,13 +13,9 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: js/components/Home/Home.js:476
+#: js/components/Home/Home.js:479
 msgid "1 year of storage"
 msgstr ""
-
-#: js/components/Home/Home.js:476
-#~ msgid "14 days of storage"
-#~ msgstr "14 jours de stockage"
 
 #: js/components/Settings/Settings.js:395
 msgid "<  Account Settings"
@@ -49,15 +45,15 @@ msgstr "Une assistance à la conduite n'est pas une voiture autonome. Cela signi
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
 msgstr "Un algorithme de vision exploite la caméra face à la route pour déterminer le chemin à parcourir"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERT"
 msgstr "ALERTE"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERTS"
 msgstr "ALERTES"
 
-#: js/components/Home/Home.js:353
+#: js/components/Home/Home.js:356
 msgid "ALL TIME"
 msgstr "TOUT LE TEMPS"
 
@@ -93,7 +89,7 @@ msgstr "Problème d'authentification"
 msgid "Authorized SSH Keys"
 msgstr "Clés SSH autorisées"
 
-#: js/components/Home/Home.js:452
+#: js/components/Home/Home.js:455
 msgid "Become a comma prime member in the comma app and get premium features!"
 msgstr "Devenez un membre comma prime dans l'application comma et obtenez des fonctionnalités premium!"
 
@@ -105,7 +101,7 @@ msgstr "Avant d'envoyer des signaux pour contrôler votre voiture, des capteurs 
 msgid "Begin Training"
 msgstr "Commencer l'entrainement"
 
-#: js/components/Home/Home.js:422
+#: js/components/Home/Home.js:425
 msgid "COMMA POINTS"
 msgstr "COMMA POINTS"
 
@@ -148,7 +144,7 @@ msgstr "Se connecter"
 msgid "Connect to WiFi"
 msgstr "Se connecter au WiFi"
 
-#: js/components/Home/Home.js:281
+#: js/components/Home/Home.js:284
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 msgstr "Connectez vous à un réseau WiFi ou cellulaire pour uploader et passer en revue vos trajets."
 
@@ -166,8 +162,8 @@ msgstr "Continuer"
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
 msgstr "Observez votre environnement en permanence en toute sécurité tout en poussant doucement le volant vers la voie souhaitée. La combinaison du clignotant et du coup de volant incitera openpilot à changer de voie."
 
-#: js/components/Home/Home.js:309
-#: js/components/Home/Home.js:369
+#: js/components/Home/Home.js:312
+#: js/components/Home/Home.js:372
 msgid "DRIVES"
 msgstr "TRAJETS"
 
@@ -175,7 +171,7 @@ msgstr "TRAJETS"
 msgid "Developer"
 msgstr "Développeur"
 
-#: js/components/Home/Home.js:488
+#: js/components/Home/Home.js:491
 msgid "Developer perks"
 msgstr "Avantages pour les développeurs"
 
@@ -192,8 +188,8 @@ msgid "Disengage openpilot"
 msgstr "Désengager openpilot"
 
 #: js/components/Settings/Settings.js:320
-msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "Affiche la vitesse en km/h à la place de mp/h et la température en °C à la place de °F."
+msgid "Display speed in km/h instead of mp/h."
+msgstr ""
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
@@ -238,7 +234,7 @@ msgstr "Activer openpilot"
 msgid "Engage openpilot"
 msgstr "Engager openpilot"
 
-#: js/components/Home/Home.js:508
+#: js/components/Home/Home.js:511
 msgid "Finish Setup"
 msgstr "Terminer la configuration"
 
@@ -266,12 +262,12 @@ msgstr "Nom d'utilisateur GitHub"
 msgid "Go Back"
 msgstr "Retour"
 
-#: js/components/Home/Home.js:341
-#: js/components/Home/Home.js:401
+#: js/components/Home/Home.js:344
+#: js/components/Home/Home.js:404
 msgid "HOURS"
 msgstr "HEURES"
 
-#: js/components/Home/Home.js:263
+#: js/components/Home/Home.js:266
 msgid "Hide Alerts"
 msgstr "Masquer les Alertes"
 
@@ -287,8 +283,8 @@ msgstr "Je serai prêt à prendre le relais à tout moment."
 msgid "I will keep my eyes on the road."
 msgstr "Je vais garder mes yeux sur la route"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "KM"
 msgstr "KM"
 
@@ -306,8 +302,8 @@ msgstr "Plas Tard"
 msgid "Limited Features"
 msgstr "Fonctionnalités limitées"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "MILES"
 msgstr "MILES"
 
@@ -324,7 +320,7 @@ msgstr "Réseau"
 msgid "No"
 msgstr "Non"
 
-#: js/components/Home/Home.js:275
+#: js/components/Home/Home.js:278
 msgid "No Network Connection"
 msgstr "Pas de connection"
 
@@ -344,7 +340,7 @@ msgstr "Ouvrir les réglages du partage de connexion"
 msgid "Open WiFi Settings"
 msgstr "Ouvrir les réglages WiFi"
 
-#: js/components/Home/Home.js:293
+#: js/components/Home/Home.js:296
 msgid "PAST WEEK"
 msgstr "SEMAINE DERNIÈRE"
 
@@ -356,7 +352,7 @@ msgstr "Jumelez l'appareil"
 msgid "Pair Your Account"
 msgstr "Associez votre compte"
 
-#: js/components/Home/Home.js:520
+#: js/components/Home/Home.js:523
 msgid "Pair your comma account with comma connect"
 msgstr "Associez votre compte comma avec comma connect"
 
@@ -424,7 +420,7 @@ msgstr ""
 msgid "Record and Upload Driver Camera"
 msgstr "Enregister et Uploader la caméra du conducteur"
 
-#: js/components/Home/Home.js:464
+#: js/components/Home/Home.js:467
 msgid "Remote Access"
 msgstr "Accès à distance"
 
@@ -570,12 +566,12 @@ msgstr "Désinstaller {software}"
 msgid "Unpaired"
 msgstr "Non apparié"
 
-#: js/components/Home/Home.js:210
+#: js/components/Home/Home.js:213
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
 msgstr "Mise à Jour Disponible"
 
-#: js/components/Home/Home.js:445
+#: js/components/Home/Home.js:448
 msgid "Upgrade Now"
 msgstr "Mettre à Jour Maintenant"
 

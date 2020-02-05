@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: crwusiz , Lee Jong Mun\n"
 "Plural-Forms: \n"
 
-#: js/components/Home/Home.js:476
+#: js/components/Home/Home.js:479
 msgid "1 year of storage"
 msgstr "저장기간 : 1 년"
 
@@ -45,15 +45,15 @@ msgstr "운전자 지원 시스템은 자가 운전 차량이 아닙니다. 이�
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
 msgstr "비전 알고리즘은 노면을 향한 카메라를 이용하여 운전 경로를 결정합니다."
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERT"
 msgstr "경고"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERTS"
 msgstr "경고"
 
-#: js/components/Home/Home.js:353
+#: js/components/Home/Home.js:356
 msgid "ALL TIME"
 msgstr "전체 시간"
 
@@ -89,7 +89,7 @@ msgstr "인증 문제"
 msgid "Authorized SSH Keys"
 msgstr "인증된 SSH 키"
 
-#: js/components/Home/Home.js:452
+#: js/components/Home/Home.js:455
 msgid "Become a comma prime member in the comma app and get premium features!"
 msgstr "comma prime 맴버가 되어 comma connect 앱에서 고급 기능을 추가하세요!"
 
@@ -101,7 +101,7 @@ msgstr "차량을 제어하기 위한 어떤 신호를 보내기 전에 센서�
 msgid "Begin Training"
 msgstr "트레이닝 시작"
 
-#: js/components/Home/Home.js:422
+#: js/components/Home/Home.js:425
 msgid "COMMA POINTS"
 msgstr "COMMA 포인트"
 
@@ -144,7 +144,7 @@ msgstr "연결"
 msgid "Connect to WiFi"
 msgstr "Wifi 연결"
 
-#: js/components/Home/Home.js:281
+#: js/components/Home/Home.js:284
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 msgstr "Wifi 또는 데이터 네트워크에 연결하여 주행영상 업로드 및 다시보기"
 
@@ -162,8 +162,8 @@ msgstr "계속"
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
 msgstr "핸들을 원하는 차선으로 부드럽게 밀어내고 주변 안전을 지속적으로 관찰하세요. 방향지시 신호와 핸들조향의 조합으로 오픈파일럿이 차선을 변경하도록 유도할 것입니다."
 
-#: js/components/Home/Home.js:309
-#: js/components/Home/Home.js:369
+#: js/components/Home/Home.js:312
+#: js/components/Home/Home.js:372
 msgid "DRIVES"
 msgstr "주행수"
 
@@ -171,7 +171,7 @@ msgstr "주행수"
 msgid "Developer"
 msgstr "개발자"
 
-#: js/components/Home/Home.js:488
+#: js/components/Home/Home.js:491
 msgid "Developer perks"
 msgstr "개발자 특혜"
 
@@ -188,8 +188,8 @@ msgid "Disengage openpilot"
 msgstr "오픈파일럿 해제"
 
 #: js/components/Settings/Settings.js:320
-msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "속도는 mp/h 대신 km/h, 온도는 °F 대신 °C 로 표시합니다"
+msgid "Display speed in km/h instead of mp/h."
+msgstr ""
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
@@ -234,7 +234,7 @@ msgstr "오픈파일럿 사용"
 msgid "Engage openpilot"
 msgstr "오픈파일럿 활성화"
 
-#: js/components/Home/Home.js:508
+#: js/components/Home/Home.js:511
 msgid "Finish Setup"
 msgstr "설치 완료"
 
@@ -262,12 +262,12 @@ msgstr "Github 사용자명"
 msgid "Go Back"
 msgstr "돌아가기"
 
-#: js/components/Home/Home.js:341
-#: js/components/Home/Home.js:401
+#: js/components/Home/Home.js:344
+#: js/components/Home/Home.js:404
 msgid "HOURS"
 msgstr "시간"
 
-#: js/components/Home/Home.js:263
+#: js/components/Home/Home.js:266
 msgid "Hide Alerts"
 msgstr "경고 숨김"
 
@@ -283,8 +283,8 @@ msgstr "언제라도 핸들을 잡을 준비를 하겠습니다."
 msgid "I will keep my eyes on the road."
 msgstr "나는 항상 도로를 주시하겠습니다"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "KM"
 msgstr "KM"
 
@@ -302,8 +302,8 @@ msgstr "나중에"
 msgid "Limited Features"
 msgstr "제한된 기능"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "MILES"
 msgstr "MILES"
 
@@ -320,7 +320,7 @@ msgstr "네트워크"
 msgid "No"
 msgstr "아니오"
 
-#: js/components/Home/Home.js:275
+#: js/components/Home/Home.js:278
 msgid "No Network Connection"
 msgstr "네트워크 연결되지않음"
 
@@ -340,7 +340,7 @@ msgstr "테더링 설정 열기"
 msgid "Open WiFi Settings"
 msgstr "Wifi 설정 열기"
 
-#: js/components/Home/Home.js:293
+#: js/components/Home/Home.js:296
 msgid "PAST WEEK"
 msgstr "지난주"
 
@@ -352,7 +352,7 @@ msgstr "장치 페이링됨"
 msgid "Pair Your Account"
 msgstr "기기와 계정을 페이링하세요"
 
-#: js/components/Home/Home.js:520
+#: js/components/Home/Home.js:523
 msgid "Pair your comma account with comma connect"
 msgstr "comma connect 앱으로 페이링하세요"
 
@@ -420,7 +420,7 @@ msgstr "50kph 이상의 속도로 주행하는동안 방향지시등없이 차�
 msgid "Record and Upload Driver Camera"
 msgstr "드라이버 카메라 기록 및 업로드"
 
-#: js/components/Home/Home.js:464
+#: js/components/Home/Home.js:467
 msgid "Remote Access"
 msgstr "원격 접속"
 
@@ -566,12 +566,12 @@ msgstr "{software} 제거"
 msgid "Unpaired"
 msgstr "페어링되지않음"
 
-#: js/components/Home/Home.js:210
+#: js/components/Home/Home.js:213
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
 msgstr "업데이트 사용가능"
 
-#: js/components/Home/Home.js:445
+#: js/components/Home/Home.js:448
 msgid "Upgrade Now"
 msgstr "지금 업데이트"
 

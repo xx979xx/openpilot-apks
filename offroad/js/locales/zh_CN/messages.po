@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: js/components/Home/Home.js:476
+#: js/components/Home/Home.js:479
 msgid "1 year of storage"
 msgstr ""
 
@@ -45,15 +45,15 @@ msgstr "驾驶辅助系统不是自动驾驶系统，意味着 openpilot 需要�
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
 msgstr ""
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERT"
 msgstr "通知"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERTS"
 msgstr "通知"
 
-#: js/components/Home/Home.js:353
+#: js/components/Home/Home.js:356
 msgid "ALL TIME"
 msgstr "全部"
 
@@ -89,7 +89,7 @@ msgstr "身份验证错误"
 msgid "Authorized SSH Keys"
 msgstr "授权 SSH 密钥"
 
-#: js/components/Home/Home.js:452
+#: js/components/Home/Home.js:455
 msgid "Become a comma prime member in the comma app and get premium features!"
 msgstr "成为 comma 会员，获取更多功能！"
 
@@ -101,7 +101,7 @@ msgstr "我们把这些传感器信息融合在一起，构建出前方道路状
 msgid "Begin Training"
 msgstr "开始教程"
 
-#: js/components/Home/Home.js:422
+#: js/components/Home/Home.js:425
 msgid "COMMA POINTS"
 msgstr "COMMA 积分"
 
@@ -144,7 +144,7 @@ msgstr "连接"
 msgid "Connect to WiFi"
 msgstr "连接到无线网络"
 
-#: js/components/Home/Home.js:281
+#: js/components/Home/Home.js:284
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 msgstr "连接到 WiFi 或使用 SIM 卡流量上传您的行车记录。"
 
@@ -162,8 +162,8 @@ msgstr "继续"
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
 msgstr ""
 
-#: js/components/Home/Home.js:309
-#: js/components/Home/Home.js:369
+#: js/components/Home/Home.js:312
+#: js/components/Home/Home.js:372
 msgid "DRIVES"
 msgstr "驾驶"
 
@@ -171,7 +171,7 @@ msgstr "驾驶"
 msgid "Developer"
 msgstr "开发人员"
 
-#: js/components/Home/Home.js:488
+#: js/components/Home/Home.js:491
 msgid "Developer perks"
 msgstr "开发人员 perks"
 
@@ -188,8 +188,8 @@ msgid "Disengage openpilot"
 msgstr "退出 openpilot"
 
 #: js/components/Settings/Settings.js:320
-msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "启用后，显示 km/h (速度) 或 °C (温度)，否则显示 mph (速度) 或 °F (温度)。"
+msgid "Display speed in km/h instead of mp/h."
+msgstr ""
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
@@ -234,7 +234,7 @@ msgstr "启用 openpilot"
 msgid "Engage openpilot"
 msgstr "启用 openpilot"
 
-#: js/components/Home/Home.js:508
+#: js/components/Home/Home.js:511
 msgid "Finish Setup"
 msgstr "设置完成"
 
@@ -262,12 +262,12 @@ msgstr "GitHub 用户名"
 msgid "Go Back"
 msgstr "返回"
 
-#: js/components/Home/Home.js:341
-#: js/components/Home/Home.js:401
+#: js/components/Home/Home.js:344
+#: js/components/Home/Home.js:404
 msgid "HOURS"
 msgstr "小时"
 
-#: js/components/Home/Home.js:263
+#: js/components/Home/Home.js:266
 msgid "Hide Alerts"
 msgstr "隐藏通知"
 
@@ -283,8 +283,8 @@ msgstr "我一定会准备好随时接管控制!"
 msgid "I will keep my eyes on the road."
 msgstr "我会保持关注路况。"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "KM"
 msgstr "公里"
 
@@ -302,8 +302,8 @@ msgstr "稍后"
 msgid "Limited Features"
 msgstr "功能限制"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "MILES"
 msgstr "英里"
 
@@ -320,7 +320,7 @@ msgstr "网络"
 msgid "No"
 msgstr "否"
 
-#: js/components/Home/Home.js:275
+#: js/components/Home/Home.js:278
 msgid "No Network Connection"
 msgstr "没有网络连接"
 
@@ -340,7 +340,7 @@ msgstr "共享网络设置"
 msgid "Open WiFi Settings"
 msgstr "无线网络设置"
 
-#: js/components/Home/Home.js:293
+#: js/components/Home/Home.js:296
 msgid "PAST WEEK"
 msgstr "上周"
 
@@ -352,7 +352,7 @@ msgstr "绑定帐户"
 msgid "Pair Your Account"
 msgstr "绑定帐户"
 
-#: js/components/Home/Home.js:520
+#: js/components/Home/Home.js:523
 msgid "Pair your comma account with comma connect"
 msgstr "使用 Comma connect 绑定到您的 Comma 帐户"
 
@@ -420,7 +420,7 @@ msgstr ""
 msgid "Record and Upload Driver Camera"
 msgstr "上传驾驶员的驾驶录像"
 
-#: js/components/Home/Home.js:464
+#: js/components/Home/Home.js:467
 msgid "Remote Access"
 msgstr "远程访问"
 
@@ -566,12 +566,12 @@ msgstr "卸载 {software}"
 msgid "Unpaired"
 msgstr "未绑定"
 
-#: js/components/Home/Home.js:210
+#: js/components/Home/Home.js:213
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
 msgstr "有版本更新"
 
-#: js/components/Home/Home.js:445
+#: js/components/Home/Home.js:448
 msgid "Upgrade Now"
 msgstr "立即更新"
 

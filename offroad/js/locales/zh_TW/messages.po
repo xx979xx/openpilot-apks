@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: js/components/Home/Home.js:476
+#: js/components/Home/Home.js:479
 msgid "1 year of storage"
 msgstr ""
 
@@ -45,15 +45,15 @@ msgstr "駕駛輔助系統不是自動駕駛系統。這代表 openpilot 的設�
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
 msgstr ""
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERT"
 msgstr "提示"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERTS"
 msgstr "提示"
 
-#: js/components/Home/Home.js:353
+#: js/components/Home/Home.js:356
 msgid "ALL TIME"
 msgstr "全部"
 
@@ -89,7 +89,7 @@ msgstr "認證錯誤"
 msgid "Authorized SSH Keys"
 msgstr "已授權的 SSH 密鑰"
 
-#: js/components/Home/Home.js:452
+#: js/components/Home/Home.js:455
 msgid "Become a comma prime member in the comma app and get premium features!"
 msgstr "想得到更多高級的功能嗎？立即成為 comma 應用的 comma prime 會員！"
 
@@ -101,7 +101,7 @@ msgstr "在發送任何操控您車子的訊號之前，我們用這些傳感器
 msgid "Begin Training"
 msgstr "開始教學"
 
-#: js/components/Home/Home.js:422
+#: js/components/Home/Home.js:425
 msgid "COMMA POINTS"
 msgstr "COMMA 點數"
 
@@ -144,7 +144,7 @@ msgstr "連線"
 msgid "Connect to WiFi"
 msgstr "連線至無線網路"
 
-#: js/components/Home/Home.js:281
+#: js/components/Home/Home.js:284
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 msgstr "連線至 WiFi 或是行動網路來上傳和查看您的行駛記錄"
 
@@ -162,8 +162,8 @@ msgstr "繼續"
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
 msgstr ""
 
-#: js/components/Home/Home.js:309
-#: js/components/Home/Home.js:369
+#: js/components/Home/Home.js:312
+#: js/components/Home/Home.js:372
 msgid "DRIVES"
 msgstr "行駛"
 
@@ -171,7 +171,7 @@ msgstr "行駛"
 msgid "Developer"
 msgstr "開發人員"
 
-#: js/components/Home/Home.js:488
+#: js/components/Home/Home.js:491
 msgid "Developer perks"
 msgstr "開發人員 perks"
 
@@ -188,8 +188,8 @@ msgid "Disengage openpilot"
 msgstr "取消 openpilot"
 
 #: js/components/Settings/Settings.js:320
-msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "開啟後單位將使用 km/h (速度) 和 °C (溫度)；關閉後單位將使用 mph (速度) 或 °F (溫度)。"
+msgid "Display speed in km/h instead of mp/h."
+msgstr ""
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
@@ -234,7 +234,7 @@ msgstr "使用 openpilot"
 msgid "Engage openpilot"
 msgstr "啟用 openpilot"
 
-#: js/components/Home/Home.js:508
+#: js/components/Home/Home.js:511
 msgid "Finish Setup"
 msgstr "完成設定"
 
@@ -262,12 +262,12 @@ msgstr "GitHub 用戶名"
 msgid "Go Back"
 msgstr "回到上一頁"
 
-#: js/components/Home/Home.js:341
-#: js/components/Home/Home.js:401
+#: js/components/Home/Home.js:344
+#: js/components/Home/Home.js:404
 msgid "HOURS"
 msgstr "小時"
 
-#: js/components/Home/Home.js:263
+#: js/components/Home/Home.js:266
 msgid "Hide Alerts"
 msgstr "隱藏提示"
 
@@ -283,8 +283,8 @@ msgstr "我會準備好隨時接管控制。"
 msgid "I will keep my eyes on the road."
 msgstr "我會盯著路況。"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "KM"
 msgstr "公里"
 
@@ -302,8 +302,8 @@ msgstr "稍後"
 msgid "Limited Features"
 msgstr "有限的功能"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "MILES"
 msgstr "英里"
 
@@ -320,7 +320,7 @@ msgstr "網路"
 msgid "No"
 msgstr "否"
 
-#: js/components/Home/Home.js:275
+#: js/components/Home/Home.js:278
 msgid "No Network Connection"
 msgstr "沒有網路連線"
 
@@ -340,7 +340,7 @@ msgstr "開啟網絡共享設定"
 msgid "Open WiFi Settings"
 msgstr "開啟無線網路設定"
 
-#: js/components/Home/Home.js:293
+#: js/components/Home/Home.js:296
 msgid "PAST WEEK"
 msgstr "上週"
 
@@ -352,7 +352,7 @@ msgstr "配對裝置"
 msgid "Pair Your Account"
 msgstr "與您的帳號配對"
 
-#: js/components/Home/Home.js:520
+#: js/components/Home/Home.js:523
 msgid "Pair your comma account with comma connect"
 msgstr "與 comma connect 配對您的 comma 帳號"
 
@@ -420,7 +420,7 @@ msgstr ""
 msgid "Record and Upload Driver Camera"
 msgstr "錄制並上傳駕駛的錄像"
 
-#: js/components/Home/Home.js:464
+#: js/components/Home/Home.js:467
 msgid "Remote Access"
 msgstr "遠端控制"
 
@@ -566,12 +566,12 @@ msgstr "卸載 {software}"
 msgid "Unpaired"
 msgstr "未配對"
 
-#: js/components/Home/Home.js:210
+#: js/components/Home/Home.js:213
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
 msgstr "有可用的更新"
 
-#: js/components/Home/Home.js:445
+#: js/components/Home/Home.js:448
 msgid "Upgrade Now"
 msgstr "馬上升級"
 

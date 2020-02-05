@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: Google Translate\n"
 "Plural-Forms: \n"
 
-#: js/components/Home/Home.js:476
+#: js/components/Home/Home.js:479
 msgid "1 year of storage"
 msgstr "تخزين لمدة سنة"
 
@@ -45,15 +45,15 @@ msgstr "نظام مساعدة السائق ليس سيارة ذاتية القي
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
 msgstr "تعمل خوارزمية الرؤية على زيادة فعالية الكاميرا المواجهة للطريق لتحديد مسار القيادة."
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERT"
 msgstr "إنذار"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERTS"
 msgstr "تنبيهات"
 
-#: js/components/Home/Home.js:353
+#: js/components/Home/Home.js:356
 msgid "ALL TIME"
 msgstr "كل الوقت"
 
@@ -89,7 +89,7 @@ msgstr "مشكلة المصادقة"
 msgid "Authorized SSH Keys"
 msgstr "مفاتيح SSH المعتمدة"
 
-#: js/components/Home/Home.js:452
+#: js/components/Home/Home.js:455
 msgid "Become a comma prime member in the comma app and get premium features!"
 msgstr "تصبح عضوا فاصلة رئيس في التطبيق فاصلة والحصول على ميزات متميزة!"
 
@@ -101,7 +101,7 @@ msgstr "قبل إرسال أي إشارات للتحكم في سيارتك ، ي
 msgid "Begin Training"
 msgstr "ابدأ التدريب"
 
-#: js/components/Home/Home.js:422
+#: js/components/Home/Home.js:425
 msgid "COMMA POINTS"
 msgstr "نقاط COMMA"
 
@@ -144,7 +144,7 @@ msgstr "الاتصال"
 msgid "Connect to WiFi"
 msgstr "الاتصال واي فاي"
 
-#: js/components/Home/Home.js:281
+#: js/components/Home/Home.js:284
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 msgstr "اتصل بشبكة WiFi أو شبكة خلوية لتحميل ومراجعة محركات الأقراص."
 
@@ -162,8 +162,8 @@ msgstr "استمر"
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
 msgstr "راقب محيطك باستمرار بحثًا عن الأمان مع دفع عجلة القيادة برفق نحو المسار الذي تريده. سيؤدي الجمع بين إشارة الدوران ودفع العجلات إلى دفع openpilot لتغيير الممرات."
 
-#: js/components/Home/Home.js:309
-#: js/components/Home/Home.js:369
+#: js/components/Home/Home.js:312
+#: js/components/Home/Home.js:372
 msgid "DRIVES"
 msgstr "DRIVES"
 
@@ -171,7 +171,7 @@ msgstr "DRIVES"
 msgid "Developer"
 msgstr "مطور"
 
-#: js/components/Home/Home.js:488
+#: js/components/Home/Home.js:491
 msgid "Developer perks"
 msgstr "اكراميات المطور"
 
@@ -188,8 +188,8 @@ msgid "Disengage openpilot"
 msgstr "فك الارتباط openpilot"
 
 #: js/components/Settings/Settings.js:320
-msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-msgstr "سرعة العرض في كم / ساعة بدلاً من النائب / ساعة ودرجة الحرارة في درجة مئوية بدلاً من درجة فهرنهايت."
+msgid "Display speed in km/h instead of mp/h."
+msgstr ""
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
@@ -234,7 +234,7 @@ msgstr "تمكين openpilot"
 msgid "Engage openpilot"
 msgstr "إشراك openpilot"
 
-#: js/components/Home/Home.js:508
+#: js/components/Home/Home.js:511
 msgid "Finish Setup"
 msgstr "إنهاء الإعداد"
 
@@ -262,12 +262,12 @@ msgstr "اسم المستخدم جيثب"
 msgid "Go Back"
 msgstr "عد"
 
-#: js/components/Home/Home.js:341
-#: js/components/Home/Home.js:401
+#: js/components/Home/Home.js:344
+#: js/components/Home/Home.js:404
 msgid "HOURS"
 msgstr "HOURS"
 
-#: js/components/Home/Home.js:263
+#: js/components/Home/Home.js:266
 msgid "Hide Alerts"
 msgstr "إخفاء التنبيهات"
 
@@ -283,8 +283,8 @@ msgstr "سوف أكون مستعدًا لتولي المسؤولية في أي �
 msgid "I will keep my eyes on the road."
 msgstr "سأبقي عيني على الطريق."
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "KM"
 msgstr "كم"
 
@@ -302,8 +302,8 @@ msgstr "في وقت لاحق"
 msgid "Limited Features"
 msgstr "ميزات محدودة"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "MILES"
 msgstr "اميال"
 
@@ -320,7 +320,7 @@ msgstr "شبكة الاتصال"
 msgid "No"
 msgstr "لا"
 
-#: js/components/Home/Home.js:275
+#: js/components/Home/Home.js:278
 msgid "No Network Connection"
 msgstr "لا يوجد اتصال شبكة"
 
@@ -340,7 +340,7 @@ msgstr "افتح إعدادات الربط"
 msgid "Open WiFi Settings"
 msgstr "افتح إعدادات WiFi"
 
-#: js/components/Home/Home.js:293
+#: js/components/Home/Home.js:296
 msgid "PAST WEEK"
 msgstr "الأسبوع الماضي"
 
@@ -352,7 +352,7 @@ msgstr "جهاز الزوج"
 msgid "Pair Your Account"
 msgstr "إقران حسابك"
 
-#: js/components/Home/Home.js:520
+#: js/components/Home/Home.js:523
 msgid "Pair your comma account with comma connect"
 msgstr "إقران حساب الفاصلة الخاص بك مع فواصل الاتصال"
 
@@ -420,7 +420,7 @@ msgstr "تلقي تنبيهات لتوجيه مرة أخرى إلى الممر �
 msgid "Record and Upload Driver Camera"
 msgstr "تسجيل وتحميل كاميرا سائق"
 
-#: js/components/Home/Home.js:464
+#: js/components/Home/Home.js:467
 msgid "Remote Access"
 msgstr "الوصول عن بعد"
 
@@ -566,12 +566,12 @@ msgstr "إلغاء التثبيت {software}"
 msgid "Unpaired"
 msgstr "أونبايريد"
 
-#: js/components/Home/Home.js:210
+#: js/components/Home/Home.js:213
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
 msgstr "تحديث متوفر"
 
-#: js/components/Home/Home.js:445
+#: js/components/Home/Home.js:448
 msgid "Upgrade Now"
 msgstr "تحديث الآن"
 

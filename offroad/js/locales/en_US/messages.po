@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: js/components/Home/Home.js:476
+#: js/components/Home/Home.js:479
 msgid "1 year of storage"
 
 #: js/components/Settings/Settings.js:395
@@ -37,13 +37,13 @@ msgid "A driver assistance system is not a self driving car. This means openpilo
 #: js/components/training/Onboarding/Onboarding.js:481
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERT"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERTS"
 
-#: js/components/Home/Home.js:353
+#: js/components/Home/Home.js:356
 msgid "ALL TIME"
 
 #: js/components/Settings/Settings.js:197
@@ -70,7 +70,7 @@ msgid "Authentication problem"
 #: js/components/Settings/Settings.js:622
 msgid "Authorized SSH Keys"
 
-#: js/components/Home/Home.js:452
+#: js/components/Home/Home.js:455
 msgid "Become a comma prime member in the comma app and get premium features!"
 
 #: js/components/training/Onboarding/Onboarding.js:438
@@ -79,7 +79,7 @@ msgid "Before any signals are sent to control your car, sensors are fused to con
 #: js/components/training/Onboarding/Onboarding.js:348
 msgid "Begin Training"
 
-#: js/components/Home/Home.js:422
+#: js/components/Home/Home.js:425
 msgid "COMMA POINTS"
 
 #: js/components/Settings/Settings.js:468
@@ -113,7 +113,7 @@ msgid "Connect"
 #: js/components/SetupWifi/SetupWifi.js:370
 msgid "Connect to WiFi"
 
-#: js/components/Home/Home.js:281
+#: js/components/Home/Home.js:284
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 
 #: js/components/SetupWifi/SetupWifi.js:226
@@ -127,14 +127,14 @@ msgid "Continue"
 #: js/components/training/Onboarding/Onboarding.js:802
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
 
-#: js/components/Home/Home.js:309
-#: js/components/Home/Home.js:369
+#: js/components/Home/Home.js:312
+#: js/components/Home/Home.js:372
 msgid "DRIVES"
 
 #: js/components/Settings/Settings.js:215
 msgid "Developer"
 
-#: js/components/Home/Home.js:488
+#: js/components/Home/Home.js:491
 msgid "Developer perks"
 
 #: js/components/Settings/Settings.js:203
@@ -147,7 +147,8 @@ msgid "Device Paired"
 msgid "Disengage openpilot"
 
 #: js/components/Settings/Settings.js:320
-msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
+msgid "Display speed in km/h instead of mp/h."
+msgstr "Display speed in km/h instead of mp/h."
 
 #: js/components/Settings/Settings.js:487
 msgid "Dongle ID"
@@ -182,7 +183,7 @@ msgid "Enable openpilot"
 #: js/components/training/Onboarding/Onboarding.js:626
 msgid "Engage openpilot"
 
-#: js/components/Home/Home.js:508
+#: js/components/Home/Home.js:511
 msgid "Finish Setup"
 
 #: js/components/training/Onboarding/Onboarding.js:1006
@@ -203,11 +204,11 @@ msgid "GitHub Username"
 #: js/components/SetupWifi/SetupWifi.js:414
 msgid "Go Back"
 
-#: js/components/Home/Home.js:341
-#: js/components/Home/Home.js:401
+#: js/components/Home/Home.js:344
+#: js/components/Home/Home.js:404
 msgid "HOURS"
 
-#: js/components/Home/Home.js:263
+#: js/components/Home/Home.js:266
 msgid "Hide Alerts"
 
 #: js/components/training/Onboarding/Onboarding.js:405
@@ -219,8 +220,8 @@ msgid "I will be ready to take over at any time."
 #: js/components/training/Onboarding/Onboarding.js:393
 msgid "I will keep my eyes on the road."
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "KM"
 
 #: js/components/training/Onboarding/Onboarding.js:892
@@ -234,8 +235,8 @@ msgid "Later"
 #: js/components/training/Onboarding/Onboarding.js:887
 msgid "Limited Features"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "MILES"
 
 #: js/components/SetupWifi/SetupWifi.js:377
@@ -248,7 +249,7 @@ msgid "Network"
 #: js/components/Settings/Settings.js:485
 msgid "No"
 
-#: js/components/Home/Home.js:275
+#: js/components/Home/Home.js:278
 msgid "No Network Connection"
 
 #: js/components/training/Onboarding/Onboarding.js:338
@@ -263,7 +264,7 @@ msgid "Open Tethering Settings"
 #: js/components/Settings/Settings.js:551
 msgid "Open WiFi Settings"
 
-#: js/components/Home/Home.js:293
+#: js/components/Home/Home.js:296
 msgid "PAST WEEK"
 
 #: js/components/Settings/Settings.js:426
@@ -272,7 +273,7 @@ msgid "Pair Device"
 #: js/components/SetupQr/SetupQr.js:63
 msgid "Pair Your Account"
 
-#: js/components/Home/Home.js:520
+#: js/components/Home/Home.js:523
 msgid "Pair your comma account with comma connect"
 
 #: js/components/Settings/Settings.js:198
@@ -325,7 +326,7 @@ msgid "Receive alerts to steer back into the lane when your vehicle drifts over 
 #: js/components/Settings/Settings.js:308
 msgid "Record and Upload Driver Camera"
 
-#: js/components/Home/Home.js:464
+#: js/components/Home/Home.js:467
 msgid "Remote Access"
 
 #: js/components/Settings/Settings.js:734
@@ -435,11 +436,11 @@ msgid "Uninstall {software}"
 #: js/components/Settings/Settings.js:198
 msgid "Unpaired"
 
-#: js/components/Home/Home.js:210
+#: js/components/Home/Home.js:213
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
 
-#: js/components/Home/Home.js:445
+#: js/components/Home/Home.js:448
 msgid "Upgrade Now"
 
 #: js/components/Settings/Settings.js:497
