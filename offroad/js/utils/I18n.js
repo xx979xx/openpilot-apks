@@ -4,13 +4,15 @@ import en from '../locales/en/messages.js';
 import zhTW from '../locales/zh_TW/messages.js';
 import zhCN from '../locales/zh_CN/messages.js';
 import frFR from '../locales/fr_FR/messages.js';
+import jaJP from '../locales/ja_JP/messages.js';
 
 // define which locale use which translate file
 let supportedLanguage = {
     'en': en,
     'zh_TW': zhTW,
     'zh_CN': zhCN,
-    'fr_FR': frFR
+    'fr_FR': frFR,
+    'ja_JP': jaJP,
 };
 
 const locale = NativeModules.I18nManager.localeIdentifier; // zh_TW_#Hant, zh_CN_#Hans
