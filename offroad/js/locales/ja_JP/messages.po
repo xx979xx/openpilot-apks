@@ -15,11 +15,7 @@ msgstr ""
 
 #: js/components/Home/Home.js:476
 msgid "1 year of storage"
-msgstr "1 year of storage"
-
-#: js/components/Home/Home.js:476
-#~ msgid "14 days of storage"
-#~ msgstr "14日間保存"
+msgstr "1年間保存"
 
 #: js/components/Settings/Settings.js:395
 msgid "<  Account Settings"
@@ -44,10 +40,6 @@ msgstr "<  設定"
 #: js/components/training/Onboarding/Onboarding.js:382
 msgid "A driver assistance system is not a self driving car. This means openpilot is designed to work with you, not without you. Your attention is required to drive."
 msgstr "運転支援システムは自動運転車ではありません。つまり、openpilotは運転手がいなくても機能するように設計されているわけではありません。運転には注意が必要です。"
-
-#: js/components/training/Onboarding/Onboarding.js:417
-#~ msgid "A vision algorithm leverages EON’s road-facing camera to determine the path to drive."
-#~ msgstr "視覚アルゴリズムは、EONの道路に面したカメラを利用して、運転する経路を決定します。"
 
 #: js/components/training/Onboarding/Onboarding.js:481
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
@@ -201,10 +193,6 @@ msgid "Disengage openpilot"
 msgstr "オープンパイロットを解除"
 
 #: js/components/Settings/Settings.js:320
-#~ msgid "Display speed in km/h instead of mp/h and temperature in °C instead of °F."
-#~ msgstr "mp/hではなくkm/hで速度を表示し、°Fではなく°Cで温度を表示します。."
-
-#: js/components/Settings/Settings.js:320
 msgid "Display speed in km/h instead of mp/h."
 msgstr "速度をmp/hではなくkm/hで表示します。"
 
@@ -241,10 +229,6 @@ msgstr "車線逸脱警告を有効にする"
 #: js/components/Settings/Settings.js:604
 msgid "Enable SSH"
 msgstr "SSHを有効にする"
-
-#: js/components/Settings/Settings.js:529
-#~ msgid "Enable Upload Over Cellular"
-#~ msgstr "モバイル回線でのアップロードを有効にする"
 
 #: js/components/Settings/Settings.js:289
 msgid "Enable openpilot"
@@ -331,11 +315,6 @@ msgstr "マイル"
 #: js/components/SetupWifi/SetupWifi.js:377
 msgid "More Options"
 msgstr "詳細設定"
-
-#: js/components/Settings/Settings.js:597
-#: js/components/Settings/Settings.js:601
-#~ msgid "N/A"
-#~ msgstr "N/A"
 
 #: js/components/Settings/Settings.js:209
 msgid "Network"
@@ -543,10 +522,6 @@ msgstr "ペダルを踏んで解除"
 msgid "Terms of Service available at https://my.comma.ai/terms.html"
 msgstr "利用規約：https://my.comma.ai/terms.html"
 
-#: js/components/Settings/Settings.js:454
-#~ msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when EON reports an invalid calibration alert or when EON is remounted in a different position."
-#~ msgstr "キャリブレーションアルゴリズムは道路側のカメラでは常に有効です。キャリブレーションのリセットは、EONが無効なキャリブレーション警告を表示した場合かEONを別の場所に取り付けた場合のみ推奨されます。"
-
 #: js/components/Settings/Settings.js:470
 msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position."
 msgstr "キャリブレーションアルゴリズムは道路側のカメラでは常に有効です。キャリブレーションのリセットは、EONが無効なキャリブレーション警告を表示した場合かEONを別の場所に取り付けた場合のみ推奨されます。"
@@ -571,10 +546,6 @@ msgstr "あなたの車の車載レーダーは、オープンパイロットが
 msgid "There was a problem scanning WiFi networks. {0}Make sure WiFi is enabled in \"More Options\" above."
 msgstr "Wi-Fiネットワークのスキャン中に問題が発生しました。 {0}Wi-fiが有効か \"More Options\" で確認してください。."
 
-#: js/components/training/Onboarding/Onboarding.js:777
-#~ msgid "This guide can be replayed at any time from the EON settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
-#~ msgstr "このガイドはEON設定からいつでも再生できます。オープンパイロットの詳細についてはWikiを読みDiscordコミュニティに参加してください。"
-
 #: js/components/training/Onboarding/Onboarding.js:994
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "このガイドはデバイス設定からいつでも再生できます。オープンパイロットの詳細についてはWikiを読みDiscordコミュニティに参加してください。"
@@ -595,7 +566,7 @@ msgstr "連携解除"
 #: js/components/Home/Home.js:210
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
-msgstr "Update Available"
+msgstr "更新可能"
 
 #: js/components/Home/Home.js:445
 msgid "Upgrade Now"
@@ -608,10 +579,6 @@ msgstr "アップロード速度"
 #: js/components/Settings/Settings.js:311
 msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
 msgstr "運転手側のカメラデータをアップロードし、ドライバ監視アルゴリズムの改善に役立てます。"
-
-#: js/components/Settings/Settings.js:532
-#~ msgid "Upload driving data over cellular connection if a sim card is used and no wifi network is available. If you have a limited data plan, you might incur in surcharges."
-#~ msgstr "SIMカードが使用されていて、Wi-Fiネットワークが利用できない場合は、モバイル接続経由で運転データをアップロードします。データプランが限られていると、追加料金が発生することがあります。"
 
 #: js/components/Settings/Settings.js:317
 msgid "Use Metric System"
@@ -715,10 +682,6 @@ msgstr "オープンパイロットは複数のセンサーを使って前方の
 #: js/components/training/Onboarding/Onboarding.js:586
 msgid "openpilot will engage when cruise control is set."
 msgstr "クルーズコントロールが設定されると、オープンパイロットが起動します。"
-
-#: js/components/training/Onboarding/Onboarding.js:534
-#~ msgid "openpilot will start driving when cruise control is set."
-#~ msgstr "クルーズコントロールが設定されると、オープンパイロットが起動します。"
 
 #: js/components/training/Onboarding/Onboarding.js:845
 msgid "openpilot will stop driving when a pedal is pressed."
