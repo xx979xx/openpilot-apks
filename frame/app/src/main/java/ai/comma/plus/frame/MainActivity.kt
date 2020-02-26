@@ -305,20 +305,20 @@ class MainActivity : Activity(), NewDestinationReceiverDelegate, OffroadNavigati
 
     fun updatePandaConnectionStatus() {
         if (pandaConnectionMonitor?.isConnected == false) {
-            sidebarMetricPanda?.text = "NO PANDA"
+            sidebarMetricPanda?.text = getString(R.string.no_panda)
             sidebarMetricPandaEdge?.setColorFilter(colorRed!!);
             sidebarMetricPandaBorder!!.getBackground().setAlpha(255)
         } else {
             if (satelliteCount == -1) {
-              sidebarMetricPanda?.text = "PANDA ACTIVE"
+              sidebarMetricPanda?.text = getString(R.string.panda_active)
               sidebarMetricPandaEdge?.setColorFilter(colorWhite!!);
               sidebarMetricPandaBorder!!.getBackground().setAlpha(76);
             } else if (satelliteCount < 6) {
-              sidebarMetricPanda?.text = "PANDA\nNO GPS"
+              sidebarMetricPanda?.text = getString(R.string.panda_no_gps)
               sidebarMetricPandaEdge?.setColorFilter(colorYellow!!);
               sidebarMetricPandaBorder!!.getBackground().setAlpha(255);
             } else if (satelliteCount >= 6) {
-              sidebarMetricPanda?.text = "PANDA GOOD GPS"
+              sidebarMetricPanda?.text = getString(R.string.panda_good_gps)
               sidebarMetricPandaEdge?.setColorFilter(colorWhite!!);
               sidebarMetricPandaBorder!!.getBackground().setAlpha(76);
             }
