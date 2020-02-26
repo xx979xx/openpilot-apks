@@ -7,15 +7,15 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        506
+        518
       ],
       [
         "js/components/Settings/Settings.js",
-        812
+        824
       ],
       [
         "js/components/Settings/Settings.js",
-        814
+        826
       ]
     ]
   },
@@ -59,7 +59,7 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        484
+        496
       ]
     ]
   },
@@ -107,7 +107,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        276
+        277
       ]
     ]
   },
@@ -115,7 +115,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        289
+        290
       ]
     ]
   },
@@ -123,7 +123,23 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        292
+        293
+      ]
+    ]
+  },
+  "Enable Lane Change Assist": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        301
+      ]
+    ]
+  },
+  "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        304
       ]
     ]
   },
@@ -131,7 +147,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        299
+        311
       ]
     ]
   },
@@ -139,7 +155,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        308
+        320
       ]
     ]
   },
@@ -147,7 +163,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        311
+        323
       ]
     ]
   },
@@ -155,7 +171,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        317
+        329
       ]
     ]
   },
@@ -163,7 +179,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        320
+        332
       ]
     ]
   },
@@ -171,7 +187,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        377
+        389
       ]
     ]
   },
@@ -179,7 +195,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        395
+        407
       ]
     ]
   },
@@ -187,7 +203,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        404
+        416
       ]
     ]
   },
@@ -195,11 +211,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        405
+        417
       ],
       [
         "js/components/Settings/Settings.js",
-        485
+        497
       ]
     ]
   },
@@ -207,11 +223,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        405
+        417
       ],
       [
         "js/components/Settings/Settings.js",
-        485
+        497
       ]
     ]
   },
@@ -219,7 +235,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        410
+        422
       ]
     ]
   },
@@ -227,7 +243,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        417
+        429
       ]
     ]
   },
@@ -235,7 +251,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        426
+        438
       ]
     ]
   },
@@ -243,7 +259,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        459
+        471
       ]
     ]
   },
@@ -251,7 +267,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        468
+        480
       ]
     ]
   },
@@ -259,7 +275,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        470
+        482
       ]
     ]
   },
@@ -267,7 +283,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        478
+        490
       ]
     ]
   },
@@ -275,7 +291,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        487
+        499
       ]
     ]
   },
@@ -283,7 +299,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        490
+        502
       ]
     ]
   },
@@ -291,7 +307,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        493
+        505
       ]
     ]
   },
@@ -299,7 +315,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        497
+        509
       ]
     ]
   },
@@ -307,11 +323,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        513
+        525
       ],
       [
         "js/components/Settings/Settings.js",
-        818
+        830
       ]
     ]
   },
@@ -319,7 +335,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        530
+        542
       ]
     ]
   },
@@ -327,7 +343,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        542
+        554
       ]
     ]
   },
@@ -335,7 +351,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        549
+        561
       ]
     ]
   },
@@ -343,7 +359,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        579
+        591
       ]
     ]
   },
@@ -351,11 +367,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        588
+        600
       ],
       [
         "js/components/Settings/Settings.js",
-        861
+        873
       ]
     ]
   },
@@ -363,7 +379,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        593
+        605
       ]
     ]
   },
@@ -371,7 +387,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        604
+        616
       ]
     ]
   },
@@ -379,7 +395,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        607
+        619
       ]
     ]
   },
@@ -387,7 +403,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        613
+        625
       ]
     ]
   },
@@ -395,15 +411,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        623
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        813
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        819
+        635
       ],
       [
         "js/components/Settings/Settings.js",
@@ -411,7 +419,15 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        862
+        831
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        837
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        874
       ]
     ]
   },
@@ -419,7 +435,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        623
+        635
       ]
     ]
   },
@@ -427,7 +443,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        629
+        641
       ]
     ]
   },
@@ -435,7 +451,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        632
+        644
       ]
     ]
   },
@@ -443,7 +459,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        635
+        647
       ]
     ]
   },
@@ -451,7 +467,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        639
+        651
       ]
     ]
   },
@@ -459,7 +475,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        643
+        655
       ]
     ]
   },
@@ -467,7 +483,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        652
+        664
       ]
     ]
   },
@@ -475,7 +491,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        667
+        679
       ]
     ]
   },
@@ -483,7 +499,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        686
+        698
       ]
     ]
   },
@@ -491,7 +507,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        703
+        715
       ]
     ]
   },
@@ -499,7 +515,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        715
+        727
       ]
     ]
   },
@@ -507,7 +523,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        725
+        737
       ]
     ]
   },
@@ -515,7 +531,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        812
+        824
       ]
     ]
   },
@@ -523,7 +539,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        818
+        830
       ]
     ]
   },
@@ -531,7 +547,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        820
+        832
       ]
     ]
   },
@@ -539,11 +555,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        824
+        836
       ],
       [
         "js/components/Settings/Settings.js",
-        826
+        838
       ]
     ]
   },
@@ -551,7 +567,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        824
+        836
       ]
     ]
   },
@@ -559,7 +575,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        861
+        873
       ]
     ]
   },
@@ -567,7 +583,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        863
+        875
       ]
     ]
   }

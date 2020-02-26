@@ -13,27 +13,27 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: js/components/Home/Home.js:476
+#: js/components/Home/Home.js:479
 msgid "1 year of storage"
 msgstr "一年行车记录"
 
-#: js/components/Settings/Settings.js:395
+#: js/components/Settings/Settings.js:407
 msgid "<  Account Settings"
 msgstr "<  帐户设置"
 
-#: js/components/Settings/Settings.js:579
+#: js/components/Settings/Settings.js:591
 msgid "<  Developer Settings"
 msgstr "<  开发人员设置"
 
-#: js/components/Settings/Settings.js:459
+#: js/components/Settings/Settings.js:471
 msgid "<  Device Settings"
 msgstr "<  设备设置"
 
-#: js/components/Settings/Settings.js:530
+#: js/components/Settings/Settings.js:542
 msgid "<  Network Settings"
 msgstr "<  网络设置"
 
-#: js/components/Settings/Settings.js:276
+#: js/components/Settings/Settings.js:277
 msgid "<  Settings"
 msgstr "<  设置"
 
@@ -45,15 +45,15 @@ msgstr "驾驶辅助系统不是自动驾驶系统，意味着 openpilot 需要�
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
 msgstr "我们利用后置摄像头图像规划出行车路径。"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERT"
 msgstr "通知"
 
-#: js/components/Home/Home.js:225
+#: js/components/Home/Home.js:228
 msgid "ALERTS"
 msgstr "通知"
 
-#: js/components/Home/Home.js:353
+#: js/components/Home/Home.js:356
 msgid "ALL TIME"
 msgstr "全部"
 
@@ -61,19 +61,19 @@ msgstr "全部"
 msgid "Account"
 msgstr "帐户"
 
-#: js/components/Settings/Settings.js:607
+#: js/components/Settings/Settings.js:619
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "允许别的设备通过 Secure Shell (SSH) 连接至您的 EON。"
 
-#: js/components/Settings/Settings.js:812
+#: js/components/Settings/Settings.js:824
 msgid "Are you sure you want to reboot?"
 msgstr "您确定要重新启动吗？"
 
-#: js/components/Settings/Settings.js:818
+#: js/components/Settings/Settings.js:830
 msgid "Are you sure you want to shutdown?"
 msgstr "您确定要关机吗？"
 
-#: js/components/Settings/Settings.js:824
+#: js/components/Settings/Settings.js:836
 msgid "Are you sure you want to uninstall?"
 msgstr "您确定要卸载吗？"
 
@@ -85,11 +85,11 @@ msgstr "网络连接中..."
 msgid "Authentication problem"
 msgstr "身份验证错误"
 
-#: js/components/Settings/Settings.js:613
+#: js/components/Settings/Settings.js:625
 msgid "Authorized SSH Keys"
 msgstr "授权 SSH 密钥"
 
-#: js/components/Home/Home.js:452
+#: js/components/Home/Home.js:455
 msgid "Become a comma prime member in the comma app and get premium features!"
 msgstr "成为 comma 会员，获取更多功能！"
 
@@ -101,11 +101,11 @@ msgstr "我们把这些传感器信息融合在一起，构建出前方道路状
 msgid "Begin Training"
 msgstr "开始教程"
 
-#: js/components/Home/Home.js:422
+#: js/components/Home/Home.js:425
 msgid "COMMA POINTS"
 msgstr "COMMA 积分"
 
-#: js/components/Settings/Settings.js:468
+#: js/components/Settings/Settings.js:480
 msgid "Camera Calibration"
 msgstr "摄像头校准"
 
@@ -114,11 +114,11 @@ msgstr "摄像头校准"
 msgid "Camera from Device"
 msgstr "设备的摄像头"
 
-#: js/components/Settings/Settings.js:623
-#: js/components/Settings/Settings.js:813
-#: js/components/Settings/Settings.js:819
+#: js/components/Settings/Settings.js:635
 #: js/components/Settings/Settings.js:825
-#: js/components/Settings/Settings.js:862
+#: js/components/Settings/Settings.js:831
+#: js/components/Settings/Settings.js:837
+#: js/components/Settings/Settings.js:874
 #: js/components/SetupWifi/SetupWifi.js:320
 msgid "Cancel"
 msgstr "取消"
@@ -127,7 +127,7 @@ msgstr "取消"
 msgid "Comma.ai, Inc. Terms & Conditions"
 msgstr "Comma.ai, Inc. 条款及细则"
 
-#: js/components/Settings/Settings.js:861
+#: js/components/Settings/Settings.js:873
 msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
 msgstr "开源社区开发维护的功能，未通过官方标准安全验证，请谨慎使用。"
 
@@ -144,7 +144,7 @@ msgstr "连接"
 msgid "Connect to WiFi"
 msgstr "连接到无线网络"
 
-#: js/components/Home/Home.js:281
+#: js/components/Home/Home.js:284
 msgid "Connect to a WiFi or cellular network to upload and review your drives."
 msgstr "连接到 WiFi 或使用 SIM 卡流量上传您的行车记录。"
 
@@ -162,8 +162,8 @@ msgstr "继续"
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
 msgstr "不断观察周围环境的安全并同时将方向盘轻轻推向想切至的车道。打转向灯和轻推方向盘这样的组合能指使 openpilot 协助您变换车道。"
 
-#: js/components/Home/Home.js:309
-#: js/components/Home/Home.js:369
+#: js/components/Home/Home.js:312
+#: js/components/Home/Home.js:372
 msgid "DRIVES"
 msgstr "驾驶"
 
@@ -171,7 +171,7 @@ msgstr "驾驶"
 msgid "Developer"
 msgstr "开发人员"
 
-#: js/components/Home/Home.js:488
+#: js/components/Home/Home.js:491
 msgid "Developer perks"
 msgstr "开发人员 perks"
 
@@ -179,7 +179,7 @@ msgstr "开发人员 perks"
 msgid "Device"
 msgstr "设备"
 
-#: js/components/Settings/Settings.js:404
+#: js/components/Settings/Settings.js:416
 msgid "Device Paired"
 msgstr "设备已绑定"
 
@@ -187,11 +187,11 @@ msgstr "设备已绑定"
 msgid "Disengage openpilot"
 msgstr "退出 openpilot"
 
-#: js/components/Settings/Settings.js:320
+#: js/components/Settings/Settings.js:332
 msgid "Display speed in km/h instead of mp/h."
 msgstr "以 km/h (而非 mp/h) 为速度的单位。"
 
-#: js/components/Settings/Settings.js:487
+#: js/components/Settings/Settings.js:499
 msgid "Dongle ID"
 msgstr "Dongle ID"
 
@@ -204,28 +204,32 @@ msgstr "下载"
 msgid "Driver Monitoring"
 msgstr "驾驶监控"
 
-#: js/components/Settings/Settings.js:623
+#: js/components/Settings/Settings.js:635
 msgid "Edit"
 msgstr "编辑"
 
-#: js/components/Settings/Settings.js:863
+#: js/components/Settings/Settings.js:875
 msgid "Enable"
 msgstr "启用"
 
-#: js/components/Settings/Settings.js:588
-#: js/components/Settings/Settings.js:861
+#: js/components/Settings/Settings.js:600
+#: js/components/Settings/Settings.js:873
 msgid "Enable Community Features"
 msgstr "启用社区功能"
 
-#: js/components/Settings/Settings.js:299
+#: js/components/Settings/Settings.js:301
+msgid "Enable Lane Change Assist"
+msgstr ""
+
+#: js/components/Settings/Settings.js:311
 msgid "Enable Lane Departure Warnings"
 msgstr "启用车道偏离警示"
 
-#: js/components/Settings/Settings.js:604
+#: js/components/Settings/Settings.js:616
 msgid "Enable SSH"
 msgstr "启用 SSH"
 
-#: js/components/Settings/Settings.js:289
+#: js/components/Settings/Settings.js:290
 msgid "Enable openpilot"
 msgstr "启用 openpilot"
 
@@ -234,7 +238,7 @@ msgstr "启用 openpilot"
 msgid "Engage openpilot"
 msgstr "启用 openpilot"
 
-#: js/components/Home/Home.js:508
+#: js/components/Home/Home.js:511
 msgid "Finish Setup"
 msgstr "设置完成"
 
@@ -242,19 +246,19 @@ msgstr "设置完成"
 msgid "Finish Training"
 msgstr "完成"
 
-#: js/components/Settings/Settings.js:493
+#: js/components/Settings/Settings.js:505
 msgid "Free Storage"
 msgstr "剩余空间"
 
-#: js/components/Settings/Settings.js:632
+#: js/components/Settings/Settings.js:644
 msgid "Git Branch"
 msgstr "Git 分支"
 
-#: js/components/Settings/Settings.js:635
+#: js/components/Settings/Settings.js:647
 msgid "Git Revision"
 msgstr "Git 修订版"
 
-#: js/components/Settings/Settings.js:686
+#: js/components/Settings/Settings.js:698
 msgid "GitHub Username"
 msgstr "GitHub 用户名"
 
@@ -262,14 +266,18 @@ msgstr "GitHub 用户名"
 msgid "Go Back"
 msgstr "返回"
 
-#: js/components/Home/Home.js:341
-#: js/components/Home/Home.js:401
+#: js/components/Home/Home.js:344
+#: js/components/Home/Home.js:404
 msgid "HOURS"
 msgstr "小时"
 
-#: js/components/Home/Home.js:263
+#: js/components/Home/Home.js:266
 msgid "Hide Alerts"
 msgstr "隐藏通知"
+
+#: js/components/DriveRating/DriveRating.js:81
+msgid "How was your drive?"
+msgstr ""
 
 #: js/components/training/Onboarding/Onboarding.js:405
 msgid "I will be ready to take over at any time!"
@@ -283,8 +291,8 @@ msgstr "我一定会准备好随时接管控制!"
 msgid "I will keep my eyes on the road."
 msgstr "我会保持关注路况。"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "KM"
 msgstr "公里"
 
@@ -302,8 +310,8 @@ msgstr "稍后"
 msgid "Limited Features"
 msgstr "功能限制"
 
-#: js/components/Home/Home.js:326
-#: js/components/Home/Home.js:386
+#: js/components/Home/Home.js:329
+#: js/components/Home/Home.js:389
 msgid "MILES"
 msgstr "英里"
 
@@ -315,12 +323,12 @@ msgstr "更多选项"
 msgid "Network"
 msgstr "网络"
 
-#: js/components/Settings/Settings.js:405
-#: js/components/Settings/Settings.js:485
+#: js/components/Settings/Settings.js:417
+#: js/components/Settings/Settings.js:497
 msgid "No"
 msgstr "否"
 
-#: js/components/Home/Home.js:275
+#: js/components/Home/Home.js:278
 msgid "No Network Connection"
 msgstr "没有网络连接"
 
@@ -328,19 +336,19 @@ msgstr "没有网络连接"
 msgid "Now that you’re all set up, it’s important to understand the functionality and limitations of openpilot as alpha software before testing."
 msgstr "现在，您已经完成了所有设置，在测试使用之前，了解 openpilot 测试版的功能限制非常重要。"
 
-#: js/components/Settings/Settings.js:549
+#: js/components/Settings/Settings.js:561
 msgid "Open Tethering Settings"
 msgstr "共享网络设置"
 
-#: js/components/Settings/Settings.js:542
+#: js/components/Settings/Settings.js:554
 msgid "Open WiFi Settings"
 msgstr "无线网络设置"
 
-#: js/components/Home/Home.js:293
+#: js/components/Home/Home.js:296
 msgid "PAST WEEK"
 msgstr "上周"
 
-#: js/components/Settings/Settings.js:426
+#: js/components/Settings/Settings.js:438
 msgid "Pair Device"
 msgstr "绑定帐户"
 
@@ -348,20 +356,20 @@ msgstr "绑定帐户"
 msgid "Pair Your Account"
 msgstr "绑定帐户"
 
-#: js/components/Home/Home.js:520
+#: js/components/Home/Home.js:523
 msgid "Pair your comma account with comma connect"
 msgstr "使用 Comma connect 绑定到您的 Comma 帐户"
 
 #: js/components/Settings/Settings.js:198
-#: js/components/Settings/Settings.js:484
+#: js/components/Settings/Settings.js:496
 msgid "Paired"
 msgstr "设备已绑定"
 
-#: js/components/Settings/Settings.js:643
+#: js/components/Settings/Settings.js:655
 msgid "Panda Dongle ID"
 msgstr "Panda Dongle ID"
 
-#: js/components/Settings/Settings.js:639
+#: js/components/Settings/Settings.js:651
 msgid "Panda Firmware"
 msgstr "Panda 固件"
 
@@ -375,8 +383,12 @@ msgstr "密码:"
 msgid "Perform Lane Change"
 msgstr "进行变换车道"
 
-#: js/components/Settings/Settings.js:513
-#: js/components/Settings/Settings.js:818
+#: js/components/Settings/Settings.js:304
+msgid "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature."
+msgstr ""
+
+#: js/components/Settings/Settings.js:525
+#: js/components/Settings/Settings.js:830
 msgid "Power Off"
 msgstr "关机"
 
@@ -394,9 +406,9 @@ msgid "Radar from your car"
 msgstr "原车雷达"
 
 #: js/components/Settings/Settings.js:130
-#: js/components/Settings/Settings.js:506
-#: js/components/Settings/Settings.js:812
-#: js/components/Settings/Settings.js:814
+#: js/components/Settings/Settings.js:518
+#: js/components/Settings/Settings.js:824
+#: js/components/Settings/Settings.js:826
 msgid "Reboot"
 msgstr "重新启动"
 
@@ -408,19 +420,19 @@ msgstr "马上"
 msgid "Reboot and Update"
 msgstr "重启并更新"
 
-#: js/components/Settings/Settings.js:308
+#: js/components/Settings/Settings.js:320
 msgid "Record and Upload Driver Camera"
 msgstr "上传驾驶员的驾驶录像"
 
-#: js/components/Home/Home.js:464
+#: js/components/Home/Home.js:467
 msgid "Remote Access"
 msgstr "远程访问"
 
-#: js/components/Settings/Settings.js:725
+#: js/components/Settings/Settings.js:737
 msgid "Remove all"
 msgstr "全部删除"
 
-#: js/components/Settings/Settings.js:478
+#: js/components/Settings/Settings.js:490
 msgid "Reset"
 msgstr "重置"
 
@@ -432,15 +444,15 @@ msgstr "重置摄像头校准需要重新启动。"
 msgid "Restart"
 msgstr "重新学习"
 
-#: js/components/Settings/Settings.js:377
+#: js/components/Settings/Settings.js:389
 msgid "Review Training Guide"
 msgstr "查看使用教程"
 
-#: js/components/Settings/Settings.js:703
+#: js/components/Settings/Settings.js:715
 msgid "Save"
 msgstr "保存"
 
-#: js/components/Settings/Settings.js:715
+#: js/components/Settings/Settings.js:727
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "保存失败，请确保您的设备已联网并输入正确的用户名"
 
@@ -472,7 +484,7 @@ msgstr "请点选画面中的方向盘"
 msgid "Select turn signal"
 msgstr "请点选画面中的转向灯"
 
-#: js/components/Settings/Settings.js:490
+#: js/components/Settings/Settings.js:502
 msgid "Serial Number"
 msgstr "序列号"
 
@@ -480,7 +492,7 @@ msgstr "序列号"
 msgid "Show password"
 msgstr "显示密码"
 
-#: js/components/Settings/Settings.js:820
+#: js/components/Settings/Settings.js:832
 msgid "Shutdown"
 msgstr "关机"
 
@@ -513,11 +525,15 @@ msgstr "请点击画面中的 “SET” 继续"
 msgid "Tap a pedal to disengage"
 msgstr "请点击画面中的油门或刹车继续"
 
-#: js/components/Settings/Settings.js:417
+#: js/components/DriveRating/DriveRating.js:89
+msgid "Tell us how openpilot performed for this drive."
+msgstr ""
+
+#: js/components/Settings/Settings.js:429
 msgid "Terms of Service available at https://my.comma.ai/terms.html"
 msgstr "服务条款请参阅 https://my.comma.ai/terms.html"
 
-#: js/components/Settings/Settings.js:470
+#: js/components/Settings/Settings.js:482
 msgid "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position."
 msgstr "摄像头是一直在后台自动校准的，只有当您的设备发出校准无效的信息或是您将设备安装至不同的位置/车子时，才需要重置校准。"
 
@@ -545,12 +561,12 @@ msgstr "无线网络扫描错误。{0}请确认已在 \"更多选项\" 里开启
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "您可以随时到设备设置里重新阅读使用教程，了解更多关于 openpilot 的信息，请查看 wiki 或加入 discord.comma.ai 社区交流。"
 
-#: js/components/Settings/Settings.js:824
-#: js/components/Settings/Settings.js:826
+#: js/components/Settings/Settings.js:836
+#: js/components/Settings/Settings.js:838
 msgid "Uninstall"
 msgstr "卸载"
 
-#: js/components/Settings/Settings.js:652
+#: js/components/Settings/Settings.js:664
 msgid "Uninstall {software}"
 msgstr "卸载 {software}"
 
@@ -558,40 +574,40 @@ msgstr "卸载 {software}"
 msgid "Unpaired"
 msgstr "未绑定"
 
-#: js/components/Home/Home.js:210
+#: js/components/Home/Home.js:213
 #: js/components/UpdatePrompt/UpdatePrompt.js:36
 msgid "Update Available"
 msgstr "有版本更新"
 
-#: js/components/Home/Home.js:445
+#: js/components/Home/Home.js:448
 msgid "Upgrade Now"
 msgstr "立即更新"
 
-#: js/components/Settings/Settings.js:497
+#: js/components/Settings/Settings.js:509
 msgid "Upload Speed"
 msgstr "上传速度"
 
-#: js/components/Settings/Settings.js:311
+#: js/components/Settings/Settings.js:323
 msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
 msgstr "上传前置摄像头的录像来协助我们提升驾驶监控的准确率。"
 
-#: js/components/Settings/Settings.js:317
+#: js/components/Settings/Settings.js:329
 msgid "Use Metric System"
 msgstr "使用公制单位"
 
-#: js/components/Settings/Settings.js:593
+#: js/components/Settings/Settings.js:605
 msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor"
 msgstr "使用来自开源社区开发维护的功能，包含：* 启用通用 (GM) 车系支援。 * 允许模拟丰田 (Toyota) 车系 DSU 模组。* 允许使用 Comma Pedal 模组。"
 
-#: js/components/Settings/Settings.js:292
+#: js/components/Settings/Settings.js:293
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 msgstr "使用 openpilot 的自适应巡航功能和车道保持功能，开启后您需要保持注意力集中，设置更改在重新启动车子后生效。"
 
-#: js/components/Settings/Settings.js:629
+#: js/components/Settings/Settings.js:641
 msgid "Version"
 msgstr "版本"
 
-#: js/components/Settings/Settings.js:667
+#: js/components/Settings/Settings.js:679
 msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
 msgstr "警告：这个功能会同步 Github 设置里所有公钥的 SSH 访问权限，请不要输入别人的 Github 用户名（即使声称是 comma 的员工），操作完成后，原先内置的 SSH 密钥会被禁用。"
 
@@ -619,12 +635,12 @@ msgstr "使用 openpilot 时，您可以随时改为人工操作方向盘，open
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
 msgstr "使用 openpilot 时，打开转向灯，检查周边车道情况，确认可以安全的切换车道。"
 
-#: js/components/Settings/Settings.js:405
-#: js/components/Settings/Settings.js:485
+#: js/components/Settings/Settings.js:417
+#: js/components/Settings/Settings.js:497
 msgid "Yes"
 msgstr "是"
 
-#: js/components/Settings/Settings.js:410
+#: js/components/Settings/Settings.js:422
 msgid "You may unpair your device in the comma connect app settings."
 msgstr "您可以在手机应用（Comma connect）中解绑设备。"
 
