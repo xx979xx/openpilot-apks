@@ -1,6 +1,6 @@
 import { NativeModules } from 'react-native'
 import { setupI18n } from "@lingui/core"
-import en from '../locales/en/messages.js';
+import enUS from '../locales/en_US/messages.js';
 import zhTW from '../locales/zh_TW/messages.js';
 import zhCN from '../locales/zh_CN/messages.js';
 import frFR from '../locales/fr_FR/messages.js';
@@ -8,7 +8,7 @@ import jaJP from '../locales/ja_JP/messages.js';
 
 // define which locale use which translate file
 let supportedLanguage = {
-    'en': en,
+    'en_US': enUS,
     'zh_TW': zhTW,
     'zh_CN': zhCN,
     'fr_FR': frFR,
@@ -23,7 +23,7 @@ i18n.load(supportedLanguage);
 if (supportedLanguage.hasOwnProperty(locale)) {
     i18n.activate(locale);
 } else {
-    i18n.activate('en');
+    i18n.activate('en_US');
 }
 
 export default i18n
