@@ -39,7 +39,7 @@ msgstr "<  設定"
 
 #: js/components/training/Onboarding/Onboarding.js:382
 msgid "A driver assistance system is not a self driving car. This means openpilot is designed to work with you, not without you. Your attention is required to drive."
-msgstr "運転支援システムは自動運転車ではありません。つまり、openpilotは運転手がいなくても機能するように設計されているわけではありません。運転には注意が必要です。"
+msgstr "運転支援システムは自動運転車ではありません。つまり、オープンパイロットは運転手がいなくても機能するように設計されているわけではありません。運転には注意が必要です。"
 
 #: js/components/training/Onboarding/Onboarding.js:481
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
@@ -61,19 +61,19 @@ msgstr "常時"
 msgid "Account"
 msgstr "アカウント"
 
-#: js/components/Settings/Settings.js:621
+#: js/components/Settings/Settings.js:619
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "Secure Shell(SSH)を使用したデバイスのEONへの接続を許可します。"
 
-#: js/components/Settings/Settings.js:826
+#: js/components/Settings/Settings.js:824
 msgid "Are you sure you want to reboot?"
 msgstr "再起動しますか?"
 
-#: js/components/Settings/Settings.js:832
+#: js/components/Settings/Settings.js:830
 msgid "Are you sure you want to shutdown?"
 msgstr "シャットダウンしますか?"
 
-#: js/components/Settings/Settings.js:838
+#: js/components/Settings/Settings.js:836
 msgid "Are you sure you want to uninstall?"
 msgstr "アンインストールしますか?"
 
@@ -85,7 +85,7 @@ msgstr "認証中..."
 msgid "Authentication problem"
 msgstr "認証エラー"
 
-#: js/components/Settings/Settings.js:627
+#: js/components/Settings/Settings.js:625
 msgid "Authorized SSH Keys"
 msgstr "認証済みSSHキー"
 
@@ -114,11 +114,11 @@ msgstr "カメラのキャリブレーション"
 msgid "Camera from Device"
 msgstr "デバイスのカメラ"
 
-#: js/components/Settings/Settings.js:637
-#: js/components/Settings/Settings.js:827
-#: js/components/Settings/Settings.js:833
-#: js/components/Settings/Settings.js:839
-#: js/components/Settings/Settings.js:876
+#: js/components/Settings/Settings.js:635
+#: js/components/Settings/Settings.js:825
+#: js/components/Settings/Settings.js:831
+#: js/components/Settings/Settings.js:837
+#: js/components/Settings/Settings.js:874
 #: js/components/SetupWifi/SetupWifi.js:320
 msgid "Cancel"
 msgstr "キャンセル"
@@ -127,7 +127,7 @@ msgstr "キャンセル"
 msgid "Comma.ai, Inc. Terms & Conditions"
 msgstr "利用規約　Comma.ai, Inc."
 
-#: js/components/Settings/Settings.js:875
+#: js/components/Settings/Settings.js:873
 msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
 msgstr "コミュニティで維持される機能は、標準の安全モデルを満たしているか comma.ai では確認されません。使用には十分に注意してください。"
 
@@ -204,28 +204,28 @@ msgstr "ダウンロード"
 msgid "Driver Monitoring"
 msgstr "運転手の監視"
 
-#: js/components/Settings/Settings.js:637
+#: js/components/Settings/Settings.js:635
 msgid "Edit"
 msgstr "編集"
 
-#: js/components/Settings/Settings.js:877
+#: js/components/Settings/Settings.js:875
 msgid "Enable"
 msgstr "有効"
 
 #: js/components/Settings/Settings.js:600
-#: js/components/Settings/Settings.js:875
+#: js/components/Settings/Settings.js:873
 msgid "Enable Community Features"
 msgstr "コミュニティ機能を有効にする"
 
 #: js/components/Settings/Settings.js:301
 msgid "Enable Lane Change Assist"
-msgstr ""
+msgstr "車線変更支援を有効にする"
 
 #: js/components/Settings/Settings.js:311
 msgid "Enable Lane Departure Warnings"
 msgstr "車線逸脱警告を有効にする"
 
-#: js/components/Settings/Settings.js:618
+#: js/components/Settings/Settings.js:616
 msgid "Enable SSH"
 msgstr "SSHを有効にする"
 
@@ -250,15 +250,15 @@ msgstr "トレーニングを終了"
 msgid "Free Storage"
 msgstr "空き容量"
 
-#: js/components/Settings/Settings.js:646
+#: js/components/Settings/Settings.js:644
 msgid "Git Branch"
 msgstr "Gitブランチ"
 
-#: js/components/Settings/Settings.js:649
+#: js/components/Settings/Settings.js:647
 msgid "Git Revision"
 msgstr "Gitリビジョン"
 
-#: js/components/Settings/Settings.js:700
+#: js/components/Settings/Settings.js:698
 msgid "GitHub Username"
 msgstr "GitHub ユーザー名"
 
@@ -277,7 +277,7 @@ msgstr "警告を非表示"
 
 #: js/components/DriveRating/DriveRating.js:81
 msgid "How was your drive?"
-msgstr ""
+msgstr "ドライブはどうでしたか？"
 
 #: js/components/training/Onboarding/Onboarding.js:405
 msgid "I will be ready to take over at any time!"
@@ -365,11 +365,11 @@ msgstr "commaアカウントと連携します。"
 msgid "Paired"
 msgstr "連携済み"
 
-#: js/components/Settings/Settings.js:657
+#: js/components/Settings/Settings.js:655
 msgid "Panda Dongle ID"
 msgstr "パンダドングルID"
 
-#: js/components/Settings/Settings.js:653
+#: js/components/Settings/Settings.js:651
 msgid "Panda Firmware"
 msgstr "パンダファームウェア"
 
@@ -385,10 +385,10 @@ msgstr "車線変更を実行"
 
 #: js/components/Settings/Settings.js:304
 msgid "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature."
-msgstr ""
+msgstr "オープンパイロットで車線変更を行うには、周囲の安全を確認し、方向指示器を作動させ、ハンドルをゆっくりと希望の車線に向けて動かします。オープンパイロットは車線変更が安全かどうかチェックできません。この機能を使用するには、常に周囲の状況を観察する必要があります。"
 
 #: js/components/Settings/Settings.js:525
-#: js/components/Settings/Settings.js:832
+#: js/components/Settings/Settings.js:830
 msgid "Power Off"
 msgstr "電源オフ"
 
@@ -407,8 +407,8 @@ msgstr "車のレーダー"
 
 #: js/components/Settings/Settings.js:130
 #: js/components/Settings/Settings.js:518
+#: js/components/Settings/Settings.js:824
 #: js/components/Settings/Settings.js:826
-#: js/components/Settings/Settings.js:828
 msgid "Reboot"
 msgstr "再起動"
 
@@ -420,10 +420,6 @@ msgstr "今すぐ再起動"
 msgid "Reboot and Update"
 msgstr "更新して再起動"
 
-#: js/components/Settings/Settings.js:314
-msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
-msgstr ""
-
 #: js/components/Settings/Settings.js:320
 msgid "Record and Upload Driver Camera"
 msgstr "運転映像の記録とアップロード"
@@ -432,7 +428,7 @@ msgstr "運転映像の記録とアップロード"
 msgid "Remote Access"
 msgstr "リモートアクセス"
 
-#: js/components/Settings/Settings.js:739
+#: js/components/Settings/Settings.js:737
 msgid "Remove all"
 msgstr "すべて削除"
 
@@ -452,11 +448,11 @@ msgstr "リスタート"
 msgid "Review Training Guide"
 msgstr "トレーニングガイドの確認"
 
-#: js/components/Settings/Settings.js:717
+#: js/components/Settings/Settings.js:715
 msgid "Save"
 msgstr "保存"
 
-#: js/components/Settings/Settings.js:729
+#: js/components/Settings/Settings.js:727
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "保存に失敗しました。ユーザー名が正しく、インターネットに接続していることを確認してください。"
 
@@ -496,7 +492,7 @@ msgstr "シリアルナンバー"
 msgid "Show password"
 msgstr "パスワードを表示"
 
-#: js/components/Settings/Settings.js:834
+#: js/components/Settings/Settings.js:832
 msgid "Shutdown"
 msgstr "シャットダウン"
 
@@ -531,7 +527,7 @@ msgstr "ペダルを踏んで解除"
 
 #: js/components/DriveRating/DriveRating.js:89
 msgid "Tell us how openpilot performed for this drive."
-msgstr ""
+msgstr "このドライブでオープンパイロットがどのように動作したかを教えてください。"
 
 #: js/components/Settings/Settings.js:429
 msgid "Terms of Service available at https://my.comma.ai/terms.html"
@@ -565,12 +561,12 @@ msgstr "Wi-Fiネットワークのスキャン中に問題が発生しました�
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "このガイドはデバイス設定からいつでも再生できます。オープンパイロットの詳細についてはWikiを読みDiscordコミュニティに参加してください。"
 
+#: js/components/Settings/Settings.js:836
 #: js/components/Settings/Settings.js:838
-#: js/components/Settings/Settings.js:840
 msgid "Uninstall"
 msgstr "アンインストール"
 
-#: js/components/Settings/Settings.js:666
+#: js/components/Settings/Settings.js:664
 msgid "Uninstall {software}"
 msgstr "アンインストール {software}"
 
@@ -607,7 +603,7 @@ msgstr "comma.aiでサポートされていないオープンソースコミュ�
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 msgstr "オープンパイロットシステムは、アダプティブクルーズコントロールとレーンキープドライバーアシスタンスに使用します。この機能を使用するには、常に注意が必要です。この設定の変更は車の電源がオフのときに有効になります。"
 
-#: js/components/Settings/Settings.js:643
+#: js/components/Settings/Settings.js:641
 msgid "Version"
 msgstr "バージョン"
 
@@ -652,19 +648,9 @@ msgstr "Comma接続アプリの設定でデバイスの連携を解除できま�
 msgid "and scan this code to pair."
 msgstr "このコードをスキャンして連携します。"
 
-#: js/components/Settings/Settings.js:187
-#: js/components/Settings/Settings.js:463
-msgid "chffrplus"
-msgstr "chffrplus"
-
 #: js/components/SetupQr/SetupQr.js:109
 msgid "comma connect"
 msgstr "commaに接続"
-
-#: js/components/Settings/Settings.js:187
-#: js/components/Settings/Settings.js:463
-msgid "openpilot"
-msgstr "openpilot"
 
 #: js/components/training/Onboarding/Onboarding.js:717
 msgid "openpilot can change lanes with your assistance."
