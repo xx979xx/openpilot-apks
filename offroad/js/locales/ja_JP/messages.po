@@ -39,7 +39,7 @@ msgstr "<  設定"
 
 #: js/components/training/Onboarding/Onboarding.js:382
 msgid "A driver assistance system is not a self driving car. This means openpilot is designed to work with you, not without you. Your attention is required to drive."
-msgstr "運転支援システムは自動運転車ではありません。つまり、openpilotは運転手がいなくても機能するように設計されているわけではありません。運転には注意が必要です。"
+msgstr "運転支援システムは自動運転車ではありません。つまり、オープンパイロットは運転手がいなくても機能するように設計されているわけではありません。運転には注意が必要です。"
 
 #: js/components/training/Onboarding/Onboarding.js:481
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
@@ -113,11 +113,6 @@ msgstr "カメラのキャリブレーション"
 #: js/components/training/Onboarding/Onboarding.js:476
 msgid "Camera from Device"
 msgstr "デバイスのカメラ"
-
-#: js/components/training/Onboarding/Onboarding.js:385
-#: js/components/training/Onboarding/Onboarding.js:412
-#~ msgid "Camera from EON"
-#~ msgstr "EONのカメラ"
 
 #: js/components/Settings/Settings.js:635
 #: js/components/Settings/Settings.js:825
@@ -224,7 +219,7 @@ msgstr "コミュニティ機能を有効にする"
 
 #: js/components/Settings/Settings.js:301
 msgid "Enable Lane Change Assist"
-msgstr ""
+msgstr "車線変更支援を有効にする"
 
 #: js/components/Settings/Settings.js:311
 msgid "Enable Lane Departure Warnings"
@@ -282,7 +277,7 @@ msgstr "警告を非表示"
 
 #: js/components/DriveRating/DriveRating.js:81
 msgid "How was your drive?"
-msgstr ""
+msgstr "ドライブはどうでしたか？"
 
 #: js/components/training/Onboarding/Onboarding.js:405
 msgid "I will be ready to take over at any time!"
@@ -390,7 +385,7 @@ msgstr "車線変更を実行"
 
 #: js/components/Settings/Settings.js:304
 msgid "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature."
-msgstr ""
+msgstr "オープンパイロットで車線変更を行うには、周囲の安全を確認し、方向指示器を作動させ、ハンドルをゆっくりと希望の車線に向けて動かします。オープンパイロットは車線変更が安全かどうかチェックできません。この機能を使用するには、常に周囲の状況を観察する必要があります。"
 
 #: js/components/Settings/Settings.js:525
 #: js/components/Settings/Settings.js:830
@@ -532,7 +527,7 @@ msgstr "ペダルを踏んで解除"
 
 #: js/components/DriveRating/DriveRating.js:89
 msgid "Tell us how openpilot performed for this drive."
-msgstr ""
+msgstr "このドライブでオープンパイロットがどのように動作したかを教えてください。"
 
 #: js/components/Settings/Settings.js:429
 msgid "Terms of Service available at https://my.comma.ai/terms.html"
