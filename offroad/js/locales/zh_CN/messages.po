@@ -61,19 +61,19 @@ msgstr "全部"
 msgid "Account"
 msgstr "帐户"
 
-#: js/components/Settings/Settings.js:619
+#: js/components/Settings/Settings.js:621
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "允许别的设备通过 Secure Shell (SSH) 连接至您的 EON。"
 
-#: js/components/Settings/Settings.js:824
+#: js/components/Settings/Settings.js:826
 msgid "Are you sure you want to reboot?"
 msgstr "您确定要重新启动吗？"
 
-#: js/components/Settings/Settings.js:830
+#: js/components/Settings/Settings.js:832
 msgid "Are you sure you want to shutdown?"
 msgstr "您确定要关机吗？"
 
-#: js/components/Settings/Settings.js:836
+#: js/components/Settings/Settings.js:838
 msgid "Are you sure you want to uninstall?"
 msgstr "您确定要卸载吗？"
 
@@ -85,7 +85,7 @@ msgstr "网络连接中..."
 msgid "Authentication problem"
 msgstr "身份验证错误"
 
-#: js/components/Settings/Settings.js:625
+#: js/components/Settings/Settings.js:627
 msgid "Authorized SSH Keys"
 msgstr "授权 SSH 密钥"
 
@@ -114,11 +114,11 @@ msgstr "摄像头校准"
 msgid "Camera from Device"
 msgstr "设备的摄像头"
 
-#: js/components/Settings/Settings.js:635
-#: js/components/Settings/Settings.js:825
-#: js/components/Settings/Settings.js:831
-#: js/components/Settings/Settings.js:837
-#: js/components/Settings/Settings.js:874
+#: js/components/Settings/Settings.js:637
+#: js/components/Settings/Settings.js:827
+#: js/components/Settings/Settings.js:833
+#: js/components/Settings/Settings.js:839
+#: js/components/Settings/Settings.js:876
 #: js/components/SetupWifi/SetupWifi.js:320
 msgid "Cancel"
 msgstr "取消"
@@ -127,7 +127,7 @@ msgstr "取消"
 msgid "Comma.ai, Inc. Terms & Conditions"
 msgstr "Comma.ai, Inc. 条款及细则"
 
-#: js/components/Settings/Settings.js:873
+#: js/components/Settings/Settings.js:875
 msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
 msgstr "开源社区开发维护的功能，未通过官方标准安全验证，请谨慎使用。"
 
@@ -204,28 +204,28 @@ msgstr "下载"
 msgid "Driver Monitoring"
 msgstr "驾驶监控"
 
-#: js/components/Settings/Settings.js:635
+#: js/components/Settings/Settings.js:637
 msgid "Edit"
 msgstr "编辑"
 
-#: js/components/Settings/Settings.js:875
+#: js/components/Settings/Settings.js:877
 msgid "Enable"
 msgstr "启用"
 
 #: js/components/Settings/Settings.js:600
-#: js/components/Settings/Settings.js:873
+#: js/components/Settings/Settings.js:875
 msgid "Enable Community Features"
 msgstr "启用社区功能"
 
 #: js/components/Settings/Settings.js:301
 msgid "Enable Lane Change Assist"
-msgstr ""
+msgstr "启用辅助变道"
 
 #: js/components/Settings/Settings.js:311
 msgid "Enable Lane Departure Warnings"
 msgstr "启用车道偏离警示"
 
-#: js/components/Settings/Settings.js:616
+#: js/components/Settings/Settings.js:618
 msgid "Enable SSH"
 msgstr "启用 SSH"
 
@@ -250,15 +250,15 @@ msgstr "完成"
 msgid "Free Storage"
 msgstr "剩余空间"
 
-#: js/components/Settings/Settings.js:644
+#: js/components/Settings/Settings.js:646
 msgid "Git Branch"
 msgstr "Git 分支"
 
-#: js/components/Settings/Settings.js:647
+#: js/components/Settings/Settings.js:649
 msgid "Git Revision"
 msgstr "Git 修订版"
 
-#: js/components/Settings/Settings.js:698
+#: js/components/Settings/Settings.js:700
 msgid "GitHub Username"
 msgstr "GitHub 用户名"
 
@@ -365,11 +365,11 @@ msgstr "使用 Comma connect 绑定到您的 Comma 帐户"
 msgid "Paired"
 msgstr "设备已绑定"
 
-#: js/components/Settings/Settings.js:655
+#: js/components/Settings/Settings.js:657
 msgid "Panda Dongle ID"
 msgstr "Panda Dongle ID"
 
-#: js/components/Settings/Settings.js:651
+#: js/components/Settings/Settings.js:653
 msgid "Panda Firmware"
 msgstr "Panda 固件"
 
@@ -385,10 +385,10 @@ msgstr "进行变换车道"
 
 #: js/components/Settings/Settings.js:304
 msgid "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature."
-msgstr ""
+msgstr "检查四周车道安全后，您可以经由打方向灯和轻推方向盘的组合来使用 dragonpilot 辅助切换车道功能。dragonpilot 无法检查是否有后方来车以及四周的安全。您必须持续观察周围的环境才能使用此功能。"
 
 #: js/components/Settings/Settings.js:525
-#: js/components/Settings/Settings.js:830
+#: js/components/Settings/Settings.js:832
 msgid "Power Off"
 msgstr "关机"
 
@@ -407,8 +407,8 @@ msgstr "原车雷达"
 
 #: js/components/Settings/Settings.js:130
 #: js/components/Settings/Settings.js:518
-#: js/components/Settings/Settings.js:824
 #: js/components/Settings/Settings.js:826
+#: js/components/Settings/Settings.js:828
 msgid "Reboot"
 msgstr "重新启动"
 
@@ -420,6 +420,10 @@ msgstr "马上"
 msgid "Reboot and Update"
 msgstr "重启并更新"
 
+#: js/components/Settings/Settings.js:314
+msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
+msgstr "车速在 50 km/h 以上，且未打转向灯的情况下，如果检测到车辆驶出当前车道线时，则会发出车道偏离警告。"
+
 #: js/components/Settings/Settings.js:320
 msgid "Record and Upload Driver Camera"
 msgstr "上传驾驶员的驾驶录像"
@@ -428,7 +432,7 @@ msgstr "上传驾驶员的驾驶录像"
 msgid "Remote Access"
 msgstr "远程访问"
 
-#: js/components/Settings/Settings.js:737
+#: js/components/Settings/Settings.js:739
 msgid "Remove all"
 msgstr "全部删除"
 
@@ -448,11 +452,11 @@ msgstr "重新学习"
 msgid "Review Training Guide"
 msgstr "查看使用教程"
 
-#: js/components/Settings/Settings.js:715
+#: js/components/Settings/Settings.js:717
 msgid "Save"
 msgstr "保存"
 
-#: js/components/Settings/Settings.js:727
+#: js/components/Settings/Settings.js:729
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "保存失败，请确保您的设备已联网并输入正确的用户名"
 
@@ -492,7 +496,7 @@ msgstr "序列号"
 msgid "Show password"
 msgstr "显示密码"
 
-#: js/components/Settings/Settings.js:832
+#: js/components/Settings/Settings.js:834
 msgid "Shutdown"
 msgstr "关机"
 
@@ -561,12 +565,12 @@ msgstr "无线网络扫描错误。{0}请确认已在 \"更多选项\" 里开启
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "您可以随时到设备设置里重新阅读使用教程，了解更多关于 openpilot 的信息，请查看 wiki 或加入 discord.comma.ai 社区交流。"
 
-#: js/components/Settings/Settings.js:836
 #: js/components/Settings/Settings.js:838
+#: js/components/Settings/Settings.js:840
 msgid "Uninstall"
 msgstr "卸载"
 
-#: js/components/Settings/Settings.js:664
+#: js/components/Settings/Settings.js:666
 msgid "Uninstall {software}"
 msgstr "卸载 {software}"
 
@@ -596,19 +600,19 @@ msgid "Use Metric System"
 msgstr "使用公制单位"
 
 #: js/components/Settings/Settings.js:605
-msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor"
-msgstr "使用来自开源社区开发维护的功能，包含：* 启用通用 (GM) 车系支援。 * 允许模拟丰田 (Toyota) 车系 DSU 模组。* 允许使用 Comma Pedal 模组。"
+msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{0} * GM car port{1} * Toyota with DSU unplugged{2} * Pedal interceptor{3}"
+msgstr "使用来自开源社区开发维护的功能，包含{0}：* 启用通用 (GM) 车系支援。{1} * 允许模拟丰田 (Toyota) 车系 DSU 模组。{2}* 允许使用 Comma Pedal 模组。{3}"
 
 #: js/components/Settings/Settings.js:293
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 msgstr "使用 openpilot 的自适应巡航功能和车道保持功能，开启后您需要保持注意力集中，设置更改在重新启动车子后生效。"
 
-#: js/components/Settings/Settings.js:641
+#: js/components/Settings/Settings.js:643
 msgid "Version"
 msgstr "版本"
 
-#: js/components/Settings/Settings.js:679
-msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
+#: js/components/Settings/Settings.js:681
+msgid "WARNING: {0} This grants SSH access to all public keys in your GitHub settings. {1} Never enter a GitHub username other than your own. {2} The built-in SSH key will be disabled if you proceed. {3} A comma employee will never ask you to add their GitHub. {4}"
 msgstr "警告：这个功能会同步 Github 设置里所有公钥的 SSH 访问权限，请不要输入别人的 Github 用户名（即使声称是 comma 的员工），操作完成后，原先内置的 SSH 密钥会被禁用。"
 
 #: js/components/training/Onboarding/Onboarding.js:333
@@ -648,9 +652,19 @@ msgstr "您可以在手机应用（Comma connect）中解绑设备。"
 msgid "and scan this code to pair."
 msgstr "然后扫描这个二维码绑定。"
 
+#: js/components/Settings/Settings.js:187
+#: js/components/Settings/Settings.js:463
+msgid "chffrplus"
+msgstr "chffrplus"
+
 #: js/components/SetupQr/SetupQr.js:109
 msgid "comma connect"
 msgstr "comma connect"
+
+#: js/components/Settings/Settings.js:187
+#: js/components/Settings/Settings.js:463
+msgid "openpilot"
+msgstr "openpilot"
 
 #: js/components/training/Onboarding/Onboarding.js:717
 msgid "openpilot can change lanes with your assistance."

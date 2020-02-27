@@ -61,19 +61,19 @@ msgstr "TOUT LE TEMPS"
 msgid "Account"
 msgstr "Compte"
 
-#: js/components/Settings/Settings.js:619
+#: js/components/Settings/Settings.js:621
 msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
 msgstr "Autoriser les appareils à se connecter à votre EON en utilisant le SSH"
 
-#: js/components/Settings/Settings.js:824
+#: js/components/Settings/Settings.js:826
 msgid "Are you sure you want to reboot?"
 msgstr "Voulez-vous redémarrer?"
 
-#: js/components/Settings/Settings.js:830
+#: js/components/Settings/Settings.js:832
 msgid "Are you sure you want to shutdown?"
 msgstr "Voulez-vous éteindre l'appareil"
 
-#: js/components/Settings/Settings.js:836
+#: js/components/Settings/Settings.js:838
 msgid "Are you sure you want to uninstall?"
 msgstr "Êtes-vous sur de vouloir désinstaller?"
 
@@ -85,7 +85,7 @@ msgstr "Authentification..."
 msgid "Authentication problem"
 msgstr "Problème d'authentification"
 
-#: js/components/Settings/Settings.js:625
+#: js/components/Settings/Settings.js:627
 msgid "Authorized SSH Keys"
 msgstr "Clés SSH autorisées"
 
@@ -114,11 +114,11 @@ msgstr "Calibration de la caméra"
 msgid "Camera from Device"
 msgstr "Caméra de l'appareil"
 
-#: js/components/Settings/Settings.js:635
-#: js/components/Settings/Settings.js:825
-#: js/components/Settings/Settings.js:831
-#: js/components/Settings/Settings.js:837
-#: js/components/Settings/Settings.js:874
+#: js/components/Settings/Settings.js:637
+#: js/components/Settings/Settings.js:827
+#: js/components/Settings/Settings.js:833
+#: js/components/Settings/Settings.js:839
+#: js/components/Settings/Settings.js:876
 #: js/components/SetupWifi/SetupWifi.js:320
 msgid "Cancel"
 msgstr "Annuler"
@@ -127,7 +127,7 @@ msgstr "Annuler"
 msgid "Comma.ai, Inc. Terms & Conditions"
 msgstr "Comma.ai, Inc. Termes & Conditions"
 
-#: js/components/Settings/Settings.js:873
+#: js/components/Settings/Settings.js:875
 msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
 msgstr "Les fonctionnalités maintenues par la communauté ne sont pas confirmés pas comma.ai pour répondre au modèle de sécurité standard. Soyez extremement prudent en les utilisant."
 
@@ -204,28 +204,28 @@ msgstr "Télécharger"
 msgid "Driver Monitoring"
 msgstr "Surveillance du conducteur"
 
-#: js/components/Settings/Settings.js:635
+#: js/components/Settings/Settings.js:637
 msgid "Edit"
 msgstr "Éditer"
 
-#: js/components/Settings/Settings.js:875
+#: js/components/Settings/Settings.js:877
 msgid "Enable"
 msgstr "Activer"
 
 #: js/components/Settings/Settings.js:600
-#: js/components/Settings/Settings.js:873
+#: js/components/Settings/Settings.js:875
 msgid "Enable Community Features"
 msgstr "Activer les fonctionnalités de la communauté"
 
 #: js/components/Settings/Settings.js:301
 msgid "Enable Lane Change Assist"
-msgstr ""
+msgstr "Activer l'assistance au changement de voie"
 
 #: js/components/Settings/Settings.js:311
 msgid "Enable Lane Departure Warnings"
 msgstr "Activer l'avertisseur de sortie de voie"
 
-#: js/components/Settings/Settings.js:616
+#: js/components/Settings/Settings.js:618
 msgid "Enable SSH"
 msgstr "Activer le SSH"
 
@@ -250,15 +250,15 @@ msgstr "Terminer l'entrainnement"
 msgid "Free Storage"
 msgstr "Espace libre"
 
-#: js/components/Settings/Settings.js:644
+#: js/components/Settings/Settings.js:646
 msgid "Git Branch"
 msgstr "Branche Git"
 
-#: js/components/Settings/Settings.js:647
+#: js/components/Settings/Settings.js:649
 msgid "Git Revision"
 msgstr "Révision de Git"
 
-#: js/components/Settings/Settings.js:698
+#: js/components/Settings/Settings.js:700
 msgid "GitHub Username"
 msgstr "Nom d'utilisateur GitHub"
 
@@ -365,11 +365,11 @@ msgstr "Associez votre compte comma avec comma connect"
 msgid "Paired"
 msgstr "Jumelé"
 
-#: js/components/Settings/Settings.js:655
+#: js/components/Settings/Settings.js:657
 msgid "Panda Dongle ID"
 msgstr "ID du Panda Dongle"
 
-#: js/components/Settings/Settings.js:651
+#: js/components/Settings/Settings.js:653
 msgid "Panda Firmware"
 msgstr "Logiciel du Panda"
 
@@ -388,7 +388,7 @@ msgid "Perform assisted lane changes with openpilot by checking your surrounding
 msgstr ""
 
 #: js/components/Settings/Settings.js:525
-#: js/components/Settings/Settings.js:830
+#: js/components/Settings/Settings.js:832
 msgid "Power Off"
 msgstr "Éteindre"
 
@@ -407,8 +407,8 @@ msgstr "Radar de votre voiture"
 
 #: js/components/Settings/Settings.js:130
 #: js/components/Settings/Settings.js:518
-#: js/components/Settings/Settings.js:824
 #: js/components/Settings/Settings.js:826
+#: js/components/Settings/Settings.js:828
 msgid "Reboot"
 msgstr "Redémarrer"
 
@@ -420,6 +420,10 @@ msgstr "Redémarrer Maintenant"
 msgid "Reboot and Update"
 msgstr "Redémarrer et Mettre à Jour"
 
+#: js/components/Settings/Settings.js:314
+msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
+msgstr ""
+
 #: js/components/Settings/Settings.js:320
 msgid "Record and Upload Driver Camera"
 msgstr "Enregister et Uploader la caméra du conducteur"
@@ -428,7 +432,7 @@ msgstr "Enregister et Uploader la caméra du conducteur"
 msgid "Remote Access"
 msgstr "Accès à distance"
 
-#: js/components/Settings/Settings.js:737
+#: js/components/Settings/Settings.js:739
 msgid "Remove all"
 msgstr "tout supprimer"
 
@@ -448,11 +452,11 @@ msgstr "Redémarrer"
 msgid "Review Training Guide"
 msgstr "Revoir le guide d'entrainement"
 
-#: js/components/Settings/Settings.js:715
+#: js/components/Settings/Settings.js:717
 msgid "Save"
 msgstr "Enregistrer"
 
-#: js/components/Settings/Settings.js:727
+#: js/components/Settings/Settings.js:729
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
 msgstr "L'enregistrement a échoué. Vérifiez que votre identifiant est correct et que vous êtes connectés à internet."
 
@@ -492,7 +496,7 @@ msgstr "Numéro de série"
 msgid "Show password"
 msgstr "Montrer le mot de passe"
 
-#: js/components/Settings/Settings.js:832
+#: js/components/Settings/Settings.js:834
 msgid "Shutdown"
 msgstr "Éteindre"
 
@@ -561,12 +565,12 @@ msgstr "Un problème est survenu lors de l'analyse des réseaux WiFi. {0}Assurez
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
 msgstr "Ce guide peut être lu à tout moment à partir des paramètres de l'appareil. Pour en savoir plus sur openpilot, lisez le wiki et rejoignez la communauté sur discord.comma.ai"
 
-#: js/components/Settings/Settings.js:836
 #: js/components/Settings/Settings.js:838
+#: js/components/Settings/Settings.js:840
 msgid "Uninstall"
 msgstr "Désinstaller"
 
-#: js/components/Settings/Settings.js:664
+#: js/components/Settings/Settings.js:666
 msgid "Uninstall {software}"
 msgstr "Désinstaller {software}"
 
@@ -596,20 +600,20 @@ msgid "Use Metric System"
 msgstr "Utiliser le système métrique"
 
 #: js/components/Settings/Settings.js:605
-msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor"
-msgstr "Utilisez des fonctionnalités de la communauté open source qui ne sont pas gérées ou prises en charge par comma.ai et dont la conformité au modèle de sécurité standard n'a pas été confirmée. Soyez extrêmement prudent lorsque vous utilisez ces fonctionnalités: * Port de voiture GM * Toyota avec DSU débranché * Intercepteur de pédale"
+msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{0} * GM car port{1} * Toyota with DSU unplugged{2} * Pedal interceptor{3}"
+msgstr "Utilisez des fonctionnalités de la communauté open source qui ne sont pas gérées ou prises en charge par comma.ai et dont la conformité au modèle de sécurité standard n'a pas été confirmée. Soyez extrêmement prudent lorsque vous utilisez ces fonctionnalités:{0} * Port de voiture GM{1} * Toyota avec DSU débranché{2} * Intercepteur de pédale{3}"
 
 #: js/components/Settings/Settings.js:293
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
 msgstr "Utilisez le système openpilot pour le régulateur de vitesse adaptatif et l'assistance au conducteur pour garder la voie. Votre attention est requise à tout moment pour utiliser cette fonction. La modification de ce paramètre prend effet lorsque la voiture est éteinte."
 
-#: js/components/Settings/Settings.js:641
+#: js/components/Settings/Settings.js:643
 msgid "Version"
 msgstr "Version"
 
-#: js/components/Settings/Settings.js:679
-msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
-msgstr "AVERTISSEMENT: cela accorde un accès SSH à toutes les clés publiques dans vos paramètres GitHub. N'entrez jamais un nom d'utilisateur GitHub autre que le vôtre. La clé SSH intégrée sera désactivée si vous continuez. Un employé comma ne vous demandera jamais d'ajouter son GitHub."
+#: js/components/Settings/Settings.js:681
+msgid "WARNING: {0} This grants SSH access to all public keys in your GitHub settings. {1} Never enter a GitHub username other than your own. {2} The built-in SSH key will be disabled if you proceed. {3} A comma employee will never ask you to add their GitHub. {4}"
+msgstr "AVERTISSEMENT: {0} cela accorde un accès SSH à toutes les clés publiques dans vos paramètres GitHub. {1} N'entrez jamais un nom d'utilisateur GitHub autre que le vôtre. {2} La clé SSH intégrée sera désactivée si vous continuez. {3} Un employé comma ne vous demandera jamais d'ajouter son GitHub.{4}"
 
 #: js/components/training/Onboarding/Onboarding.js:333
 msgid "Welcome to openpilot alpha"
@@ -648,9 +652,19 @@ msgstr "Vous pouvez dissocier votre appareil des paramètres de l'application co
 msgid "and scan this code to pair."
 msgstr "et scannez ce code pour l'appairer"
 
+#: js/components/Settings/Settings.js:187
+#: js/components/Settings/Settings.js:463
+msgid "chffrplus"
+msgstr "chffrplus"
+
 #: js/components/SetupQr/SetupQr.js:109
 msgid "comma connect"
 msgstr "comma connect"
+
+#: js/components/Settings/Settings.js:187
+#: js/components/Settings/Settings.js:463
+msgid "openpilot"
+msgstr "openpilot"
 
 #: js/components/training/Onboarding/Onboarding.js:717
 msgid "openpilot can change lanes with your assistance."

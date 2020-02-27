@@ -11,11 +11,11 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        824
+        826
       ],
       [
         "js/components/Settings/Settings.js",
-        826
+        828
       ]
     ]
   },
@@ -40,6 +40,30 @@
       [
         "js/components/Settings/Settings.js",
         132
+      ]
+    ]
+  },
+  "chffrplus": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        187
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        463
+      ]
+    ]
+  },
+  "openpilot": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        187
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        463
       ]
     ]
   },
@@ -148,6 +172,14 @@
       [
         "js/components/Settings/Settings.js",
         311
+      ]
+    ]
+  },
+  "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph).": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        314
       ]
     ]
   },
@@ -327,7 +359,7 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        830
+        832
       ]
     ]
   },
@@ -371,11 +403,11 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        873
+        875
       ]
     ]
   },
-  "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor": {
+  "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{0} * GM car port{1} * Toyota with DSU unplugged{2} * Pedal interceptor{3}": {
     "origin": [
       [
         "js/components/Settings/Settings.js",
@@ -387,7 +419,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        616
+        618
       ]
     ]
   },
@@ -395,7 +427,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        619
+        621
       ]
     ]
   },
@@ -403,7 +435,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        625
+        627
       ]
     ]
   },
@@ -411,23 +443,23 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        635
+        637
       ],
       [
         "js/components/Settings/Settings.js",
-        825
+        827
       ],
       [
         "js/components/Settings/Settings.js",
-        831
+        833
       ],
       [
         "js/components/Settings/Settings.js",
-        837
+        839
       ],
       [
         "js/components/Settings/Settings.js",
-        874
+        876
       ]
     ]
   },
@@ -435,7 +467,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        635
+        637
       ]
     ]
   },
@@ -443,7 +475,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        641
+        643
       ]
     ]
   },
@@ -451,7 +483,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        644
+        646
       ]
     ]
   },
@@ -459,7 +491,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        647
+        649
       ]
     ]
   },
@@ -467,7 +499,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        651
+        653
       ]
     ]
   },
@@ -475,7 +507,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        655
+        657
       ]
     ]
   },
@@ -483,15 +515,15 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        664
+        666
       ]
     ]
   },
-  "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub.": {
+  "WARNING: {0} This grants SSH access to all public keys in your GitHub settings. {1} Never enter a GitHub username other than your own. {2} The built-in SSH key will be disabled if you proceed. {3} A comma employee will never ask you to add their GitHub. {4}": {
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        679
+        681
       ]
     ]
   },
@@ -499,7 +531,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        698
+        700
       ]
     ]
   },
@@ -507,7 +539,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        715
+        717
       ]
     ]
   },
@@ -515,7 +547,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        727
+        729
       ]
     ]
   },
@@ -523,7 +555,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        737
+        739
       ]
     ]
   },
@@ -531,7 +563,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        824
+        826
       ]
     ]
   },
@@ -539,7 +571,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        830
+        832
       ]
     ]
   },
@@ -547,7 +579,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        832
+        834
       ]
     ]
   },
@@ -555,11 +587,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        836
+        838
       ],
       [
         "js/components/Settings/Settings.js",
-        838
+        840
       ]
     ]
   },
@@ -567,7 +599,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        836
+        838
       ]
     ]
   },
@@ -575,7 +607,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        873
+        875
       ]
     ]
   },
@@ -583,7 +615,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        875
+        877
       ]
     ]
   }
