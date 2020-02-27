@@ -661,6 +661,11 @@ msgstr "chffrplus"
 msgid "comma connect"
 msgstr "comma connect"
 
+#: js/components/Home/Home.js:149
+msgid "dashcam"
+msgstr "dashcam"
+
+#: js/components/Home/Home.js:149
 #: js/components/Settings/Settings.js:187
 #: js/components/Settings/Settings.js:463
 msgid "openpilot"
