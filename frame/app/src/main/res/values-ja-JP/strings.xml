@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Chffr Plus Frame</string>
+    <string name="storage">ストレージ</string>
+    <string name="temp">一時的</string>
+    <string name="no_panda">PANDA 未接続</string>
+    <string name="panda_no_gps">PANDA\n GPS無し</string>
+    <string name="panda_good_gps">PANDA\n GPSあり</string>
+    <string name="panda_active">PANDA\nは有効</string>
+    <string name="start_to_begin">車を始動させてはじめましょう</string>
+    <string name="go_back">戻る</string>
+    <string name="ride_completed">ライド完了</string>
+    <string name="continue_str">再試行</string>
+    <string name="keep_away_sunlight">EONに日光を当てないでください</string>
+</resources>

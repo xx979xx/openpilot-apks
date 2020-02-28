@@ -160,7 +160,8 @@ msgstr "再試行"
 
 #: js/components/training/Onboarding/Onboarding.js:802
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
-msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を促します。"
+msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を開始さ
+せます。"
 
 #: js/components/Home/Home.js:312
 #: js/components/Home/Home.js:372
@@ -422,7 +423,7 @@ msgstr "更新して再起動"
 
 #: js/components/Settings/Settings.js:314
 msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
-msgstr ""
+msgstr "時速50Km以上で走行中に方向指示器を使用せず、検出中の車線を外れるとアラートを表示して現在の車線に戻ります。"
 
 #: js/components/Settings/Settings.js:320
 msgid "Record and Upload Driver Camera"
@@ -458,7 +459,7 @@ msgstr "保存"
 
 #: js/components/Settings/Settings.js:729
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
-msgstr "保存に失敗しました。ユーザー名が正しく、インターネットに接続していることを確認してください。"
+msgstr "保存に失敗しました。ユーザー名が正常かつ、インターネットに接続していることを確認してください。"
 
 #: js/components/SetupWifi/SetupWifi.js:397
 msgid "Scanning WiFi Networks..."
@@ -663,13 +664,13 @@ msgstr "commaに接続"
 
 #: js/components/Home/Home.js:149
 msgid "dashcam"
-msgstr "dashcam"
+msgstr "ダッシュカム"
 
 #: js/components/Home/Home.js:149
 #: js/components/Settings/Settings.js:187
 #: js/components/Settings/Settings.js:463
 msgid "openpilot"
-msgstr "openpilot"
+msgstr "オープンパイロット"
 
 #: js/components/training/Onboarding/Onboarding.js:717
 msgid "openpilot can change lanes with your assistance."
