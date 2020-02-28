@@ -160,8 +160,7 @@ msgstr "再試行"
 
 #: js/components/training/Onboarding/Onboarding.js:802
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
-msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を開始さ
-せます。"
+msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を開始させます。"
 
 #: js/components/Home/Home.js:312
 #: js/components/Home/Home.js:372
