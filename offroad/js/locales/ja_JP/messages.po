@@ -385,7 +385,7 @@ msgstr "車線変更を実行"
 
 #: js/components/Settings/Settings.js:304
 msgid "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature."
-msgstr "オープンパイロットで車線変更を行うには、周囲の安全を確認し、方向指示器を作動させ、ハンドルをゆっくりと希望の車線に向けて動かします。オープンパイロットは車線変更が安全かどうかチェックできません。この機能を使用するには、常に周囲の状況を観察する必要があります。"
+msgstr "オープンパイロットで車線変更を行うには、周囲の安全を確認し、方向指示器を作動させ、ハンドルをゆっくりと目的の車線に向けて動かします。オープンパイロットは車線変更が安全かどうかチェックできません。この機能を使用するには、ドライバーが常に周囲の状況を観察する必要があります。"
 
 #: js/components/Settings/Settings.js:525
 #: js/components/Settings/Settings.js:832
@@ -478,7 +478,7 @@ msgstr "ライトを選択してください"
 
 #: js/components/training/Onboarding/Onboarding.js:500
 msgid "Select path to continue"
-msgstr "続けるパスを選択してください"
+msgstr "続ける道を選択してください"
 
 #: js/components/training/Onboarding/Onboarding.js:813
 msgid "Select steering wheel"
@@ -625,7 +625,7 @@ msgstr "危険な状況に遭遇した場合や高速道路を出た場合は、
 
 #: js/components/training/Onboarding/Onboarding.js:672
 msgid "When openpilot is engaged, you must always pay attention! openpilot monitors awareness with 3D facial reconstruction and pose. Distracted drivers are alerted, then disengaged from openpilot until corrected."
-msgstr "オープンパイロットが使用されている場合は、常に注意を払う必要があります。オープンパイロットは、顔の3D構築とポーズを使って認識を監視しています。注意散漫なドライバーは警告を受け、是正されるまでオープンパイロットを無効にされます。"
+msgstr "オープンパイロットが使用されている場合は、常に注意を払う必要があります。オープンパイロットは、顔の3Dモデルとポーズを使って認識を監視しています。注意散漫なドライバーは警告を受け、是正されるまでオープンパイロットを無効にされます。"
 
 #: js/components/training/Onboarding/Onboarding.js:631
 msgid "When you are ready to engage openpilot at a comfortable speed, locate the cruise controls on your steering wheel and press \"SET\" to begin."

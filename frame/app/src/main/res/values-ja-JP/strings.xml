@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Chffr Plus Frame</string>
     <string name="storage">ストレージ</string>
-    <string name="temp">一時的</string>
+    <string name="temp">温度</string>
     <string name="no_panda">PANDA 未接続</string>
     <string name="panda_no_gps">PANDA\n GPS無し</string>
     <string name="panda_good_gps">PANDA\n GPSあり</string>
