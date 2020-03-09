@@ -160,7 +160,7 @@ msgstr "再試行"
 
 #: js/components/training/Onboarding/Onboarding.js:802
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
-msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を促します。"
+msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を開始させます。"
 
 #: js/components/Home/Home.js:312
 #: js/components/Home/Home.js:372
@@ -385,7 +385,7 @@ msgstr "車線変更を実行"
 
 #: js/components/Settings/Settings.js:304
 msgid "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature."
-msgstr "オープンパイロットで車線変更を行うには、周囲の安全を確認し、方向指示器を作動させ、ハンドルをゆっくりと希望の車線に向けて動かします。オープンパイロットは車線変更が安全かどうかチェックできません。この機能を使用するには、常に周囲の状況を観察する必要があります。"
+msgstr "オープンパイロットで車線変更を行うには、周囲の安全を確認し、方向指示器を作動させ、ハンドルをゆっくりと目的の車線に向けて動かします。オープンパイロットは車線変更が安全かどうかチェックできません。この機能を使用するには、ドライバーが常に周囲の状況を観察する必要があります。"
 
 #: js/components/Settings/Settings.js:525
 #: js/components/Settings/Settings.js:832
@@ -422,7 +422,7 @@ msgstr "更新して再起動"
 
 #: js/components/Settings/Settings.js:314
 msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
-msgstr ""
+msgstr "時速50Km以上で走行中に方向指示器を使用せず、検出中の車線を外れるとアラートを表示して現在の車線に戻ります。"
 
 #: js/components/Settings/Settings.js:320
 msgid "Record and Upload Driver Camera"
@@ -458,7 +458,7 @@ msgstr "保存"
 
 #: js/components/Settings/Settings.js:729
 msgid "Save failed. Ensure that your username is correct and you are connected to the internet."
-msgstr "保存に失敗しました。ユーザー名が正しく、インターネットに接続していることを確認してください。"
+msgstr "保存に失敗しました。ユーザー名が正常かつ、インターネットに接続していることを確認してください。"
 
 #: js/components/SetupWifi/SetupWifi.js:397
 msgid "Scanning WiFi Networks..."
@@ -478,7 +478,7 @@ msgstr "ライトを選択してください"
 
 #: js/components/training/Onboarding/Onboarding.js:500
 msgid "Select path to continue"
-msgstr "続けるパスを選択してください"
+msgstr "続ける道を選択してください"
 
 #: js/components/training/Onboarding/Onboarding.js:813
 msgid "Select steering wheel"
@@ -625,7 +625,7 @@ msgstr "危険な状況に遭遇した場合や高速道路を出た場合は、
 
 #: js/components/training/Onboarding/Onboarding.js:672
 msgid "When openpilot is engaged, you must always pay attention! openpilot monitors awareness with 3D facial reconstruction and pose. Distracted drivers are alerted, then disengaged from openpilot until corrected."
-msgstr "オープンパイロットが使用されている場合は、常に注意を払う必要があります。オープンパイロットは、顔の3D構築とポーズを使って認識を監視しています。注意散漫なドライバーは警告を受け、是正されるまでオープンパイロットを無効にされます。"
+msgstr "オープンパイロットが使用されている場合は、常に注意を払う必要があります。オープンパイロットは、顔の3Dモデルとポーズを使って認識を監視しています。注意散漫なドライバーは警告を受け、是正されるまでオープンパイロットを無効にされます。"
 
 #: js/components/training/Onboarding/Onboarding.js:631
 msgid "When you are ready to engage openpilot at a comfortable speed, locate the cruise controls on your steering wheel and press \"SET\" to begin."
@@ -663,13 +663,13 @@ msgstr "commaに接続"
 
 #: js/components/Home/Home.js:149
 msgid "dashcam"
-msgstr "dashcam"
+msgstr "ダッシュカム"
 
 #: js/components/Home/Home.js:149
 #: js/components/Settings/Settings.js:187
 #: js/components/Settings/Settings.js:463
 msgid "openpilot"
-msgstr "openpilot"
+msgstr "オープンパイロット"
 
 #: js/components/training/Onboarding/Onboarding.js:717
 msgid "openpilot can change lanes with your assistance."
