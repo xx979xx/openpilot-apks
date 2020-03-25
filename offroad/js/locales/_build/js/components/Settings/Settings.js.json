@@ -3,455 +3,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        130
+        134
       ],
       [
         "js/components/Settings/Settings.js",
-        518
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        826
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        828
-      ]
-    ]
-  },
-  "Resetting calibration requires a reboot.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        130
-      ]
-    ]
-  },
-  "Later": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        131
-      ]
-    ]
-  },
-  "Reboot Now": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        132
-      ]
-    ]
-  },
-  "chffrplus": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        187
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        463
-      ]
-    ]
-  },
-  "openpilot": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        187
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        463
-      ]
-    ]
-  },
-  "Account": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        197
-      ]
-    ]
-  },
-  "Paired": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        198
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        496
-      ]
-    ]
-  },
-  "Unpaired": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        198
-      ]
-    ]
-  },
-  "Device": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        203
-      ]
-    ]
-  },
-  "{0} Free": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        204
-      ]
-    ]
-  },
-  "Network": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        209
-      ]
-    ]
-  },
-  "Developer": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        215
-      ]
-    ]
-  },
-  "<  Settings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        277
-      ]
-    ]
-  },
-  "Enable openpilot": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        290
-      ]
-    ]
-  },
-  "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        293
-      ]
-    ]
-  },
-  "Enable Lane Change Assist": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        301
-      ]
-    ]
-  },
-  "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        304
-      ]
-    ]
-  },
-  "Enable Lane Departure Warnings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        311
-      ]
-    ]
-  },
-  "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph).": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        314
-      ]
-    ]
-  },
-  "Record and Upload Driver Camera": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        320
-      ]
-    ]
-  },
-  "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        323
-      ]
-    ]
-  },
-  "Use Metric System": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        329
-      ]
-    ]
-  },
-  "Display speed in km/h instead of mp/h.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        332
-      ]
-    ]
-  },
-  "Review Training Guide": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        389
-      ]
-    ]
-  },
-  "<  Account Settings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        407
-      ]
-    ]
-  },
-  "Device Paired": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        416
-      ]
-    ]
-  },
-  "Yes": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        417
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        497
-      ]
-    ]
-  },
-  "No": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        417
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        497
-      ]
-    ]
-  },
-  "You may unpair your device in the comma connect app settings.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        422
-      ]
-    ]
-  },
-  "Terms of Service available at https://my.comma.ai/terms.html": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        429
-      ]
-    ]
-  },
-  "Pair Device": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        438
-      ]
-    ]
-  },
-  "<  Device Settings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        471
-      ]
-    ]
-  },
-  "Camera Calibration": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        480
-      ]
-    ]
-  },
-  "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position.": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        482
-      ]
-    ]
-  },
-  "Reset": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        490
-      ]
-    ]
-  },
-  "Dongle ID": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        499
-      ]
-    ]
-  },
-  "Serial Number": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        502
-      ]
-    ]
-  },
-  "Free Storage": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        505
-      ]
-    ]
-  },
-  "Upload Speed": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        509
-      ]
-    ]
-  },
-  "Power Off": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        525
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        832
-      ]
-    ]
-  },
-  "<  Network Settings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        542
-      ]
-    ]
-  },
-  "Open WiFi Settings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        554
-      ]
-    ]
-  },
-  "Open Tethering Settings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        561
-      ]
-    ]
-  },
-  "<  Developer Settings": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        591
-      ]
-    ]
-  },
-  "Enable Community Features": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        600
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        875
-      ]
-    ]
-  },
-  "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{0} * GM car port{1} * Toyota with DSU unplugged{2} * Pedal interceptor{3}": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        605
-      ]
-    ]
-  },
-  "Enable SSH": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        618
-      ]
-    ]
-  },
-  "Allow devices to connect to your EON using Secure Shell (SSH).": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        621
-      ]
-    ]
-  },
-  "Authorized SSH Keys": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        627
-      ]
-    ]
-  },
-  "Cancel": {
-    "origin": [
-      [
-        "js/components/Settings/Settings.js",
-        637
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        827
-      ],
-      [
-        "js/components/Settings/Settings.js",
-        833
+        522
       ],
       [
         "js/components/Settings/Settings.js",
@@ -459,7 +15,451 @@
       ],
       [
         "js/components/Settings/Settings.js",
-        876
+        841
+      ]
+    ]
+  },
+  "Resetting calibration requires a reboot.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        134
+      ]
+    ]
+  },
+  "Later": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        135
+      ]
+    ]
+  },
+  "Reboot Now": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        136
+      ]
+    ]
+  },
+  "chffrplus": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        191
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        467
+      ]
+    ]
+  },
+  "openpilot": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        191
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        467
+      ]
+    ]
+  },
+  "Account": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        201
+      ]
+    ]
+  },
+  "Paired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        202
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        500
+      ]
+    ]
+  },
+  "Unpaired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        202
+      ]
+    ]
+  },
+  "Device": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        207
+      ]
+    ]
+  },
+  "{0} Free": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        208
+      ]
+    ]
+  },
+  "Network": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        213
+      ]
+    ]
+  },
+  "Developer": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        219
+      ]
+    ]
+  },
+  "<  Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        281
+      ]
+    ]
+  },
+  "Enable openpilot": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        294
+      ]
+    ]
+  },
+  "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        297
+      ]
+    ]
+  },
+  "Enable Lane Change Assist": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        305
+      ]
+    ]
+  },
+  "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        308
+      ]
+    ]
+  },
+  "Enable Lane Departure Warnings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        315
+      ]
+    ]
+  },
+  "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph).": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        318
+      ]
+    ]
+  },
+  "Record and Upload Driver Camera": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        324
+      ]
+    ]
+  },
+  "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        327
+      ]
+    ]
+  },
+  "Use Metric System": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        333
+      ]
+    ]
+  },
+  "Display speed in km/h instead of mp/h.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        336
+      ]
+    ]
+  },
+  "Review Training Guide": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        393
+      ]
+    ]
+  },
+  "<  Account Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        411
+      ]
+    ]
+  },
+  "Device Paired": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        420
+      ]
+    ]
+  },
+  "Yes": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        421
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        501
+      ]
+    ]
+  },
+  "No": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        421
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        501
+      ]
+    ]
+  },
+  "You may unpair your device in the comma connect app settings.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        426
+      ]
+    ]
+  },
+  "Terms of Service available at https://my.comma.ai/terms.html": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        433
+      ]
+    ]
+  },
+  "Pair Device": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        442
+      ]
+    ]
+  },
+  "<  Device Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        475
+      ]
+    ]
+  },
+  "Camera Calibration": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        484
+      ]
+    ]
+  },
+  "The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position.": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        486
+      ]
+    ]
+  },
+  "Reset": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        494
+      ]
+    ]
+  },
+  "Dongle ID": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        503
+      ]
+    ]
+  },
+  "Serial Number": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        506
+      ]
+    ]
+  },
+  "Free Storage": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        509
+      ]
+    ]
+  },
+  "Upload Speed": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        513
+      ]
+    ]
+  },
+  "Power Off": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        529
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        845
+      ]
+    ]
+  },
+  "<  Network Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        546
+      ]
+    ]
+  },
+  "Open WiFi Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        558
+      ]
+    ]
+  },
+  "Open Tethering Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        565
+      ]
+    ]
+  },
+  "<  Developer Settings": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        595
+      ]
+    ]
+  },
+  "Enable Community Features": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        604
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        888
+      ]
+    ]
+  },
+  "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{0} * GM car port{1} * Toyota with DSU unplugged{2} * Pedal interceptor{3}": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        609
+      ]
+    ]
+  },
+  "Enable SSH": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        622
+      ]
+    ]
+  },
+  "Allow devices to connect to your EON using Secure Shell (SSH).": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        625
+      ]
+    ]
+  },
+  "Authorized SSH Keys": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        631
+      ]
+    ]
+  },
+  "Cancel": {
+    "origin": [
+      [
+        "js/components/Settings/Settings.js",
+        641
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        840
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        846
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        852
+      ],
+      [
+        "js/components/Settings/Settings.js",
+        889
       ]
     ]
   },
@@ -467,7 +467,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        637
+        641
       ]
     ]
   },
@@ -475,7 +475,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        643
+        647
       ]
     ]
   },
@@ -483,7 +483,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        646
+        650
       ]
     ]
   },
@@ -491,7 +491,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        649
+        653
       ]
     ]
   },
@@ -499,7 +499,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        653
+        657
       ]
     ]
   },
@@ -507,7 +507,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        657
+        661
       ]
     ]
   },
@@ -515,7 +515,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        666
+        670
       ]
     ]
   },
@@ -523,7 +523,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        681
+        685
       ]
     ]
   },
@@ -531,7 +531,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        700
+        704
       ]
     ]
   },
@@ -539,7 +539,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        717
+        721
       ]
     ]
   },
@@ -547,7 +547,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        729
+        733
       ]
     ]
   },
@@ -555,7 +555,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        739
+        743
       ]
     ]
   },
@@ -563,7 +563,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        826
+        839
       ]
     ]
   },
@@ -571,7 +571,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        832
+        845
       ]
     ]
   },
@@ -579,7 +579,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        834
+        847
       ]
     ]
   },
@@ -587,11 +587,11 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        838
+        851
       ],
       [
         "js/components/Settings/Settings.js",
-        840
+        853
       ]
     ]
   },
@@ -599,7 +599,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        838
+        851
       ]
     ]
   },
@@ -607,7 +607,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        875
+        888
       ]
     ]
   },
@@ -615,7 +615,7 @@
     "origin": [
       [
         "js/components/Settings/Settings.js",
-        877
+        890
       ]
     ]
   }

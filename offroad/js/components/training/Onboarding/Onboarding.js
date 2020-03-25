@@ -881,7 +881,7 @@ class Onboarding extends Component {
                         size='small' color='ghost' textWeight='light'
                         style={ Styles.onboardingStepPointCrumb }
                         onPress={ () => this.handleDisengageRadioPressed('index') }>
-                        openpilot disengaging
+                        { i18n._(t`openpilot disengaging`) }
                     </X.Button>
                     <X.Text size='medium' color='white' weight='bold'>
                         <Trans>Limited Features</Trans>

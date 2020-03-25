@@ -35,7 +35,7 @@ class SetupTerms extends Component {
                             color='white'
                             size='big'
                             weight='bold'>
-                            Review Terms
+                            <Trans>Review Terms</Trans>
                         </X.Text>
                     </View>
                     <ScrollThrough
