@@ -18,10 +18,10 @@ export let ChffrPlusTheme = {
             jumbo: 28,
         },
         weights: {
-            light: 'OpenSans-Light',
-            regular: 'OpenSans-Regular',
-            semibold: 'OpenSans-Semibold',
-            bold: 'OpenSans-Bold',
+            light: 'mplus-1p-light',
+            regular: 'mplus-1p-regular',
+            semibold: 'mplus-1p-bold',
+            bold: 'mplus-1p-black',
         },
         colors: {
             setupDisabled: '#1D2225',
