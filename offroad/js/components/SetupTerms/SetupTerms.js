@@ -31,7 +31,7 @@ class SetupTerms extends Component {
                             color='white'
                             size='big'
                             weight='bold'>
-                            Review Terms
+                            レビュー規約
                         </X.Text>
                     </View>
                     <ScrollThrough
@@ -40,9 +40,9 @@ class SetupTerms extends Component {
                         primaryButtonTextDisabled='Read to Continue'
                         secondaryButtonText='Decline'
                         scrollViewStyles={ Styles.setupTermsScrollView }>
-                        <X.Text weight='semibold' color='white'>Comma.ai, Inc. Terms & Conditions</X.Text>
+                        <X.Text weight='semibold' color='white'>Comma.ai, Inc. 利用規約</X.Text>
                         <X.Text size='small' color='white' style={ Styles.tosText }>{ Documents.TOS }</X.Text>
-                        <X.Text size='small' color='white'>Privacy policy available at https://my.comma.ai/privacy.html</X.Text>
+                        <X.Text size='small' color='white'>プライバシーポリシーは https://my.comma.ai/privacy.html でご覧いただけます。</X.Text>
                     </ScrollThrough>
                 </X.Entrance>
             </X.Gradient>

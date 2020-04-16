@@ -75,7 +75,7 @@ class DriveRating extends Component {
                             color='white'
                             size='jumbo'
                             weight='bold'>
-                            How was your drive?
+                            ドライブはどうでしたか?
                         </X.Text>
                     </View>
                     <View style={ Styles.driveRatingSubtitle }>
@@ -83,7 +83,7 @@ class DriveRating extends Component {
                             color='lightGrey200'
                             size='medium'
                             weight='regular'>
-                            Tell us how openpilot performed for this drive.
+                            OpenPilotがどのように動作したか教えてください。
                         </X.Text>
                     </View>
                     <X.Entrance style={ Styles.driveRatingSelections }>
