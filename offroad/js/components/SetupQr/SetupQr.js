@@ -56,7 +56,7 @@ class SetupPair extends Component {
                             color='white'
                             size='big'
                             weight='bold'>
-                            アカウント連携
+                            Pair Your Account
                         </X.Text>
                     </View>
                     <View style={ Styles.setupPairingBody }>
@@ -75,7 +75,7 @@ class SetupPair extends Component {
                                                   color='whiteFieldLabel'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  アカウント連携に成功
+                                                  Succesfully paired to account
                                               </X.Text>
                                           </View>
                                       </View>
@@ -97,17 +97,17 @@ class SetupPair extends Component {
                                 <X.Text>
                                     <X.Text
                                         color='white'>
-                                        { isPaired ? 'アカウント連携に成功しました' : 'ダウンロード ' }
+                                        { isPaired ? 'Successfully paired to an account in ' : 'Download ' }
                                     </X.Text>
                                     <X.Text
                                         color='white'
                                         weight='bold'>
-                                        { 'コンマ接続 ' }
+                                        { 'comma connect ' }
                                     </X.Text>
                                     { isPaired ? null : (
                                       <X.Text
                                           color='white'>
-                                          { 'QRコードをスキャンして連携します' }
+                                          { 'and scan this code to pair.' }
                                       </X.Text>
                                     ) }
                                 </X.Text>
@@ -133,14 +133,14 @@ class SetupPair extends Component {
                                         color='setupPrimary'
                                         onPress={ this.props.handleSetupComplete }
                                         style={ Styles.setupPairingButtonsContinue }>
-                                        続ける
+                                        Continue
                                     </X.Button>
                                 ) : (
                                     <X.Button
                                         color='setupInverted'
                                         onPress={ this.props.handleSetupComplete }
                                         style={ Styles.setupPairingButtonsContinue }>
-                                        スキップする
+                                        Skip for Now
                                     </X.Button>
                                 ) }
                             </View>

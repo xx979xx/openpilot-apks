@@ -127,9 +127,9 @@ class Settings extends Component {
     handlePressedResetCalibration = async () => {
         this.props.deleteParam(Params.KEY_CALIBRATION_PARAMS);
         this.setState({ calibration: null });
-        Alert.alert('再起動', 'キャリブレーションをリセットするには再起動が必要です。', [
-            { text: 'Later', onPress: () => {}, style: 'キャンセル' },
-            { text: '今すぐ再起動', onPress: () => ChffrPlus.reboot() },
+        Alert.alert('Reboot', 'Resetting calibration requires a reboot.', [
+            { text: 'Later', onPress: () => {}, style: 'cancel' },
+            { text: 'Reboot Now', onPress: () => ChffrPlus.reboot() },
         ]);
     }
 
@@ -194,25 +194,25 @@ class Settings extends Component {
         const settingsMenuItems = [
             {
                 icon: Icons.user,
-                title: 'アカウント',
-                context: isPaired ? '連携' : '連携解除',
+                title: 'Account',
+                context: isPaired ? 'Paired' : 'Unpaired',
                 route: SettingsRoutes.ACCOUNT,
             },
             {
                 icon: Icons.eon,
-                title: 'デバイス',
+                title: 'Device',
                 context: `${ parseInt(freeSpace) + '%' } Free`,
                 route: SettingsRoutes.DEVICE,
             },
             {
                 icon: Icons.network,
-                title: 'ネットワーク',
+                title: 'Network',
                 context: connectivity,
                 route: SettingsRoutes.NETWORK,
             },
             {
                 icon: Icons.developer,
-                title: '開発者',
+                title: 'Developer',
                 context: `${ software } v${ version.split('-')[0] }`,
                 route: SettingsRoutes.DEVELOPER,
             },
@@ -275,7 +275,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  設定'}
+                        {'<  Settings'}
                     </X.Button>
                 </View>
                 <ScrollView
@@ -288,10 +288,10 @@ class Settings extends Component {
                         { !parseInt(isPassive) ? (
                             <X.TableCell
                                 type='switch'
-                                title='オープンパイロットを有効化'
+                                title='Enable openpilot'
                                 value={ !!parseInt(openpilotEnabled) }
                                 iconSource={ Icons.openpilot }
-                                description='オープンパイロットはACCとLKAです。この機能を使用するには、常に注意が必要です。設定の変更は、車の電源がオフの時に可能です。'
+                                description='Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.'
                                 isExpanded={ expandedCell == 'openpilot_enabled' }
                                 handleExpanded={ () => this.handleExpanded('openpilot_enabled') }
                                 handleChanged={ this.props.setOpenpilotEnabled } />
@@ -299,29 +299,29 @@ class Settings extends Component {
                         { !parseInt(isPassive) ? (
                             <X.TableCell
                                 type='switch'
-                                title='車線変更支援を有効化'
+                                title='Enable Lane Change Assist'
                                 value={ !!parseInt(laneChangeEnabled) }
                                 iconSource={ Icons.road }
-                                description='車線変更支援を使用するには、方向指示器を作動させてハンドルをゆっくりと動かします。オープンパイロットは車線変更が安全かどうかチェックすることはできません。ですので、この機能をを使用する際は周囲の状況に常に気を配ってください。'
+                                description='Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature.'
                                 isExpanded={ expandedCell == 'lanechange_enabled' }
                                 handleExpanded={ () => this.handleExpanded('lanechange_enabled') }
                                 handleChanged={ this.props.setLaneChangeEnabled } />
                         ) : null }
                         <X.TableCell
                             type='switch'
-                            title='車線逸脱警報を有効化'
+                            title='Enable Lane Departure Warnings'
                             value={ !!parseInt(isLaneDepartureWarningEnabled) }
                             iconSource={ Icons.warning }
-                            description='時速50Km以上で走行中に方向指示器が動作していない状態で車線を逸脱した場合に、元に戻るように警告を表示させることができます。'
+                            description='Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph).'
                             isExpanded={ expandedCell == 'ldw' }
                             handleExpanded={ () => this.handleExpanded('ldw') }
                             handleChanged={ this.props.setLaneDepartureWarningEnabled } />
                         <X.TableCell
                             type='switch'
-                            title='ドライバー側の映像の記録とアップロード'
+                            title='Record and Upload Driver Camera'
                             value={ !!parseInt(recordFront) }
                             iconSource={ Icons.network }
-                            description='ドライバー側のカメラ映像をアップロードし、ドライバー監視アルゴリズムの改善に協力します。'
+                            description='Upload data from the driver facing camera and help improve the driver monitoring algorithm.'
                             isExpanded={ expandedCell == 'record_front' }
                             handleExpanded={ () => this.handleExpanded('record_front') }
                             handleChanged={ this.props.setRecordFront } />
@@ -336,10 +336,10 @@ class Settings extends Component {
                             handleChanged={ this.props.setIsRHD } />
                         <X.TableCell
                             type='switch'
-                            title='メートル法を使用'
+                            title='Use Metric System'
                             value={ !!parseInt(isMetric) }
                             iconSource={ Icons.metric }
-                            description='速度をmp/hではなくkm/hで表示します。'
+                            description='Display speed in km/h instead of mp/h.'
                             isExpanded={ expandedCell == 'metric' }
                             handleExpanded={ () => this.handleExpanded('metric') }
                             handleChanged={ this.props.setMetric } />
@@ -396,7 +396,7 @@ class Settings extends Component {
                         <X.Button
                             color='settingsDefault'
                             onPress={ () => this.props.openTrainingGuide() }>
-                            トレーニングガイドの確認
+                            Review Training Guide
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -414,7 +414,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  アカウント設定'}
+                        {'<  Account Settings'}
                     </X.Button>
                 </View>
                 <ScrollView
@@ -423,20 +423,20 @@ class Settings extends Component {
                     <View>
                         <X.Table>
                             <X.TableCell
-                                title='デバイス連携済'
-                                value={ isPaired ? 'はい' : 'いいえ' } />
+                                title='Device Paired'
+                                value={ isPaired ? 'Yes' : 'No' } />
                             { isPaired ? (
                                 <X.Text
                                     color='white'
                                     size='tiny'>
-                                    コンマアプリの設定でデバイスの連携を解除できます。
+                                    You may unpair your device in the comma connect app settings.
                                 </X.Text>
                             ) : null }
                             <X.Line color='light' />
                             <X.Text
                                 color='white'
                                 size='tiny'>
-                                利用規約 {'https://my.comma.ai/terms.html'}
+                                Terms of Service available at {'https://my.comma.ai/terms.html'}
                             </X.Text>
                         </X.Table>
                         { isPaired ? null : (
@@ -445,7 +445,7 @@ class Settings extends Component {
                                     color='settingsDefault'
                                     size='small'
                                     onPress={ this.props.openPairing }>
-                                    デバイス連携
+                                    Pair Device
                                 </X.Button>
                             </X.Table>
                         ) }
@@ -479,7 +479,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  デバイス設定'}
+                        {'<  Device Settings'}
                     </X.Button>
                 </View>
                 <ScrollView
@@ -488,9 +488,9 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='custom'
-                            title='キャリブレーション'
+                            title='Camera Calibration'
                             iconSource={ Icons.calibration }
-                            description='キャリブレーションアルゴリズムは道路側のカメラで常に有効になっています。キャリブレーションのリセットは、キャリブレーションエラーが発生した場合か別の位置に取り付けした場合のみに行ってください。'
+                            description='The calibration algorithm is always active on the road facing camera. Resetting calibration is only advised when the device reports an invalid calibration alert or when the device is remounted in a different position.'
                             isExpanded={ expandedCell == 'calibration' }
                             handleExpanded={ () => this.handleExpanded('calibration') }>
                             <X.Button
@@ -498,16 +498,16 @@ class Settings extends Component {
                                 color='settingsDefault'
                                 onPress={ this.handlePressedResetCalibration  }
                                 style={ { minWidth: '100%' } }>
-                                リセット
+                                Reset
                             </X.Button>
                         </X.TableCell>
                     </X.Table>
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='custom'
-                            title='ドライバーカメラビュー'
+                            title='Driver Camera View'
                             iconSource={ Icons.monitoring }
-                            description='ドライバー側のカメラを見ながらデバイスの取り付け位置を最適化し、ドライバーの監視を最適化します。(オフロードでの使用のみ)'
+                            description='Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (offroad use only)'
                             isExpanded={ expandedCell == 'driver_view_enabled' }
                             handleExpanded={ () => this.handleExpanded('driver_view_enabled') } >
                             <X.Button
@@ -522,20 +522,20 @@ class Settings extends Component {
                     </X.Table>
                     <X.Table>
                         <X.TableCell
-                            title='連携済み'
-                            value={ isPaired ? 'はい' : 'いいえ' } />
+                            title='Paired'
+                            value={ isPaired ? 'Yes' : 'No' } />
                         <X.TableCell
-                            title='ドングル ID'
+                            title='Dongle ID'
                             value={ dongleId } />
                         <X.TableCell
-                            title='シリアルナンバー'
+                            title='Serial Number'
                             value={ serialNumber } />
                         <X.TableCell
-                            title='空き容量'
+                            title='Free Storage'
                             value={ parseInt(freeSpace) + '%' }
                              />
                         <X.TableCell
-                            title='アップロード速度'
+                            title='Upload Speed'
                             value={ txSpeedKbps + ' kbps' }
                              />
                     </X.Table>
@@ -544,14 +544,14 @@ class Settings extends Component {
                             size='small'
                             color='settingsDefault'
                             onPress={ () => this.props.reboot() }>
-                            再起動
+                            Reboot
                         </X.Button>
                         <X.Line color='transparent' size='tiny' spacing='mini' />
                         <X.Button
                             size='small'
                             color='settingsDefault'
                             onPress={ () => this.props.shutdown() }>
-                            電源を切る
+                            Power Off
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -568,7 +568,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  ネットワーク設定'}
+                        {'<  Network Settings'}
                     </X.Button>
                 </View>
                 <ScrollView
@@ -580,14 +580,14 @@ class Settings extends Component {
                             size='small'
                             color='settingsDefault'
                             onPress={ this.props.openWifiSettings }>
-                            WiFi設定を開く
+                            Open WiFi Settings
                         </X.Button>
                         <X.Line color='transparent' size='tiny' spacing='mini' />
                         <X.Button
                             size='small'
                             color='settingsDefault'
                             onPress={ this.props.openTetheringSettings }>
-                            テザリング設定を開く
+                            Open Tethering Settings
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -617,7 +617,7 @@ class Settings extends Component {
                         color='ghost'
                         size='small'
                         onPress={ () => this.handlePressedBack() }>
-                        {'<  開発者設定'}
+                        {'<  Developer Settings'}
                     </X.Button>
                 </View>
                 <ScrollView
@@ -626,12 +626,12 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='switch'
-                            title='コミュニティ機能の有効化'
+                            title='Enable Community Features'
                             value={ !!parseInt(communityFeatures) }
                             iconSource={ Icons.developer }
                             descriptionExtra={
                               <X.Text color='white' size='tiny'>
-                                  comma.aiが保守・サポートしていないオープンソースコミュニティの機能を使用します。標準の安全モデルを満たしているかどうか確認されていないので、使用する際には特に注意してください。:{'\n'}
+                                  Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{'\n'}
                                   * GM car port{'\n'}
                                   * Toyota with DSU unplugged{'\n'}
                                   * Pedal interceptor{'\n'}
@@ -642,16 +642,16 @@ class Settings extends Component {
                             handleChanged={ this.props.setCommunityFeatures } />
                         <X.TableCell
                             type='switch'
-                            title='SSHを有効化'
+                            title='Enable SSH'
                             value={ isSshEnabled }
                             iconSource={ Icons.developer }
-                            description='Secure Shell (SSH) を使用してデバイスに接続できるようにします。'
+                            description='Allow devices to connect to your device using Secure Shell (SSH).'
                             isExpanded={ expandedCell == 'ssh' }
                             handleExpanded={ () => this.handleExpanded('ssh') }
                             handleChanged={ this.props.setSshEnabled } />
                         <X.TableCell
                             iconSource={ Icons.developer }
-                            title='認可されたSSHキー'
+                            title='Authorized SSH Keys'
                             descriptionExtra={ this.renderSshInput() }
                             isExpanded={ expandedCell === 'ssh_keys' }
                             handleExpanded={ this.toggleExpandGithubInput }
@@ -661,27 +661,27 @@ class Settings extends Component {
                                 color='settingsDefault'
                                 onPress={ this.toggleExpandGithubInput }
                                 style={ { minWidth: '100%' } }>
-                                { expandedCell === 'SSHキー' ? 'キャンセル' : '編集' }
+                                { expandedCell === 'ssh_keys' ? 'Cancel' : 'Edit' }
                             </X.Button>
                         </X.TableCell>
                     </X.Table>
                     <X.Table spacing='none'>
                         <X.TableCell
-                            title='バージョン'
+                            title='Version'
                             value={ `${ software } v${ version }` } />
                         <X.TableCell
-                            title='Git ブランチ'
+                            title='Git Branch'
                             value={ gitBranch } />
                         <X.TableCell
-                            title='Git リビジョン'
+                            title='Git Revision'
                             value={ gitRevision.slice(0, 12) }
                             valueTextSize='tiny' />
                         <X.TableCell
-                            title='パンダファームウェア'
+                            title='Panda Firmware'
                             value={ pandaFirmwareHex != null ? pandaFirmwareHex : 'N/A' }
                             valueTextSize='tiny' />
                         <X.TableCell
-                            title='パンダドングル ID'
+                            title='Panda Dongle ID'
                             value={ (pandaDongleId != null && pandaDongleId != "unprovisioned") ? pandaDongleId : 'N/A' }
                             valueTextSize='tiny' />
                     </X.Table>
@@ -690,7 +690,7 @@ class Settings extends Component {
                             color='settingsDefault'
                             size='small'
                             onPress={ this.props.uninstall }>
-                            { `アンインストール ${ software }` }
+                            { `Uninstall ${ software }` }
                         </X.Button>
                     </X.Table>
                 </ScrollView>
@@ -705,15 +705,15 @@ class Settings extends Component {
         return (
             <View>
                 <X.Text color='white' size='tiny'>
-                    警告:
+                    WARNING:
                     {'\n'}
-                    これにより、GitHub設定のすべての公開鍵へのSSHアクセスが許可されます。
+                    This grants SSH access to all public keys in your GitHub settings.
                     {'\n'}
-                    自分以外のGitHubユーザ名は絶対に入力しないでください。
+                    Never enter a GitHub username other than your own.
                     {'\n'}
-                    続行すると、組み込みのSSHキーは無効になります。
+                    The built-in SSH key will be disabled if you proceed.
                     {'\n'}
-                    コンマ従業員がGitHubの追加を要求することはありません。
+                    A comma employee will never ask you to add their GitHub.
                     {'\n'}
                 </X.Text>
                 <View style={ Styles.githubUsernameInputContainer }>
@@ -722,7 +722,7 @@ class Settings extends Component {
                         weight='semibold'
                         size='small'
                         style={ Styles.githubUsernameInputLabel }>
-                        GitHubユーザー名
+                        GitHub Username
                     </X.Text>
                     <TextInput
                         style={ Styles.githubUsernameInput }
@@ -741,7 +741,7 @@ class Settings extends Component {
                         isDisabled={ !githubUsernameIsValid }
                         onPress={ this.writeSshKeys }
                         style={ Styles.githubUsernameSaveButton }>
-                        <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }>保存</X.Text>
+                        <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }>Save</X.Text>
                     </X.Button>
                     { authKeysUpdateState !== null &&
                         <View style={ Styles.githubUsernameInputStatus }>
@@ -753,7 +753,7 @@ class Settings extends Component {
                                     style={ Styles.connectingIndicator } />
                             }
                             { authKeysUpdateState === 'failed' &&
-                                <X.Text color='white' size='tiny'>保存に失敗しました。ユーザー名が正しく、インターネットに接続されていることを確認してください。</X.Text>
+                                <X.Text color='white' size='tiny'>Save failed. Ensure that your username is correct and you are connected to the internet.</X.Text>
                             }
                         </View>
                     }
@@ -763,7 +763,7 @@ class Settings extends Component {
                             color='settingsDefault'
                             onPress={ this.clearSshKeys }
                             style={ Styles.githubUsernameSaveButton }>
-                            <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }>すべて削除</X.Text>
+                            <X.Text color='white' size='small' style={ Styles.githubUsernameInputSave }>Remove all</X.Text>
                         </X.Button>
                     </View>
                 </View>
@@ -857,21 +857,21 @@ const mapDispatchToProps = dispatch => ({
         ChffrPlus.openTetheringSettings();
     },
     reboot: () => {
-        Alert.alert('再起動', '本当に再起動しますか？', [
-            { text: 'キャンセル', onPress: () => {}, style: 'cancel' },
-            { text: '再起動', onPress: () => ChffrPlus.reboot() },
+        Alert.alert('Reboot', 'Are you sure you want to reboot?', [
+            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
+            { text: 'Reboot', onPress: () => ChffrPlus.reboot() },
         ]);
     },
     shutdown: () => {
-        Alert.alert('電源を切る', '本当に電源を切りますか？', [
-            { text: 'キャンセル', onPress: () => {}, style: 'cancel' },
-            { text: 'シャットダウン', onPress: () => ChffrPlus.shutdown() },
+        Alert.alert('Power Off', 'Are you sure you want to shutdown?', [
+            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
+            { text: 'Shutdown', onPress: () => ChffrPlus.shutdown() },
         ]);
     },
     uninstall: () => {
-        Alert.alert('アンインストール', '本当にアンインストールしますか？', [
-            { text: 'キャンセル', onPress: () => {}, style: 'cancel' },
-            { text: 'アンインストール', onPress: () => ChffrPlus.writeParam(Params.KEY_DO_UNINSTALL, "1") },
+        Alert.alert('Uninstall', 'Are you sure you want to uninstall?', [
+            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
+            { text: 'Uninstall', onPress: () => ChffrPlus.writeParam(Params.KEY_DO_UNINSTALL, "1") },
         ]);
     },
     openTrainingGuide: () => {
@@ -912,9 +912,9 @@ const mapDispatchToProps = dispatch => ({
     },
     setCommunityFeatures: (communityFeatures) => {
         if (communityFeatures == 1) {
-            Alert.alert('コミュニティ機能を有効化', 'コミュニティで管理されている機能はcomma.aiが標準の安全モデルを満たしていることを確認していません。これらの機能を使用する際には十分に注意してください。', [
-                { text: 'キャンセル', onPress: () => {}, style: 'cancel' },
-                { text: '有効化', onPress: () => {
+            Alert.alert('Enable Community Features', 'Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them.', [
+                { text: 'Cancel', onPress: () => {}, style: 'cancel' },
+                { text: 'Enable', onPress: () => {
                     dispatch(updateParam(Params.KEY_COMMUNITY_FEATURES, (communityFeatures | 0).toString()));
                 } },
             ]);

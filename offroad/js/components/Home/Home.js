@@ -194,7 +194,7 @@ class Home extends Component {
                                             color='darkBlue'
                                             size='tiny'
                                             weight='semibold'>
-                                            更新可能
+                                            Update Available
                                         </X.Text>
                                     </X.Button>
                                 </View>
@@ -259,13 +259,13 @@ class Home extends Component {
                                     color='white'
                                     size='jumbo'
                                     weight='semibold'>
-                                    ネットワーク接続なし
+                                    No Network Connection
                                 </X.Text>
                                 <X.Text
                                     color='lightGrey700'
                                     size='medium'
                                     style={ Styles.homeBodyDisconnectedContext }>
-                                    WiFiまたはモバイルネットワークに接続して、ドライブ動画をアップロードして確認します。
+                                    Connect to a WiFi or cellular network to upload and review your drives.
                                 </X.Text>
                             </View>
                         </View>
@@ -277,7 +277,7 @@ class Home extends Component {
                                       color='white'
                                       size='tiny'
                                       weight='semibold'>
-                                      先週
+                                      PAST WEEK
                                   </X.Text>
                               </View>
                               <View style={ Styles.homeBodyStatsRow }>
@@ -293,7 +293,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          ドライブ
+                                          DRIVES
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyStat }>
@@ -325,7 +325,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          時間
+                                          HOURS
                                       </X.Text>
                                   </View>
                               </View>
@@ -337,7 +337,7 @@ class Home extends Component {
                                       color='white'
                                       size='tiny'
                                       weight='semibold'>
-                                      常時
+                                      ALL TIME
                                   </X.Text>
                               </View>
                               <View style={ Styles.homeBodyStatsRow }>
@@ -353,7 +353,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          ドライブ
+                                          DRIVES
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyStat }>
@@ -385,7 +385,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          時間
+                                          HOURS
                                       </X.Text>
                                   </View>
                               </View>
@@ -406,7 +406,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyAccountPointsLabel }>
-                                          コンマポイント
+                                          COMMA POINTS
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyAccountDetails }>
@@ -429,14 +429,14 @@ class Home extends Component {
                                           size='medium'
                                           weight='semibold'
                                           style={ Styles.homeBodyAccountUpgradeTitle }>
-                                          今すぐアップグレード
+                                          Upgrade Now
                                       </X.Text>
                                       <X.Text
                                           color='white'
                                           size='tiny'
                                           weight='light'
                                           style={ Styles.homeBodyAccountUpgradeContext }>
-                                          コンマアプリでプライム会員になってプレミアム機能をゲット！
+                                          Become a comma prime member in the comma app and get premium features!
                                       </X.Text>
                                       <View style={ Styles.homeBodyAccountUpgradeFeatures }>
                                           <View style={ Styles.homeBodyAccountUpgradeFeature }>
@@ -448,7 +448,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  リモートアクセス
+                                                  Remote Access
                                               </X.Text>
                                           </View>
                                           <View style={ Styles.homeBodyAccountUpgradeFeature }>
@@ -460,7 +460,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  1年間の保存期間
+                                                  1 year of storage
                                               </X.Text>
                                           </View>
                                           <View style={ Styles.homeBodyAccountUpgradeFeature }>
@@ -472,7 +472,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  開発者の特典
+                                                  Developer perks
                                               </X.Text>
                                           </View>
                                       </View>
@@ -492,7 +492,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='medium'
                                                   weight='semibold'>
-                                                  セットアップ終了
+                                                  Finish Setup
                                               </X.Text>
                                               <X.Image
                                                   isFlex={ false }
@@ -504,7 +504,7 @@ class Home extends Component {
                                               size='tiny'
                                               weight='light'
                                               style={ Styles.homeBodyAccountPairButtonContext }>
-                                              コンマアカウントと連携します
+                                              Pair your comma account with comma connect
                                           </X.Text>
                                       </X.Gradient>
                                   </X.Button>
