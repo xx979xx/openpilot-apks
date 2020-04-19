@@ -322,20 +322,20 @@ class Onboarding extends Component {
                 <X.Text
                     size='jumbo' color='white' weight='bold'
                     style={ Styles.onboardingStepHeader }>
-                    Welcome to openpilot alpha
+                    オープンパイロットアルファへようこそ
                 </X.Text>
                 <X.Text
                     color='white' weight='light'
                     style={ Styles.onboardingStepContext }>
-                    Now that you’re all set up, it’s important to
-                    understand the functionality and limitations of
-                    openpilot as alpha software before testing.
+                    これですべてのセットアップが完了したので
+                    テストを行う前にアルファ版としての
+                    オープンパイロットの機能と制限を頭に入れてください。
                 </X.Text>
                 <View style={ Styles.onboardingPrimaryAction }>
                     <X.Button
                         color='setupPrimary'
                         onPress={ () => this.setStep('OB_INTRO') }>
-                        Begin Training
+                        トレーニング開始
                     </X.Button>
                 </View>
             </X.Entrance>
@@ -364,33 +364,33 @@ class Onboarding extends Component {
                     </View>
                     <View style={ Styles.onboardingStepPointBody }>
                         <X.Text size='bigger' color='white' weight='bold'>
-                            openpilot is an advanced driver assistance system.
+                            オープンパイロットは先進的な運転支援システムです。
                         </X.Text>
                         <X.Text
                             size='smallish' color='white' weight='light'
                             style={ Styles.onboardingStepContextSmall }>
-                            A driver assistance system is not a self driving car.
-                            This means openpilot is designed to work with you,
-                            not without you. Your attention is required to drive.
+                            運転支援システムは自動運転車ではありません。
+                            つまり、オープンパイロットはあなたが必要です。
+                            運転には必ずあなたが必要です。
                         </X.Text>
                         <X.CheckboxField
                             size='small'
                             color='white'
                             isChecked={ stepChecks.includes(1) }
                             onPress={ () => this.handleIntroCheckboxPressed(1) }
-                            label='I will keep my eyes on the road.' />
+                            label='目を離さないようにしてください。' />
                         <X.CheckboxField
                             size='small'
                             color='white'
                             isChecked={ stepChecks.includes(2) }
                             onPress={ () => this.handleIntroCheckboxPressed(2) }
-                            label='I will be ready to take over at any time.' />
+                            label='いつでもあなたのみで運転できるようにしておきます。' />
                         <X.CheckboxField
                             size='small'
                             color='white'
                             isChecked={ stepChecks.includes(3) }
                             onPress={ () => this.handleIntroCheckboxPressed(3) }
-                            label='I will be ready to take over at any time!' />
+                            label='いつでも引き継げるように準備しておきます!' />
                     </View>
                 </View>
             </X.Entrance>
@@ -418,13 +418,13 @@ class Onboarding extends Component {
                 </View>
                 <View style={ Styles.onboardingStepPointBody }>
                     <X.Text size='bigger' color='white' weight='bold'>
-                        openpilot uses multiple sensors to see the road ahead.
+                        オープンパイロットでは、複数のセンサーを使用して前方の道路を確認しています。
                     </X.Text>
                     <X.Text
                         size='smallish' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmall }>
-                        Before any signals are sent to control your car,
-                        sensors are fused to construct a scene of the road.
+                        車のコントロールに必要な信号が送信される前に,
+                        センサーからの情報で道路状況が構築されます。
                     </X.Text>
                     <X.RadioField
                         size='big'
@@ -432,7 +432,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('camera') }
                         hasAppend={ true }
                         onPress={ () => this.handleSensorRadioPressed('camera') }
-                        label='Camera from Device' />
+                        label='デバイスのカメラ' />
                     <X.RadioField
                         size='big'
                         color='white'
@@ -440,7 +440,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('radar') }
                         hasAppend={ true }
                         onPress={ () => this.handleSensorRadioPressed('radar') }
-                        label='Radar from your car' />
+                        label='車のレーダー' />
                 </View>
             </View>
         )
@@ -456,22 +456,21 @@ class Onboarding extends Component {
                     size='small' color='ghost' textWeight='light'
                     style={ Styles.onboardingStepPointCrumb }
                     onPress={ () => this.handleSensorRadioPressed('index') }>
-                    openpilot sensors
+                    オープンパイロットのセンサー
                 </X.Button>
                 <X.Text size='medium' color='white' weight='bold'>
-                    Camera from Device
+                    デバイスのカメラ
                 </X.Text>
                 <X.Text
                     size='small' color='white' weight='light'
                     style={ Styles.onboardingStepContextSmaller }>
-                    A vision algorithm leverages the road-facing
-                    camera to determine the path to drive.
+                    ビジョンアルゴリズムは道路側のカメラを利用して
+                    走行するべき道を決定します。
                 </X.Text>
                 <X.Text
                     size='small' color='white' weight='light'
                     style={ Styles.onboardingStepContextSmaller }>
-                    The lane lines are drawn with varying widths to
-                    reflect the confidence in finding your lane.
+                    車線はいろいろな方法で描かれています。
                 </X.Text>
                 <X.Button color='ghost'
                     style={ Styles.onboardingStepPointInstruction }
@@ -479,7 +478,7 @@ class Onboarding extends Component {
                     <X.Text
                         size='small' color='white' weight='semibold'
                         style={ Styles.onboardingStepPointInstructionText }>
-                        Select path to continue
+                        パスを選択して続行します
                     </X.Text>
                     <X.Image
                       source={ require('../../../img/icon_chevron_right.png') }
@@ -499,22 +498,22 @@ class Onboarding extends Component {
                     size='small' color='ghost' textWeight='light'
                     style={ Styles.onboardingStepPointCrumb }
                     onPress={ () => this.handleSensorRadioPressed('index') }>
-                    openpilot sensors
+                    オープンパイロットのセンサー
                 </X.Button>
                 <X.Text size='medium' color='white' weight='bold'>
-                    Radar from your car
+                    あなたの車のレーダー
                 </X.Text>
                 <X.Text
                     size='small' color='white' weight='light'
                     style={ Styles.onboardingStepContextSmaller }>
-                    The stock radar in your car helps openpilot measure
-                    the lead car distance for longitudinal control.
+                    あなたの車のレーダーはオープンパイロットが
+                    前方の距離を測定するのに役に立ちます。
                 </X.Text>
                 <X.Text
                     size='small' color='white' weight='light'
                     style={ Styles.onboardingStepContextSmaller }>
-                    The indicator is drawn either red or yellow to
-                    illustrate relative speed to the lead car.
+                    インジケーターは赤か黄色で描かれます。
+                    前方の車との相対速度を表示しています。
                 </X.Text>
                 <X.Button color='ghost'
                     style={ Styles.onboardingStepPointInstruction }
@@ -522,7 +521,7 @@ class Onboarding extends Component {
                     <X.Text
                         size='small' color='white' weight='semibold'
                         style={ Styles.onboardingStepPointInstructionText }>
-                        Select lead car indicator
+                        リードカーのインジケータを選択します。
                     </X.Text>
                     <X.Image
                         source={ require('../../../img/icon_chevron_right.png') }
@@ -561,12 +560,12 @@ class Onboarding extends Component {
                 </View>
                 <View style={ Styles.onboardingStepPointBody }>
                     <X.Text size='bigger' color='white' weight='bold'>
-                        openpilot will engage when cruise control is set.
+                        クルーズコントロールが有効になっている場合にオープンパイロットが利用できます。
                     </X.Text>
                     <X.Text
                         size='smallish' color='white' weight='light'
                         style={ Styles.onboardingStepContext }>
-                        Press cruise to engage and a pedal to disengage.
+                        クルーズボタンを押すと作動し、ペダルを踏むと解除されます。
                     </X.Text>
                     <X.RadioField
                         size='big'
@@ -574,7 +573,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('cruise') }
                         hasAppend={ true }
                         onPress={ () => this.handleEngageRadioPressed('cruise') }
-                        label='Engage openpilot' />
+                        label='オープンパイロットを活用する' />
                     <X.RadioField
                         size='big'
                         color='white'
@@ -582,7 +581,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('monitoring') }
                         hasAppend={ true }
                         onPress={ () => this.handleEngageRadioPressed('monitoring') }
-                        label='Driver Monitoring' />
+                        label='ドライバー監視' />
                 </View>
             </View>
         )
@@ -598,17 +597,17 @@ class Onboarding extends Component {
                     size='small' color='ghost' textWeight='light'
                     style={ Styles.onboardingStepPointCrumb }
                     onPress={ () => this.handleEngageRadioPressed('index') }>
-                    openpilot engaging
+                    オープンパイロットの魅力
                 </X.Button>
                 <X.Text size='medium' color='white' weight='bold'>
-                    Engage openpilot
+                    オープンパイロットを活用
                 </X.Text>
                 <X.Text
                     size='small' color='white' weight='light'
                     style={ Styles.onboardingStepContextSmaller }>
-                    When you are ready to engage openpilot at a comfortable
-                    speed, locate the cruise controls on your steering wheel
-                    and press "SET" to begin.
+                    快適な速度でオープンパイロットを利用する準備ができたら
+                    クルーズコントロールボタンの位置を確認し
+                    "SET" を押します。
                 </X.Text>
                 <X.Button color='ghost'
                     style={ Styles.onboardingStepPointInstruction }
@@ -616,7 +615,7 @@ class Onboarding extends Component {
                     <X.Text
                         size='small' color='white' weight='semibold'
                         style={ Styles.onboardingStepPointInstructionText }>
-                        Tap "SET" (on screen) to engage
+                        画面上の"SET"を押して次の操作をします。
                     </X.Text>
                     <X.Image
                         source={ require('../../../img/icon_chevron_right.png') }
@@ -637,18 +636,18 @@ class Onboarding extends Component {
                         size='small' color='ghost' textWeight='light'
                         style={ Styles.onboardingStepPointCrumb }
                         onPress={ () => this.handleEngageRadioPressed('index') }>
-                        openpilot engaging
+                        オープンパイロットの魅力
                     </X.Button>
                     <X.Text size='medium' color='white' weight='bold'>
-                        Driver Monitoring
+                        ドライバー監視
                     </X.Text>
                     <X.Text
                         size='small' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmaller }>
-                        When openpilot is engaged, you must always pay attention!
-                        openpilot monitors awareness with 3D facial reconstruction
-                        and pose. Distracted drivers are alerted, then disengaged
-                        from openpilot until corrected.
+                        オープンパイロット作動中は常に注意してください!
+                        オープンパイロットは顔の3Dモデルを構築し監視します。
+                        注意力散漫なドライバーには警告が表示され
+                        改善されるまでオープンパイロットはオフになります。
                     </X.Text>
                     <X.Button color='ghost'
                         style={ Styles.onboardingStepPointInstruction }
@@ -656,7 +655,7 @@ class Onboarding extends Component {
                         <X.Text
                             size='small' color='white' weight='semibold'
                             style={ Styles.onboardingStepPointInstructionText }>
-                            Select face to continue
+                            顔を選択して続ける
                         </X.Text>
                         <X.Image
                             source={ require('../../../img/icon_chevron_right.png') }
@@ -688,12 +687,12 @@ class Onboarding extends Component {
                 </View>
                 <View style={ Styles.onboardingStepPointBody }>
                     <X.Text size='bigger' color='white' weight='bold'>
-                        openpilot can change lanes with your assistance.
+                        オープンパイロットはあなたの力を借りて車線変更を行います。
                     </X.Text>
                     <X.Text
                         size='smallish' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmall }>
-                        openpilot is not capable of checking if a lane change is safe. This is your job. openpilot will change lanes regardless if another vehicle is present.
+                        オープンパイロットは車線変更が安全かどうかわかりません。たとえすぐそこにほかの車がいたとしても容赦なく車線変更を行います。
                     </X.Text>
                     <X.RadioField
                         size='big'
@@ -701,7 +700,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('start') }
                         hasAppend={ true }
                         onPress={ () => this.handleLaneChangeRadioPressed('start') }
-                        label='Start Lane Change' />
+                        label='車線変更を開始' />
                     <X.RadioField
                         size='big'
                         color='white'
@@ -709,7 +708,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('perform') }
                         hasAppend={ true }
                         onPress={ () => this.handleLaneChangeRadioPressed('perform') }
-                        label='Perform Lane Change' />
+                        label='車線変更を行う' />
                 </View>
             </View>
         )
@@ -726,16 +725,16 @@ class Onboarding extends Component {
                         size='small' color='ghost' textWeight='light'
                         style={ Styles.onboardingStepPointCrumb }
                         onPress={ () => this.handleLaneChangeRadioPressed('index') }>
-                        openpilot controls
+                        オープンパイロットの制御
                     </X.Button>
                     <X.Text size='medium' color='white' weight='bold'>
-                        Start Lane Change
+                        車線変更を開始
                     </X.Text>
                     <X.Text
                         size='small' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmaller }>
-                        With openpilot engaged, turn on your signal, check
-                        your surroundings, and confirm it is safe to change lanes.
+                        オープンパイロットを使用しています。
+                        周囲を確認し車線変更が安全か確認してください。
                     </X.Text>
                     <X.Button color='ghost'
                         style={ Styles.onboardingStepPointInstruction }
@@ -743,7 +742,7 @@ class Onboarding extends Component {
                         <X.Text
                             size='small' color='white' weight='semibold'
                             style={ Styles.onboardingStepPointInstructionText }>
-                            Select turn signal
+                            方向指示器を選択
                         </X.Text>
                         <X.Image
                             source={ require('../../../img/icon_chevron_right.png') }
@@ -765,18 +764,18 @@ class Onboarding extends Component {
                         size='small' color='ghost' textWeight='light'
                         style={ Styles.onboardingStepPointCrumb }
                         onPress={ () => this.handleLaneChangeRadioPressed('index') }>
-                        openpilot lane changes
+                        オープンパイロットの車線変更
                     </X.Button>
                     <X.Text size='medium' color='white' weight='bold'>
-                        Perform Lane Change
+                        車線変更を実行する
                     </X.Text>
                     <X.Text
                         size='small' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmaller }>
-                        Continuously observe your surroundings for safety while
-                        gently nudging the steering wheel towards your desired
-                        lane. The combination of turn signal and wheel nudge
-                        will prompt openpilot to change lanes.
+                        安全のため常に周囲を確認してください。
+                        好きな方向に向かってハンドルをやさしく動かしてください。
+                        方向指示器とハンドルの組み合わせでオープンパイロット
+                        が車線変更を行います。
                     </X.Text>
                     <X.Button color='ghost'
                         style={ Styles.onboardingStepPointInstruction }
@@ -784,7 +783,7 @@ class Onboarding extends Component {
                         <X.Text
                             size='small' color='white' weight='semibold'
                             style={ Styles.onboardingStepPointInstructionText }>
-                            Select steering wheel
+                            ハンドルを選択
                         </X.Text>
                         <X.Image
                             source={ require('../../../img/icon_chevron_right.png') }
@@ -816,13 +815,13 @@ class Onboarding extends Component {
                 </View>
                 <View style={ Styles.onboardingStepPointBody }>
                     <X.Text size='bigger' color='white' weight='bold'>
-                        openpilot will stop driving when a pedal is pressed.
+                        オープンパイロットはペダルを踏むと解除されます。.
                     </X.Text>
                     <X.Text
                         size='smallish' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmall }>
-                        When encountering a potentially unsafe situation or
-                        exiting a highway, you can disengage with any pedal.
+                        安全でない可能性のある状況に遭遇したら場合や、
+                        高速道路を降りるときは好きなペダルで解除できます。
                     </X.Text>
                     <X.RadioField
                         size='big'
@@ -830,7 +829,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('limitations') }
                         hasAppend={ true }
                         onPress={ () => this.handleDisengageRadioPressed('limitations') }
-                        label='Limited Features' />
+                        label='限定された機能' />
                     <X.RadioField
                         size='big'
                         color='white'
@@ -838,7 +837,7 @@ class Onboarding extends Component {
                         isChecked={ stepChecks.includes('disengage') }
                         hasAppend={ true }
                         onPress={ () => this.handleDisengageRadioPressed('disengage') }
-                        label='Perform Lane Change' />
+                        label='車線変更を実行' />
                 </View>
             </View>
         )
@@ -855,18 +854,17 @@ class Onboarding extends Component {
                         size='small' color='ghost' textWeight='light'
                         style={ Styles.onboardingStepPointCrumb }
                         onPress={ () => this.handleDisengageRadioPressed('index') }>
-                        openpilot disengaging
+                        オープンパイロットの解除
                     </X.Button>
                     <X.Text size='medium' color='white' weight='bold'>
-                        Limited Features
+                        限定された機能
                     </X.Text>
                     <X.Text
                         size='small' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmaller }>
-                        Keep in mind that certain situations are not handled by
-                        openpilot. Scenarios such as traffic lights, stop signs,
-                        quick vehicle cutins and pedestrians are unrecognized
-                        and openpilot may accelerate.
+                        特定の状況ではオープンパイロットは機能しません。
+                        信号、標識、歩行者などは認識することができず
+                        加速してしまうことがあります。
                     </X.Text>
                     <X.Button color='ghost'
                         style={ Styles.onboardingStepPointInstruction }
@@ -874,7 +872,7 @@ class Onboarding extends Component {
                         <X.Text
                             size='small' color='white' weight='semibold'
                             style={ Styles.onboardingStepPointInstructionText }>
-                            Select light to continue
+                            光を選択して続ける
                         </X.Text>
                         <X.Image
                             source={ require('../../../img/icon_chevron_right.png') }
@@ -896,18 +894,17 @@ class Onboarding extends Component {
                         size='small' color='ghost' textWeight='light'
                         style={ Styles.onboardingStepPointCrumb }
                         onPress={ () => this.handleDisengageRadioPressed('index') }>
-                        openpilot disengaging
+                        オープンパイロット解除
                     </X.Button>
                     <X.Text size='medium' color='white' weight='bold'>
-                        Disengage openpilot
+                        オープンパイロットを解除
                     </X.Text>
                     <X.Text
                         size='small' color='white' weight='light'
                         style={ Styles.onboardingStepContextSmaller }>
-                        While openpilot is engaged, you may keep your hands
-                        on the wheel to override lateral controls. Longitudinal
-                        controls will be managed by openpilot until the gas
-                        or brake pedal is pressed to disengage.
+                        オープンパイロットの作動中はハンドル操作をしなくても大丈夫です。
+                        でも、手は添えてくださいね？
+                        ペダルを踏んで解除するまで前方の車との距離はオープンパイロットにより管理されます。
                     </X.Text>
                     <X.Button color='ghost'
                         style={ Styles.onboardingStepPointInstruction }
@@ -915,7 +912,7 @@ class Onboarding extends Component {
                         <X.Text
                             size='small' color='white' weight='semibold'
                             style={ Styles.onboardingStepPointInstructionText }>
-                            Tap a pedal to disengage
+                            ペダルをタップして解除します。
                         </X.Text>
                         <X.Image
                             source={ require('../../../img/icon_chevron_right.png') }
@@ -956,14 +953,14 @@ class Onboarding extends Component {
                 <X.Text
                     size='jumbo' color='white' weight='bold'
                     style={ Styles.onboardingStepHeader }>
-                    Congratulations! You have completed openpilot training.
+                    おめでとう！これでオープンパイロットの訓練は完了です。
                 </X.Text>
                 <X.Text
                     color='white' weight='light'
                     style={ Styles.onboardingStepContextSmaller }>
-                    This guide can be replayed at any time from the
-                    device settings. To learn more about openpilot, read the
-                    wiki and join the community at discord.comma.ai
+                    このガイドは設定からいつでも再生することができます。
+                    オープンパイロットについてもっと知りたい人は
+                    wikiを読み、discord.comma.aiのコミュニティに参加してください。
                 </X.Text>
                 <X.Line color='transparent' spacing='small' />
                 <View style={ Styles.onboardingActionsRow }>
@@ -971,7 +968,7 @@ class Onboarding extends Component {
                         <X.Button
                             color='setupPrimary'
                             onPress={ this.props.completeTrainingStep }>
-                            Finish Training
+                            トレーニングを終わる
                         </X.Button>
                     </View>
                     <View style={ Styles.onboardingSecondaryAction }>
@@ -979,7 +976,7 @@ class Onboarding extends Component {
                             color='setupInverted'
                             textColor='white'
                             onPress={ this.handleRestartPressed }>
-                            Restart
+                            リスタート
                         </X.Button>
                     </View>
                 </View>
