@@ -25,11 +25,11 @@ class UpdatePrompt extends Component {
                 <ScrollThrough
                     onPrimaryButtonClick={ this.onUpdatePressed }
                     onSecondaryButtonClick={ this.props.dismiss }
-                    primaryButtonText={ 'Reboot and Update' }
-                    secondaryButtonText={ 'Later' }
+                    primaryButtonText={ '再起動して更新' }
+                    secondaryButtonText={ 'あとで' }
                     onScroll={ this.onScroll }
                     enabled={ true }>
-                    <X.Text color='white' size='big' weight='semibold'>Update Available</X.Text>
+                    <X.Text color='white' size='big' weight='semibold'>更新可能</X.Text>
                     <X.Line />
                     <X.Text color='white'>
                         { this.props.releaseNotes }
