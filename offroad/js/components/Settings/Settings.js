@@ -10,6 +10,7 @@ import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
 
 import ChffrPlus from '../../native/ChffrPlus';
+import Layout from '../../native/Layout';
 import UploadProgressTimer from '../../timers/UploadProgressTimer';
 import { formatSize } from '../../utils/bytes';
 import { mpsToKph, mpsToMph, kphToMps, mphToMps } from '../../utils/conversions';
@@ -18,7 +19,6 @@ import { resetToLaunch } from '../../store/nav/actions';
 
 import {
     updateSshEnabled,
-    updateSidebarCollapsed,
 } from '../../store/host/actions';
 import {
     deleteParam,
@@ -54,6 +54,9 @@ const Icons = {
     minus: require('../../img/icon_minus.png'),
     mapSpeed: require('../../img/icon_map.png'),
     openpilot: require('../../img/icon_openpilot.png'),
+    openpilot_mirrored: require('../../img/icon_openpilot_mirrored.png'),
+    monitoring: require('../../img/icon_monitoring.png'),
+    road: require('../../img/icon_road.png'),
 }
 
 class Settings extends Component {
@@ -99,8 +102,7 @@ class Settings extends Component {
     }
 
     async componentWillUnmount() {
-        await this.props.handleSidebarExpanded();
-        await ChffrPlus.emitSidebarExpanded();
+        await Layout.emitSidebarExpanded();
         UploadProgressTimer.stop();
     }
 
@@ -113,10 +115,8 @@ class Settings extends Component {
 
     handlePressedBack() {
         const { route } = this.state;
-        this.props.handleSidebarExpanded();
         if (route == SettingsRoutes.PRIMARY) {
-            ChffrPlus.sendBroadcast("ai.comma.plus.offroad.NAVIGATED_FROM_SETTINGS");
-            this.props.navigateHome();
+            this.props.goBack();
         } else {
             this.handleNavigatedFromMenu(SettingsRoutes.PRIMARY);
         }
@@ -260,6 +260,7 @@ class Settings extends Component {
         const {
             params: {
                 RecordFront: recordFront,
+                IsRHD: isRHD,
                 IsMetric: isMetric,
                 LongitudinalControl: hasLongitudinalControl,
                 LimitSetSpeed: limitSetSpeed,
@@ -268,7 +269,7 @@ class Settings extends Component {
                 Passive: isPassive,
                 IsLdwEnabled: isLaneDepartureWarningEnabled,
                 LaneChangeEnabled: laneChangeEnabled,
-            }
+            },
         } = this.props;
         const { expandedCell, speedLimitOffsetInt } = this.state;
         return (
@@ -304,7 +305,7 @@ class Settings extends Component {
                                 type='switch'
                                 title={ i18n._(t`Enable Lane Change Assist`) }
                                 value={ !!parseInt(laneChangeEnabled) }
-                                iconSource={ Icons.openpilot }
+                                iconSource={ Icons.road }
                                 description={ i18n._(t`Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature.`) }
                                 isExpanded={ expandedCell == 'lanechange_enabled' }
                                 handleExpanded={ () => this.handleExpanded('lanechange_enabled') }
@@ -324,10 +325,19 @@ class Settings extends Component {
                             title={ i18n._(t`Record and Upload Driver Camera`) }
                             value={ !!parseInt(recordFront) }
                             iconSource={ Icons.network }
-                            description={ i18n._(t`Upload data from the driver facing camera and help improve the Driver Monitoring algorithm.`) }
+                            description={ i18n._(t`Upload data from the driver facing camera and help improve the driver monitoring algorithm.`) }
                             isExpanded={ expandedCell == 'record_front' }
                             handleExpanded={ () => this.handleExpanded('record_front') }
                             handleChanged={ this.props.setRecordFront } />
+                        <X.TableCell
+                            type='switch'
+                            title='Enable Right-Hand Drive'
+                            value={ !!parseInt(isRHD) }
+                            iconSource={ Icons.openpilot_mirrored }
+                            description='Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat.'
+                            isExpanded={ expandedCell == 'is_rhd' }
+                            handleExpanded={ () => this.handleExpanded('is_rhd') }
+                            handleChanged={ this.props.setIsRHD } />
                         <X.TableCell
                             type='switch'
                             title={ i18n._(t`Use Metric System`) }
@@ -463,6 +473,7 @@ class Settings extends Component {
                 DongleId: dongleId,
                 Passive: isPassive,
             },
+            isOffroad,
         } = this.props;
         const software = i18n._(!!parseInt(isPassive) ? t`chffrplus` : t`openpilot`);
         return (
@@ -492,6 +503,24 @@ class Settings extends Component {
                                 onPress={ this.handlePressedResetCalibration  }
                                 style={ { minWidth: '100%' } }>
                                 { i18n._(t`Reset`) }
+                            </X.Button>
+                        </X.TableCell>
+                    </X.Table>
+                    <X.Table color='darkBlue'>
+                        <X.TableCell
+                            type='custom'
+                            title='Driver Camera View'
+                            iconSource={ Icons.monitoring }
+                            description='Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (offroad use only)'
+                            isExpanded={ expandedCell == 'driver_view_enabled' }
+                            handleExpanded={ () => this.handleExpanded('driver_view_enabled') } >
+                            <X.Button
+                                size='tiny'
+                                color='settingsDefault'
+                                isDisabled={ !isOffroad }
+                                onPress={ this.props.setIsDriverViewEnabled  }
+                                style={ { minWidth: '100%' } }>
+                                Preview
                             </X.Button>
                         </X.TableCell>
                     </X.Table>
@@ -706,6 +735,8 @@ class Settings extends Component {
                     <TextInput
                         style={ Styles.githubUsernameInput }
                         onChangeText={ (text) => this.setState({ githubUsername: text, authKeysUpdateState: null })}
+                        onFocus={ () => Layout.emitSidebarCollapsed() }
+                        onBlur={ () => Layout.emitSidebarExpanded() }
                         value={ githubUsername }
                         ref={ ref => this.githubInput = ref }
                         underlineColorAndroid='transparent'
@@ -807,6 +838,7 @@ const mapStateToProps = state => ({
     simState: state.host.simState,
     wifiState: state.host.wifiState,
     isPaired: state.host.device && state.host.device.is_paired,
+    isOffroad: state.host.isOffroad,
 
     // Uploader
     txSpeedKbps: parseInt(state.uploads.txSpeedKbps),
@@ -817,22 +849,19 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     dispatch,
-    navigateHome: async () => {
-        await dispatch(updateSidebarCollapsed(false));
+    goBack: async () => {
         await dispatch(resetToLaunch());
-        await ChffrPlus.emitHomePress();
+        await Layout.goBack();
     },
     openPairing: () => {
         dispatch(NavigationActions.navigate({ routeName: 'SetupQr' }));
     },
     openWifiSettings: async () => {
-        await dispatch(updateSidebarCollapsed(true));
         await dispatch(NavigationActions.navigate({ routeName: 'SettingsWifi' }));
-        ChffrPlus.emitSidebarCollapsed();
+        Layout.emitSidebarCollapsed();
     },
     openTetheringSettings: async () => {
-        await dispatch(updateSidebarCollapsed(true));
-        ChffrPlus.emitSidebarCollapsed();
+        Layout.emitSidebarCollapsed();
         ChffrPlus.openTetheringSettings();
     },
     reboot: () => {
@@ -871,6 +900,12 @@ const mapDispatchToProps = dispatch => ({
     setRecordFront: (recordFront) => {
         dispatch(updateParam(Params.KEY_RECORD_FRONT, (recordFront | 0).toString()));
     },
+    setIsRHD: (isRHD) => {
+        dispatch(updateParam(Params.KEY_IS_RHD, (isRHD | 0).toString()));
+    },
+    setIsDriverViewEnabled: (isDriverViewEnabled) => {
+        dispatch(updateParam(Params.KEY_IS_DRIVER_VIEW_ENABLED, (isDriverViewEnabled | 1).toString()));
+    },
     setSshEnabled: (isSshEnabled) => {
         dispatch(updateSshEnabled(!!isSshEnabled));
     },
@@ -906,14 +941,6 @@ const mapDispatchToProps = dispatch => ({
     },
     refreshParams: () => {
         dispatch(refreshParams());
-    },
-    handleSidebarCollapsed: async () => {
-        await dispatch(updateSidebarCollapsed(true));
-        ChffrPlus.emitSidebarCollapsed();
-    },
-    handleSidebarExpanded: async () => {
-        await dispatch(updateSidebarCollapsed(false));
-        ChffrPlus.emitSidebarExpanded();
     },
 });
 

@@ -36,7 +36,7 @@ class UpdatePrompt extends Component {
                     <X.Text color='white' size='big' weight='semibold'><Trans>Update Available</Trans></X.Text>
                     <X.Line />
                     <X.Text color='white'>
-                        { this.props.navigation.state.params.releaseNotes }
+                        { this.props.releaseNotes }
                     </X.Text>
                 </ScrollThrough>
             </X.Gradient>
@@ -47,5 +47,7 @@ class UpdatePrompt extends Component {
 const mapDispatchToProps = (dispatch) => ({
     dismiss: () => dispatch(NavigationActions.navigate({ routeName: 'Home' })),
 });
-
-export default connect(null, mapDispatchToProps)(UpdatePrompt);
+const stateToProps = (state) => ({
+    releaseNotes: state.host.updateReleaseNotes,
+});
+export default connect(stateToProps, mapDispatchToProps)(UpdatePrompt);

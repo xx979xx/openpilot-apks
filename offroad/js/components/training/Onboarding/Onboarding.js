@@ -3,7 +3,7 @@ import { View, Animated } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
 
-import ChffrPlus from '../../..//native/ChffrPlus';
+import Layout from '../../../native/Layout';
 import { completeTrainingStep } from '../step';
 import { onTrainingRouteCompleted } from '../../../utils/version';
 
@@ -317,11 +317,7 @@ class Onboarding extends Component {
 
     handleEngagedMocked(shouldMock) {
         this.setState({ engagedMocked: shouldMock })
-        if (shouldMock) {
-            ChffrPlus.sendBroadcast("ai.comma.plus.frame.ACTION_ENGAGED_MOCKED");
-        } else {
-            ChffrPlus.sendBroadcast("ai.comma.plus.frame.ACTION_ENGAGED_UNMOCKED");
-        }
+        Layout.setMockEngaged(shouldMock);
     }
 
     renderSplashStep() {
@@ -640,7 +636,7 @@ class Onboarding extends Component {
                     <X.Text
                         size='small' color='white' weight='semibold'
                         style={ Styles.onboardingStepPointInstructionText }>
-                        <Trans>Tap "SET" to engage</Trans>
+                        <Trans>Tap "SET" (on screen) to engage</Trans>
                     </X.Text>
                     <X.Image
                         source={ require('../../../img/icon_chevron_right.png') }
@@ -1387,12 +1383,6 @@ const mapDispatchToProps = dispatch => ({
     completeTrainingStep: completeTrainingStep('Onboarding', dispatch),
     restartTraining: () => {
         onTrainingRouteCompleted('Onboarding');
-    },
-    onSidebarCollapsed: () => {
-        ChffrPlus.sendBroadcast("ai.comma.plus.frame.ACTION_SIDEBAR_COLLAPSED");
-    },
-    onSidebarExpanded: () => {
-        ChffrPlus.sendBroadcast("ai.comma.plus.frame.ACTION_SIDEBAR_EXPANDED");
     },
 });
 export default connect(mapStateToProps, mapDispatchToProps)(Onboarding);
