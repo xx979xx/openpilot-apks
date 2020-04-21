@@ -3,7 +3,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        333
+        329
       ]
     ]
   },
@@ -11,7 +11,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        338
+        334
       ]
     ]
   },
@@ -19,7 +19,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        348
+        344
       ]
     ]
   },
@@ -27,7 +27,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        377
+        373
       ]
     ]
   },
@@ -35,7 +35,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        382
+        378
       ]
     ]
   },
@@ -43,7 +43,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        393
+        389
       ]
     ]
   },
@@ -51,7 +51,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        399
+        395
       ]
     ]
   },
@@ -59,7 +59,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        405
+        401
       ]
     ]
   },
@@ -67,7 +67,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        433
+        429
       ]
     ]
   },
@@ -75,7 +75,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        438
+        434
       ]
     ]
   },
@@ -83,11 +83,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        449
+        445
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        476
+        472
       ]
     ]
   },
@@ -95,11 +95,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        457
+        453
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        523
+        519
       ]
     ]
   },
@@ -107,11 +107,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        473
+        469
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        520
+        516
       ]
     ]
   },
@@ -119,7 +119,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        481
+        477
       ]
     ]
   },
@@ -127,7 +127,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        489
+        485
       ]
     ]
   },
@@ -135,7 +135,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        500
+        496
       ]
     ]
   },
@@ -143,7 +143,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        528
+        524
       ]
     ]
   },
@@ -151,7 +151,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        536
+        532
       ]
     ]
   },
@@ -159,7 +159,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        547
+        543
       ]
     ]
   },
@@ -167,7 +167,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        586
+        582
       ]
     ]
   },
@@ -175,7 +175,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        591
+        587
       ]
     ]
   },
@@ -183,11 +183,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        599
+        595
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        626
+        622
       ]
     ]
   },
@@ -195,11 +195,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        607
+        603
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        667
+        663
       ]
     ]
   },
@@ -207,11 +207,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        623
+        619
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        755
+        751
       ]
     ]
   },
@@ -219,15 +219,15 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        631
+        627
       ]
     ]
   },
-  "Tap \"SET\" to engage": {
+  "Tap \"SET\" (on screen) to engage": {
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        643
+        639
       ]
     ]
   },
@@ -235,7 +235,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        664
+        660
       ]
     ]
   },
@@ -243,7 +243,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        672
+        668
       ]
     ]
   },
@@ -251,7 +251,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        685
+        681
       ]
     ]
   },
@@ -259,7 +259,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        717
+        713
       ]
     ]
   },
@@ -267,7 +267,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        722
+        718
       ]
     ]
   },
@@ -275,11 +275,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        730
+        726
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        758
+        754
       ]
     ]
   },
@@ -287,15 +287,15 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        738
+        734
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        797
+        793
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        867
+        863
       ]
     ]
   },
@@ -303,7 +303,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        763
+        759
       ]
     ]
   },
@@ -311,7 +311,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        772
+        768
       ]
     ]
   },
@@ -319,7 +319,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        794
+        790
       ]
     ]
   },
@@ -327,7 +327,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        802
+        798
       ]
     ]
   },
@@ -335,7 +335,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        813
+        809
       ]
     ]
   },
@@ -343,7 +343,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        845
+        841
       ]
     ]
   },
@@ -351,7 +351,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        850
+        846
       ]
     ]
   },
@@ -359,11 +359,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        859
+        855
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        887
+        883
       ]
     ]
   },
@@ -371,11 +371,11 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        884
+        880
       ],
       [
         "js/components/training/Onboarding/Onboarding.js",
-        927
+        923
       ]
     ]
   },
@@ -383,7 +383,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        892
+        888
       ]
     ]
   },
@@ -391,7 +391,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        905
+        901
       ]
     ]
   },
@@ -399,7 +399,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        930
+        926
       ]
     ]
   },
@@ -407,7 +407,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        935
+        931
       ]
     ]
   },
@@ -415,7 +415,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        948
+        944
       ]
     ]
   },
@@ -423,7 +423,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        989
+        985
       ]
     ]
   },
@@ -431,7 +431,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        994
+        990
       ]
     ]
   },
@@ -439,7 +439,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        1006
+        1002
       ]
     ]
   },
@@ -447,7 +447,7 @@
     "origin": [
       [
         "js/components/training/Onboarding/Onboarding.js",
-        1014
+        1010
       ]
     ]
   }

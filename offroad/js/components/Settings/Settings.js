@@ -331,10 +331,10 @@ class Settings extends Component {
                             handleChanged={ this.props.setRecordFront } />
                         <X.TableCell
                             type='switch'
-                            title='Enable Right-Hand Drive'
+                            title={ i18n._(t`Enable Right-Hand Drive`) }
                             value={ !!parseInt(isRHD) }
                             iconSource={ Icons.openpilot_mirrored }
-                            description='Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat.'
+                            description={ i18n._(t`Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat.`) }
                             isExpanded={ expandedCell == 'is_rhd' }
                             handleExpanded={ () => this.handleExpanded('is_rhd') }
                             handleChanged={ this.props.setIsRHD } />
@@ -509,9 +509,9 @@ class Settings extends Component {
                     <X.Table color='darkBlue'>
                         <X.TableCell
                             type='custom'
-                            title='Driver Camera View'
+                            title={ i18n._(t`Driver Camera View`) }
                             iconSource={ Icons.monitoring }
-                            description='Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (offroad use only)'
+                            description={ i18n._(t`Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (offroad use only)`) }
                             isExpanded={ expandedCell == 'driver_view_enabled' }
                             handleExpanded={ () => this.handleExpanded('driver_view_enabled') } >
                             <X.Button
