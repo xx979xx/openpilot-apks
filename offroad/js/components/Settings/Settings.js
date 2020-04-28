@@ -206,11 +206,7 @@ class Settings extends Component {
             },
             {
                 icon: Icons.network,
-<<<<<<< HEAD
-                title: 'ネットワーク',
-=======
                 title: 'WiFi',
->>>>>>> Master/master
                 context: connectivity,
                 route: SettingsRoutes.NETWORK,
             },
