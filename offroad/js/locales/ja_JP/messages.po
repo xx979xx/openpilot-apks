@@ -67,7 +67,7 @@ msgstr "Secure Shell(SSH)を使用したデバイスのEONへの接続を許可�
 
 #: js/components/Settings/Settings.js:337
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
-msgstr "オープンパイロットが左ハンドルの交通ルールを遵守し、右ハンドルの運転手の監視をできるようにします。"
+msgstr ""
 
 #: js/components/Settings/Settings.js:868
 msgid "Are you sure you want to reboot?"
@@ -205,7 +205,7 @@ msgstr "ダウンロード"
 
 #: js/components/Settings/Settings.js:512
 msgid "Driver Camera View"
-msgstr "ドライバー側のカメラ映像"
+msgstr ""
 
 #: js/components/training/Onboarding/Onboarding.js:603
 #: js/components/training/Onboarding/Onboarding.js:663
@@ -235,7 +235,7 @@ msgstr "車線逸脱警告を有効にする"
 
 #: js/components/Settings/Settings.js:334
 msgid "Enable Right-Hand Drive"
-msgstr "右ハンドルを有効にする"
+msgstr ""
 
 #: js/components/Settings/Settings.js:651
 msgid "Enable SSH"
@@ -410,7 +410,7 @@ msgstr "クルーズボタンを押して有効にし、ペダルを踏んで解
 
 #: js/components/Settings/Settings.js:514
 msgid "Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (offroad use only)"
-msgstr "ドライバー側のカメラを見ながら、デバイスの取り付け位置を最適化し、ドライバー監視を最適化します。(オフロードでの使用のみ)"
+msgstr ""
 
 #: js/components/SetupTerms/SetupTerms.js:49
 msgid "Privacy policy available at https://my.comma.ai/privacy.html"
@@ -621,7 +621,7 @@ msgstr "アップロード速度"
 
 #: js/components/Settings/Settings.js:328
 msgid "Upload data from the driver facing camera and help improve the driver monitoring algorithm."
-msgstr "ドライバー側のカメラデータをアップロードし、ドライバーの監視アルゴリズムの改善に貢献します。"
+msgstr ""
 
 #: js/components/Settings/Settings.js:343
 msgid "Use Metric System"

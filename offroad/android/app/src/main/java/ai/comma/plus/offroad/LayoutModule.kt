@@ -151,7 +151,7 @@ class LayoutModule(ctx: ReactApplicationContext) : ReactContextBaseJavaModule(ct
 
         while(running) {
             val msg = sock.receive()
-            if (msg == null) {
+            if (msg == null || msg.size < 4) {
                 continue
             }
 

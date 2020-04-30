@@ -59,7 +59,7 @@ class ThermalPoller(val delegate: ThermalPollerDelegate) {
             if (!running) break
 
             val msg = thermalSock!!.receive()
-            if (msg == null) {
+            if (msg == null || msg.size < 4) {
                 continue
             }
             val msgbuf = ByteBuffer.wrap(msg.data)
