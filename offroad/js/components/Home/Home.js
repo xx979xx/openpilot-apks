@@ -28,6 +28,10 @@ import Styles from './HomeStyles';
 import { formatCommas } from '../../utils/number';
 import { mToKm } from '../../utils/conversions';
 
+// i18n
+import {t, Trans} from "@lingui/macro"
+import {i18n} from "../../utils/I18n";
+
 class Home extends Component {
     static navigationOptions = {
       header: null,
@@ -131,7 +135,7 @@ class Home extends Component {
             updateReleaseNotes,
         } = this.props;
 
-        const softwareName = !!parseInt(params.Passive) ? 'dashcam' : 'openpilot';
+        const softwareName = i18n._(!!parseInt(params.Passive) ? t`dashcam` : t`openpilot`);
         const softwareString = `${ softwareName } v${ params.Version }`;
         const hasDeviceStats = typeof(deviceStats.all) !== 'undefined';
         const isMetric = !!parseInt(params.IsMetric);
@@ -194,7 +198,7 @@ class Home extends Component {
                                             color='darkBlue'
                                             size='tiny'
                                             weight='semibold'>
-                                            更新可能
+                                            <Trans>Update Available</Trans>
                                         </X.Text>
                                     </X.Button>
                                 </View>
@@ -209,7 +213,7 @@ class Home extends Component {
                                             color='white'
                                             size='tiny'
                                             weight='semibold'>
-                                            { alerts.length } { alerts.length > 1 ? 'ALERTS' : 'ALERT' }
+                                            { alerts.length } { i18n._(alerts.length > 1 ? t`ALERTS` : t`ALERT`) }
                                         </X.Text>
                                     </X.Button>
                                 </View>
@@ -247,7 +251,7 @@ class Home extends Component {
                                         size='tiny'
                                         onPress={ this.handleHideAlertsPressed }
                                         style={ Styles.homeBodyAlertAction }>
-                                        Hide Alerts
+                                        { i18n._(t`Hide Alerts`) }
                                     </X.Button>
                                 </View>
                             </ScrollView>
@@ -259,13 +263,13 @@ class Home extends Component {
                                     color='white'
                                     size='jumbo'
                                     weight='semibold'>
-                                    ネットワーク接続なし
+                                    <Trans>No Network Connection</Trans>
                                 </X.Text>
                                 <X.Text
                                     color='lightGrey700'
                                     size='medium'
                                     style={ Styles.homeBodyDisconnectedContext }>
-                                    WiFiまたはモバイルネットワークに接続して、ドライブ動画をアップロードして確認します。
+                                    <Trans>Connect to a WiFi or cellular network to upload and review your drives.</Trans>
                                 </X.Text>
                             </View>
                         </View>
@@ -277,7 +281,7 @@ class Home extends Component {
                                       color='white'
                                       size='tiny'
                                       weight='semibold'>
-                                      先週
+                                      <Trans>PAST WEEK</Trans>
                                   </X.Text>
                               </View>
                               <View style={ Styles.homeBodyStatsRow }>
@@ -293,7 +297,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          ドライブ
+                                          <Trans>DRIVES</Trans>
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyStat }>
@@ -310,7 +314,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          { isMetric ? 'KM' : 'MILES' }
+                                          { i18n._(isMetric ? t`KM` : t`MILES`) }
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyStat }>
@@ -325,7 +329,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          時間
+                                          <Trans>HOURS</Trans>
                                       </X.Text>
                                   </View>
                               </View>
@@ -337,7 +341,7 @@ class Home extends Component {
                                       color='white'
                                       size='tiny'
                                       weight='semibold'>
-                                      常時
+                                      <Trans>ALL TIME</Trans>
                                   </X.Text>
                               </View>
                               <View style={ Styles.homeBodyStatsRow }>
@@ -353,7 +357,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          ドライブ
+                                          <Trans>DRIVES</Trans>
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyStat }>
@@ -370,7 +374,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          { isMetric ? 'KM' : 'MILES' }
+                                          { i18n._(isMetric ? t`KM` : t`MILES`) }
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyStat }>
@@ -385,7 +389,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyStatLabel }>
-                                          時間
+                                          <Trans>HOURS</Trans>
                                       </X.Text>
                                   </View>
                               </View>
@@ -406,7 +410,7 @@ class Home extends Component {
                                           color='lightGrey700'
                                           size='tiny'
                                           style={ Styles.homeBodyAccountPointsLabel }>
-                                          コンマポイント
+                                          <Trans>COMMA POINTS</Trans>
                                       </X.Text>
                                   </View>
                                   <View style={ Styles.homeBodyAccountDetails }>
@@ -429,14 +433,14 @@ class Home extends Component {
                                           size='medium'
                                           weight='semibold'
                                           style={ Styles.homeBodyAccountUpgradeTitle }>
-                                          今すぐアップグレード
+                                          <Trans>Upgrade Now</Trans>
                                       </X.Text>
                                       <X.Text
                                           color='white'
                                           size='tiny'
                                           weight='light'
                                           style={ Styles.homeBodyAccountUpgradeContext }>
-                                          コンマアプリでプライム会員になってプレミアム機能をゲット！
+                                          <Trans>Become a comma prime member in the comma app and get premium features!</Trans>
                                       </X.Text>
                                       <View style={ Styles.homeBodyAccountUpgradeFeatures }>
                                           <View style={ Styles.homeBodyAccountUpgradeFeature }>
@@ -448,7 +452,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  リモートアクセス
+                                                  <Trans>Remote Access</Trans>
                                               </X.Text>
                                           </View>
                                           <View style={ Styles.homeBodyAccountUpgradeFeature }>
@@ -460,7 +464,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  1年間の保存期間
+                                                  <Trans>1 year of storage</Trans>
                                               </X.Text>
                                           </View>
                                           <View style={ Styles.homeBodyAccountUpgradeFeature }>
@@ -472,7 +476,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  開発者の特典
+                                                  <Trans>Developer perks</Trans>
                                               </X.Text>
                                           </View>
                                       </View>
@@ -492,7 +496,7 @@ class Home extends Component {
                                                   color='white'
                                                   size='medium'
                                                   weight='semibold'>
-                                                  セットアップ終了
+                                                  <Trans>Finish Setup</Trans>
                                               </X.Text>
                                               <X.Image
                                                   isFlex={ false }
@@ -504,7 +508,7 @@ class Home extends Component {
                                               size='tiny'
                                               weight='light'
                                               style={ Styles.homeBodyAccountPairButtonContext }>
-                                              コンマアカウントと連携します
+                                              <Trans>Pair your comma account with comma connect</Trans>
                                           </X.Text>
                                       </X.Gradient>
                                   </X.Button>

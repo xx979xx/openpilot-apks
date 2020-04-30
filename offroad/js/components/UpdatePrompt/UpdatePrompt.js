@@ -7,6 +7,10 @@ import ChffrPlus from '../../native/ChffrPlus';
 
 import ScrollThrough from '../ScrollThrough';
 
+// i18n
+import {t, Trans} from "@lingui/macro"
+import {i18n} from "../../utils/I18n";
+
 class UpdatePrompt extends Component {
     static navigationOptions = {
         header: null,
@@ -25,11 +29,11 @@ class UpdatePrompt extends Component {
                 <ScrollThrough
                     onPrimaryButtonClick={ this.onUpdatePressed }
                     onSecondaryButtonClick={ this.props.dismiss }
-                    primaryButtonText={ '再起動して更新' }
-                    secondaryButtonText={ 'あとで' }
+                    primaryButtonText={ i18n._(t`Reboot and Update`) }
+                    secondaryButtonText={ i18n._(t`Later`) }
                     onScroll={ this.onScroll }
                     enabled={ true }>
-                    <X.Text color='white' size='big' weight='semibold'>更新可能</X.Text>
+                    <X.Text color='white' size='big' weight='semibold'><Trans>Update Available</Trans></X.Text>
                     <X.Line />
                     <X.Text color='white'>
                         { this.props.releaseNotes }

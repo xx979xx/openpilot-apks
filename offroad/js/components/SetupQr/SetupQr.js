@@ -12,6 +12,10 @@ import X from '../../themes';
 import Styles from './SetupQrStyles';
 import { updateConnectionState, refreshDeviceInfo } from '../../store/host/actions';
 
+// i18n
+import { i18n } from '../../utils/I18n'
+import { t, Trans } from "@lingui/macro"
+
 class SetupPair extends Component {
     static navigationOptions = {
         header: null,
@@ -56,7 +60,7 @@ class SetupPair extends Component {
                             color='white'
                             size='big'
                             weight='bold'>
-                            アカウント連携
+                            <Trans>Pair Your Account</Trans>
                         </X.Text>
                     </View>
                     <View style={ Styles.setupPairingBody }>
@@ -75,7 +79,7 @@ class SetupPair extends Component {
                                                   color='whiteFieldLabel'
                                                   size='tiny'
                                                   weight='semibold'>
-                                                  アカウント連携に成功
+                                                  <Trans>Succesfully paired to account</Trans>
                                               </X.Text>
                                           </View>
                                       </View>
@@ -97,17 +101,17 @@ class SetupPair extends Component {
                                 <X.Text>
                                     <X.Text
                                         color='white'>
-                                        { isPaired ? 'アカウント連携に成功しました' : 'ダウンロード ' }
+                                        { i18n._(isPaired ? t`Successfully paired to an account in ` : t`Download `) }
                                     </X.Text>
                                     <X.Text
                                         color='white'
                                         weight='bold'>
-                                        { 'コンマ接続 ' }
+                                        {i18n._(t`comma connect `)}
                                     </X.Text>
                                     { isPaired ? null : (
                                       <X.Text
                                           color='white'>
-                                          { 'QRコードをスキャンして連携します' }
+                                          {i18n._(t`and scan this code to pair.`)}
                                       </X.Text>
                                     ) }
                                 </X.Text>
@@ -133,14 +137,14 @@ class SetupPair extends Component {
                                         color='setupPrimary'
                                         onPress={ this.props.handleSetupComplete }
                                         style={ Styles.setupPairingButtonsContinue }>
-                                        続ける
+                                        {i18n._(t`Continue`)}
                                     </X.Button>
                                 ) : (
                                     <X.Button
                                         color='setupInverted'
                                         onPress={ this.props.handleSetupComplete }
                                         style={ Styles.setupPairingButtonsContinue }>
-                                        スキップする
+                                        {i18n._(t`Skip for Now`)}
                                     </X.Button>
                                 ) }
                             </View>
