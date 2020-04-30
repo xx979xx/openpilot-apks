@@ -126,11 +126,7 @@ class Settings extends Component {
 
     handlePressedResetCalibration = async () => {
         this.props.deleteParam(Params.KEY_CALIBRATION_PARAMS);
-        this.setState({ calibration: null });
-        Alert.alert('再起動', 'キャリブレーションをリセットするには再起動が必要です。', [
-            { text: 'Later', onPress: () => {}, style: 'キャンセル' },
-            { text: '今すぐ再起動', onPress: () => ChffrPlus.reboot() },
-        ]);
+        this.props.deleteParam(Params.KEY_LIVE_PARAMETERS);
     }
 
     // handleChangedSpeedLimitOffset(operator) {
