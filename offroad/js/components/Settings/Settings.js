@@ -210,7 +210,7 @@ class Settings extends Component {
             },
             {
                 icon: Icons.network,
-                title: i18n._(t`Network`),
+                title: i18n._(t`WiFi`),
                 context: connectivity,
                 route: SettingsRoutes.NETWORK,
             },
@@ -651,7 +651,7 @@ class Settings extends Component {
                             title={ i18n._(t`Enable SSH`) }
                             value={ isSshEnabled }
                             iconSource={ Icons.developer }
-                            description={ i18n._(t`Allow devices to connect to your EON using Secure Shell (SSH).`) }
+                            description={ i18n._(t`Allow devices to connect to your device using Secure Shell (SSH).`) }
                             isExpanded={ expandedCell == 'ssh' }
                             handleExpanded={ () => this.handleExpanded('ssh') }
                             handleChanged={ this.props.setSshEnabled } />

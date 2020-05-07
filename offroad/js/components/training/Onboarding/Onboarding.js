@@ -374,7 +374,7 @@ class Onboarding extends Component {
                         </X.Text>
                         <X.Text
                             size='smallish' color='white' weight='light'
-                            style={ Styles.onboardingStepContextSmall }>
+                            style={ Styles.onboardingStepContext }>
                             <Trans>
                                 A driver assistance system is not a self driving car.
                                 This means openpilot is designed to work with you,
@@ -616,7 +616,7 @@ class Onboarding extends Component {
                     size='small' color='ghost' textWeight='light'
                     style={ Styles.onboardingStepPointCrumb }
                     onPress={ () => this.handleEngageRadioPressed('index') }>
-                    { i18n._(t`openpilot controls`) }
+                    { i18n._(t`openpilot engaging`) }
                 </X.Button>
                 <X.Text size='medium' color='white' weight='bold'>
                     <Trans>Engage openpilot</Trans>
