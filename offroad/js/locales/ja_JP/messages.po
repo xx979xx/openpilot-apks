@@ -43,7 +43,7 @@ msgstr "運転支援システムは自動運転車ではありません。つま
 
 #: js/components/training/Onboarding/Onboarding.js:477
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
-msgstr "視覚アルゴリズムは、道路に面したカメラを利用して、運転する経路を決定します。"
+msgstr "視覚アルゴリズムは、道路に面したカメラを利用して、走行経路を決定します。"
 
 #: js/components/Home/Home.js:216
 msgid "ALERT"
@@ -59,7 +59,7 @@ msgstr "常時"
 
 #: js/components/SetupTerms/SetupTerms.js:43
 msgid "Accept Terms and Conditions"
-msgstr ""
+msgstr "規約に同意する"
 
 #: js/components/Settings/Settings.js:201
 msgid "Account"
@@ -67,7 +67,7 @@ msgstr "アカウント"
 
 #: js/components/Settings/Settings.js:654
 msgid "Allow devices to connect to your device using Secure Shell (SSH)."
-msgstr "Secure Shell(SSH)を使用したデバイスのデバイスへの接続を許可します。"
+msgstr "セキュアシェル(SSH)を使用してデバイスに接続できるようにする"
 
 #: js/components/Settings/Settings.js:337
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
@@ -103,7 +103,7 @@ msgstr "commaアプリでcommaプライムメンバーになってプレミア�
 
 #: js/components/training/Onboarding/Onboarding.js:434
 msgid "Before any signals are sent to control your car, sensors are fused to construct a scene of the road."
-msgstr "車をコントロールするための信号が送られる前に、センサーフュージョンにより道路状況が構築される。"
+msgstr "車を制御するための信号が送られる前に、センサーフュージョンにより道路状況が構築されます。"
 
 #: js/components/training/Onboarding/Onboarding.js:344
 msgid "Begin Training"
@@ -137,7 +137,7 @@ msgstr "利用規約　Comma.ai, Inc."
 
 #: js/components/Settings/Settings.js:923
 msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
-msgstr "コミュニティで維持される機能は、標準の安全モデルを満たしているか comma.ai では確認されません。使用には十分に注意してください。"
+msgstr "コミュニティで維持される機能は、標準の安全モデルを満たしているかどうか comma.ai では確認されていません。使用には十分に注意してください。"
 
 #: js/components/training/Onboarding/Onboarding.js:985
 msgid "Congratulations! You have completed openpilot training."
@@ -168,7 +168,7 @@ msgstr "再試行"
 
 #: js/components/training/Onboarding/Onboarding.js:798
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
-msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を開始させます。"
+msgstr "安全のために常に周囲の状況を確認しながら、慎重にハンドルを対象車線に向けて動かしてください。ウインカーとハンドル操作の組み合わせは、オープンパイロットに車線変更を開始させます。"
 
 #: js/components/Home/Home.js:300
 #: js/components/Home/Home.js:360
@@ -177,7 +177,7 @@ msgstr "運転"
 
 #: js/components/SetupTerms/SetupTerms.js:45
 msgid "Decline"
-msgstr ""
+msgstr "拒否"
 
 #: js/components/Settings/Settings.js:219
 msgid "Developer"
@@ -305,7 +305,7 @@ msgstr "いつでも引き継ぎます!"
 
 #: js/components/training/Onboarding/Onboarding.js:395
 msgid "I will be ready to take over at any time."
-msgstr "いつでも引き継ぎます。"
+msgstr "いつでも引き継げるように準備しておきます。"
 
 #: js/components/training/Onboarding/Onboarding.js:389
 msgid "I will keep my eyes on the road."
@@ -427,7 +427,7 @@ msgstr "車のレーダー"
 
 #: js/components/SetupTerms/SetupTerms.js:44
 msgid "Read to Continue"
-msgstr ""
+msgstr "続きを読む"
 
 #: js/components/Settings/Settings.js:134
 #: js/components/Settings/Settings.js:551
@@ -551,7 +551,7 @@ msgstr "正常にアカウント連携されました"
 
 #: js/components/training/Onboarding/Onboarding.js:639
 msgid "Tap \"SET\" (on screen) to engage"
-msgstr "\"SET\" を選択して接続します"
+msgstr "\"SET\" を選択して参加します"
 
 #: js/components/training/Onboarding/Onboarding.js:944
 msgid "Tap a pedal to disengage"
