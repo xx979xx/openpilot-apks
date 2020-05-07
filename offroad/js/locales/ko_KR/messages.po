@@ -66,8 +66,8 @@ msgid "Account"
 msgstr "계정"
 
 #: js/components/Settings/Settings.js:654
-msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
-msgstr "SSH를 사용하여 EON에 장치연결 허용"
+msgid "Allow devices to connect to your device using Secure Shell (SSH)."
+msgstr "SSH를 사용하여장치에 장치연결 허용"
 
 #: js/components/Settings/Settings.js:337
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
@@ -339,10 +339,6 @@ msgstr "MILES"
 msgid "More Options"
 msgstr "추가 옵션"
 
-#: js/components/Settings/Settings.js:213
-msgid "Network"
-msgstr "네트워크"
-
 #: js/components/Settings/Settings.js:431
 #: js/components/Settings/Settings.js:530
 msgid "No"
@@ -555,11 +551,7 @@ msgstr "의 계정에 성공적으로 페어링됨"
 
 #: js/components/training/Onboarding/Onboarding.js:639
 msgid "Tap \"SET\" (on screen) to engage"
-msgstr ""
-
-#: js/components/training/Onboarding/Onboarding.js:643
-#~ msgid "Tap \"SET\" to engage"
-#~ msgstr "활성화는 \"SET\" 버튼 누름"
+msgstr "활성화는 \"SET\" 버튼 누름"
 
 #: js/components/training/Onboarding/Onboarding.js:944
 msgid "Tap a pedal to disengage"
@@ -627,25 +619,17 @@ msgstr "지금 업데이트"
 msgid "Upload Speed"
 msgstr "업로드 속도"
 
-#: js/components/Settings/Settings.js:327
-#~ msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
-#~ msgstr "운전자 대면 카메라에서 데이터를 업로드하고 운전자 모니터링 알고리짐을 개선하십시오"
-
 #: js/components/Settings/Settings.js:328
 msgid "Upload data from the driver facing camera and help improve the driver monitoring algorithm."
-msgstr ""
+msgstr "운전자 대면 카메라에서 데이터를 업로드하고 운전자 모니터링 알고리짐을 개선하십시오"
 
 #: js/components/Settings/Settings.js:343
 msgid "Use Metric System"
 msgstr "미터법 사용"
 
-#: js/components/Settings/Settings.js:593
-#~ msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features: * GM car port * Toyota with DSU unplugged * Pedal interceptor"
-#~ msgstr "이 기능은 comma.ai에서 유지하거나 지원하지않으며 표준 안전 모델을 충족하는지 확인되지않은 오픈소스 커뮤니티의 기능입니다 : * GM car port * Toyota with DSU unplugged * Pedal interceptor"
-
 #: js/components/Settings/Settings.js:638
 msgid "Use features from the open source community that are not maintained or supported by comma.ai and have not been confirmed to meet the standard safety model. Be extra cautious when using these features:{0} * GM car port{1} * Toyota with DSU unplugged{2} * Pedal interceptor{3}"
-msgstr ""
+msgstr "능은 comma.ai에서 유지하거나 지원하지않으며 표준 안전 모델을 충족하는지 확인되지않은 오픈소스 커뮤니티의 기능입니다 :{0} * GM car port{1} * Toyota with DSU unplugged{2} * Pedal interceptor{3}"
 
 #: js/components/Settings/Settings.js:298
 msgid "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off."
@@ -655,13 +639,9 @@ msgstr "오픈파일럿 시스템을 사용하여 어댑티브 크루즈 컨트�
 msgid "Version"
 msgstr "버전"
 
-#: js/components/Settings/Settings.js:667
-#~ msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
-#~ msgstr "경고: 그러면 GitHub 설정의 모든 공용 키에 SSH 액세스 권한이 부여됩니다. GitHub 사용자 이름이 아닌 다른 사용자 이름을 입력하지 마십시오. 계속 진행하면 내장 SSH키가 비활성화됩니다. comma 직원은 절대 GitHub를 추가해 달라고 하지않습니다."
-
 #: js/components/Settings/Settings.js:714
 msgid "WARNING: {0} This grants SSH access to all public keys in your GitHub settings. {1} Never enter a GitHub username other than your own. {2} The built-in SSH key will be disabled if you proceed. {3} A comma employee will never ask you to add their GitHub. {4}"
-msgstr ""
+msgstr "경고:{0} 그러면 GitHub 설정의 모든 공용 키에 SSH 액세스 권한이 부여됩니다.{1} GitHub 사용자 이름이 아닌 다른 사용자 이름을 입력하지 마십시오.{2} 계속 진행하면 내장 SSH키가 비활성화됩니다.{3} comma 직원은 절대 GitHub를 추가해 달라고 하지않습니다. {4}"
 
 #: js/components/training/Onboarding/Onboarding.js:329
 msgid "Welcome to openpilot alpha"
@@ -683,6 +663,10 @@ msgstr "편안한 속도로 오픈파일럿을 작동할 준비가 되면 핸들
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
 msgstr "오픈파일럿이 작동 중일 때, 핸들을 조향하기 위해 손을 핸들에 대고 있을 수 있습니다. 핸들 조향 제어는 브레이크 페달을 눌러 해제할 때까지 오픈파일럿에 의해 관리됩니다"
 
+#: js/components/Settings/Settings.js:213
+msgid "WiFi"
+msgstr "WiFi"
+
 #: js/components/training/Onboarding/Onboarding.js:759
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
 msgstr "오픈파일럿이 활성화된 상태에서 방향지시등을 커고 주변을 점검하고 차선을 변경해도 안전한지 확인하세요."
@@ -703,7 +687,7 @@ msgstr "이 코드를 스캔해서 페어링을 시도하세요"
 #: js/components/Settings/Settings.js:191
 #: js/components/Settings/Settings.js:478
 msgid "chffrplus"
-msgstr ""
+msgstr "chffrplus"
 
 #: js/components/SetupQr/SetupQr.js:109
 msgid "comma connect"
@@ -711,19 +695,18 @@ msgstr "comma connect"
 
 #: js/components/Home/Home.js:138
 msgid "dashcam"
-msgstr ""
+msgstr "dashcam"
 
 #: js/components/Home/Home.js:138
 #: js/components/Settings/Settings.js:191
 #: js/components/Settings/Settings.js:478
 msgid "openpilot"
-msgstr ""
+msgstr "오픈파일럿"
 
 #: js/components/training/Onboarding/Onboarding.js:713
 msgid "openpilot can change lanes with your assistance."
 msgstr "오픈파일럿은 당신의 도움으로 차선을 바꿀 수 있습니다."
 
-#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:751
 msgid "openpilot controls"
 msgstr "오픈파일럿 컨트롤"
@@ -733,6 +716,7 @@ msgstr "오픈파일럿 컨트롤"
 msgid "openpilot disengaging"
 msgstr "오픈파일럿 해제"
 
+#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:660
 msgid "openpilot engaging"
 msgstr "오픈파일럿 활성화"

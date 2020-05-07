@@ -7,9 +7,9 @@ msgstr ""
 "X-Generator: @lingui/cli\n"
 "Language: zh_CN\n"
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: afa <rmingwang@gmail.com>\n"
+"Report-Msgid-Bugs-To: Rick Lan <ricklan+offroad@gmail.com>\n"
 "PO-Revision-Date: 2019-11-06 16:21+0800\n"
-"Last-Translator: afa\n"
+"Last-Translator: afa <rmingwang@gmail.com>\n"
 "Language-Team: \n"
 "Plural-Forms: \n"
 
@@ -59,19 +59,19 @@ msgstr "全部"
 
 #: js/components/SetupTerms/SetupTerms.js:43
 msgid "Accept Terms and Conditions"
-msgstr ""
+msgstr "同意本条款"
 
 #: js/components/Settings/Settings.js:201
 msgid "Account"
 msgstr "帐户"
 
 #: js/components/Settings/Settings.js:654
-msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
-msgstr "允许别的设备通过 Secure Shell (SSH) 连接至您的 EON。"
+msgid "Allow devices to connect to your device using Secure Shell (SSH)."
+msgstr "允许别的设备通过 Secure Shell (SSH) 连接至您的设备。"
 
 #: js/components/Settings/Settings.js:337
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
-msgstr ""
+msgstr "允许 openpilot 遵守左侧交通惯例，但监控位于右侧的驾驶。"
 
 #: js/components/Settings/Settings.js:868
 msgid "Are you sure you want to reboot?"
@@ -177,7 +177,7 @@ msgstr "驾驶"
 
 #: js/components/SetupTerms/SetupTerms.js:45
 msgid "Decline"
-msgstr ""
+msgstr "拒绝"
 
 #: js/components/Settings/Settings.js:219
 msgid "Developer"
@@ -213,7 +213,7 @@ msgstr "下载"
 
 #: js/components/Settings/Settings.js:512
 msgid "Driver Camera View"
-msgstr ""
+msgstr "观看驾驶监控画面"
 
 #: js/components/training/Onboarding/Onboarding.js:603
 #: js/components/training/Onboarding/Onboarding.js:663
@@ -243,7 +243,7 @@ msgstr "启用车道偏离警示"
 
 #: js/components/Settings/Settings.js:334
 msgid "Enable Right-Hand Drive"
-msgstr ""
+msgstr "启用右驾模式"
 
 #: js/components/Settings/Settings.js:651
 msgid "Enable SSH"
@@ -339,10 +339,6 @@ msgstr "英里"
 msgid "More Options"
 msgstr "更多选项"
 
-#: js/components/Settings/Settings.js:213
-msgid "Network"
-msgstr "网络"
-
 #: js/components/Settings/Settings.js:431
 #: js/components/Settings/Settings.js:530
 msgid "No"
@@ -418,7 +414,7 @@ msgstr "按下巡航按钮启动，踩下油门或刹车取消。"
 
 #: js/components/Settings/Settings.js:514
 msgid "Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (offroad use only)"
-msgstr ""
+msgstr "预览驾驶监控画面，用来协助将装置挂载至适当的位置。 (只允许熄火时使用)"
 
 #: js/components/SetupTerms/SetupTerms.js:49
 msgid "Privacy policy available at https://my.comma.ai/privacy.html"
@@ -431,7 +427,7 @@ msgstr "原车雷达"
 
 #: js/components/SetupTerms/SetupTerms.js:44
 msgid "Read to Continue"
-msgstr ""
+msgstr "阅读完后继续"
 
 #: js/components/Settings/Settings.js:134
 #: js/components/Settings/Settings.js:551
@@ -555,11 +551,7 @@ msgstr "已绑定成功："
 
 #: js/components/training/Onboarding/Onboarding.js:639
 msgid "Tap \"SET\" (on screen) to engage"
-msgstr ""
-
-#: js/components/training/Onboarding/Onboarding.js:643
-#~ msgid "Tap \"SET\" to engage"
-#~ msgstr "请点击画面中的 “SET” 继续"
+msgstr "请点击画面上的 \"SET\" 继续"
 
 #: js/components/training/Onboarding/Onboarding.js:944
 msgid "Tap a pedal to disengage"
@@ -627,13 +619,9 @@ msgstr "立即更新"
 msgid "Upload Speed"
 msgstr "上传速度"
 
-#: js/components/Settings/Settings.js:327
-#~ msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
-#~ msgstr "上传前置摄像头的录像来协助我们提升驾驶监控的准确率。"
-
 #: js/components/Settings/Settings.js:328
 msgid "Upload data from the driver facing camera and help improve the driver monitoring algorithm."
-msgstr ""
+msgstr "上传前置摄像头的录像来协助我们提升驾驶监控的准确率。"
 
 #: js/components/Settings/Settings.js:343
 msgid "Use Metric System"
@@ -675,6 +663,10 @@ msgstr "当车辆行驶在安全速度时，您可以按下位于方向盘上的
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
 msgstr "使用 openpilot 时，您可以随时改为人工操作方向盘，openpilot 会继续控制车速，直到踩下油门或刹车取消 openpilot 为止。"
 
+#: js/components/Settings/Settings.js:213
+msgid "WiFi"
+msgstr "WiFi"
+
 #: js/components/training/Onboarding/Onboarding.js:759
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
 msgstr "使用 openpilot 时，打开转向灯，检查周边车道情况，确认可以安全的切换车道。"
@@ -715,7 +707,6 @@ msgstr "openpilot"
 msgid "openpilot can change lanes with your assistance."
 msgstr "openpilot 可以在你的协助下切换车道。"
 
-#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:751
 msgid "openpilot controls"
 msgstr "openpilot 控制"
@@ -725,6 +716,7 @@ msgstr "openpilot 控制"
 msgid "openpilot disengaging"
 msgstr "停用 openpilot"
 
+#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:660
 msgid "openpilot engaging"
 msgstr "启用 openpilot"

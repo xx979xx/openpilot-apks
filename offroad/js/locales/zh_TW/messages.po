@@ -66,8 +66,8 @@ msgid "Account"
 msgstr "帳號"
 
 #: js/components/Settings/Settings.js:654
-msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
-msgstr "允許別的裝置經由 Secure Shell (SSH) 連線至您的 EON。"
+msgid "Allow devices to connect to your device using Secure Shell (SSH)."
+msgstr "允許別的裝置經由 Secure Shell (SSH) 連線至您的設備。"
 
 #: js/components/Settings/Settings.js:337
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
@@ -339,10 +339,6 @@ msgstr "英里"
 msgid "More Options"
 msgstr "更多選項"
 
-#: js/components/Settings/Settings.js:213
-msgid "Network"
-msgstr "網路"
-
 #: js/components/Settings/Settings.js:431
 #: js/components/Settings/Settings.js:530
 msgid "No"
@@ -431,7 +427,7 @@ msgstr "來自您車子的雷達"
 
 #: js/components/SetupTerms/SetupTerms.js:44
 msgid "Read to Continue"
-msgstr "繼續閱讀"
+msgstr "閱讀完後繼續"
 
 #: js/components/Settings/Settings.js:134
 #: js/components/Settings/Settings.js:551
@@ -667,6 +663,10 @@ msgstr "當您的車行駛在安全的速度時，您可以按下位於方向盤
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
 msgstr "當您使用 openpilot 時，您可以隨時改以人工操控方向，縱向控制則會繼續由 openpilot 控制直到踩下油門或剎車取消 openpilot 為止。"
 
+#: js/components/Settings/Settings.js:213
+msgid "WiFi"
+msgstr "WiFi"
+
 #: js/components/training/Onboarding/Onboarding.js:759
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
 msgstr "使用 openpilot 時，打開方向燈，檢查您四周的情況，確認是否可以安全的切換車道。"
@@ -707,7 +707,6 @@ msgstr "openpilot"
 msgid "openpilot can change lanes with your assistance."
 msgstr "openpilot 可以在您的協助下切換車道。"
 
-#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:751
 msgid "openpilot controls"
 msgstr "openpilot 控制"
@@ -717,6 +716,7 @@ msgstr "openpilot 控制"
 msgid "openpilot disengaging"
 msgstr "停用 openpilot"
 
+#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:660
 msgid "openpilot engaging"
 msgstr "使用 openpilot"

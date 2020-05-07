@@ -66,8 +66,8 @@ msgid "Account"
 msgstr "Compte"
 
 #: js/components/Settings/Settings.js:654
-msgid "Allow devices to connect to your EON using Secure Shell (SSH)."
-msgstr "Autoriser les appareils à se connecter à votre EON en utilisant le SSH"
+msgid "Allow devices to connect to your device using Secure Shell (SSH)."
+msgstr "Autoriser les appareils à se connecter à votre appareil en utilisant le SSH"
 
 #: js/components/Settings/Settings.js:337
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
@@ -339,10 +339,6 @@ msgstr "MILES"
 msgid "More Options"
 msgstr "Plus d'Options"
 
-#: js/components/Settings/Settings.js:213
-msgid "Network"
-msgstr "Réseau"
-
 #: js/components/Settings/Settings.js:431
 #: js/components/Settings/Settings.js:530
 msgid "No"
@@ -555,11 +551,7 @@ msgstr "Association réussie à un compte en"
 
 #: js/components/training/Onboarding/Onboarding.js:639
 msgid "Tap \"SET\" (on screen) to engage"
-msgstr ""
-
-#: js/components/training/Onboarding/Onboarding.js:643
-#~ msgid "Tap \"SET\" to engage"
-#~ msgstr "Appuyez sur \"SET\" pour engager"
+msgstr "Appuyez sur \"SET\" pour engager"
 
 #: js/components/training/Onboarding/Onboarding.js:944
 msgid "Tap a pedal to disengage"
@@ -627,13 +619,9 @@ msgstr "Mettre à Jour Maintenant"
 msgid "Upload Speed"
 msgstr "Vitesse de téléchargement"
 
-#: js/components/Settings/Settings.js:327
-#~ msgid "Upload data from the driver facing camera and help improve the Driver Monitoring algorithm."
-#~ msgstr "Téléchargez les données du pilote face à la caméra et améliorez l'algorithme de surveillance du pilote."
-
 #: js/components/Settings/Settings.js:328
 msgid "Upload data from the driver facing camera and help improve the driver monitoring algorithm."
-msgstr ""
+msgstr "Téléchargez les données du pilote face à la caméra et améliorez l'algorithme de surveillance du pilote."
 
 #: js/components/Settings/Settings.js:343
 msgid "Use Metric System"
@@ -675,6 +663,10 @@ msgstr "Lorsque vous êtes prêt à engager openpilot à une vitesse confortable
 msgid "While openpilot is engaged, you may keep your hands on the wheel to override lateral controls. Longitudinal controls will be managed by openpilot until the gas or brake pedal is pressed to disengage."
 msgstr "Lorsque openpilot est engagé, vous pouvez garder les mains sur le volant pour annuler les commandes latérales. Les commandes longitudinales seront gérées par openpilot jusqu'à ce que la pédale d'accélérateur ou de frein soit enfoncée pour se désengager."
 
+#: js/components/Settings/Settings.js:213
+msgid "WiFi"
+msgstr "WiFi"
+
 #: js/components/training/Onboarding/Onboarding.js:759
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
 msgstr "Avec openpilot engagé, appuyez sur votre clignotant, vérifiez votre environnement et confirmez qu'il est sûr de changer de voie."
@@ -715,7 +707,6 @@ msgstr "openpilot"
 msgid "openpilot can change lanes with your assistance."
 msgstr "openpilot peut changer de voie avec votre aide"
 
-#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:751
 msgid "openpilot controls"
 msgstr "commandes openpilot"
@@ -725,6 +716,7 @@ msgstr "commandes openpilot"
 msgid "openpilot disengaging"
 msgstr "openpilot se désengage"
 
+#: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:660
 msgid "openpilot engaging"
 msgstr "openpilot s'engage"
