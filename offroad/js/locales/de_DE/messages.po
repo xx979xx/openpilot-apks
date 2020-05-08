@@ -55,7 +55,7 @@ msgstr "ALARME"
 
 #: js/components/Home/Home.js:344
 msgid "ALL TIME"
-msgstr "IMMER"
+msgstr "GESAMT"
 
 #: js/components/SetupTerms/SetupTerms.js:43
 msgid "Accept Terms and Conditions"
@@ -209,7 +209,7 @@ msgstr "Dongle ID"
 
 #: js/components/SetupQr/SetupQr.js:104
 msgid "Download"
-msgstr "Download"
+msgstr "Herunterladen"
 
 #: js/components/Settings/Settings.js:512
 msgid "Driver Camera View"
@@ -251,12 +251,12 @@ msgstr "SSH aktivieren"
 
 #: js/components/Settings/Settings.js:295
 msgid "Enable openpilot"
-msgstr "Openpilot aktivieren"
+msgstr "Openpilot anschalten"
 
 #: js/components/training/Onboarding/Onboarding.js:595
 #: js/components/training/Onboarding/Onboarding.js:622
 msgid "Engage openpilot"
-msgstr "Engage openpilot"
+msgstr "Openpilot aktivieren"
 
 #: js/components/Home/Home.js:499
 msgid "Finish Setup"
@@ -665,7 +665,7 @@ msgstr "Während Openpilot aktiviert ist, können Sie Ihre mitlenken (lateral co
 
 #: js/components/Settings/Settings.js:213
 msgid "WiFi"
-msgstr "WiFi"
+msgstr "W-lan"
 
 #: js/components/training/Onboarding/Onboarding.js:759
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
