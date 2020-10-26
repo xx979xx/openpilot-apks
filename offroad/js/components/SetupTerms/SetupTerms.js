@@ -35,14 +35,14 @@ class SetupTerms extends Component {
                             color='white'
                             size='big'
                             weight='bold'>
-                            Review Terms
+                            <Trans>Review Terms</Trans>
                         </X.Text>
                     </View>
                     <ScrollThrough
                         onPrimaryButtonClick={ onAccept }
-                        primaryButtonText='Accept Terms and Conditions'
-                        primaryButtonTextDisabled='Read to Continue'
-                        secondaryButtonText='Decline'
+                        primaryButtonText={i18n._(t`Accept Terms and Conditions`)}
+                        primaryButtonTextDisabled={i18n._(t`Read to Continue`)}
+                        secondaryButtonText={i18n._(t`Decline`)}
                         scrollViewStyles={ Styles.setupTermsScrollView }>
                         <X.Text weight='semibold' color='white'><Trans>Comma.ai, Inc. Terms & Conditions</Trans></X.Text>
                         <X.Text size='small' color='white' style={ Styles.tosText }>{ Documents.TOS }</X.Text>

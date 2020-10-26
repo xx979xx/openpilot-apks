@@ -184,7 +184,7 @@ class Settings extends Component {
                 Version: version,
             },
         } = this.props;
-        const software = !!parseInt(isPassive) ? 'dashcam' : 'openpilot';
+        const software = i18n._(!!parseInt(isPassive) ? t`dashcam` : t`openpilot`);
         let connectivity = 'Disconnected'
         if (wifiState.isConnected && wifiState.ssid) {
             connectivity = wifiState.ssid;
@@ -299,10 +299,10 @@ class Settings extends Component {
                         { !parseInt(isPassive) ? (
                             <X.TableCell
                                 type='switch'
-                                title='Enable Lane Change Assist'
+                                title={ i18n._(t`Enable Lane Change Assist`) }
                                 value={ !!parseInt(laneChangeEnabled) }
                                 iconSource={ Icons.road }
-                                description='Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature.'
+                                description={ i18n._(t`Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature.`) }
                                 isExpanded={ expandedCell == 'lanechange_enabled' }
                                 handleExpanded={ () => this.handleExpanded('lanechange_enabled') }
                                 handleChanged={ this.props.setLaneChangeEnabled } />
@@ -477,7 +477,7 @@ class Settings extends Component {
         } else {
           var yaw_str = Math.abs(yaw).toFixed(1).concat(i18n._(t`° left`))
         }
-        text = text.concat(i18n._(t`\n\nYour device is pointed `), pitch_str, i18n._(t` and `), yaw_str, '. ')
+        text = text.concat(i18n._('\n\n',t`Your device is pointed `), pitch_str, i18n._(t` and `), yaw_str, '. ')
       }
       return text;
     }
@@ -499,7 +499,7 @@ class Settings extends Component {
             },
             isOffroad,
         } = this.props;
-        const software = !!parseInt(isPassive) ? 'dashcam' : 'openpilot';
+        const software = i18n._(!!parseInt(isPassive) ? t`dashcam` : t`openpilot`);
         return (
             <View style={ Styles.settings }>
                 <View style={ Styles.settingsHeader }>
@@ -646,7 +646,7 @@ class Settings extends Component {
             },
         } = this.props;
         const { expandedCell } = this.state;
-        const software = !!parseInt(isPassive) ? 'dashcam' : 'openpilot';
+        const software = i18n._(!!parseInt(isPassive) ? t`dashcam` : t`openpilot`);
         return (
             <View style={ Styles.settings }>
                 <View style={ Styles.settingsHeader }>
@@ -679,7 +679,7 @@ class Settings extends Component {
                             title={ i18n._(t`Enable SSH`) }
                             value={ isSshEnabled }
                             iconSource={ Icons.developer }
-                            description={ i18n._(t`Allow devices to connect to your EON using Secure Shell (SSH).`) }
+                            description={ i18n._(t`Allow devices to connect to your device using Secure Shell (SSH).`) }
                             isExpanded={ expandedCell == 'ssh' }
                             handleExpanded={ () => this.handleExpanded('ssh') }
                             handleChanged={ this.props.setSshEnabled } />

@@ -50,7 +50,8 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
         BLUETOOTH_SETTINGS(1),
         TETHERING_SETTINGS(2),
         CELLULAR_SETTINGS(3),
-        DATE_SETTINGS(4)
+        DATE_SETTINGS(4),
+        LOCALE_SETTINGS(5)
     }
     private var networkMonitor: NetworkMonitor? = null
     private var thermalPoller: ThermalPoller? = null
@@ -220,10 +221,9 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
 
     @ReactMethod
     fun openLocaleSettings() {
-        val intent = Intent("android.intent.action.MAIN")
-        intent.component = ComponentName("com.android.settings", "com.android.settings.LanguageSettings")
+        val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
         intent.putExtra("extra_prefs_show_button_bar", true)
-        startActivityWithIntent(intent)
+        startActivityWithIntent(intent, ActivityRequestCode.LOCALE_SETTINGS.code)
     }
 
     @ReactMethod

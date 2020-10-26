@@ -15,3 +15,6 @@ metro.config.js
 
 # macOS
 .DS_Store
+
+offroad/js/locales/*/messages.js 
+offroad/js/locales/_build/
