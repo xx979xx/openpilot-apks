@@ -629,8 +629,8 @@ msgid "Version"
 msgstr "الإصدار"
 
 #: js/components/Settings/Settings.js:742
-msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
-msgstr "تحذير: هذا يمنح SSH الوصول إلى جميع المفاتيح العامة في إعدادات GitHub. لا تقم مطلقًا بإدخال اسم مستخدم GitHub بخلاف اسم المستخدم الخاص بك. سيتم تعطيل مفتاح SSH المدمج في حالة المتابعة. لن يطلب منك موظف فاصلة أبدًا إضافة GitHub."
+msgid "WARNING: {0} This grants SSH access to all public keys in your GitHub settings. {1} Never enter a GitHub username other than your own. {2} The built-in SSH key will be disabled if you proceed. {3} A comma employee will never ask you to add their GitHub. {4}"
+msgstr ""
 
 #: js/components/training/Onboarding/Onboarding.js:329
 msgid "Welcome to openpilot alpha"

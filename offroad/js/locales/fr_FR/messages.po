@@ -7,9 +7,9 @@ msgstr ""
 "X-Generator: @lingui/cli\n"
 "Language: fr_FR\n"
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: Thomas Pichard\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Thomas Pichard\n"
 "Language-Team: \n"
 "Plural-Forms: \n"
 
@@ -22,7 +22,7 @@ msgstr ""
 
 #: js/components/Home/Home.js:467
 msgid "1 year of storage"
-msgstr ""
+msgstr "1 an de stockage"
 
 #: js/components/Settings/Settings.js:417
 msgid "<  Account Settings"
@@ -74,7 +74,7 @@ msgstr "Compte"
 
 #: js/components/Settings/Settings.js:682
 msgid "Allow devices to connect to your device using Secure Shell (SSH)."
-msgstr ""
+msgstr "Autoriser les appareils à se connecter à votre appareil en utilisant le SSH"
 
 #: js/components/Settings/Settings.js:333
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
@@ -208,7 +208,7 @@ msgstr "Désengager openpilot"
 
 #: js/components/Settings/Settings.js:342
 msgid "Display speed in km/h instead of mp/h."
-msgstr ""
+msgstr "Affiche la vitesse en km/h à la place de mp/h"
 
 #: js/components/Settings/Settings.js:556
 msgid "Dongle ID"
@@ -242,7 +242,7 @@ msgstr "Activer les fonctionnalités de la communauté"
 
 #: js/components/Settings/Settings.js:302
 msgid "Enable Lane Change Assist"
-msgstr ""
+msgstr "Activer l'assistance au changement de voie"
 
 #: js/components/Settings/Settings.js:312
 msgid "Enable Lane Departure Warnings"
@@ -548,7 +548,7 @@ msgstr "Association réussie à un compte en"
 
 #: js/components/training/Onboarding/Onboarding.js:639
 msgid "Tap \"SET\" (on screen) to engage"
-msgstr ""
+msgstr "Appuyez sur \"SET\" pour engager"
 
 #: js/components/training/Onboarding/Onboarding.js:944
 msgid "Tap a pedal to disengage"
@@ -610,7 +610,7 @@ msgstr "Vitesse de téléchargement"
 
 #: js/components/Settings/Settings.js:324
 msgid "Upload data from the driver facing camera and help improve the driver monitoring algorithm."
-msgstr ""
+msgstr "Téléchargez les données du pilote face à la caméra et améliorez l'algorithme de surveillance du pilote."
 
 #: js/components/Settings/Settings.js:339
 msgid "Use Metric System"
@@ -629,8 +629,8 @@ msgid "Version"
 msgstr "Version"
 
 #: js/components/Settings/Settings.js:742
-msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
-msgstr "AVERTISSEMENT: cela accorde un accès SSH à toutes les clés publiques dans vos paramètres GitHub. N'entrez jamais un nom d'utilisateur GitHub autre que le vôtre. La clé SSH intégrée sera désactivée si vous continuez. Un employé comma ne vous demandera jamais d'ajouter son GitHub."
+msgid "WARNING: {0} This grants SSH access to all public keys in your GitHub settings. {1} Never enter a GitHub username other than your own. {2} The built-in SSH key will be disabled if you proceed. {3} A comma employee will never ask you to add their GitHub. {4}"
+msgstr "AVERTISSEMENT: {0} cela accorde un accès SSH à toutes les clés publiques dans vos paramètres GitHub. {1} N'entrez jamais un nom d'utilisateur GitHub autre que le vôtre. {2} La clé SSH intégrée sera désactivée si vous continuez. {3} Un employé comma ne vous demandera jamais d'ajouter son GitHub.{4}"
 
 #: js/components/training/Onboarding/Onboarding.js:329
 msgid "Welcome to openpilot alpha"
@@ -654,7 +654,7 @@ msgstr "Lorsque openpilot est engagé, vous pouvez garder les mains sur le volan
 
 #: js/components/Settings/Settings.js:209
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 #: js/components/training/Onboarding/Onboarding.js:759
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
@@ -690,14 +690,14 @@ msgstr "comma connect"
 #: js/components/Settings/Settings.js:502
 #: js/components/Settings/Settings.js:649
 msgid "dashcam"
-msgstr ""
+msgstr "dashcam"
 
 #: js/components/Home/Home.js:138
 #: js/components/Settings/Settings.js:187
 #: js/components/Settings/Settings.js:502
 #: js/components/Settings/Settings.js:649
 msgid "openpilot"
-msgstr ""
+msgstr "openpilot"
 
 #: js/components/training/Onboarding/Onboarding.js:713
 msgid "openpilot can change lanes with your assistance."
