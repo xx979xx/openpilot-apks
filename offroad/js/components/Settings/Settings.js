@@ -468,16 +468,16 @@ class Settings extends Component {
         var pitch = parseFloat(calibArr[1]) * (180/pi)
         var yaw = parseFloat(calibArr[2]) * (180/pi)
         if (pitch > 0) {
-          var pitch_str = Math.abs(pitch).toFixed(1).concat(i18n._(t`° up`))
+          var pitch_str = i18n._(Math.abs(pitch).toFixed(1).concat(t`° up`))
         } else {
-          var pitch_str = Math.abs(pitch).toFixed(1).concat(i18n._(t`° down`))
+          var pitch_str = i18n._(Math.abs(pitch).toFixed(1).concat(t`° down`))
         }
         if (yaw > 0) {
-          var yaw_str = Math.abs(yaw).toFixed(1).concat(i18n._(t`° right`))
+          var yaw_str = i18n._(Math.abs(yaw).toFixed(1).concat(t`° right`))
         } else {
-          var yaw_str = Math.abs(yaw).toFixed(1).concat(i18n._(t`° left`))
+          var yaw_str = i18n._(Math.abs(yaw).toFixed(1).concat(t`° left`))
         }
-        text = text.concat(i18n._('\n\n',t`Your device is pointed `), pitch_str, i18n._(t` and `), yaw_str, '. ')
+        text = i18n._(text.concat('\n\n', t`Your device is pointed `, pitch_str, t` and `, yaw_str, '. '))
       }
       return text;
     }

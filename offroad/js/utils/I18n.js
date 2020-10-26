@@ -8,6 +8,7 @@ import jaJP from '../locales/ja_JP/messages.js';
 import ptBR from '../locales/pt_BR/messages.js';
 import koKR from '../locales/ko_KR/messages.js';
 import deDE from '../locales/de_DE/messages.js';
+import arEG from '../locales/ar_EG/messages.js';
 import xkoKR from '../locales/ko_KR/extra.js';
 import xarEG from '../locales/ar_EG/extra.js';
 
