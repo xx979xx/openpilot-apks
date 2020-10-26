@@ -12,6 +12,9 @@ export const ALERT_PARAMS = [
   Params.KEY_OFFROAD_PANDA_FIRMWARE_MISMATCH,
   Params.KEY_OFFROAD_INVALID_TIME,
   Params.KEY_OFFROAD_IS_TAKING_SNAPSHOT,
+  Params.KEY_OFFROAD_NEOS_UPDATE,
+  Params.KEY_OFFROAD_UPDATE_FAILED,
+  Params.KEY_IS_DRIVER_VIEW_ENABLED,
 ];
 const PARAMS = [
   "AccessToken",
@@ -40,6 +43,8 @@ const PARAMS = [
   "PandaDongleId",
   "CommunityFeaturesToggle",
   "IsLdwEnabled",
+  "LaneChangeEnabled",
+  "IsRHD"
 ].concat(ALERT_PARAMS);
 
 export function refreshParams(params) {

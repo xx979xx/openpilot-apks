@@ -23,6 +23,7 @@ import { resetToLaunch } from '../../store/nav/actions';
 import { Params } from '../../config';
 import X from '../../themes';
 import ChffrPlus from '../../native/ChffrPlus';
+import Layout from '../../native/Layout';
 import Styles from './SetupWifiStyles';
 
 // i18n
@@ -432,28 +433,26 @@ class SetupWifi extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    return {}
-}
-
 const mapDispatchToProps = dispatch => ({
     handleSetupWifiMoreOptionsPressed: () => {
         ChffrPlus.openWifiSettings();
     },
-    handleSetupWifiCompleted: (hasBackButton) => {
-        dispatch(updateConnectionState(true));
-        dispatch(resetToLaunch());
+    handleSetupWifiCompleted: async (hasBackButton) => {
+        await dispatch(updateConnectionState(true));
+        await dispatch(resetToLaunch());
+        Layout.emitSidebarExpanded();
         if (hasBackButton) {
-            ChffrPlus.sendBroadcast("ai.comma.plus.offroad.NAVIGATED_FROM_SETTINGS");
+            Layout.emitHomePress();
         }
     },
     handleSetupWifiSkip: async (hasBackButton) => {
         await ChffrPlus.writeParam(Params.KEY_HAS_COMPLETED_SETUP, "1");
-        dispatch(resetToLaunch());
+        await dispatch(resetToLaunch());
+        Layout.emitSidebarExpanded();
         if (hasBackButton) {
-            ChffrPlus.sendBroadcast("ai.comma.plus.offroad.NAVIGATED_FROM_SETTINGS");
+            Layout.emitHomePress();
         }
     },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SetupWifi);
+export default connect(null, mapDispatchToProps)(SetupWifi);

@@ -1,22 +1,14 @@
 # openpilot-apks
 
-The source code for the APKs that run inside openpilot.
+The source code for the APKs that run alongside openpilot.
 
-[![CircleCI](https://circleci.com/gh/commaai/openpilot-apks.svg?style=svg)](https://circleci.com/gh/commaai/openpilot-apks)
+[![openpilot apk tests](https://github.com/commaai/openpilot-apks/workflows/openpilot%20apk%20tests/badge.svg)](https://github.com/commaai/openpilot-apks/actions)
 
 ## offroad
 
 offroad is the interactive UI displayed while your car is off. Its main features are device setup, comma account pairing, and settings management.
 
-## frame
-
-frame contains the sidebar and manages the background color behind openpilot UI.
-
-## black
-
-black draws a box behind the openpilot `ui.c` while driving.
-
-## Shared Dependencies
+## Dependencies
 
 Ubuntu 16.04:
 
@@ -36,10 +28,7 @@ sdkmanager "platform-tools" "platforms;android-23" "platforms;android-27" "ndk-b
 sdkmanager "extras;android;m2repository"
 sdkmanager "extras;google;m2repository"
 sdkmanager --licenses
-```
 
-### Offroad Dependencies
-```
 Node:
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -58,7 +47,6 @@ sudo make install
 
 ## Build
 
-Clone or move this repository under the [openpilot](https://github.com/commaai/openpilot) repository before building.  If you have not generated the capnp java files in the openpilot/cereal/ director you need to run "make" in that directory to generate the files needed for building Offroad.  This only needs to be done once.
+Clone or move this repository under the [openpilot](https://github.com/commaai/openpilot) repository before building. If you have not generated the capnp java files in the openpilot/cereal/ directory you need to run `scons cereal/` in the openpilot directory to generate the files needed for building Offroad. This only needs to be done once.
 
 See build.sh in project directories.
-

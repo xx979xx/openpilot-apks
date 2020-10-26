@@ -24,12 +24,16 @@ import android.util.Base64
 import android.util.Log
 import io.jsonwebtoken.Jwts
 import java.io.File
+import java.io.ByteArrayOutputStream
+import java.nio.channels.Channels
 import java.security.GeneralSecurityException
 import java.security.KeyFactory
 import java.security.PrivateKey
 import java.security.spec.InvalidKeySpecException
 import java.security.spec.PKCS8EncodedKeySpec
 import java.util.regex.Pattern
+import org.capnproto.Serialize;
+import ai.comma.openpilot.cereal.Log.UiLayoutState
 
 
 /**
@@ -37,17 +41,18 @@ import java.util.regex.Pattern
  */
 class ChffrPlusModule(val ctx: ReactApplicationContext) :
         ReactContextBaseJavaModule(ctx),
-        HomeButtonReceiverDelegate,
         NavDestinationPollerDelegate,
-        SettingsClickReceiverDelegate,
         ThermalPollerDelegate {
     val WIFI_STATE_EVENT_NAME = "WIFI_STATE_CHANGED"
     val SIM_STATE_EVENT_NAME = "SIM_STATE_CHANGED"
-
-    private var homeBtnReceiver: HomeButtonReceiver? = null
+    enum class ActivityRequestCode(val code: Int) {
+        WIFI_SETTINGS(0),
+        BLUETOOTH_SETTINGS(1),
+        TETHERING_SETTINGS(2),
+        CELLULAR_SETTINGS(3),
+        DATE_SETTINGS(4)
+    }
     private var networkMonitor: NetworkMonitor? = null
-    private var navDestinationPoller: NavDestinationPoller? = null
-    private var settingsClickReceiver: SettingsClickReceiver? = null
     private var thermalPoller: ThermalPoller? = null
 
     override fun getName(): String = "ChffrPlus"
@@ -55,20 +60,11 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
     override fun initialize() {
         super.initialize()
 
-        homeBtnReceiver = HomeButtonReceiver(this)
-        ctx.registerReceiver(homeBtnReceiver, HomeButtonReceiver.pressIntentFilter)
-
-        settingsClickReceiver = SettingsClickReceiver(this)
-        ctx.registerReceiver(settingsClickReceiver, SettingsClickReceiver.pressIntentFilter)
-
         networkMonitor = NetworkMonitor()
         val filter = IntentFilter(WifiManager.NETWORK_STATE_CHANGED_ACTION)
         filter.addAction("android.intent.action.SIM_STATE_CHANGED")
         filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION)
         ctx.registerReceiver(networkMonitor, filter)
-
-        navDestinationPoller = NavDestinationPoller(this)
-//        navDestinationPoller!!.start()
 
         thermalPoller = ThermalPoller(this)
         thermalPoller!!.start()
@@ -76,15 +72,11 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
 
     override fun onCatalystInstanceDestroy() {
         super.onCatalystInstanceDestroy()
-
-        Log.d("offroad", "catalyst destroyed")
-        ctx.unregisterReceiver(homeBtnReceiver)
         ctx.unregisterReceiver(networkMonitor)
-        ctx.unregisterReceiver(settingsClickReceiver)
-
-//        navDestinationPoller!!.stop()
         thermalPoller!!.stop()
     }
+
+
 
     override fun onThermalDataChanged(thermalSample: ThermalSample) {
         ctx.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
@@ -96,38 +88,15 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
                 .emit("onDestinationChanged", destination.toWritableMap())
     }
 
-    override fun onHomePress() {
-        ctx.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
-                .emit("onHomePress", WritableNativeMap())
-    }
-
-    override fun onSettingsClicked() {
-        ctx.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
-                .emit("onSettingsClick", WritableNativeMap())
-    }
-
-    private fun startActivityWithIntent(intent: Intent) {
+    private fun startActivityWithIntent(intent: Intent, code: Int) {
         val currentActivity = currentActivity
 
         if (currentActivity != null) {
-            currentActivity.startActivity(intent)
+            currentActivity.startActivityForResult(intent, code)
         } else {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             reactApplicationContext.startActivity(intent)
         }
-    }
-
-    @ReactMethod
-    fun sendBroadcast(action: String) {
-        val intent = Intent(action)
-        currentActivity?.sendBroadcast(intent)
-    }
-
-    @ReactMethod
-    fun isNavAvailable(promise: Promise) {
-        val pm = reactApplicationContext.packageManager
-        val packages = pm.getInstalledApplications(PackageManager.GET_META_DATA).map { it.packageName }
-        promise.resolve(packages.contains("com.waze"))
     }
 
     @ReactMethod
@@ -149,6 +118,15 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
                 promise.resolve(kbps)
             }
         }, 1000)
+    }
+
+    @ReactMethod
+    fun closeActivites() {
+        ActivityRequestCode.values().forEach {
+            try {
+                currentActivity?.finishActivity(it.code)
+            } catch(e: Exception) {}
+        }
     }
 
     @ReactMethod
@@ -208,14 +186,14 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
     fun openWifiSettings() {
         val intent = Intent(WifiManager.ACTION_PICK_WIFI_NETWORK)
         intent.putExtra("extra_prefs_show_button_bar", true)
-        startActivityWithIntent(intent)
+        startActivityWithIntent(intent, ActivityRequestCode.WIFI_SETTINGS.code)
     }
 
     @ReactMethod
     fun openBluetoothSettings() {
         val intent = Intent(Settings.ACTION_BLUETOOTH_SETTINGS)
         intent.putExtra("extra_prefs_show_button_bar", true)
-        startActivityWithIntent(intent)
+        startActivityWithIntent(intent, ActivityRequestCode.BLUETOOTH_SETTINGS.code)
     }
 
     @ReactMethod
@@ -223,21 +201,21 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
         val intent = Intent("android.intent.action.MAIN")
         intent.component = ComponentName("com.android.settings", "com.android.settings.TetherSettings")
         intent.putExtra("extra_prefs_show_button_bar", true)
-        startActivityWithIntent(intent)
+        startActivityWithIntent(intent, ActivityRequestCode.TETHERING_SETTINGS.code)
     }
 
     @ReactMethod
     fun openCellularSettings() {
         val intent = Intent(Settings.ACTION_NETWORK_OPERATOR_SETTINGS)
         intent.putExtra("extra_prefs_show_button_bar", true)
-        startActivityWithIntent(intent)
+        startActivityWithIntent(intent, ActivityRequestCode.CELLULAR_SETTINGS.code)
     }
 
     @ReactMethod
     fun openDateTimeSettings() {
         val intent = Intent(Settings.ACTION_DATE_SETTINGS)
         intent.putExtra("extra_prefs_show_button_bar", true)
-        startActivityWithIntent(intent)
+        startActivityWithIntent(intent, ActivityRequestCode.DATE_SETTINGS.code)
     }
 
     @ReactMethod
@@ -289,6 +267,28 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
         val availableBlocks = stat.availableBlocksLong
 
         promise.resolve((availableBlocks * blockSize).toString())
+    }
+
+    @ReactMethod
+    fun getLastRouteName(promise: Promise) {
+        val dataDir = File("/sdcard/realdata/")
+        val files = dataDir.listFiles()
+
+        if (files !== null) {
+          files.sortWith( Comparator { first, second ->
+              first.lastModified().compareTo(second.lastModified())
+          })
+          if (files.size > 0) {
+              val dongleId = ChffrPlusParams.readParam("DongleId")
+              val timeParts = files.last().name.split("--").toList()
+              val timeStr = timeParts.dropLast(1).joinToString("--")
+              promise.resolve("${dongleId}|${timeStr}")
+          } else {
+              promise.resolve(null)
+          }
+        } else {
+            promise.resolve(null)
+        }
     }
 
     @Throws(GeneralSecurityException::class)

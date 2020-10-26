@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
+import Layout from '../../native/Layout';
 
 import { View } from 'react-native';
 
@@ -10,6 +11,10 @@ import SetupWifi from '../SetupWifi';
 class SettingsWifi extends Component {
     static navigationOptions = {
         header: null,
+    }
+
+    async componentWillUnmount() {
+        await Layout.emitSidebarExpanded();
     }
 
     render() {
@@ -24,15 +29,16 @@ class SettingsWifi extends Component {
 
 function mapDispatchToProps(dispatch) {
     return {
-        handleBackPressed: () => {
-            dispatch(NavigationActions.reset({
+        handleBackPressed: async () => {
+            await dispatch(NavigationActions.reset({
                 index: 0,
                 key: null,
                 actions: [
                     NavigationActions.navigate({ routeName: 'Settings' })
                 ]
             }));
-        }
+            Layout.emitSidebarExpanded();
+        },
     }
 }
 

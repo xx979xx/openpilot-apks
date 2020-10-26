@@ -30,7 +30,6 @@ import { updateDate, updateLocation } from './js/store/environment/actions';
 import {
     updateSimState,
     updateWifiState,
-    updateNavAvailability,
     setDeviceIds,
     refreshDeviceInfo,
     updateSshEnabled,
@@ -91,7 +90,6 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        this.store.dispatch(updateNavAvailability());
         this.store.dispatch(updateSimState());
         this.store.dispatch(updateWifiState());
         StatusBar.setHidden(true);
