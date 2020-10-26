@@ -108,13 +108,13 @@ export default class App extends Component {
     render() {
         return (
             <I18nProvider i18n={i18n}>
-                <Provider store={ this.store }>
-                    <PersistGate
-                        persistor={ this.persistor }
-                        onBeforeLift={ this.onBeforeLift }>
-                        <StackNavigator />
-                    </PersistGate>
-                </Provider>
+            <Provider store={ this.store }>
+                <PersistGate
+                    persistor={ this.persistor }
+                    onBeforeLift={ this.onBeforeLift }>
+                    <StackNavigator />
+                </PersistGate>
+            </Provider>
             </I18nProvider>
         );
     }

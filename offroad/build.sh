@@ -21,6 +21,8 @@ export SENTRY_WIZARD_INTEGRATION=reactNative
 yarn
 yarn compile
 
+yarn compile
+
 mkdir -p android/app/src/main/assets
 rm android/app/src/main/assets/index.android.bundl* || true
 rm -r android/build android/app/build || true

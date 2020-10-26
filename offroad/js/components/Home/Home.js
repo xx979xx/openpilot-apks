@@ -135,7 +135,7 @@ class Home extends Component {
             updateReleaseNotes,
         } = this.props;
 
-        const softwareName = i18n._(!!parseInt(isPassive) ? t`dashcam` : t`openpilot`);
+        const softwareName = i18n._(!!parseInt(params.Passive) ? t`dashcam` : t`openpilot`);
         const softwareString = `${ softwareName } v${ params.Version }`;
         const hasDeviceStats = typeof(deviceStats.all) !== 'undefined';
         const isMetric = !!parseInt(params.IsMetric);

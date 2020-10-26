@@ -22,7 +22,7 @@ msgstr ""
 
 #: js/components/Home/Home.js:467
 msgid "1 year of storage"
-msgstr ""
+msgstr "一年的行車記錄"
 
 #: js/components/Settings/Settings.js:417
 msgid "<  Account Settings"
@@ -50,7 +50,7 @@ msgstr "駕駛輔助系統不是自動駕駛系統。這代表 openpilot 的設�
 
 #: js/components/training/Onboarding/Onboarding.js:477
 msgid "A vision algorithm leverages the road-facing camera to determine the path to drive."
-msgstr ""
+msgstr "我們利用設備的後置相機補捉到的影像演算出行車的路徑。"
 
 #: js/components/Home/Home.js:216
 msgid "ALERT"
@@ -66,7 +66,7 @@ msgstr "全部"
 
 #: js/components/SetupTerms/SetupTerms.js:43
 msgid "Accept Terms and Conditions"
-msgstr ""
+msgstr "同意本條款"
 
 #: js/components/Settings/Settings.js:197
 msgid "Account"
@@ -74,11 +74,11 @@ msgstr "帳號"
 
 #: js/components/Settings/Settings.js:682
 msgid "Allow devices to connect to your device using Secure Shell (SSH)."
-msgstr ""
+msgstr "允許別的裝置經由 Secure Shell (SSH) 連線至您的設備。"
 
 #: js/components/Settings/Settings.js:333
 msgid "Allow openpilot to obey left-hand traffic conventions and perform driver monitoring on right driver seat."
-msgstr ""
+msgstr "允許 openpilot 遵守左側交通慣例，但監控位於右側的駕駛。"
 
 #: js/components/Settings/Settings.js:896
 msgid "Are you sure you want to reboot?"
@@ -127,7 +127,7 @@ msgstr "相機校準"
 #: js/components/training/Onboarding/Onboarding.js:445
 #: js/components/training/Onboarding/Onboarding.js:472
 msgid "Camera from Device"
-msgstr ""
+msgstr "來自設備的相機"
 
 #: js/components/Settings/Settings.js:698
 #: js/components/Settings/Settings.js:897
@@ -140,11 +140,11 @@ msgstr "取消"
 
 #: js/components/SetupTerms/SetupTerms.js:47
 msgid "Comma.ai, Inc. Terms & Conditions"
-msgstr "Comma.ai, Inc. 條款及細則"
+msgstr "Comma.ai, Inc. 條款"
 
 #: js/components/Settings/Settings.js:951
 msgid "Community maintained features are not confirmed by comma.ai to meet the standard safety model. Be extra cautious using them."
-msgstr ""
+msgstr "由社群維護的功能尚未通過官方標準的安全驗證，請謹慎使用。"
 
 #: js/components/training/Onboarding/Onboarding.js:985
 msgid "Congratulations! You have completed openpilot training."
@@ -175,7 +175,7 @@ msgstr "繼續"
 
 #: js/components/training/Onboarding/Onboarding.js:798
 msgid "Continuously observe your surroundings for safety while gently nudging the steering wheel towards your desired lane. The combination of turn signal and wheel nudge will prompt openpilot to change lanes."
-msgstr ""
+msgstr "不斷觀察周圍環境的安全並同時將方向盤輕輕推向想切至的車道。打方向燈和輕推方向盤這樣的組合能指使 openpilot 協助您變換車道。"
 
 #: js/components/Home/Home.js:300
 #: js/components/Home/Home.js:360
@@ -184,7 +184,7 @@ msgstr "行駛"
 
 #: js/components/SetupTerms/SetupTerms.js:45
 msgid "Decline"
-msgstr ""
+msgstr "拒绝"
 
 #: js/components/Settings/Settings.js:215
 msgid "Developer"
@@ -208,7 +208,7 @@ msgstr "取消 openpilot"
 
 #: js/components/Settings/Settings.js:342
 msgid "Display speed in km/h instead of mp/h."
-msgstr ""
+msgstr "以 km/h (而非 mp/h) 為速度的單位。"
 
 #: js/components/Settings/Settings.js:556
 msgid "Dongle ID"
@@ -220,7 +220,7 @@ msgstr "下載"
 
 #: js/components/Settings/Settings.js:536
 msgid "Driver Camera View"
-msgstr ""
+msgstr "觀看駕駛監控畫面"
 
 #: js/components/training/Onboarding/Onboarding.js:603
 #: js/components/training/Onboarding/Onboarding.js:663
@@ -233,24 +233,24 @@ msgstr "編輯"
 
 #: js/components/Settings/Settings.js:953
 msgid "Enable"
-msgstr ""
+msgstr "啟用"
 
 #: js/components/Settings/Settings.js:666
 #: js/components/Settings/Settings.js:951
 msgid "Enable Community Features"
-msgstr ""
+msgstr "啟用社群開發功能"
 
 #: js/components/Settings/Settings.js:302
 msgid "Enable Lane Change Assist"
-msgstr ""
+msgstr "啟用換道輔助"
 
 #: js/components/Settings/Settings.js:312
 msgid "Enable Lane Departure Warnings"
-msgstr ""
+msgstr "啟用車道偏離警告"
 
 #: js/components/Settings/Settings.js:330
 msgid "Enable Right-Hand Drive"
-msgstr ""
+msgstr "啟用右駕模式"
 
 #: js/components/Settings/Settings.js:679
 msgid "Enable SSH"
@@ -403,11 +403,11 @@ msgstr "密碼:"
 #: js/components/training/Onboarding/Onboarding.js:793
 #: js/components/training/Onboarding/Onboarding.js:863
 msgid "Perform Lane Change"
-msgstr ""
+msgstr "進行變換車道"
 
 #: js/components/Settings/Settings.js:305
 msgid "Perform assisted lane changes with openpilot by checking your surroundings for safety, activating the turn signal and gently nudging the steering wheel towards your desired lane. openpilot is not capable of checking if a lane change is safe. You must continuously observe your surroundings to use this feature."
-msgstr ""
+msgstr "檢查四周車道安全後，您可以經由打方向燈和輕推方向盤的組合來使用 openpilot 輔助切換車道功能。openpilot 無法檢查是否有後方來車以及四周的安全。您必須持續觀察周圍的環境才能使用此功能。"
 
 #: js/components/Settings/Settings.js:582
 #: js/components/Settings/Settings.js:902
@@ -420,7 +420,7 @@ msgstr "按下巡航鈕啟動，踩油門或剎車取消。"
 
 #: js/components/Settings/Settings.js:538
 msgid "Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (offroad use only)"
-msgstr ""
+msgstr "預覽駕駛監控畫面，用來協助將裝置掛載至適當的位置。(只允許熄火時使用)"
 
 #: js/components/SetupTerms/SetupTerms.js:49
 msgid "Privacy policy available at https://my.comma.ai/privacy.html"
@@ -433,7 +433,7 @@ msgstr "來自您車子的雷達"
 
 #: js/components/SetupTerms/SetupTerms.js:44
 msgid "Read to Continue"
-msgstr ""
+msgstr "閱讀完後繼續"
 
 #: js/components/Settings/Settings.js:575
 #: js/components/Settings/Settings.js:896
@@ -447,7 +447,7 @@ msgstr "重啟並更新"
 
 #: js/components/Settings/Settings.js:315
 msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31mph (50kph)."
-msgstr ""
+msgstr "啟用這個選項後，在速超過 30 英里 (50 公里) 下未打方向燈且車輛駛出檢測到的車道分隔線，系統將會發出警示訊息。"
 
 #: js/components/Settings/Settings.js:321
 msgid "Record and Upload Driver Camera"
@@ -471,7 +471,7 @@ msgstr "重新開始"
 
 #: js/components/SetupTerms/SetupTerms.js:38
 msgid "Review Terms"
-msgstr ""
+msgstr "閱讀條款"
 
 #: js/components/Settings/Settings.js:399
 msgid "Review Training Guide"
@@ -507,11 +507,11 @@ msgstr "請點選畫面上的行車路徑繼續"
 
 #: js/components/training/Onboarding/Onboarding.js:809
 msgid "Select steering wheel"
-msgstr ""
+msgstr "請點選畫面上的方向盤"
 
 #: js/components/training/Onboarding/Onboarding.js:768
 msgid "Select turn signal"
-msgstr ""
+msgstr "請點選畫面上的方向燈"
 
 #: js/components/Settings/Settings.js:559
 msgid "Serial Number"
@@ -536,7 +536,7 @@ msgstr "暫時跳過"
 #: js/components/training/Onboarding/Onboarding.js:726
 #: js/components/training/Onboarding/Onboarding.js:754
 msgid "Start Lane Change"
-msgstr ""
+msgstr "開始切換車道"
 
 #: js/components/SetupQr/SetupQr.js:82
 msgid "Succesfully paired to account"
@@ -548,7 +548,7 @@ msgstr "已配對成功："
 
 #: js/components/training/Onboarding/Onboarding.js:639
 msgid "Tap \"SET\" (on screen) to engage"
-msgstr ""
+msgstr "請點選畫面上的 \"SET\" 繼續"
 
 #: js/components/training/Onboarding/Onboarding.js:944
 msgid "Tap a pedal to disengage"
@@ -580,7 +580,7 @@ msgstr "掃描無線網路出現錯誤。{0}請確認無線網路功能已在上
 
 #: js/components/training/Onboarding/Onboarding.js:990
 msgid "This guide can be replayed at any time from the device settings. To learn more about openpilot, read the wiki and join the community at discord.comma.ai"
-msgstr ""
+msgstr "若有需要，您可以隨時至設備設定裡重新閱讀使用指南。若您想知道更多關於 openpilot 的訊息，請參閱 wiki 或是加入我們在 discord.comma.ai 的社群。"
 
 #: js/components/Settings/Settings.js:908
 #: js/components/Settings/Settings.js:910
@@ -610,7 +610,7 @@ msgstr "上傳速度"
 
 #: js/components/Settings/Settings.js:324
 msgid "Upload data from the driver facing camera and help improve the driver monitoring algorithm."
-msgstr ""
+msgstr "上傳前置相機的錄像來協助我們提升駕駛監控的準確率。"
 
 #: js/components/Settings/Settings.js:339
 msgid "Use Metric System"
@@ -629,8 +629,8 @@ msgid "Version"
 msgstr "版本"
 
 #: js/components/Settings/Settings.js:742
-msgid "WARNING: This grants SSH access to all public keys in your GitHub settings. Never enter a GitHub username other than your own. The built-in SSH key will be disabled if you proceed. A comma employee will never ask you to add their GitHub."
-msgstr "警告：這將授予在您 GitHub 帳號裡所有公開密鑰的 SSH 訪問權限。永遠不要輸入您自己以外的 GitHub 用戶名。comma 的員工永遠不會要求您添加他們的 GitHub 用戶名。"
+msgid "WARNING: {0} This grants SSH access to all public keys in your GitHub settings. {1} Never enter a GitHub username other than your own. {2} The built-in SSH key will be disabled if you proceed. {3} A comma employee will never ask you to add their GitHub. {4}"
+msgstr "警告：{0}這將授予在您 GitHub 帳號裡所有公開密鑰的 SSH 訪問權限。{1}永遠不要輸入您自己以外的 GitHub 用戶名。{2}如果繼續操作，將會暫時禁用內建的 SSH 密鑰。{3}comma 的員工永遠不會要求您添加他們的 GitHub 用戶名。{4}"
 
 #: js/components/training/Onboarding/Onboarding.js:329
 msgid "Welcome to openpilot alpha"
@@ -638,7 +638,7 @@ msgstr "歡迎來到 openpilot alpha"
 
 #: js/components/training/Onboarding/Onboarding.js:846
 msgid "When encountering a potentially unsafe situation or exiting a highway, you can disengage with any pedal."
-msgstr ""
+msgstr "當遇到危險情況或是想離開高速公路時，你可以經由踩踏油門或剎車來取消控制。"
 
 #: js/components/training/Onboarding/Onboarding.js:668
 msgid "When openpilot is engaged, you must always pay attention! openpilot monitors awareness with 3D facial reconstruction and pose. Distracted drivers are alerted, then disengaged from openpilot until corrected."
@@ -654,11 +654,11 @@ msgstr "當您使用 openpilot 時，您可以隨時改以人工操控方向，�
 
 #: js/components/Settings/Settings.js:209
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 #: js/components/training/Onboarding/Onboarding.js:759
 msgid "With openpilot engaged, turn on your signal, check your surroundings, and confirm it is safe to change lanes."
-msgstr ""
+msgstr "使用 openpilot 時，打開方向燈，檢查您四周的情況，確認是否可以安全的切換車道。"
 
 #: js/components/Settings/Settings.js:427
 #: js/components/Settings/Settings.js:554
@@ -690,18 +690,18 @@ msgstr "comma connect"
 #: js/components/Settings/Settings.js:502
 #: js/components/Settings/Settings.js:649
 msgid "dashcam"
-msgstr ""
+msgstr "dashcam"
 
 #: js/components/Home/Home.js:138
 #: js/components/Settings/Settings.js:187
 #: js/components/Settings/Settings.js:502
 #: js/components/Settings/Settings.js:649
 msgid "openpilot"
-msgstr ""
+msgstr "openpilot"
 
 #: js/components/training/Onboarding/Onboarding.js:713
 msgid "openpilot can change lanes with your assistance."
-msgstr ""
+msgstr "openpilot 可以在您的協助下切換車道。"
 
 #: js/components/training/Onboarding/Onboarding.js:751
 msgid "openpilot controls"
@@ -710,12 +710,12 @@ msgstr "openpilot 控制"
 #: js/components/training/Onboarding/Onboarding.js:880
 #: js/components/training/Onboarding/Onboarding.js:923
 msgid "openpilot disengaging"
-msgstr ""
+msgstr "停用 openpilot"
 
 #: js/components/training/Onboarding/Onboarding.js:619
 #: js/components/training/Onboarding/Onboarding.js:660
 msgid "openpilot engaging"
-msgstr ""
+msgstr "使用 openpilot"
 
 #: js/components/training/Onboarding/Onboarding.js:373
 msgid "openpilot is an advanced driver assistance system."
@@ -723,11 +723,11 @@ msgstr "openpilot 是進階版的駕駛輔助系統。"
 
 #: js/components/training/Onboarding/Onboarding.js:718
 msgid "openpilot is not capable of checking if a lane change is safe. This is your job. openpilot will change lanes regardless if another vehicle is present."
-msgstr ""
+msgstr "openpilot 無法確認是否可以安全的變更車道。這是您的工作。無論是否有其它的車輛，openpilot 都會變更車道。"
 
 #: js/components/training/Onboarding/Onboarding.js:790
 msgid "openpilot lane changes"
-msgstr ""
+msgstr "openpilot 變換車道"
 
 #: js/components/Settings/Settings.js:459
 msgid "openpilot requires the device to be mounted within 4° left or right and within 5° up or down. openpilot is continuously calibrating, resetting is rarely required."
@@ -744,11 +744,11 @@ msgstr "openpilot 使用多個傳感器來監看前方道路。"
 
 #: js/components/training/Onboarding/Onboarding.js:582
 msgid "openpilot will engage when cruise control is set."
-msgstr ""
+msgstr "openpilot 將在巡航系統啟用後開始運作。"
 
 #: js/components/training/Onboarding/Onboarding.js:841
 msgid "openpilot will stop driving when a pedal is pressed."
-msgstr ""
+msgstr "當踩下油門或剎車時，openpilot 將停止所有的操控。"
 
 #: js/components/Settings/Settings.js:204
 msgid "{0} Free"

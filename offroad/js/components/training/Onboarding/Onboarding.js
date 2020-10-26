@@ -374,7 +374,7 @@ class Onboarding extends Component {
                         </X.Text>
                         <X.Text
                             size='smallish' color='white' weight='light'
-                            style={ Styles.onboardingStepContextSmall }>
+                            style={ Styles.onboardingStepContext }>
                             <Trans>
                                 A driver assistance system is not a self driving car.
                                 This means openpilot is designed to work with you,

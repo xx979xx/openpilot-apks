@@ -739,18 +739,18 @@ class Settings extends Component {
         return (
             <View>
                 <X.Text color='white' size='tiny'>
-                    <Trans>
+                    {i18n._(t`
                     WARNING:
-                    {'\n'}
+                    ${'\n'}
                     This grants SSH access to all public keys in your GitHub settings.
-                    {'\n'}
+                    ${'\n'}
                     Never enter a GitHub username other than your own.
-                    {'\n'}
+                    ${'\n'}
                     The built-in SSH key will be disabled if you proceed.
-                    {'\n'}
+                    ${'\n'}
                     A comma employee will never ask you to add their GitHub.
-                    {'\n'}
-                    </Trans>
+                    ${'\n'}
+                    `)}
                 </X.Text>
                 <View style={ Styles.githubUsernameInputContainer }>
                     <X.Text

@@ -5,3 +5,5 @@ node_modules/
 *.apk
 yarn-error.log
 .*.swp
+offroad/js/locales/*/messages.js 
+offroad/js/locales/_build/
